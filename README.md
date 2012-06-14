@@ -2,6 +2,7 @@ ps3-firmware-beginners-luck
 ===========================
 
 == Arrogant Penguin - 2012 ==
++++ DaSnOoTeRKiNG - 2012  +++
 
 ps3_firmware
 
