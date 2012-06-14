@@ -1,0 +1,38 @@
+== Solar Storm License ==
+== Arrogant Penguin Industries - 2009 ==
+
+Redistribution and use in source and binary forms, with or without modification,
+are permitted provided that the following conditions are met ::
+
+1. The source code and any redistribution of the source code contained within must
+retain the above licensing notice, and the following disclaimer.
+2. The binary release and any redistribution of the binary release, in part or in
+whole, must retain the above licensing notice, this list of conditions, and the
+following disclaimer in the documentation and/or the materials provided clearly
+marked within the distribution.
+3. Any binary created with the source code, edited or otherwise, shall contain a
+section in the documentation and/or materials that includes this original license,
+however the binary may, and is encouraged, be licensed under another available
+license.
+
+Limitations ::
+1. All code releases under this license will include at the top of the released
+file a header comment to include the following:
+        <Contributor (Business, or Person)>
+        <Date Contribution was committed>
+2. Backward engineering of binaries released under this license is prohibited.
+3. Copying excessive chunks of the source code, stripping it of this license, or
+changing the license without giving credit to the original author, and/or releasing
+it in source code or binary form is prohibited under this license.
+
+Disclaimer ::
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY
+EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL
+THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT
+OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR
+TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
