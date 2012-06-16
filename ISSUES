@@ -1,0 +1,43 @@
+## This document is a collection of issues
+   that we are having with the system ##
+
+== Arrogant Penguin - 2012 ==
+
+~~ ISSUE 1 ~~
+
+Within the PS3Toolchain ::
+
+-- File pkg.py --
+Line 312 produces an error in the function of unsupported
+type - that causes a pup not to be extracted.
+
+def unpack(filename):
+	with open(filename, 'rb') as fp:
+		data = fp.read()
+		offset = 0
+		header = Header()
+		header.unpack(data[offset:offset+len(header)])
+		if debug:
+			print header
+			print
+		
+This line >>	assert header.type == 0x00000001, 'Unsupported Type'
+		if header.itemCount > 0:
+			dataEnc = data[header.dataOff:header.dataOff+header.dataSize]
+			context = keyToContext(header.QADigest)
+			
+			decData = crypt(context, dataEnc, header.dataSize)
+			directory = nullterm(header.contentID)
+			try:
+				os.makedirs(directory)
+			except Exception, e:
+				pass
+			fileDescs = []
+			for i in range(0, header.itemCount):
+				fileD = FileHeader()
+				fileD.unpack(decData[0x20 * i:0x20 * i + 0x20])
+				fileD.doWork(decData)
+				fileDescs.append(fileD)
+				if debug:
+					print fileD
+				fileD.dump(directory, decData, header)
