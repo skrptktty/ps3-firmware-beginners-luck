@@ -1,0 +1,25 @@
+﻿<Lang>
+	<Options>ընտրանքներ</Options>
+	<Tasks>խնդիրներ</Tasks>
+	<Browse>Փնտրել</Browse>
+	<Original_Firmware>Բնօրինակը որոնում.</Original_Firmware>
+	<Modified_Firmware>Փոփոխված որոնում.</Modified_Firmware>
+	<Build_MFW>կառուցել MFW</Build_MFW>
+	<Quit>թողնել</Quit>
+	<Settings>Կառավարում</Settings>
+	<About_PS3MFW_Builder>Օգտվողի մասին PS3MFW Builder</About_PS3MFW_Builder>
+	<Select_Official_firmware>Ընտրել Պաշտոնական որոնում</Select_Official_firmware>
+	<Select_Destination_MFW_firmware>Ընտրել Ուղղություններ MFW որոնում</Select_Destination_MFW_firmware>
+	<Build_MFW>կառուցել MFW</Build_MFW>
+	<Exit>Ելք</Exit>
+	<File>ֆայլ</File>
+	<Theme>թեմա</Theme>
+	<Help>օգնություն</Help>
+	<Language>լեզու</Language>
+	<Save_settings>փրկել</Save_settings>
+	<Default_settings>ի ավատար</Default_settings>
+	<PS3MFW_Builder_Settings>PS3MFW Builder Կառավարում</PS3MFW_Builder_Settings>
+	<Configure>համաձեւել</Configure>
+	<Task_Options>առաջադրանք Ընտրանքներ</Task_Options>
+	<successfully>Փոփոխված որոնում Կառուցվել է հաջողությամբ:</successfully>
+</Lang>

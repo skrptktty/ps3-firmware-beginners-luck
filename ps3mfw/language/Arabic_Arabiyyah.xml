@@ -1,0 +1,25 @@
+﻿<Lang>
+	<Options>الخيارات</Options>
+	<Tasks>المهام</Tasks>
+	<Browse>إستعراض</Browse>
+	<Original_Firmware>الفيرمويير الاصلى :</Original_Firmware>
+	<Modified_Firmware>الفيرمويير المعدل :</Modified_Firmware>
+	<Build_MFW>تكوين الفيرموير</Build_MFW>
+	<Quit>خروج</Quit>
+	<Settings>الإعدادات</Settings>
+	<About_PS3MFW_Builder>عن البرنامج</About_PS3MFW_Builder>
+	<Select_Official_firmware>اختار الفيرمويير الأصلى</Select_Official_firmware>
+	<Select_Destination_MFW_firmware>اختار مكان حفظ الفيرمويير المعدل</Select_Destination_MFW_firmware>
+	<Build_MFW>تكوين الفيرموير</Build_MFW>
+	<Exit>خروج</Exit>
+	<File>ملف</File>
+	<Theme>السيمات</Theme>
+	<Help>المساعدة</Help>
+	<Language>اللغة</Language>
+	<Save_settings>حفظ</Save_settings>
+	<Default_settings>الافتراضى</Default_settings>
+	<PS3MFW_Builder_Settings>اعدادات البرنامج</PS3MFW_Builder_Settings>
+	<Configure>الضبط</Configure>
+	<Task_Options>خيارات المهام</Task_Options>
+	<successfully>تم تكوين الفيرمويير المعدل بنجاح!</successfully>
+</Lang>

@@ -1,0 +1,25 @@
+﻿<Lang>
+	<Options>ఎంపికలు</Options>
+	<Tasks>పనులు</Tasks>
+	<Browse>బ్రౌజ్ చేయండి</Browse>
+	<Original_Firmware>అసలు ఫర్మువేర్​​:</Original_Firmware>
+	<Modified_Firmware>చివరి మార్పు ఫర్మువేర్​​:</Modified_Firmware>
+	<Build_MFW>బిల్డ్ MFW</Build_MFW>
+	<Quit>క్విట్</Quit>
+	<Settings>సెట్టింగులు</Settings>
+	<About_PS3MFW_Builder>PS3MFW బిల్డర్ గురించి</About_PS3MFW_Builder>
+	<Select_Official_firmware>అధికారిక ఫర్మువేర్ ​​ఎంచుకోండి</Select_Official_firmware>
+	<Select_Destination_MFW_firmware>గమ్యం MFW ఫర్మువేర్ ​​ఎంచుకోండి</Select_Destination_MFW_firmware>
+	<Build_MFW>బిల్డ్ MFW</Build_MFW>
+	<Exit>నిష్క్రమణ</Exit>
+	<File>ఫైలు</File>
+	<Theme>నేపథ్యం</Theme>
+	<Help>సహాయం</Help>
+	<Language>భాష</Language>
+	<Save_settings>సేవ్</Save_settings>
+	<Default_settings>డిఫాల్ట్</Default_settings>
+	<PS3MFW_Builder_Settings>PS3MFW బిల్డర్ సెట్టింగులు</PS3MFW_Builder_Settings>
+	<Configure>ఆకృతీకరించుటకు</Configure>
+	<Task_Options>టాస్క్ ఐచ్ఛికాలు</Task_Options>
+	<successfully>చివరి మార్పు ఫర్మువేర్ ​​విజయవంతంగా నిర్మించబడిన!</successfully>
+</Lang>

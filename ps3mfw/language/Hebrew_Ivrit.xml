@@ -1,0 +1,24 @@
+﻿<Lang>
+	<Options>אפשרויות</Options>
+	<Tasks>משימות</Tasks>
+	<Browse>עיון</Browse>
+	<Original_Firmware>קושחה מקורית :</Original_Firmware>
+	<Modified_Firmware>MFW קושחה :</Modified_Firmware>
+	<Build_MFW>MFW בנה</Build_MFW>
+	<Quit>צא</Quit>
+	<Settings>הגדרות</Settings>
+	<About_PS3MFW_Builder>PS3MFW Builder אודות</About_PS3MFW_Builder>
+	<Select_Official_firmware>מקורית קושחה בחר</Select_Official_firmware>
+	<Select_Destination_MFW_firmware>MFW קושחה יעד בחר</Select_Destination_MFW_firmware>
+	<Exit>יציאה</Exit>
+	<File>קובץ</File>
+	<Theme>ערכת נושא</Theme>
+	<Help>עזרה</Help>
+	<Language>שפה</Language>
+	<Save_settings>שמור</Save_settings>
+	<Default_settings>ברירת מחדל</Default_settings>
+	<PS3MFW_Builder_Settings>PS3MFW Builder הגדרות</PS3MFW_Builder_Settings>
+	<Configure>הגדר</Configure>
+	<Task_Options>אפשרויות משימה</Task_Options>
+	<successfully>הקושחה נבנתה בהצלחה!</successfully>
+</Lang>

@@ -1,0 +1,25 @@
+﻿<Lang>
+	<Options>Tùy chọn</Options>
+	<Tasks>Nhiệm vụ</Tasks>
+	<Browse>Duyệt</Browse>
+	<Original_Firmware>FGốc Firmware :</Original_Firmware>
+	<Modified_Firmware>Thay đổi Firmware :</Modified_Firmware>
+	<Build_MFW>Xây dựng MFW</Build_MFW>
+	<Quit>Bỏ Thuốc</Quit>
+	<Settings>Cài đặt</Settings>
+	<About_PS3MFW_Builder>Giới thiệu về PS3MFW Builder</About_PS3MFW_Builder>
+	<Select_Official_firmware>Chọn firmware chính thức</Select_Official_firmware>
+	<Select_Destination_MFW_firmware>Chọn Điểm đến MFW firmware</Select_Destination_MFW_firmware>
+	<Build_MFW>Xây dựng MFW</Build_MFW>
+	<Exit>Thoát</Exit>
+	<File>Tập Tin</File>
+	<Theme>Theme</Theme>
+	<Help>Trợ giúp</Help>
+	<Language>Ngôn ngữ</Language>
+	<Save_settings>Lưu</Save_settings>
+	<Default_settings>Mặc định</Default_settings>
+	<PS3MFW_Builder_Settings>Thiết lập PS3MFW Builder</PS3MFW_Builder_Settings>
+	<Configure>Cấu hình</Configure>
+	<Task_Options>Nhiệm vụ Tùy chọn</Task_Options>
+	<successfully>Thay đổi Firmware xây dựng thành công!</successfully>
+</Lang>

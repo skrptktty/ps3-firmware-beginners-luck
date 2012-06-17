@@ -1,0 +1,25 @@
+﻿<Lang>
+	<Options>વિકલ્પો</Options>
+	<Tasks>ક્રિયાઓ</Tasks>
+	<Browse>બ્રાઉઝ કરો</Browse>
+	<Original_Firmware>મૂળ ફર્મવેર :</Original_Firmware>
+	<Modified_Firmware>સુધારાયેલ ફર્મવેર :</Modified_Firmware>
+	<Build_MFW>બિલ્ડ MFW</Build_MFW>
+	<Quit>છોડી દેવું</Quit>
+	<Settings>સેટિંગ્સ</Settings>
+	<About_PS3MFW_Builder>PS3MFW બિલ્ડર વિશે</About_PS3MFW_Builder>
+	<Select_Official_firmware>સત્તાવાર ફર્મવેર પસંદ કરો</Select_Official_firmware>
+	<Select_Destination_MFW_firmware>લક્ષ્યસ્થાન MFW ફર્મવેર પસંદ કરો</Select_Destination_MFW_firmware>
+	<Build_MFW>બિલ્ડ MFW</Build_MFW>
+	<Exit>બહાર નીકળો</Exit>
+	<File>ફાઈલ</File>
+	<Theme>વિષય</Theme>
+	<Help>મદદ</Help>
+	<Language>ભાષા</Language>
+	<Save_settings>સેવ કરો</Save_settings>
+	<Default_settings>મૂળભૂત</Default_settings>
+	<PS3MFW_Builder_Settings>PS3MFW બિલ્ડર સુયોજનો</PS3MFW_Builder_Settings>
+	<Configure>રૂપરેખાંકિત</Configure>
+	<Task_Options>ટાસ્ક વિકલ્પો</Task_Options>
+	<successfully>સુધારાયેલ ફર્મવેર સફળતાપૂર્વક બિલ્ટ!</successfully>
+</Lang>

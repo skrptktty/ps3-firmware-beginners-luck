@@ -1,0 +1,25 @@
+﻿<Lang>
+	<Options>Opsies</Options>
+	<Tasks>Take</Tasks>
+	<Browse>Blaai</Browse>
+	<Original_Firmware>Oorspronklike Firmware:</Original_Firmware>
+	<Modified_Firmware>Gewysigde Firmware:</Modified_Firmware>
+	<Build_MFW>Bou MFW</Build_MFW>
+	<Quit>Eindigen</Quit>
+	<Settings>Stellings</Settings>
+	<About_PS3MFW_Builder>Oor PS3MFW Bouer</About_PS3MFW_Builder>
+	<Select_Official_firmware>Kies Amptelike firmware</Select_Official_firmware>
+	<Select_Destination_MFW_firmware>Kies Bestemmings MFW firmware</Select_Destination_MFW_firmware>
+	<Build_MFW>Bou MFW</Build_MFW>
+	<Exit>Uittree</Exit>
+	<File>Lêer</File>
+	<Theme>Tema</Theme>
+	<Help>Help</Help>
+	<Language>Taal</Language>
+	<Save_settings>Stoor</Save_settings>
+	<Default_settings>Standaard</Default_settings>
+	<PS3MFW_Builder_Settings>PS3MFW Bouer-instellings</PS3MFW_Builder_Settings>
+	<Configure>Instel</Configure>
+	<Task_Options>Taak Opsies</Task_Options>
+	<successfully>Gewysigde Firmware suksesvol Bou!</successfully>
+</Lang>

@@ -1,0 +1,25 @@
+﻿<Lang>
+	<Options>Možnosti</Options>
+	<Tasks>Úkoly</Tasks>
+	<Browse>Prohlížet</Browse>
+	<Original_Firmware>Původní firmware :</Original_Firmware>
+	<Modified_Firmware>Změněno Firmware :</Modified_Firmware>
+	<Build_MFW>Sestavení MFW</Build_MFW>
+	<Quit>Přestat</Quit>
+	<Settings>Nastavení</Settings>
+	<About_PS3MFW_Builder>O PS3MFW Builder</About_PS3MFW_Builder>
+	<Select_Official_firmware>Vyberte Oficiální firmware</Select_Official_firmware>
+	<Select_Destination_MFW_firmware>Vyberte cílové MFW firmware</Select_Destination_MFW_firmware>
+	<Build_MFW>Sestavení MFW</Build_MFW>
+	<Exit>Východ</Exit>
+	<File>Soubor</File>
+	<Theme>Téma</Theme>
+	<Help>Pomoc</Help>
+	<Language>Jazyk</Language>
+	<Save_settings>Uložit</Save_settings>
+	<Default_settings>Standardní</Default_settings>
+	<PS3MFW_Builder_Settings>PS3MFW Builder Nastavení</PS3MFW_Builder_Settings>
+	<Configure>Konfigurace</Configure>
+	<Task_Options>Možnosti Úkolu</Task_Options>
+	<successfully>Upravené Firmware úspěšně vytvořena!</successfully>
+</Lang>

@@ -1,0 +1,25 @@
+﻿<Lang>
+	<Options>პარამეტრები</Options>
+	<Tasks>ამოცანები</Tasks>
+	<Browse>დათვალიერება</Browse>
+	<Original_Firmware>ორიგინალური Firmware :</Original_Firmware>
+	<Modified_Firmware>მოდიფიცირებული Firmware :</Modified_Firmware>
+	<Build_MFW>ბილდ MFW</Build_MFW>
+	<Quit>დატოვეს</Quit>
+	<Settings>პარამეტრები</Settings>
+	<About_PS3MFW_Builder>შესახებ PS3MFW აღმაშენებელი</About_PS3MFW_Builder>
+	<Select_Official_firmware>აირჩიეთ ოფიციალური firmware</Select_Official_firmware>
+	<Select_Destination_MFW_firmware>აირჩიეთ გადახდის MFW firmware</Select_Destination_MFW_firmware>
+	<Build_MFW>ბილდ MFW</Build_MFW>
+	<Exit>გასვლა</Exit>
+	<File>ფაილი</File>
+	<Theme>თემა</Theme>
+	<Help>დახმარება</Help>
+	<Language>ენა</Language>
+	<Save_settings>გადავარჩინოთ</Save_settings>
+	<Default_settings>ნაგულისხმები</Default_settings>
+	<PS3MFW_Builder_Settings>PS3MFW აღმაშენებლის დაყენებები</PS3MFW_Builder_Settings>
+	<Configure>კონფიგურაცია</Configure>
+	<Task_Options>სამუშაო პარამეტრები</Task_Options>
+	<successfully>მოდიფიცირებული Firmware ჩამონტაჟებული წარმატებით!</successfully>
+</Lang>

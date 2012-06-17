@@ -1,0 +1,25 @@
+﻿<Lang>
+	<Options>Parinktys</Options>
+	<Tasks>Užduotys</Tasks>
+	<Browse>Peržiūra</Browse>
+	<Original_Firmware>Originalus Firmware :</Original_Firmware>
+	<Modified_Firmware>Modifikuotas firmware :</Modified_Firmware>
+	<Build_MFW>Statyti MFW</Build_MFW>
+	<Quit>Mesti</Quit>
+	<Settings>Nustatymai</Settings>
+	<About_PS3MFW_Builder>Apie PS3MFW Builder</About_PS3MFW_Builder>
+	<Select_Official_firmware>Pasirinkite oficialiajame firmware</Select_Official_firmware>
+	<Select_Destination_MFW_firmware>Pasirinkite Paskirtis MFW firmware</Select_Destination_MFW_firmware>
+	<Build_MFW>Statyti MFW</Build_MFW>
+	<Exit>Išeiti</Exit>
+	<File>Failas</File>
+	<Theme>Tema</Theme>
+	<Help>Padėti</Help>
+	<Language>Kalba</Language>
+	<Save_settings>Sutaupyti</Save_settings>
+	<Default_settings>Numatytasis</Default_settings>
+	<PS3MFW_Builder_Settings>PS3MFW Builder Nustatymai</PS3MFW_Builder_Settings>
+	<Configure>Konfigūruoti</Configure>
+	<Task_Options>Užduotis Parinktys</Task_Options>
+	<successfully>Modifikuotas firmware pastatytas sėkmingai!</successfully>
+</Lang>

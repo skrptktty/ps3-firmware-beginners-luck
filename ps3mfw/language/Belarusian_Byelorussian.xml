@@ -1,0 +1,25 @@
+﻿<Lang>
+	<Options>опцыі</Options>
+	<Tasks>задачы</Tasks>
+	<Browse>праглядаць</Browse>
+	<Original_Firmware>Арыгінальная прашыўка :</Original_Firmware>
+	<Modified_Firmware>Мадыфікаваная прашыўка :</Modified_Firmware>
+	<Build_MFW>зборка MFW</Build_MFW>
+	<Quit>выхад</Quit>
+	<Settings>Налады</Settings>
+	<About_PS3MFW_Builder>Аб PS3MFW Builder</About_PS3MFW_Builder>
+	<Select_Official_firmware>Выберыце Афіцыйныя прашыўкі</Select_Official_firmware>
+	<Select_Destination_MFW_firmware>Выберыце прашыўку прызначэння MFW</Select_Destination_MFW_firmware>
+	<Build_MFW>зборка MFW</Build_MFW>
+	<Exit>выхад</Exit>
+	<File>файл</File>
+	<Theme>тэма</Theme>
+	<Help>дапамога</Help>
+	<Language>Мова</Language>
+	<Save_settings>эканоміць</Save_settings>
+	<Default_settings>змаўчанне</Default_settings>
+	<PS3MFW_Builder_Settings>PS3MFW Builder паводле</PS3MFW_Builder_Settings>
+	<Configure>канфігураваць</Configure>
+	<Task_Options>параметры задач</Task_Options>
+	<successfully>Мадыфікаваная прашыўка Убудаваны паспяхова!</successfully>
+</Lang>

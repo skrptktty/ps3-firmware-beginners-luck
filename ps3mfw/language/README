@@ -1,0 +1,128 @@
+==============================================================
+  .------.  .-------. .-----.   ..  .-.   .--------.      .--.
+ /_____   \/   _____//_____  \ /  \/   \ /_   _____/\    /   /
+  /   ____/\____  \  __(__  < /         \ /   __)\   \/\/   / 
+ /   /     /       \/        \   /\/\    Y   /    \        /  
+/___/     /________/_________/__/    \___|__/      \__/\__/   
+                                                  Translations
+==============================================================
+
+
+main: https://github.com/DanyL/PS3MFW-Translations
+
+
+usage: For PS3MFW Builder 0.2.1 with the XML files stored in \language\ subfolder (do not include the README in that folder)
+
+
+Currently these translations are provided:
+- Afrikaans/Suid-Afrikaans
+- Albanian/Shqip
+- Arabic/Arabiyyah (improved by Abkarino)
+- Arabic/Arabi (by kaito kid)
+- Armenian/Hayeren
+- Azerbaijani/Azeri-Torki
+- Basque/Euskara
+- Belarusian/Byelorussian
+- Bengali/Bangla
+- Bulgarian/Balgarski-Ezik
+- Catalan-Valencian/Catala-Valencia
+- Chinese-simplified/Hanyu-Hans
+- Chinese-traditional/Hanyu-Hant
+- Croatian/Hrvatski
+- Czech/Cesky
+- Danish/Danske
+- Dutch/Nederlands
+- English
+- Esperanto
+- Estonian/Eesti-keel
+- Filipino/Tagalog
+- Finnish/Suomi
+- French/Francais (improved by Atilla, Razkar)
+- Fun1/SwedishChef
+- Fun2/Piglatin
+- Fun3/L33t-var2
+- Fun4/L33t-var1
+- Gallic/Galo
+- Georgian/Kartuli
+- German/Deutsch
+- Greek/Elinika
+- Gujarati/Gujarati
+- Haitian-Creole/Kreyol-Ayisyen
+- Hausa
+- Hebrew/Ivrit (by DanyL)
+- Hindi-Urdu/Urdu-Nastaliq
+- Hindustani/Hindi-Devanagari
+- Hungarian/Magyar
+- Icelandic/Islenska
+- Indonesian/Indonesia
+- Irish/Gaelic
+- Italian/Italiano (by Martix97)
+- Japanese/Nihongo
+- Kannada/Canarese
+- Korean/Hangugeo-Chosonmal
+- Latin/Latina
+- Latvian/Latviesu-Valoda
+- Lithuanian/Lietuvos
+- Macedonian/Makedonski-Jazik
+- Malay/Melayu
+- Maltese/Malti
+- Norwegian/Norske
+- Pashto
+- Persian/Farsi
+- Polish/Polski
+- Portugese-Brazil/Portugues-Brasil
+- Portugese-Portugal/Portugues-Portugal
+- Romanian/Roman
+- Russian/Russkiy
+- Serbian/Srpski
+- Slovak/Slovaski
+- Slovenian/Slovenski
+- Spanish/Espanol (by rubio0075)
+- Spanish-Spain/Espanol-Espana (by vad3r+euss)
+- Spanish-Latin-American/Espanol-America-Latina (by naruse)
+- Swahili/Kiswahili
+- Swedish/Svenska
+- Tamil/Tamil-Nadu
+- Telugu/Andhra-Pradesh
+- Thai/Phasa-Tai
+- Turkish/Turkce (by Ibocan)
+- Ukranian/Ukrayinska-Mova
+- Vietnamese/Viet
+- Welsh/Cymraeg
+- Yiddish/Yidish
+
+
+Translation Guide:
+- The file is in XML UTF-8 format. Make sure you use an UTF-8 compatible editor (e.g. Notepad++)
+- Name the file itself in normal characters only (format is "English name_localised name, e.g. French_Francais.xml and /not/ French_Français.xml !). 
+- Provide a localised translation for each word/line within the XML subitems.
+- Save and try it in PS3MFW Builder. In some cases (e.g. Korean) the characters do not appear in the editor, but /will/ apear inside MFW Builder because of the UTF-8 encoder.
+
+
+Todo (maybe):
+- Split Spanish into correct subs (current is Euro variants only - Portuguese Brasilian/Euro was crosschecked by walsid and splitted into seperate XML):
+  - Spanish-Spain/Espanol-Espana.xml (already contributed by vad3r+euss)
+  - Spanish-Latin-American/Espanol-America-Latina.xml (already contributed by naruse)
+  - Spanisch-(Mexican).xml
+- Add more uncovered languages:
+  - Northern-Sotho_Sesotho-sa-Leboa.xml
+- Add more uncovered dialects (e.g. are dialects common in Netherlands, Belgium and Luxemburg):
+  - West-Frisian_West-Fries
+  - Frisian_Fries
+  - Gronings-East-Frisian_Gronings-Oost-Fries
+  - Drents_Drents
+  - Guelderish-Overijsels_Zuid-Gelders-Overijsels
+  - Tweants_Twents
+  - Veluws_Veluws
+  - South-Guelderish_Zuid-Gelders
+  - Hollandic_Hollands (this is closest to official Dutch btw)
+  - Hagues_Haags
+  - Zeelandic-West-Flemish_Zeeuws-West-Vlaams
+  - East-Flemish_Oost-Vlaams
+  - Brabantian_Brabants
+  - Limburgish_Limburgs
+  - Picardian
+  - Walloon_Wallonisch
+  - Luxembourgish
+  - Champenois
+  - Lorrain

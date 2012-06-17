@@ -1,0 +1,25 @@
+﻿<Lang>
+	<Options>Dewisiadau</Options>
+	<Tasks>Tasgau</Tasks>
+	<Browse>Pori</Browse>
+	<Original_Firmware>Firmware gwreiddiol :</Original_Firmware>
+	<Modified_Firmware>Firmware Modified :</Modified_Firmware>
+	<Build_MFW>Adeiladu MFW</Build_MFW>
+	<Quit>Ymadael</Quit>
+	<Settings>Gosodiadau</Settings>
+	<About_PS3MFW_Builder>Ynglŷn â PS3MFW Adeiladwr</About_PS3MFW_Builder>
+	<Select_Official_firmware>Dewiswch firmware Swyddogol</Select_Official_firmware>
+	<Select_Destination_MFW_firmware>Dewiswch Cyrchfan MFW firmware</Select_Destination_MFW_firmware>
+	<Build_MFW>Adeiladu MFW</Build_MFW>
+	<Exit>Gadael</Exit>
+	<File>Ffeil</File>
+	<Theme>Thema</Theme>
+	<Help>Helpu</Help>
+	<Language>Iaith</Language>
+	<Save_settings>Cadw</Save_settings>
+	<Default_settings>Ddiofyn</Default_settings>
+	<PS3MFW_Builder_Settings>Gosodiadau PS3MFW Adeiladwr</PS3MFW_Builder_Settings>
+	<Configure>Ffurfweddu</Configure>
+	<Task_Options>Dewisiadau tasg</Task_Options>
+	<successfully>Firmware Adeiledig a Addaswyd yn llwyddiannus!</successfully>
+</Lang>

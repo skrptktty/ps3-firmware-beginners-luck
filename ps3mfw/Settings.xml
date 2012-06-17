@@ -1,0 +1,9 @@
+<Settings>
+    <language>English</language>
+	<BUILD_DIR>/tmp/PS3MFW</BUILD_DIR>
+	<PS3_KEYS>/home/moggles/Downloads</PS3_KEYS>
+    <Theme>alt</Theme>
+    <IN_FILE></IN_FILE>
+    <OUT_FILE></OUT_FILE>
+	<tasks> add_license_msg change_version patch_category_game</tasks>
+</Settings>

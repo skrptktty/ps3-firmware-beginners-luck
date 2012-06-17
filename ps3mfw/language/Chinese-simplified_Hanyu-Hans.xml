@@ -1,0 +1,25 @@
+﻿<Lang>
+	<Options>选项</Options>
+	<Tasks>任务</Tasks>
+	<Browse>浏览</Browse>
+	<Original_Firmware>原来的固件 ：</Original_Firmware>
+	<Modified_Firmware>修改过的固件 ：</Modified_Firmware>
+	<Build_MFW>构建MFW</Build_MFW>
+	<Quit>退出</Quit>
+	<Settings>设置</Settings>
+	<About_PS3MFW_Builder>关于PS3MFW生成器</About_PS3MFW_Builder>
+	<Select_Official_firmware>选择官方固件</Select_Official_firmware>
+	<Select_Destination_MFW_firmware>选择目的地MFW固件</Select_Destination_MFW_firmware>
+	<Build_MFW>构建MFW</Build_MFW>
+	<Exit>退出</Exit>
+	<File>文件</File>
+	<Theme>主题</Theme>
+	<Help>帮助</Help>
+	<Language>语言</Language>
+	<Save_settings>保存</Save_settings>
+	<Default_settings>默认</Default_settings>
+	<PS3MFW_Builder_Settings>PS3MFW生成器设置</PS3MFW_Builder_Settings>
+	<Configure>配置</Configure>
+	<Task_Options>任务选项</Task_Options>
+	<successfully>修改固件内置成功！</successfully>
+</Lang>

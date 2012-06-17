@@ -1,0 +1,25 @@
+﻿<Lang>
+	<Options>विकल्प</Options>
+	<Tasks>कार्य</Tasks>
+	<Browse>ब्राउज़ करें</Browse>
+	<Original_Firmware>मूल फर्मवेयर :</Original_Firmware>
+	<Modified_Firmware>संशोधित फर्मवेयर :</Modified_Firmware>
+	<Build_MFW>गठन MFW</Build_MFW>
+	<Quit>छोड़ो</Quit>
+	<Settings>सेटिंग्स</Settings>
+	<About_PS3MFW_Builder>PS3MFW बिल्डर के बारे में</About_PS3MFW_Builder>
+	<Select_Official_firmware>आधिकारिक फर्मवेयर चुनें</Select_Official_firmware>
+	<Select_Destination_MFW_firmware>गंतव्य MFW फर्मवेयर चुनें</Select_Destination_MFW_firmware>
+	<Build_MFW>गठन MFW</Build_MFW>
+	<Exit>निकास</Exit>
+	<File>फ़ाइल</File>
+	<Theme>विषय</Theme>
+	<Help>मदद</Help>
+	<Language>भाषा</Language>
+	<Save_settings>बचाना</Save_settings>
+	<Default_settings>डिफ़ॉल्ट</Default_settings>
+	<PS3MFW_Builder_Settings>PS3MFW बिल्डर सेटिंग्स</PS3MFW_Builder_Settings>
+	<Configure>कॉन्फ़िगर</Configure>
+	<Task_Options>टास्क विकल्प</Task_Options>
+	<successfully>संशोधित फर्मवेयर सफलतापूर्वक निर्मित किया गया!</successfully>
+</Lang>

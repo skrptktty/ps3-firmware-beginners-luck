@@ -1,0 +1,216 @@
+#!/usr/bin/env tclsh8.5
+#
+# ps3mfw -- PS3 MFW creator
+#
+# Copyright (C) Anonymous Developers (Code Monkeys)
+#
+# This software is distributed under the terms of the GNU General Public
+# License ("GPL") version 3, as published by the Free Software Foundation.
+#
+
+set ::PS3MFW_VERSION "0.2.1"
+
+# Option --debug: Show verbose debugging information
+# Option --silent: Disable log output
+# Option --build-dir: Build directory for temporary files
+# Option --gui: Launch the Graphical User Interface
+
+array set ::options {
+	--debug false
+	--silent false
+	--build-dir ""
+	--gui true
+}
+
+
+#
+# End of configuration section.
+#
+
+set ::PUP "pup"
+set ::PUPPACK "puppack"
+set ::PUPUNPACK "pupunpack"
+set ::COSPKG "cospkg"
+set ::COSUNPKG "cosunpkg"
+set ::PKG "pkg"
+set ::UNPKG "unpkg"
+set ::UNSELF "unself"
+set ::MAKESELF "self_rebuilder"
+set ::RCOMAGE "rcomage"
+set ::UNSPP "unspp"
+set ::SPP "spp"
+
+set ::PS3MFW_DIR [file dirname [info script]]
+set ::program [file tail [info script]]
+
+while {[catch {file readlink [file join ${::PS3MFW_DIR} ${::program}]} program] == 0} {
+	if {[file pathtype ${::program}] == "absolute"} {
+		set ::PS3MFW_DIR [file dirname ${::program}]
+	} else {
+		set ::PS3MFW_DIR [file join ${::PS3MFW_DIR} [file dirname ${::program}]]
+	}
+
+	set ::program [file tail ${::program}]
+}
+
+set ::auto_path [linsert ${::auto_path} 0 ${::PS3MFW_DIR}]
+if { $::tcl_platform(platform) == "windows"} {
+	append ::env(PATH) ";[file nativename [file join ${::PS3MFW_DIR} tools]]"
+} else {
+	append ::env(PATH) ":[file join ${::PS3MFW_DIR} tools]"
+}
+
+source [file join ${::PS3MFW_DIR} xml.tcl]
+source [file join ${::PS3MFW_DIR} tar.tcl]
+source [file join ${::PS3MFW_DIR} ps3mfw_base.tcl]
+source [file join ${::PS3MFW_DIR} ps3mfw_tasks.tcl]
+
+set ::xmlang [::xml::LoadFile [file join $::PS3MFW_DIR Settings.xml]]
+
+if {[file exists [::xml::GetData ${::xmlang} "Settings:PS3_KEYS" 0]]} {
+	set ::env(PS3_KEYS) [::xml::GetData ${::xmlang} "Settings:PS3_KEYS" 0]
+} else {
+	set ::env(PS3_KEYS) " "
+}
+
+set ::TASKS_DIR [file join ${::PS3MFW_DIR} tasks]
+
+set ::taskfiles [get_sorted_task_files]
+set ::tasks [list]
+set ::taskname ""
+set ::arguments [list]
+set ::current_opt ""
+set ::current_task_opt ""
+
+foreach taskfile ${::taskfiles} {
+	source ${::taskfile}
+}
+
+foreach arg ${::argv} {
+	if {${::current_opt} != ""} {
+		if {![string match "--*" ${::arg}]} {
+			set ::options(${::current_opt}) ${::arg}
+			set ::current_opt ""
+		} else {
+			usage "Invalid option: ${::arg}, expected value.\n"
+		}
+	} elseif {${::current_task_opt} != ""} {
+		if {![string match "--*" ${::arg}]} {
+			set ::${::taskname}::options(${::current_task_opt}) ${::arg}
+			set ::current_task_opt ""
+		} else {
+			usage "Invalid option: ${::arg}, expected value.\n"
+		}
+	} else {
+		if {[string match "--*" ${::arg}]} {
+			if {[info exists ::options(${::arg})]} {
+				set ::current_opt ${::arg}
+			} else {
+				set ::task [string map {- _} [string range ${::arg} 2 end]]
+				if {[namespace exists ${::task}]} {
+					lappend tasks "${::task}"
+					set ::taskname ${::task}
+				} elseif {[info exists ::${::taskname}::options(${::arg})]} {
+					set ::current_task_opt ${::arg}
+				} else {
+					usage "Invalid option: ${::arg}, expected task.\n"
+				}
+			}
+		} else {
+			lappend arguments ${::arg}
+		}
+	}
+}
+
+if {${::current_opt} != ""} {
+	usage "Option ${::current_opt} needs a value\n"
+} elseif {${::current_task_opt} != ""} {
+	usage "Option ${::current_task_opt} needs a value\n"
+}
+
+if {[llength ${::tasks}] == 0 } {
+	set ::tasks [list change_version patch_category_game add_license_msg]
+	foreach task ${::tasks} {
+		source [file join ${::TASKS_DIR} ${::task}.tcl]
+	}
+}
+
+if {$::options(--build-dir) != ""} {
+	set ::BUILD_DIR $::options(--build-dir)
+} else {
+	if { $::tcl_platform(platform) == "windows" && [info exists ::env(TEMP)]} {
+		if {[file exists [::xml::GetData ${::xmlang} "Settings:BUILD_DIR" 0]]} {
+			set ::BUILD_DIR [::xml::GetData ${::xmlang} "Settings:BUILD_DIR" 0]
+		} else {
+			set ::BUILD_DIR [file join $::env(TEMP) PS3MFW]
+		}
+		if {[catch {file mkdir ${::BUILD_DIR}}]} {
+			set ::BUILD_DIR [pwd]
+		}
+	} elseif {$::tcl_platform(platform) == "unix"} {
+		if {[file exists [::xml::GetData ${::xmlang} "Settings:BUILD_DIR" 0]]} {
+			set ::BUILD_DIR [::xml::GetData ${::xmlang} "Settings:BUILD_DIR" 0]
+		} else {
+			set ::BUILD_DIR [file join /tmp PS3MFW]
+		}
+		if {[catch {file mkdir ${::BUILD_DIR}}]} {
+			set ::BUILD_DIR [pwd]
+		}
+	} else {
+		set ::BUILD_DIR [pwd]
+	}
+}
+unset ::options(--build-dir)
+
+set ::ORIGINAL_PUP_DIR [file join ${::BUILD_DIR} PS3MFW-OFW]
+set ::CUSTOM_PUP_DIR [file join ${::BUILD_DIR} PS3MFW-MFW]
+set ::LOG_FILE [file join ${::BUILD_DIR} "[file rootname [file tail ${::argv0}]].log"]
+
+# update base files
+set ::CUSTOM_VERSION_TXT [file join ${::CUSTOM_PUP_DIR} version.txt]
+set ::CUSTOM_LICENSE_XML [file join ${::CUSTOM_PUP_DIR} license.xml]
+set ::CUSTOM_PROMO_FLAGS_TXT [file join ${::CUSTOM_PUP_DIR} promo_flags.txt]
+set ::CUSTOM_UPDATE_FLAGS_TXT [file join ${::CUSTOM_PUP_DIR} update_flags.txt]
+set ::CUSTOM_PS3SWU_SELF [file join ${::CUSTOM_PUP_DIR} ps3swu.self]
+set ::CUSTOM_UPDATE_TAR [file join ${::CUSTOM_PUP_DIR} update_files.tar]
+set ::CUSTOM_UPDATE_DIR [file join ${::CUSTOM_PUP_DIR} update_files]
+
+# update_files.tar pkg files
+set ::CUSTOM_DEVFLASH_DIR [file join ${::CUSTOM_UPDATE_DIR} dev_flash]
+set ::CUSTOM_UPLXML_DIR [file join ${::CUSTOM_UPDATE_DIR} UPL.xml]
+
+# modification files
+set ::CUSTOM_UPL_XML [file join ${::CUSTOM_UPLXML_DIR} UPL.xml]
+
+# version info
+set ::PUP_BUILD ""
+
+if {$options(--gui)} {
+	package require Tk 8.5
+	foreach font [font names] {
+		font configure ${::font} -family Helvetica
+	}
+	if { [info proc console] == "" && [info command console] == "" } {
+		source [file join ${::PS3MFW_DIR} console.tcl]
+		console hide
+	}
+	if {$::options(--debug)} {
+		console show
+	}
+
+	source [file join ${::PS3MFW_DIR} ps3mfw_gui.tcl]
+	source [file join ${::PS3MFW_DIR} scrolledframe.tcl]
+	source [file join ${::PS3MFW_DIR} tracedtext.tcl]
+	::gui::create_gui ${::arguments} ${::tasks}
+} else {
+	if {[llength ${::arguments}] != 2} {
+		# exits
+		usage
+	}
+
+	set ::IN_FILE [lindex ${::arguments} 0]
+	set ::OUT_FILE [lindex ${::arguments} 1]
+
+	build_mfw ${::IN_FILE} ${::OUT_FILE} ${::tasks}
+	exit
+}

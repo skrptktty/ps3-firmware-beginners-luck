@@ -1,0 +1,25 @@
+﻿<Lang>
+	<Options>Možnosti</Options>
+	<Tasks>Naloge</Tasks>
+	<Browse>Prebrskaj</Browse>
+	<Original_Firmware>Originalni Firmware :</Original_Firmware>
+	<Modified_Firmware>Spremenjeno Firmware :</Modified_Firmware>
+	<Build_MFW>Zgradite MFW</Build_MFW>
+	<Quit>Zaprite</Quit>
+	<Settings>Nastavenie</Settings>
+	<About_PS3MFW_Builder>O PS3MFW Builder</About_PS3MFW_Builder>
+	<Select_Official_firmware>Izberi Uradni firmware</Select_Official_firmware>
+	<Select_Destination_MFW_firmware>Izberi firmware Destinacija MFW</Select_Destination_MFW_firmware>
+	<Build_MFW>Zgradite MFW</Build_MFW>
+	<Exit>Izhod</Exit>
+	<File>Datoteka</File>
+	<Theme>Tema</Theme>
+	<Help>Pomoč</Help>
+	<Language>Jezik</Language>
+	<Save_settings>Shrani</Save_settings>
+	<Default_settings>Privzeto</Default_settings>
+	<PS3MFW_Builder_Settings>PS3MFW Builder Nastavitve</PS3MFW_Builder_Settings>
+	<Configure>Konfiguriraj</Configure>
+	<Task_Options>Možnosti Opravil</Task_Options>
+	<successfully>Modified Firmware Vgrajen uspešno!</successfully>
+</Lang>

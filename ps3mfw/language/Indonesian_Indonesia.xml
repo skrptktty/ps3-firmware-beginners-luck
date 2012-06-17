@@ -1,0 +1,25 @@
+﻿<Lang>
+	<Options>Pilihan</Options>
+	<Tasks>Tugas</Tasks>
+	<Browse>Daftar</Browse>
+	<Original_Firmware>Asli Firmware :</Original_Firmware>
+	<Modified_Firmware>Dimodifikasi Firmware:</Modified_Firmware>
+	<Build_MFW>Membangun MFW</Build_MFW>
+	<Quit>Berhenti</Quit>
+	<Settings>Pengaturan</Settings>
+	<About_PS3MFW_Builder>Tentang PS3MFW Builder</About_PS3MFW_Builder>
+	<Select_Official_firmware>Pilih firmware Resmi</Select_Official_firmware>
+	<Select_Destination_MFW_firmware>Pilih Tujuan firmware MFW</Select_Destination_MFW_firmware>
+	<Build_MFW>Membangun MFW</Build_MFW>
+	<Exit>Keluar</Exit>
+	<File>File yang</File>
+	<Theme>Tema</Theme>
+	<Help>Bantuan</Help>
+	<Language>Bahasa</Language>
+	<Save_settings>Simpan</Save_settings>
+	<Default_settings>Standar</Default_settings>
+	<PS3MFW_Builder_Settings>PS3MFW Builder Pengaturan</PS3MFW_Builder_Settings>
+	<Configure>Konfigurasi</Configure>
+	<Task_Options>Tugas Pilihan</Task_Options>
+	<successfully>Firmware diubah Dibangun berhasil!</successfully>
+</Lang>

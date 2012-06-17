@@ -1,0 +1,25 @@
+﻿<Lang>
+	<Options>Valikud</Options>
+	<Tasks>Ülesanded</Tasks>
+	<Browse>Sirvi</Browse>
+	<Original_Firmware>Originaal Firmware :</Original_Firmware>
+	<Modified_Firmware>Muudetud Firmware:</Modified_Firmware>
+	<Build_MFW>Ehita MFW</Build_MFW>
+	<Quit>Loobuma</Quit>
+	<Settings>Seaded</Settings>
+	<About_PS3MFW_Builder>Umbes PS3MFW Builder</About_PS3MFW_Builder>
+	<Select_Official_firmware>Vali Official püsivara</Select_Official_firmware>
+	<Select_Destination_MFW_firmware>Valige Sihtkoha MFW püsivara</Select_Destination_MFW_firmware>
+	<Build_MFW>Ehita MFW</Build_MFW>
+	<Exit>Väljapääs</Exit>
+	<File>Fail</File>
+	<Theme>Teema</Theme>
+	<Help>Aitama</Help>
+	<Language>Keel</Language>
+	<Save_settings>Välja Arvatud</Save_settings>
+	<Default_settings>Vaikimisi</Default_settings>
+	<PS3MFW_Builder_Settings>PS3MFW Ehitaja Seaded</PS3MFW_Builder_Settings>
+	<Configure>Konfigureeri</Configure>
+	<Task_Options>Ülesanne Valikud</Task_Options>
+	<successfully>Muudetud Firmware ehitatud edukalt!</successfully>
+</Lang>

@@ -1,0 +1,25 @@
+﻿<Lang>
+	<Options>ಆಯ್ಕೆಗಳು</Options>
+	<Tasks>ಕಾರ್ಯಗಳು</Tasks>
+	<Browse>ಬ್ರೌಸ್ ಮಾಡಿ</Browse>
+	<Original_Firmware>ಮೂಲ ಫರ್ಮ್ವೇರ್ :</Original_Firmware>
+	<Modified_Firmware>ಮಾಡಿಫೈಡ್ ಫರ್ಮ್ವೇರ್ :</Modified_Firmware>
+	<Build_MFW>ಬಿಲ್ಡ್ MFW</Build_MFW>
+	<Quit>ಬಿಟ್ಟುಬಿಡು</Quit>
+	<Settings>ಸೆಟ್ಟಿಂಗ್ಗಳು</Settings>
+	<About_PS3MFW_Builder>PS3MFW ಬಿಲ್ಡರ್ ಬಗ್ಗೆ</About_PS3MFW_Builder>
+	<Select_Official_firmware>ಅಧಿಕೃತ ಫರ್ಮ್ವೇರ್ ಆಯ್ಕೆ ಮಾಡಿ</Select_Official_firmware>
+	<Select_Destination_MFW_firmware>ಗಮ್ಯಸ್ಥಾನ MFW ಫರ್ಮ್ವೇರ್ ಆಯ್ಕೆ ಮಾಡಿ</Select_Destination_MFW_firmware>
+	<Build_MFW>ಬಿಲ್ಡ್ MFW</Build_MFW>
+	<Exit>ನಿರ್ಗಮನ</Exit>
+	<File>ಕಡತ</File>
+	<Theme>ಥೀಮ್</Theme>
+	<Help>ಸಹಾಯ</Help>
+	<Language>ಭಾಷೆ</Language>
+	<Save_settings>ಉಳಿಸಿ</Save_settings>
+	<Default_settings>ಡೀಫಾಲ್ಟ್</Default_settings>
+	<PS3MFW_Builder_Settings>PS3MFW ಬಿಲ್ಡರ್ ಸೆಟ್ಟಿಂಗ್ಗಳು</PS3MFW_Builder_Settings>
+	<Configure>ಸಂರಚಿಸು</Configure>
+	<Task_Options>ಟಾಸ್ಕ್ ಆಯ್ಕೆಗಳು</Task_Options>
+	<successfully>ಮಾಡಿಫೈಡ್ ಫರ್ಮ್ವೇರ್ ಯಶಸ್ವಿಯಾಗಿ ಬಿಲ್ಟ್!</successfully>
+</Lang>

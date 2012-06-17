@@ -1,0 +1,25 @@
+﻿<Lang>
+	<Options>Opzioni</Options>
+	<Tasks>Tasks</Tasks>
+	<Browse>Sfoglia</Browse>
+	<Original_Firmware>Firmware Ufficiale :</Original_Firmware>
+	<Modified_Firmware>Firmware Modificato :</Modified_Firmware>
+	<Build_MFW>Costruisci un MFW</Build_MFW>
+	<Quit>Esci</Quit>
+	<Settings>Impostazioni</Settings>
+	<About_PS3MFW_Builder>About PS3MFW Builder</About_PS3MFW_Builder>
+	<Select_Official_firmware>Seleziona il firmware ufficiale</Select_Official_firmware>
+	<Select_Destination_MFW_firmware>Seleziona la destinazione del  MFW</Select_Destination_MFW_firmware>
+	<Build_MFW>Costruisci un MFW</Build_MFW>
+	<Exit>Esci</Exit>
+	<File>File</File>
+	<Theme>Tema</Theme>
+	<Help>Aiuto</Help>
+	<Language>Lingua</Language>
+	<Save_settings>Salva</Save_settings>
+	<Default_settings>Impostazioni di default</Default_settings>
+	<PS3MFW_Builder_Settings>PS3MFW Builder Impostazioni</PS3MFW_Builder_Settings>
+	<Configure>Configura</Configure>
+	<Task_Options>Task Options</Task_Options>
+	<successfully>Firmware modificato costruito con successo!</successfully>
+</Lang>

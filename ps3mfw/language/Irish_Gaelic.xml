@@ -1,0 +1,25 @@
+﻿<Lang>
+	<Options>Roghanna</Options>
+	<Tasks>Tascanna</Tasks>
+	<Browse>Brabhsáil</Browse>
+	<Original_Firmware>Firmware to :</Original_Firmware>
+	<Modified_Firmware>Firmware Modified :</Modified_Firmware>
+	<Build_MFW>Tógáil MFW</Build_MFW>
+	<Quit>Scoir</Quit>
+	<Settings>Socruithe</Settings>
+	<About_PS3MFW_Builder>Maidir PS3MFW Tógálaí</About_PS3MFW_Builder>
+	<Select_Official_firmware>Roghnaigh Firmware Oifigiúla</Select_Official_firmware>
+	<Select_Destination_MFW_firmware>Roghnaigh Ceann Scríbe MFW Firmware</Select_Destination_MFW_firmware>
+	<Build_MFW>Tógáil MFW</Build_MFW>
+	<Exit>Scoir</Exit>
+	<File>Comhad</File>
+	<Theme>Téama</Theme>
+	<Help>Cabhair</Help>
+	<Language>Teanga</Language>
+	<Save_settings>Sábháil</Save_settings>
+	<Default_settings>Réamhshocrú</Default_settings>
+	<PS3MFW_Builder_Settings>Socruithe PS3MFW Tógálaí</PS3MFW_Builder_Settings>
+	<Configure>Cumraigh</Configure>
+	<Task_Options>Roghanna tasc</Task_Options>
+	<successfully>Firmware mionathraithe Tógtha go rathúil!</successfully>
+</Lang>

@@ -1,0 +1,25 @@
+﻿<Lang>
+	<Options>விருப்பங்கள்</Options>
+	<Tasks>பணிகள்</Tasks>
+	<Browse>தேடவும்</Browse>
+	<Original_Firmware>அசல் Firmware:</Original_Firmware>
+	<Modified_Firmware>செய்தது Firmware:</Modified_Firmware>
+	<Build_MFW>கட்ட MFW</Build_MFW>
+	<Quit>நிறுத்தவும்</Quit>
+	<Settings>அமைப்புகள்</Settings>
+	<About_PS3MFW_Builder>PS3MFW பில்டர் பற்றி</About_PS3MFW_Builder>
+	<Select_Official_firmware>அதிகாரப்பூர்வ மென்பொருள் தேர்ந்தெடுக்கவும்</Select_Official_firmware>
+	<Select_Destination_MFW_firmware>இலக்கு MFW firmware தேர்ந்தெடுக்கவும்</Select_Destination_MFW_firmware>
+	<Build_MFW>கட்ட MFW</Build_MFW>
+	<Exit>வெளியேறவும்</Exit>
+	<File>கோப்பு</File>
+	<Theme>தீம்</Theme>
+	<Help>உதவும்</Help>
+	<Language>மொழி</Language>
+	<Save_settings>சேமிக்கவும்</Save_settings>
+	<Default_settings>முன்னிருப்பு</Default_settings>
+	<PS3MFW_Builder_Settings>PS3MFW பில்டர் அமைப்புகள்</PS3MFW_Builder_Settings>
+	<Configure>கட்டமைக்கவும்</Configure>
+	<Task_Options>பணி விருப்பங்கள்</Task_Options>
+	<successfully>செய்தது Firmware வெற்றிகரமாக பில்ட்!</successfully>
+</Lang>

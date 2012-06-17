@@ -1,0 +1,25 @@
+﻿<Lang>
+	<Options>Aukerak</Options>
+	<Tasks>Atazak</Tasks>
+	<Browse>Arakatu</Browse>
+	<Original_Firmware>Jatorrizko Firmware :</Original_Firmware>
+	<Modified_Firmware>Aldatua Firmware :</Modified_Firmware>
+	<Build_MFW>Egizu MFW</Build_MFW>
+	<Quit>Irten</Quit>
+	<Settings>Ezarpenak</Settings>
+	<About_PS3MFW_Builder>PS3MFW Builder buruz</About_PS3MFW_Builder>
+	<Select_Official_firmware>Hautatu Ofizialean firmware</Select_Official_firmware>
+	<Select_Destination_MFW_firmware>Aukeratu Helmugako MFW firmware</Select_Destination_MFW_firmware>
+	<Build_MFW>Egizu MFW</Build_MFW>
+	<Exit>Salir</Exit>
+	<File>File</File>
+	<Theme>Theme</Theme>
+	<Help>Laguntza</Help>
+	<Language>Hizkuntza</Language>
+	<Save_settings>Gorde</Save_settings>
+	<Default_settings>Lehenetsia</Default_settings>
+	<PS3MFW_Builder_Settings>PS3MFW Builder Ezarpenak</PS3MFW_Builder_Settings>
+	<Configure>Konfiguratu</Configure>
+	<Task_Options>Zeregin Aukerak</Task_Options>
+	<successfully>Aldatua Firmware ongi eraikia da!</successfully>
+</Lang>

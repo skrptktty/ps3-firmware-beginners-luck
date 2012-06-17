@@ -1,0 +1,25 @@
+﻿<Lang>
+	<Options>Valkostir</Options>
+	<Tasks>Verkefni</Tasks>
+	<Browse>Beit</Browse>
+	<Original_Firmware>Original Firmware :</Original_Firmware>
+	<Modified_Firmware>Breytt Firmware :</Modified_Firmware>
+	<Build_MFW>Byggja MFW</Build_MFW>
+	<Quit>Hætta</Quit>
+	<Settings>Stillingar</Settings>
+	<About_PS3MFW_Builder>Um PS3MFW Builder</About_PS3MFW_Builder>
+	<Select_Official_firmware>Veldu Opinber vélbúnaðar</Select_Official_firmware>
+	<Select_Destination_MFW_firmware>Veldu Destination MFW vélbúnaðar</Select_Destination_MFW_firmware>
+	<Build_MFW>Byggja MFW</Build_MFW>
+	<Exit>Hætta</Exit>
+	<File>Skrá</File>
+	<Theme>þema</Theme>
+	<Help>Hjálp</Help>
+	<Language>Tungumál</Language>
+	<Save_settings>Vista</Save_settings>
+	<Default_settings>Sjálfgefið</Default_settings>
+	<PS3MFW_Builder_Settings>PS3MFW Builder Stillingar</PS3MFW_Builder_Settings>
+	<Configure>Stilla</Configure>
+	<Task_Options>Verkefni Valkostir</Task_Options>
+	<successfully>Breytt Firmware Byggir tókst!</successfully>
+</Lang>

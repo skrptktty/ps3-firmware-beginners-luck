@@ -1,0 +1,25 @@
+﻿<Lang>
+	<Options>Optioner</Options>
+	<Tasks>Opgaver</Tasks>
+	<Browse>Gennemse</Browse>
+	<Original_Firmware>Original Firmware :</Original_Firmware>
+	<Modified_Firmware>Ændret Firmware :</Modified_Firmware>
+	<Build_MFW>Byg MFW</Build_MFW>
+	<Quit>Afslut</Quit>
+	<Settings>Indstillinger</Settings>
+	<About_PS3MFW_Builder>Om PS3MFW Builder</About_PS3MFW_Builder>
+	<Select_Official_firmware>Vælg officielle firmware</Select_Official_firmware>
+	<Select_Destination_MFW_firmware>Vælg Bestemmelsessted MFW firmware</Select_Destination_MFW_firmware>
+	<Build_MFW>Byg MFW</Build_MFW>
+	<Exit>Udgang</Exit>
+	<File>Fil</File>
+	<Theme>Tema</Theme>
+	<Help>Hjælp</Help>
+	<Language>Sprog</Language>
+	<Save_settings>Gem</Save_settings>
+	<Default_settings>Standard</Default_settings>
+	<PS3MFW_Builder_Settings>PS3MFW Builder Indstillinger</PS3MFW_Builder_Settings>
+	<Configure>Konfigurer</Configure>
+	<Task_Options>Opgaver Optioner</Task_Options>
+	<successfully>Modificeret Firmware Bygget med succes!</successfully>
+</Lang>

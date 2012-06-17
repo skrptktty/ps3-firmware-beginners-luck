@@ -1,0 +1,58 @@
+Based off of gitbrew's 215d8903bc86539ca1da53519e2ac10eeafc4c27
+ps3tools. .git folder not included to protect sensitive info about the author.
+Sorry about the fucked up tabs, TAB = 4 SPACES 4 LYFE!!!
+Add the files in the npdrm_keystuff folder to your ps3 keys folder. Create a
+file with your console's 16 byte IDPS in the 'idps' file in your ps3 keys
+folder (e.g. ~/.ps3/idps).
+Copy your PS3's exdata folder containing your act.dat and rif files to your
+ps3 keys dir (e.g. ~/.ps3/exdata/act.dat). Compile and have fun with your
+LEGALLY purchased NPDRM games!
+
+Also works on free games without exdata/idps.
+
+Apologies for any existing bugs in unself. Adding these changes to
+unself2 is left as an exercise for the reader.
+
+v2 info:
+Added npdrm magic to unself2 and readself2
+unself2 doesn't like the metadata section with type 3 in my game.
+This section looks to be some kind of linking information. Here is a snippet:
+crt0:p190002crt1:p190002libaudio_stub:p190002libaudio_stub:p190002
+
+I haven't yet looked around to see if this is type of section is documented anywhere.
+
+
+
+Thanks:
+fail0verflow for the orginal tools
+JuanNadie for figuring out NPDRM
+euss for his endless hours of work on the wiki
+
+<drama>
+Why didn't you beat me to the punch, Team PS360? I didn't need to reverse a
+single instruction! It isn't that hard...
+</drama>
+
+
+v3 info:
+unself2 now ignores metadata sections of type 3 instead of aborting. Additional
+help with any remaining bugs would be greatly appreciated.
+
+I'm sorry if everyone got the impression that these unself/readself
+modifications can, by themselves, "reactivate" your NPDRM content. These are
+just the first steps in the process. To those who say this is useless because
+you need act.dat and rif files: unless you can get unencrypted (debug) or
+easily decrypted (free, demos) PSN content, the only way to get the unencrypted
+files is by decrypting it with act.dat and the content's rif file.  There are
+no "crypto fails" here, proper decryption with the true keys is the only way
+forward. Using the NPDRM algo with the right keys is the only way to decrypt
+unless you let GameOS do it for you and hook into GameOS to either grab
+intermediate keys or dump decrypted content. Using hacks to restore the NPDRM
+decryption info to jailbroken PS3s is only a partial fix. For instance, unless
+you patch vsh or set the SRTC to some time in the past, some content (even
+non-demos and non-trials!) expires until you log into PSN and reauthenticate.
+
+<drama>
+Sorry about your "technical difficulties", Team PS360. You should L2IRC.
+</drama>
+
