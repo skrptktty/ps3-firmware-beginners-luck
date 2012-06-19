@@ -1,0 +1,25 @@
+﻿<Lang>
+	<Options>опции</Options>
+	<Tasks>задачи</Tasks>
+	<Browse>Прелистајте</Browse>
+	<Original_Firmware>Авторски фирмверот :</Original_Firmware>
+	<Modified_Firmware>Изменето фирмверот :</Modified_Firmware>
+	<Build_MFW>Изградба MFW</Build_MFW>
+	<Quit>Напушти</Quit>
+	<Settings>Подесувања</Settings>
+	<About_PS3MFW_Builder>За PS3MFW Builder</About_PS3MFW_Builder>
+	<Select_Official_firmware>Изберете Службен firmware-от</Select_Official_firmware>
+	<Select_Destination_MFW_firmware>Изберете дестинација MFW firmware-от</Select_Destination_MFW_firmware>
+	<Build_MFW>Изградба MFW</Build_MFW>
+	<Exit>Егзит</Exit>
+	<File>датотеката</File>
+	<Theme>тема</Theme>
+	<Help>Помош</Help>
+	<Language>јазик</Language>
+	<Save_settings>Зачувај</Save_settings>
+	<Default_settings>репутација</Default_settings>
+	<PS3MFW_Builder_Settings>PS3MFW Builder Подесувања</PS3MFW_Builder_Settings>
+	<Configure>Конфигурирај</Configure>
+	<Task_Options>задача Опции</Task_Options>
+	<successfully>Изменето фирмверот Вграден успешно!</successfully>
+</Lang>

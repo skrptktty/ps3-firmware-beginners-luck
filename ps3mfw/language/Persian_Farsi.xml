@@ -1,0 +1,25 @@
+﻿<Lang>
+	<Options>گزینه ها</Options>
+	<Tasks>وظایف</Tasks>
+	<Browse>مرور</Browse>
+	<Original_Firmware>فریمور اصلی :</Original_Firmware>
+	<Modified_Firmware>اصلاح فریمور :</Modified_Firmware>
+	<Build_MFW>ساخت MFW</Build_MFW>
+	<Quit>ترک</Quit>
+	<Settings>تنظیمات</Settings>
+	<About_PS3MFW_Builder>درباره PS3MFW ساز</About_PS3MFW_Builder>
+	<Select_Official_firmware>انتخاب سیستم عامل رسمی</Select_Official_firmware>
+	<Select_Destination_MFW_firmware>انتخاب مقصد سیستم عامل MFW</Select_Destination_MFW_firmware>
+	<Build_MFW>ساخت MFW</Build_MFW>
+	<Exit>خروج</Exit>
+	<File>پرونده</File>
+	<Theme>موضوع</Theme>
+	<Help>کمک</Help>
+	<Language>زبان</Language>
+	<Save_settings>ذخیره</Save_settings>
+	<Default_settings>پیش فرض</Default_settings>
+	<PS3MFW_Builder_Settings>PS3MFW تنظیمات ساز</PS3MFW_Builder_Settings>
+	<Configure>پیکربندی</Configure>
+	<Task_Options>گزینه های ضربتی</Task_Options>
+	<successfully>اصلاح فریمور ساخته شده با موفقیت!</successfully>
+</Lang>

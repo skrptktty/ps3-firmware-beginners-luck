@@ -1,0 +1,306 @@
+
+==============================================================
+  .------.  .-------. .-----.   ..  .-.   .--------.      .--.
+ /_____   \/   _____//_____  \ /  \/   \ /_   _____/\    /   /
+  /   ____/\____  \  __(__  < /         \ /   __)\   \/\/   / 
+ /   /     /       \/        \   /\/\    Y   /    \        /  
+/___/     /________/_________/__/    \___|__/      \__/\__/   
+                               PS3MFW tasks v0.2.11 OtherOS++
+==============================================================
+
+Several exciting new tasks have been created. The most interesting one is a new privacy patch, which keeps PS3 from sending personally identifiable information to many configurable domain names: After jailbreak became available for PS3, reverse engineers discovered that the PS3 collects a multitude of personal information without your knowledge, such as such as your TV model, a list of all usb devices (including product IDs) you ever plugged into your PS3, usage statistics, which games and media you play and more.
+
+The Digital Millenium Copyright Act (DMCA) specifically allows for consumers to circumvent technological protection measures in order to protect their privacy. Even though there was little doubt concerning the legality of PS3MFW Builder before because it in itself does not circumvent any technological protection measures, this new feature makes using it inside the USA fully DMCA compliant.
+
+Additionally, several new customizations including a firmware version spoofer, a way to edit the look and sound of the boot sequence by inserting your own coldboot files, and a task to replace the default "Airbush" XMB theme. Now it can also create modified firmwares that can be installed on PS3s with broken Blu-Ray drives as well as create firmwares that can convert demo (kiosk/shop) units into regular retail PS3s! A bug that prevented USB storage devices from being shown under Game Data Utility was fixed.
+
+The new tasks can be found at www.git-hacks.com/ps3mfw
+
+-------------------------------
+Unofficial 0.2.11 update 'euss'
+-------------------------------
+
+- Updated Spoof task up to including 4.11
+- Expanded firmware list up to including 4.11
+- New task made on request:
+  - broken_bluetooth.tcl - Allows you to remove Bluetooth firmware installation so that the MFW can be installed without a working Bluetooth board (circumventing errorcode 0x8002F1F9). This is potentially dangerous if used on a PS3 with a working BT/Wifi board, and should only be used if the BT/Wifi is broken.
+
+
+------------------------------------------------------------
+Unofficial 0.2.1 'DanyL' (+ translations by euss and others)
+------------------------------------------------------------
+Added in main, options to save settings for:
+- Language, translations added for 
+   - Afrikaans/Suid-Afrikaans
+   - Albanian/Shqip
+   - Arabic/Arabiyyah
+   - Arabic/Arabi (by kaito kid)
+   - Armenian/Hayeren
+   - Azerbaijani/Azeri-Torki
+   - Basque/Euskara
+   - Belarusian/Byelorussian
+   - Bengali/Bangla
+   - Bulgarian/Balgarski-Ezik
+   - Catalan-Valencian/Catala-Valencia
+   - Chinese-simplified/Hanyu-Hans
+   - Chinese-traditional/Hanyu-Hant
+   - Croatian/Hrvatski
+   - Czech/Cesky
+   - Danish/Danske
+   - Dutch/Nederlands
+   - English
+   - Esperanto
+   - Estonian/Eesti-keel
+   - Filipino/Tagalog
+   - Finnish/Suomi
+   - French/Francais (improved by Atilla, Razkar)
+   - Fun1/SwedishChef
+   - Fun2/Piglatin
+   - Fun3/L33t-var2
+   - Fun4/L33t-var1
+   - Gallic/Galo
+   - Georgian/Kartuli
+   - German/Deutsch
+   - Greek/Elinika
+   - Gujarati/Gujarati
+   - Haitian-Creole/Kreyol-Ayisyen
+   - Hausa
+   - Hebrew/Ivrit (by DanyL)
+   - Hindi-Urdu/Urdu-Nastaliq
+   - Hindustani/Hindi-Devanagari
+   - Hungarian/Magyar
+   - Icelandic/Islenska
+   - Indonesian/Indonesia
+   - Irish/Gaelic
+   - Italian/Italiano
+   - Japanese/Nihongo
+   - Kannada/Canarese
+   - Korean/Hangugeo-Chosonmal
+   - Latin/Latina
+   - Latvian/Latviesu-Valoda
+   - Lithuanian/Lietuvos
+   - Macedonian/Makedonski-Jazik
+   - Malay/Melayu
+   - Maltese/Malti
+   - Norwegian/Norske
+   - Pashto
+   - Persian/Farsi
+   - Polish/Polski
+   - Portugese /Portugues
+   - Romanian/Roman
+   - Russian/Russkiy
+   - Serbian/Srpski
+   - Slovak/Slovaski
+   - Slovenian/Slovenski
+   - Spanish/Espanol
+   - Swahili/Kiswahili
+   - Swedish/Svenska
+   - Tamil/Tamil-Nadu
+   - Telugu/Andhra-Pradesh
+   - Thai/Phasa-Tai
+   - Turkish/Turkce (by Ibocan)
+   - Ukranian/Ukrayinska-Mova
+   - Vietnamese/Viet
+   - Welsh/Cymraeg
+   - Yiddish/Yidish
+- Temp folder
+- PS3_KEYS folder
+- Save/Default for all the settings, including selected/unselected tasks, original/modified firmware paths, theme and so on.
+Keybind added: you can restart PS3MFW Builder by pressing Shift-R.
+
+Translation Guide:
+* The file is in XML UTF-8 format. Make sure you use an UTF-8 compatible editor (e.g. Notepad++)
+* Name the file itself in normal characters only (format is "English name_localised name, e.g. French_Francais.xml and /not/ French_Fran�ais.xml !). 
+* Provide a localised translation for each word/line within the XML subitems.
+* Save and try it in PS3MFW Builder. In some cases (e.g. Korean) the characters do not appear in the editor, but /will/ apear inside MFW Builder because of the UTF-8 encoder.
+
+-----------------------------------
+BREAKDOWN OF ALL NEW/EXTENDED TASKS
+-----------------------------------
+
+- homebrew_category.tcl - Add "Homebrew" category to the XMB
+
+- language_pack.tcl - Add/change Language Pack's, for XMB translations, see: http://www.ps3hax.net/2011/08/xmb-translation-guide/
+
+- tv_category.tcl - Add "TV" category to the XMB
+
+- patch_appldr.tcl - Patch Appldr to allow Fself (3.10-3.30 / 3.40-3.55) set debug true (Experimental!)
+
+- patch_emer_init.tcl - Added 100 GameOS/OtherOS Sizes (10-1000GB in 10GB increments) quick&dirty alpha version (final needs radiobuttons, slider and/or inputbox)
+
+- patch_shop2.tcl - Converts demo/promo firmwares to enable installing on retail PS3s (thus enabling password lockout, demo-mode and package installer in systemmenu), without the need for service mode!
+
+- spoof_version.tcl - More spoof added (all Retail/CEX 1.x, 2.x, 3.x up to including 3.73)
+
+- ps3mfw_base.tcl - Merged 0.2++ spoof (needed for spoof_version.tcl) and OtherOS++ SPP (needed for patch_profile.tcl)
+
+---------------
+OtherOS++ Tasks
+---------------
+
+- patch_emer_init.tcl
+  - 4 GameOS/OtherOS Sizes: Create GameOS HDD region of size half / quarter / eight of installed HDD or 22GB smaller than default
+  - Disable searching for update packages in GAME disc.
+
+- patch_lv1.tcl
+  - peek/poke support (unused lv1 calls 182 and 183)
+  - Allow mapping of HTAB with write protection
+  - Allow to set all bits of SPE register MFC_SR1 with lv1_set_spe_privilege_state_area_1_register
+  - Allow setting data access breakpoints in hypervisor state with lv1_set_dabr
+  - Allow ENCDEC IOCTL command 0x85
+  - Allow access to all SS services (Needed for ps3dm-utils)
+  - Allow access to all services of Indi Info Manager
+  - Allow extracting for all package types
+  - Allow enabling product mode by using Update Manager Write EPROM
+  - Allow deleting of all ENCDEC keys
+  - Allow creating/modifying/deleting of repository nodes in any LPAR
+  - Disable integrity check in System Manager
+  - Allow access to all System Manager services of GameOS
+  - Enable GuestOS mode 1 for GameOS
+  - Skip ACL checks for all storage devices
+  - OtherOS++ support
+
+- patch_lv2.tcl
+  - Patch to add LV1 Peek&Poke system calls to LV2 3.55 (LV1 peek/poke patch necessary)
+  - Patch to add LV1 Call system call to LV2 3.55
+
+- patch_profile.tcl - Increase boot memory size of GameOS (Needed for OtherOS++)
+
+- spoof_version.tcl - Simplified spoof up to 3.60
+
+- ps3mfw_base.tcl - Added support for SPP (needed for patch_profile.tcl)
+
+---------
+0.2 Tasks
+---------
+
+- patch_privacy.tcl - PS3 collects a large amount of personal information while it’s operating. Additionally personal information is sent to many domain names when internet access is enabled (unrelated to PSN access). This task prevents PS3 from sending any data to the domain names you select.
+
+- broken_bluray.tcl - Allows you to remove Blu-Ray firmware installation so that the MFW can be installed without a working Blu-Ray drive. This is potentially dangerous if used on a PS3 with a working drive, and should only be used if the drive is broken.
+
+- spoof_version.tcl - Allows changing the firmware version the PS3 appears to be on, similar to the rebug spoofer.
+
+- change_coldboot_files.tcl - Advanced users only: Allows changing the sound played and image shown during the boot process. Caution: If improper files are used, this can cause a “brick”.
+
+- change_ssl_cer.tcl - Allows changing of SSL certificates.
+
+- change_theme.tcl - Can be used to replace the default "Airbrush" theme with another theme file (.p3t format).
+
+- patch_shop.tcl - Creates firmware to transform demo PS3s (the units used in stores) into full retail PS3s, without the need for service mode!
+
+---------
+0.1 Tasks
+---------
+
+tasks/patch_category_game.tcl    
+Add new icons to the XMB Game category
+Modifies dev_flash/vsh/resource/explore/xmb/category_game.xml file
+
+ --patch-package-files : Add "Install Package Files" icon to the XMB Game Category
+ --patch-app-home : Add "/app_home" icon to the XMB Game Category
+
+
+tasks/patch_lv1.tcl
+Patch LV1 hypervisor
+Modifies CORE OS lv1.self
+
+ --patch-lv1-mmap : Allow mapping of any memory area (Needed for LV2 Poke)
+
+
+tasks/patch_lv2.tcl
+Patch LV2 kernel
+Modifies CORE OS lv1.self
+
+ --patch-lv2-peek-poke : Patch to add Peek&Poke system calls to LV2
+
+
+tasks/patch_nas_plugin.tcl
+Patch package installer
+Modifies dev_flash/vsh/module/nas_plugin.sprx
+
+ --allow-debug-pkg : Patch to allow installation of debug packages
+ --allow-pseudoretail-pkg : Patch to allow installation of pseudo-retail packages
+
+
+tasks/patch_vsh.tcl
+Patch Application launcher
+Modifies dev_flash/vsh/module/vsh.self
+ --allow-unsigned-app : Patch to allow running of unsigned applications
+
+
+tasks/add_license_msg.tcl
+Modifies PUP license.xml
+Add a custom message to the 'New Features' installation screen
+ --license-auto-add-features : Automatically generate the enabled features of PS3MFW
+ --license-features-message : Prefix message to the generated features list
+ --license-message : New Features message (Appears after the license agreement)
+
+
+tasks/clean_friends.tcl
+Clean unwanted icons from the XMB Friends Category
+Modifies dev_flash/vsh/resource/explore/xmb/category_friends.xml file
+ --clean-friends-avcroom : Remove "Video Chat" icon from the XMB Friends Category
+ --clean-friends-chat : Remove "Chat Room" icon from the XMB Friends Category
+ --clean-friends-message-box : Remove "Message Box" icon from the XMB Friends Category
+ --clean-friends-nas : Remove "My Profile" icon from the XMB Friends Category
+ --clean-friends-new-chat : Remove "New Chat" icon from the XMB Friends Category
+
+
+tasks/clean_game.tcl
+Clean unwanted icons from the XMB Game Category
+Modifies dev_flash/vsh/resource/explore/xmb/category_game.xml file
+ --clean-game-gamedata : Remove "Game Data" icon from the XMB Game Category
+ --clean-game-mcutility : Remove "Memory Card Utility (PS/PS2)" icon from the XMB Game Category
+ --clean-game-minis-manual : Remove "Minis Manual" icon from the XMB Game Category
+ --clean-game-sdps3 : Remove "Saved Data Utility (PS3)" icon from the XMB Game Category
+ --clean-game-sdpsp : Remove "Saved Data Utility (minis)" icon from the XMB Game Category
+ --clean-game-trophy : Remove "Trophy Collection" icon from the XMB Game Category
+ --clean-game-welcome : Remove "PlayStation Store" icon from the XMB Game Category
+
+
+tasks/clean_music.tcl
+Clean unwanted icons from the XMB Music Category
+Modifies dev_flash/vsh/resource/explore/xmb/category_music.xml file
+ --clean-music-dlna-device : Remove "Network Media Servers" icon from the XMB Music Category
+ --clean-music-dlna-scan : Remove "Search for Media Servers" icon from the XMB Music Category
+ --clean-music-welcome : Remove "PlayStation Store" icon from the XMB Music Category
+
+
+tasks/clean_network.tcl
+Clean unwanted icons from the XMB Network Category
+Modifies dev_flash/vsh/resource/explore/xmb/category_network.xml file
+ --clean-network-browser : Remove "Internet Browser" icon from the XMB Network Category
+ --clean-network-folding-at-home : Remove "Life with PlayStation" icon from the XMB Network Category
+ --clean-network-kensaku : Remove "Internet Search" icon from the XMB Network Category
+ --clean-network-manual : Remove "Online Instruction Manuals" icon from the XMB Network Category
+ --clean-network-premo : Remove "Remote Play" icon from the XMB Network Category
+
+
+tasks/clean_photo.tcl
+Clean unwanted icons from the XMB Photo Category
+Modifies dev_flash/vsh/resource/explore/xmb/category_photo.xml file
+ --clean-photo-dlna-device : Remove "Network Media Servers" icon from the XMB Photo Category
+ --clean-photo-dlna-scan : Remove "Search for Media Servers" icon from the XMB Photo Category
+ --clean-photo-hakoniwa : Remove "Photo Gallery" icon from the XMB Photo Category
+ --clean-photo-screenshot : Remove "Screenshot" icon from the XMB Photo Category
+
+
+tasks/clean_psn.tcl
+Clean unwanted icons from the XMB PlayStation Network Category
+Modifies dev_flash/vsh/resource/explore/xmb/category_psn.xml file
+ --clean-psn-commerce-new : Remove "What's New" icon from the XMB PlayStation Network Category
+ --clean-psn-home : Remove "PlayStation Home" icon from the XMB PlayStation Network Category
+ --clean-psn-regist : Remove "Sign In" icon from the XMB PlayStation Network Category
+ --clean-psn-welcome : Remove "PlayStation Store" icon from the XMB PlayStation Network Category
+
+
+tasks/clean_video.tcl
+Clean unwanted icons from the XMB Video Category
+Modifies dev_flash/vsh/resource/explore/xmb/category_video.xml file
+ --clean-video-bddata-mgmt : Remove "BD Data Utility" icon from the XMB Video Category
+ --clean-video-dlna-device : Remove "Network Media Servers" icon from the XMB Video Category
+ --clean-video-dlna-scan : Remove "Search for Media Servers" icon from the XMB Video Category
+ --clean-video-editingvideo-mgmt : Remove "Video Editor & Uploader" icon from the XMB Video Category
+ --clean-video-netflix : Remove "Netflix" icon from the XMB Video Category
+ --clean-video-welcome : Remove "PlayStation Store" icon from the XMB Video Category
+

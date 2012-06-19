@@ -1,0 +1,25 @@
+﻿<Lang>
+	<Options>опції</Options>
+	<Tasks>завдання</Tasks>
+	<Browse>переглядати</Browse>
+	<Original_Firmware>Оригінальна прошивка :</Original_Firmware>
+	<Modified_Firmware>Модифікована прошивка :</Modified_Firmware>
+	<Build_MFW>збірка MFW</Build_MFW>
+	<Quit>вихід</Quit>
+	<Settings>Установки</Settings>
+	<About_PS3MFW_Builder>Про PS3MFW Builder</About_PS3MFW_Builder>
+	<Select_Official_firmware>Виберіть Офіційні прошивки</Select_Official_firmware>
+	<Select_Destination_MFW_firmware>Виберіть прошивку призначення MFW</Select_Destination_MFW_firmware>
+	<Build_MFW>збірка MFW</Build_MFW>
+	<Exit>вихід</Exit>
+	<File>файл</File>
+	<Theme>Тема</Theme>
+	<Help>Допомога</Help>
+	<Language>мова</Language>
+	<Save_settings>економити</Save_settings>
+	<Default_settings>умовчання</Default_settings>
+	<PS3MFW_Builder_Settings>PS3MFW Builder Настройки</PS3MFW_Builder_Settings>
+	<Configure>конфігурувати</Configure>
+	<Task_Options>параметри завдань</Task_Options>
+	<successfully>Модифікована прошивка Вбудований успішно!</successfully>
+</Lang>

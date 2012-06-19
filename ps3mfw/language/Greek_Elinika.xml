@@ -1,0 +1,25 @@
+﻿<Lang>
+	<Options>επιλογές</Options>
+	<Tasks>Εργασίες</Tasks>
+	<Browse>Αναζήτηση</Browse>
+	<Original_Firmware>Αρχικό Firmware :</Original_Firmware>
+	<Modified_Firmware>Τροποποιημένο Firmware :</Modified_Firmware>
+	<Build_MFW>Κατασκευάστηκε MFW</Build_MFW>
+	<Quit>Κλείστε</Quit>
+	<Settings>ρυθμίσεις</Settings>
+	<About_PS3MFW_Builder>Σχετικά με PS3MFW Builder</About_PS3MFW_Builder>
+	<Select_Official_firmware>Επιλέξτε Επίσημη firmware</Select_Official_firmware>
+	<Select_Destination_MFW_firmware>Επιλογή προορισμού MFW firmware</Select_Destination_MFW_firmware>
+	<Build_MFW>Κατασκευάστηκε MFW</Build_MFW>
+	<Exit>έξοδος</Exit>
+	<File>αρχείο</File>
+	<Theme>θέμα</Theme>
+	<Help>Βοήθεια</Help>
+	<Language>γλώσσα</Language>
+	<Save_settings>εκτός</Save_settings>
+	<Default_settings>προεπιλογή</Default_settings>
+	<PS3MFW_Builder_Settings>PS3MFW Builder Ρυθμίσεις</PS3MFW_Builder_Settings>
+	<Configure>Διαμόρφωση</Configure>
+	<Task_Options>Επιλογές εργασίας</Task_Options>
+	<successfully>Τροποποιημένο Firmware Χτισμένο με επιτυχία!</successfully>
+</Lang>

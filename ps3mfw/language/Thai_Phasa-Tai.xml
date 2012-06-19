@@ -1,0 +1,25 @@
+﻿<Lang>
+	<Options>ตัวเลือก</Options>
+	<Tasks>งาน</Tasks>
+	<Browse>เลือกดู</Browse>
+	<Original_Firmware>เฟิร์มแวต้นฉบับ :</Original_Firmware>
+	<Modified_Firmware>เฟิร์มแว Modified :</Modified_Firmware>
+	<Build_MFW>MFW สร้าง</Build_MFW>
+	<Quit>ออกจาก</Quit>
+	<Settings>การตั้งค่า</Settings>
+	<About_PS3MFW_Builder>เกี่ยวกับ PS3MFW Builder</About_PS3MFW_Builder>
+	<Select_Official_firmware>เลือก firmware เป็นทางการ</Select_Official_firmware>
+	<Select_Destination_MFW_firmware>เลือกหัวข้อเฟิร์มแว MFW</Select_Destination_MFW_firmware>
+	<Build_MFW>MFW สร้าง</Build_MFW>
+	<Exit>ทางออก</Exit>
+	<File>ไฟล์</File>
+	<Theme>ชุดรูปแบบ</Theme>
+	<Help>ช่วยเหลือ</Help>
+	<Language>ภาษา</Language>
+	<Save_settings>บันทึก</Save_settings>
+	<Default_settings>ค่าเริ่มต้น</Default_settings>
+	<PS3MFW_Builder_Settings>การตั้งค่า PS3MFW Builder</PS3MFW_Builder_Settings>
+	<Configure>การตั้งค่าคอนฟิก</Configure>
+	<Task_Options>ตัวเลือกงาน</Task_Options>
+	<successfully>เฟิร์มแวดัดแปลงสร้างสำเร็จ!</successfully>
+</Lang>

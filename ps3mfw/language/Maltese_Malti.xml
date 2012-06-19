@@ -1,0 +1,25 @@
+﻿<Lang>
+	<Options>Għażliet</Options>
+	<Tasks>Kompiti</Tasks>
+	<Browse>Jibbrawżjaw</Browse>
+	<Original_Firmware>Oriġinali Firmware :</Original_Firmware>
+	<Modified_Firmware>Modifikati Firmware :</Modified_Firmware>
+	<Build_MFW>Ibni MFW</Build_MFW>
+	<Quit>Nieqaf</Quit>
+	<Settings>Issettjar</Settings>
+	<About_PS3MFW_Builder>Dwar PS3MFW bennej</About_PS3MFW_Builder>
+	<Select_Official_firmware>Agħżel Firmware Uffiċjali</Select_Official_firmware>
+	<Select_Destination_MFW_firmware>Agħżel Destinazzjoni MFW Firmware</Select_Destination_MFW_firmware>
+	<Build_MFW>Ibni MFW</Build_MFW>
+	<Exit>ħruġ</Exit>
+	<File>Fajl</File>
+	<Theme>Tema</Theme>
+	<Help>Għajnuna</Help>
+	<Language>Lingwa</Language>
+	<Save_settings>Ħlief</Save_settings>
+	<Default_settings>Nuqqas</Default_settings>
+	<PS3MFW_Builder_Settings>PS3MFW issettjar bennej</PS3MFW_Builder_Settings>
+	<Configure>Kkonfigurat</Configure>
+	<Task_Options>Kompitu Għażliet</Task_Options>
+	<successfully>Firmware modifikati Mibnija b'suċċess!</successfully>
+</Lang>

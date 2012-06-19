@@ -1,0 +1,31 @@
+
+==============================================================
+  .------.  .-------. .-----.   ..  .-.   .--------.      .--.
+ /_____   \/   _____//_____  \ /  \/   \ /_   _____/\    /   /
+  /   ____/\____  \  __(__  < /         \ /   __)\   \/\/   / 
+ /   /     /       \/        \   /\/\    Y   /    \        /  
+/___/     /________/_________/__/    \___|__/      \__/\__/   
+                               PS3MFW Builder v0.2.1 OtherOS++
+==============================================================
+
+
+GITREADME
+
+
+Howto
+-----
+
+Generic:
+  git clone https://github.com/euss/mfw/ --recursive
+
+If you did not use --recursive, submodule /language/ will be missing, also solveable with:
+  git submodule init
+  git submodule update
+
+  
+
+Errors/Solutions
+----------------
+
+Error: can't find package ttk::theme::xpnative (on MacOSX)
+Solution: edit Settings.xml and blank <Theme>xpnative</Theme> section to <Theme></Theme>

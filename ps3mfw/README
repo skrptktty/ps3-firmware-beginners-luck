@@ -1,0 +1,28 @@
+
+==============================================================
+  .------.  .-------. .-----.   ..  .-.   .--------.      .--.
+ /_____   \/   _____//_____  \ /  \/   \ /_   _____/\    /   /
+  /   ____/\____  \  __(__  < /         \ /   __)\   \/\/   / 
+ /   /     /       \/        \   /\/\    Y   /    \        /  
+/___/     /________/_________/__/    \___|__/      \__/\__/   
+                               PS3MFW Builder v0.2.1 OtherOS++
+==============================================================
+
+------------
+INTRODUCTION
+------------
+
+Today we are proud to present our second official release, PS3MFW Builder v0.2. Just as the previous release, v0.2 is intended for firmwares 3.10 and above. Extensive testing of the framework and tasks has been successful with all versions above 3.10, the majority of tasks are also successful below 3.10. PS3MFW Builder v0.2 contains many new features that further improve usability. For this new version, PS3MFW Builder and the tasks have been moved to seperate repositories on git-hacks.com. Builder 0.2 adds new functions to aid in the creation of tasks, with 2 bug fixes. For programmers, the new core offers more flexibility for tasks and allows to manipulate the user interface better.
+
+The new PS3MFW Builder v0.2 and tasks can be found at www.git-hacks.com/ps3mfw
+
+------------
+REQUIREMENTS
+------------
+
+To use PS3MFW Builder, the following is needed:
+
+-The latest version of ps3tools (not older than 25 March 2011), found on git-hacks.com
+
+-Tcl/Tk 8.5 ( http://www.tcl.tk/software/tcltk/8.5.tml )
+

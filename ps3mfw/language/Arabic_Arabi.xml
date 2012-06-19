@@ -1,0 +1,25 @@
+﻿<Lang>
+	<Options>الخيارات</Options>
+	<Tasks>المهام</Tasks>
+	<Browse>تصفح</Browse>
+	<Original_Firmware>التحديث الرسمي :</Original_Firmware>
+	<Modified_Firmware>التحديث المعدل :</Modified_Firmware>
+	<Build_MFW>MFW بناء</Build_MFW>
+	<Quit>مغادرة</Quit>
+	<Settings>الاعدادات</Settings>
+	<About_PS3MFW_Builder>PS3MFW حول انشاء</About_PS3MFW_Builder>
+	<Select_Official_firmware>حدد التحديث الرسمي</Select_Official_firmware>
+	<Select_Destination_MFW_firmware>MFW حدد وجهة تحديث</Select_Destination_MFW_firmware>
+	<Build_MFW>MFW بناء</Build_MFW>
+	<Exit>خروج</Exit>
+	<File>ملف</File>
+	<Theme>السمات</Theme>
+	<Help>مساعدة</Help>
+	<Language>اللغة</Language>
+	<Save_settings>حفظ</Save_settings>
+	<Default_settings>الافتراضي</Default_settings>
+	<PS3MFW_Builder_Settings>PS3MFW اعدادات بناء</PS3MFW_Builder_Settings>
+	<Configure>تكوين</Configure>
+	<Task_Options>خيارات المهمه</Task_Options>
+	<successfully>بناء التحديث المعدل تم بنجاح!</successfully>
+</Lang>

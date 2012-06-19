@@ -1,0 +1,25 @@
+﻿<Lang>
+	<Options>Opties</Options>
+	<Tasks>Taken</Tasks>
+	<Browse>Bladeren</Browse>
+	<Original_Firmware>Originele Firmware :</Original_Firmware>
+	<Modified_Firmware>Gemodificeerde Firmware :</Modified_Firmware>
+	<Build_MFW>Bouw MFW</Build_MFW>
+	<Quit>Beëindigen</Quit>
+	<Settings>Instellingen</Settings>
+	<About_PS3MFW_Builder>Over PS3MFW Builder</About_PS3MFW_Builder>
+	<Select_Official_firmware>Selecteer Originele Firmware</Select_Official_firmware>
+	<Select_Destination_MFW_firmware>Select Doel MFW firmware</Select_Destination_MFW_firmware>
+	<Build_MFW>Bouw MFW</Build_MFW>
+	<Exit>Exit</Exit>
+	<File>Bestand</File>
+	<Theme>Thema</Theme>
+	<Help>Help</Help>
+	<Language>Taal</Language>
+	<Save_settings>Opslaan</Save_settings>
+	<Default_settings>Standaard</Default_settings>
+	<PS3MFW_Builder_Settings>PS3MFW Builder Instellingen</PS3MFW_Builder_Settings>
+	<Configure>Configureren</Configure>
+	<Task_Options>Taak Opties</Task_Options>
+	<successfully>Aangepaste Firmware met succes gebouwd!</successfully>
+</Lang>

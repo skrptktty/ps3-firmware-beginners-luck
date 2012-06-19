@@ -1,0 +1,25 @@
+﻿<Lang>
+	<Options>Vaihtoehtoja</Options>
+	<Tasks>Tehtävät</Tasks>
+	<Browse>Selaa</Browse>
+	<Original_Firmware>Alkuperäinen Firmware :</Original_Firmware>
+	<Modified_Firmware>Muokattu Firmware :</Modified_Firmware>
+	<Build_MFW>Rakenna MFW</Build_MFW>
+	<Quit>Lopettaa</Quit>
+	<Settings>Asetukset</Settings>
+	<About_PS3MFW_Builder>Tietoja PS3MFW Builder</About_PS3MFW_Builder>
+	<Select_Official_firmware>Valitse virallinen firmware</Select_Official_firmware>
+	<Select_Destination_MFW_firmware>Valitse Kohde MFW firmware</Select_Destination_MFW_firmware>
+	<Build_MFW>Rakenna MFW</Build_MFW>
+	<Exit>Poistua</Exit>
+	<File>Tiedosto</File>
+	<Theme>Teema</Theme>
+	<Help>Apua</Help>
+	<Language>Kieli</Language>
+	<Save_settings>Tallenna</Save_settings>
+	<Default_settings>Oletusarvo</Default_settings>
+	<PS3MFW_Builder_Settings>PS3MFW Builder Asetukset</PS3MFW_Builder_Settings>
+	<Configure>Määritä</Configure>
+	<Task_Options>Tehtävän Vaihtoehtoja</Task_Options>
+	<successfully>Muokattu Firmware Rakennettu onnistuneesti!</successfully>
+</Lang>

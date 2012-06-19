@@ -1,0 +1,25 @@
+﻿<Lang>
+	<Options>Opcijas</Options>
+	<Tasks>Uzdevumi</Tasks>
+	<Browse>Pārlūkot</Browse>
+	<Original_Firmware>Original Programmaparatūra :</Original_Firmware>
+	<Modified_Firmware>Modified Programmaparatūra :</Modified_Firmware>
+	<Build_MFW>Būvēt MFW</Build_MFW>
+	<Quit>Iziet</Quit>
+	<Settings>Uzstādījumi</Settings>
+	<About_PS3MFW_Builder>Par PS3MFW Builder</About_PS3MFW_Builder>
+	<Select_Official_firmware>Izvēlieties Oficiālais firmware</Select_Official_firmware>
+	<Select_Destination_MFW_firmware>Izvēlēties Galamērķis MFW firmware</Select_Destination_MFW_firmware>
+	<Build_MFW>Būvēt MFW</Build_MFW>
+	<Exit>Iziet</Exit>
+	<File>Fails</File>
+	<Theme>Tēma</Theme>
+	<Help>Palīdzība</Help>
+	<Language>Valoda</Language>
+	<Save_settings>Saglabāt</Save_settings>
+	<Default_settings>Noklusētā</Default_settings>
+	<PS3MFW_Builder_Settings>PS3MFW Builder Iestatījumi</PS3MFW_Builder_Settings>
+	<Configure>Konfigurēt</Configure>
+	<Task_Options>Uzdevumu Opcijas</Task_Options>
+	<successfully>Modificētas Firmware būvēta veiksmīgi!</successfully>
+</Lang>

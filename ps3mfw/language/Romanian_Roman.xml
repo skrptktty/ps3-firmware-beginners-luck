@@ -1,0 +1,25 @@
+﻿<Lang>
+	<Options>Optiuni</Options>
+	<Tasks>Sarcini</Tasks>
+	<Browse>Cauta</Browse>
+	<Original_Firmware>Original Firmware :</Original_Firmware>
+	<Modified_Firmware>Modificat Firmware :</Modified_Firmware>
+	<Build_MFW>Construiti MFW</Build_MFW>
+	<Quit>Parasi</Quit>
+	<Settings>Setari</Settings>
+	<About_PS3MFW_Builder>Despre PS3MFW Builder</About_PS3MFW_Builder>
+	<Select_Official_firmware>Selectati firmware-ul oficial</Select_Official_firmware>
+	<Select_Destination_MFW_firmware>Selectati Destinatie firmware MFW</Select_Destination_MFW_firmware>
+	<Build_MFW>Construiti MFW</Build_MFW>
+	<Exit>Iesire</Exit>
+	<File>Fisier</File>
+	<Theme>Tema</Theme>
+	<Help>Ajutor</Help>
+	<Language>Limba</Language>
+	<Save_settings>Salva</Save_settings>
+	<Default_settings>Implicit</Default_settings>
+	<PS3MFW_Builder_Settings>PS3MFW Builder Setari</PS3MFW_Builder_Settings>
+	<Configure>Configurare</Configure>
+	<Task_Options>Sarcini Optiuni</Task_Options>
+	<successfully>Firmware modificat Construit cu succes!</successfully>
+</Lang>

@@ -1,0 +1,25 @@
+﻿<Lang>
+	<Options>オプション</Options>
+	<Tasks>タスク</Tasks>
+	<Browse>参照</Browse>
+	<Original_Firmware>オリジナルのファームウェア ：</Original_Firmware>
+	<Modified_Firmware>修正されたファームウェア ：</Modified_Firmware>
+	<Build_MFW>ビルドMFW</Build_MFW>
+	<Quit>終了</Quit>
+	<Settings>設定</Settings>
+	<About_PS3MFW_Builder>PS3MFWビルダーについて</About_PS3MFW_Builder>
+	<Select_Official_firmware>公式ファームウェアを選択する</Select_Official_firmware>
+	<Select_Destination_MFW_firmware>デスティネーションMFWのファームウェアを選択</Select_Destination_MFW_firmware>
+	<Build_MFW>ビルドMFW</Build_MFW>
+	<Exit>終了</Exit>
+	<File>ファイル</File>
+	<Theme>テーマ</Theme>
+	<Help>ヘルプ</Help>
+	<Language>言語</Language>
+	<Save_settings>保存</Save_settings>
+	<Default_settings>デフォルトの</Default_settings>
+	<PS3MFW_Builder_Settings>PS3MFWビルダーの設定</PS3MFW_Builder_Settings>
+	<Configure>設定</Configure>
+	<Task_Options>タスクのオプション</Task_Options>
+	<successfully>修正されたファームウェアは正常に構築！</successfully>
+</Lang>

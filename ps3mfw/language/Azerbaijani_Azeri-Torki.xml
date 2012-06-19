@@ -1,0 +1,25 @@
+﻿<Lang>
+	<Options>Seçimlər</Options>
+	<Tasks>Tapşırıqlar</Tasks>
+	<Browse>Gözat</Browse>
+	<Original_Firmware>Orijinal Firmware :</Original_Firmware>
+	<Modified_Firmware>Değiştirme Firmware :</Modified_Firmware>
+	<Build_MFW>Geliştirin MFW</Build_MFW>
+	<Quit>Çıxış</Quit>
+	<Settings>Parametrlər</Settings>
+	<About_PS3MFW_Builder>PS3MFW Builder haqqında</About_PS3MFW_Builder>
+	<Select_Official_firmware>Rəsmi firmware seçin</Select_Official_firmware>
+	<Select_Destination_MFW_firmware>Hedef MFW firmware seçin</Select_Destination_MFW_firmware>
+	<Build_MFW>Geliştirin MFW</Build_MFW>
+	<Exit>Çıxış</Exit>
+	<File>Fayl</File>
+	<Theme>Mövzu</Theme>
+	<Help>Yardım</Help>
+	<Language>Dil</Language>
+	<Save_settings>Kaydet'i</Save_settings>
+	<Default_settings>Defolt</Default_settings>
+	<PS3MFW_Builder_Settings>PS3MFW Oluşturucu Ayarları</PS3MFW_Builder_Settings>
+	<Configure>Yapılandır</Configure>
+	<Task_Options>Tapşırıq Seçimlər</Task_Options>
+	<successfully>Değiştirme Firmware uğurla inşa!</successfully>
+</Lang>

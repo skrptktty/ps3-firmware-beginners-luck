@@ -1,0 +1,25 @@
+﻿<Lang>
+	<Options>Ang Opsyon</Options>
+	<Tasks>Gawain</Tasks>
+	<Browse>Browse</Browse>
+	<Original_Firmware>Orihinal na firmware :</Original_Firmware>
+	<Modified_Firmware>Binagong firmware :</Modified_Firmware>
+	<Build_MFW>Bumuo MFW</Build_MFW>
+	<Quit>Umalis</Quit>
+	<Settings>Mga Setting</Settings>
+	<About_PS3MFW_Builder>Tungkol sa PS3MFW Builder</About_PS3MFW_Builder>
+	<Select_Official_firmware>Pumili ng Opisyal na firmware</Select_Official_firmware>
+	<Select_Destination_MFW_firmware>Piliin Destination MFW firmware</Select_Destination_MFW_firmware>
+	<Build_MFW>Bumuo MFW</Build_MFW>
+	<Exit>Labasan</Exit>
+	<File>File</File>
+	<Theme>Tema</Theme>
+	<Help>Tulong</Help>
+	<Language>Wika</Language>
+	<Save_settings>I-save ang</Save_settings>
+	<Default_settings>Default</Default_settings>
+	<PS3MFW_Builder_Settings>PS3MFW Tagabuo ng Mga Setting</PS3MFW_Builder_Settings>
+	<Configure>I-configure</Configure>
+	<Task_Options>Gawain Opsyon</Task_Options>
+	<successfully>Binuo matagumpay ang Binagong firmware!</successfully>
+</Lang>

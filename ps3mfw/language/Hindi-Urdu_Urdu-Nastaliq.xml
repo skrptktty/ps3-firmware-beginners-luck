@@ -1,0 +1,25 @@
+﻿<Lang>
+	<Options>اختیارات</Options>
+	<Tasks>ٹاسکس کو</Tasks>
+	<Browse>براؤز کریں</Browse>
+	<Original_Firmware>اصل Firmware :</Original_Firmware>
+	<Modified_Firmware>تبدیل شدہ Firmware :</Modified_Firmware>
+	<Build_MFW>تعمیر MFW</Build_MFW>
+	<Quit>نظر انداز</Quit>
+	<Settings>ترتیبات</Settings>
+	<About_PS3MFW_Builder>PS3MFW ڈویلپر کے بارے میں</About_PS3MFW_Builder>
+	<Select_Official_firmware>سرکاری firmware منتخب کریں</Select_Official_firmware>
+	<Select_Destination_MFW_firmware>مقصود MFW firmware منتخب کریں</Select_Destination_MFW_firmware>
+	<Build_MFW>تعمیر MFW</Build_MFW>
+	<Exit>خروج کریں</Exit>
+	<File>فائل</File>
+	<Theme>تھیم</Theme>
+	<Help>مدد</Help>
+	<Language>زبان</Language>
+	<Save_settings>محفوظ کریں</Save_settings>
+	<Default_settings>پہلے سے طے شدہ</Default_settings>
+	<PS3MFW_Builder_Settings>PS3MFW ڈویلپر ترتیبات</PS3MFW_Builder_Settings>
+	<Configure>تشکیل کریں</Configure>
+	<Task_Options>ٹاسک اختیارات</Task_Options>
+	<successfully>تبدیل شدہ Firmware کو کامیابی سے بلٹ!</successfully>
+</Lang>

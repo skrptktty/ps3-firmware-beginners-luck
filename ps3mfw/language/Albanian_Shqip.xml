@@ -1,0 +1,25 @@
+﻿<Lang>
+	<Options>Opsionet</Options>
+	<Tasks>Detyrat</Tasks>
+	<Browse>Shfletoj</Browse>
+	<Original_Firmware>Firmware origjinale:</Original_Firmware>
+	<Modified_Firmware>Ndryshuar Firmware:</Modified_Firmware>
+	<Build_MFW>Ndërtimi i MFW</Build_MFW>
+	<Quit>Lë</Quit>
+	<Settings>Cilësimet</Settings>
+	<About_PS3MFW_Builder>Rreth PS3MFW Builder</About_PS3MFW_Builder>
+	<Select_Official_firmware>Zgjidh firmware Zyrtare</Select_Official_firmware>
+	<Select_Destination_MFW_firmware>Zgjidh Destinacioni firmware MFW</Select_Destination_MFW_firmware>
+	<Build_MFW>Ndërtimi i MFW</Build_MFW>
+	<Exit>Dalje</Exit>
+	<File>Skedar</File>
+	<Theme>Temë</Theme>
+	<Help>Ndihmë</Help>
+	<Language>Gjuhë</Language>
+	<Save_settings>Ruaj</Save_settings>
+	<Default_settings>Gabim</Default_settings>
+	<PS3MFW_Builder_Settings>PS3MFW Builder Parametrat</PS3MFW_Builder_Settings>
+	<Configure>Konfiguro</Configure>
+	<Task_Options>Opsionet Detyrë</Task_Options>
+	<successfully>Firmware Ndryshuar ndërtuar me sukses!</successfully>
+</Lang>

@@ -1,0 +1,25 @@
+﻿<Lang>
+	<Options>Опције</Options>
+	<Tasks>Задаци</Tasks>
+	<Browse>Прегледај</Browse>
+	<Original_Firmware>Оригинални фирмваре :</Original_Firmware>
+	<Modified_Firmware>Модификовани Фирмваре :</Modified_Firmware>
+	<Build_MFW>изгради МФВ</Build_MFW>
+	<Quit>престати</Quit>
+	<Settings>Подешавања</Settings>
+	<About_PS3MFW_Builder>О ПС3МФВ Градитељ</About_PS3MFW_Builder>
+	<Select_Official_firmware>Изабери Званични фирмвера</Select_Official_firmware>
+	<Select_Destination_MFW_firmware>Одаберите Одредиште МФВ фирмвер</Select_Destination_MFW_firmware>
+	<Build_MFW>изгради МФВ</Build_MFW>
+	<Exit>излаз</Exit>
+	<File>фајл</File>
+	<Theme>тема</Theme>
+	<Help>помоћи</Help>
+	<Language>језик</Language>
+	<Save_settings>сачувати</Save_settings>
+	<Default_settings>дефаулт</Default_settings>
+	<PS3MFW_Builder_Settings>ПС3МФВ Градитељ Подешавања</PS3MFW_Builder_Settings>
+	<Configure>конфигурисати</Configure>
+	<Task_Options>Задатак Опције</Task_Options>
+	<successfully>Модификовани фирмваре Уграђени успешно!</successfully>
+</Lang>

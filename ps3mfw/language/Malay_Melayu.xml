@@ -1,0 +1,25 @@
+﻿<Lang>
+	<Options>Pilihan</Options>
+	<Tasks>Tugas</Tasks>
+	<Browse>Carian</Browse>
+	<Original_Firmware>Firmware asal :</Original_Firmware>
+	<Modified_Firmware>Firmware diubah suai :</Modified_Firmware>
+	<Build_MFW>Membina MFW</Build_MFW>
+	<Quit>Keluar</Quit>
+	<Settings>Tetapan</Settings>
+	<About_PS3MFW_Builder>Mengenai PS3MFW Builder</About_PS3MFW_Builder>
+	<Select_Official_firmware>Pilih firmware Rasmi</Select_Official_firmware>
+	<Select_Destination_MFW_firmware>Pilih Destinasi firmware MFW</Select_Destination_MFW_firmware>
+	<Build_MFW>Membina MFW</Build_MFW>
+	<Exit>Keluar</Exit>
+	<File>File</File>
+	<Theme>Tema</Theme>
+	<Help>Bantuan</Help>
+	<Language>Bahasa</Language>
+	<Save_settings>Simpan</Save_settings>
+	<Default_settings>Lalai</Default_settings>
+	<PS3MFW_Builder_Settings>PS3MFW Builder Tetapan</PS3MFW_Builder_Settings>
+	<Configure>Konfigurasi</Configure>
+	<Task_Options>Petugas Pilihan</Task_Options>
+	<successfully>Firmware diubah suai Dibina berjaya!</successfully>
+</Lang>

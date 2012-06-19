@@ -1,0 +1,25 @@
+﻿<Lang>
+	<Options>Beállítások</Options>
+	<Tasks>Feladatok</Tasks>
+	<Browse>Tallózás</Browse>
+	<Original_Firmware>Eredeti Firmware :</Original_Firmware>
+	<Modified_Firmware>Módosított firmware :</Modified_Firmware>
+	<Build_MFW>Építsd MFW</Build_MFW>
+	<Quit>Kilépés</Quit>
+	<Settings>Beállítások</Settings>
+	<About_PS3MFW_Builder>Mintegy PS3MFW Builder</About_PS3MFW_Builder>
+	<Select_Official_firmware>Válassza ki a hivatalos firmware</Select_Official_firmware>
+	<Select_Destination_MFW_firmware>Válassza ki a Cél MFW firmware</Select_Destination_MFW_firmware>
+	<Build_MFW>Építsd MFW</Build_MFW>
+	<Exit>Kijárat</Exit>
+	<File>Fájl</File>
+	<Theme>Téma</Theme>
+	<Help>Segítség</Help>
+	<Language>Nyelv</Language>
+	<Save_settings>Kivéve</Save_settings>
+	<Default_settings>Alapértelmezett</Default_settings>
+	<PS3MFW_Builder_Settings>PS3MFW Builder Beállítások</PS3MFW_Builder_Settings>
+	<Configure>Konfigurálása</Configure>
+	<Task_Options>Feladat Beállításai</Task_Options>
+	<successfully>Módosított firmware Beépített sikerült!</successfully>
+</Lang>

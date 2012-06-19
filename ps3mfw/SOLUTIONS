@@ -1,0 +1,67 @@
+
+==============================================================
+  .------.  .-------. .-----.   ..  .-.   .--------.      .--.
+ /_____   \/   _____//_____  \ /  \/   \ /_   _____/\    /   /
+  /   ____/\____  \  __(__  < /         \ /   __)\   \/\/   / 
+ /   /     /       \/        \   /\/\    Y   /    \        /  
+/___/     /________/_________/__/    \___|__/      \__/\__/   
+                               PS3MFW Builder v0.2.1 OtherOS++
+==============================================================
+
+------------------------------------
+0.2.1 - Known errors (and solutions)
+------------------------------------
+
+Error: could not unpkg file dev_flash_[xxx] :child process exited abnormally (e.g. with spoof task selected)
+Solution: User did not select keyfolder (ps3keys or .ps3) in settings.
+
+
+----------------------------------
+0.2 - Known errors (and solutions)
+----------------------------------
+
+Error: DAT/UNDAT related (with spoof task)
+Solution: Needs updated ps3tools (W32 binairies are included in git) or else the spoof task won't work (needs dat / undat)
+
+Error: TV category is not shown
+Solution: Make sure either one of these folders exist in /dev_hdd0/game (you can use ftp or manger to create them) :
+- BCES00096      = Play TV
+- BCES00274 
+- BCES00275
+- BCED00245
+- BCET00001
+- BCJB95006      = Torne
+- NPHA70006      = QookTV
+- NPHA80082      = NowTV
+Services and region: 3 a la carta (ES), 4oD (GB), ABC iView (AU), ANIMAX (DE, CZ, HU, RO, SK), ANTENA 3 (ES), AXN (BG, CZ, HU, PL, RO, SK), BBC iPlayer (GB), ipla (PL), ITV/STV/UTV Players (GB), LaSexta (ES), NOS (NL), NowTV (HK), Plus 7 (AU), QookTV (HK, KR), RTE Player (IE), RTVE (ES), Torne (HK), TVNZ ONDEMAND (NZ), YLE Areena (FI)
+
+Error: FATAL ERROR: Error extracting PUP file PS3UPDAT.PUP : child killed: unknown signal
+Solution: libz-1.dll is missing (W32 DLL's are included in git)
+
+Error: FATAL ERROR: Could not unpack rco file sysconf_plugin.rco : couldn't execute "rcomage": no such file or directory
+Solution: Rcomage is missing (W32 binairies are included in git), other source: http://dl.qj.net/down/rcomage-v111.html
+
+Error: unable to load dat-key
+Solution: Update the keyset to include the DAT keys: dat-key and dat-iv
+
+Error: No gameupdates can be found! (with privacy patch)
+Solution: It is either privacy or no privacy, gameupdates are looked up by vsh.self ("https://a0.ww.%s.dl.playstation.net/tpl/%s/%s/%s-ver.xml") everytime an application is started. You can still install gameupdates externally, e.g. when you download them with the PC instead (e.g. Killahs AIO Tool and PS3 Game Updater).
+Solution2: Disable only the playstation.net task option - effectively making it no longer privacy patched.
+
+Error: wrong args should be patch_lv1 patch_self self
+Solution: Sometimes caused by having the application in a folder location with spaces in the path, try putting PS3MFW Builder in C:\PS3MFW (or any other location without spaces).
+Solution2: Sometimes caused by running the application with limited user restrictions. Try elevating rights (e.g. try administrator)
+
+Error: User wants an /insert well known 'CFW' e.g. Kmeaw/ like MFW firmware or use that as source PUP
+Solution: Take official firmware and select the following tasks accordingly to your target requirements:
+- Patched LV1 hypervisor to allow mapping of any needed memory area (Wutangrza, Waninkoko, Kmeaw, graf_chokolo)
+- Patched LV2 kernel to add Peek&Poke system calls to LV2 (Wutangrza, Waninkoko, Kmeaw, graf_chokolo)
+- Patched PKG installer to allow installation of pseudo-retail + debug PKGs (geohot, Waninkoko, kmeaw)
+- Patched Application launcher to allow running of unsigned applications (Waninkoko)
+- Add new icons to XMB to add Install PKGs + /app_home (KaKaRoTo, geohot Waninkoko, Kmeaw)
+
+Error: Error running script: invalid command name "34" and/or Error running script: invalid command name "35" (when using Kmeaw, Rebug etc as input PUP and selecting privacy [34] and/or spoof [35])
+Solution: Take official firmware and use the solution mentioned above
+
+Error: No applicable update found (when trying to install the PUP)
+Solution: Use Recovery Mode and make sure the PUP is in the correct location.

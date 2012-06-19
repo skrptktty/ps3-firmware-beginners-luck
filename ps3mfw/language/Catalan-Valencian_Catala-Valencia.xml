@@ -1,0 +1,25 @@
+﻿<Lang>
+	<Options>Opcions</Options>
+	<Tasks>Tasques</Tasks>
+	<Browse>Navegar</Browse>
+	<Original_Firmware>Microprogramari Original :</Original_Firmware>
+	<Modified_Firmware>Microprogramari modificat :</Modified_Firmware>
+	<Build_MFW>Construir MFW</Build_MFW>
+	<Quit>Deixar</Quit>
+	<Settings>Configuració</Settings>
+	<About_PS3MFW_Builder>Sobre PS3MFW Builder</About_PS3MFW_Builder>
+	<Select_Official_firmware>Seleccioneu el microprogramari Oficial</Select_Official_firmware>
+	<Select_Destination_MFW_firmware>Seleccioneu Destinació microprogramari MFW</Select_Destination_MFW_firmware>
+	<Build_MFW>Construir MFW</Build_MFW>
+	<Exit>Sortida</Exit>
+	<File>Expedient</File>
+	<Theme>Tema</Theme>
+	<Help>Ajuda</Help>
+	<Language>Llengua</Language>
+	<Save_settings>Estalviar</Save_settings>
+	<Default_settings>Defecte</Default_settings>
+	<PS3MFW_Builder_Settings>PS3MFW Builder Configuració</PS3MFW_Builder_Settings>
+	<Configure>Configurar</Configure>
+	<Task_Options>Opcions de Tasca</Task_Options>
+	<successfully>Microprogramari modificat incorporat amb èxit!</successfully>
+</Lang>

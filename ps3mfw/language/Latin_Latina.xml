@@ -1,0 +1,25 @@
+﻿<Lang>
+	<Options>Optiones</Options>
+	<Tasks>Operum</Tasks>
+	<Browse>Navigare</Browse>
+	<Original_Firmware>Firmware Originales:</Original_Firmware>
+	<Modified_Firmware>Firmware Mutatio :</Modified_Firmware>
+	<Build_MFW>Labora MFW</Build_MFW>
+	<Quit>Liber</Quit>
+	<Settings>Optiones</Settings>
+	<About_PS3MFW_Builder>Vestibulum Labora PS3MFW</About_PS3MFW_Builder>
+	<Select_Official_firmware>Selecta Firmware Originales</Select_Official_firmware>
+	<Select_Destination_MFW_firmware>Selecta destinatio MFW firmware</Select_Destination_MFW_firmware>
+	<Build_MFW>Labora MFW</Build_MFW>
+	<Exit>Exitus</Exit>
+	<File>Fasciculus</File>
+	<Theme>Thema</Theme>
+	<Help>Auxilium</Help>
+	<Language>Lingua</Language>
+	<Save_settings>Salvum</Save_settings>
+	<Default_settings>Default Optiones</Default_settings>
+	<PS3MFW_Builder_Settings>Labora PS3MFW Optiones</PS3MFW_Builder_Settings>
+	<Configure>Configurare</Configure>
+	<Task_Options>Operum Optiones</Task_Options>
+	<successfully>Labori mutatio Firmware feliciter!</successfully>
+</Lang>

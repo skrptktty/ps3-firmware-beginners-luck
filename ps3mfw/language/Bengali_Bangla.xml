@@ -1,0 +1,25 @@
+﻿<Lang>
+	<Options>বিকল্প</Options>
+	<Tasks>করনা</Tasks>
+	<Browse>বৃক্ষের শাখাপল্লব</Browse>
+	<Original_Firmware>মূল ফার্মওয়্যার :</Original_Firmware>
+	<Modified_Firmware>বার পরিমার্জিত ফার্মওয়্যার :</Modified_Firmware>
+	<Build_MFW>বিল্ড MFW</Build_MFW>
+	<Quit>অব্যাহতিপ্রাপ্ত</Quit>
+	<Settings>সেটিংস</Settings>
+	<About_PS3MFW_Builder>আমাদের সম্পর্কে PS3MFW বিল্ডার</About_PS3MFW_Builder>
+	<Select_Official_firmware>অফিসিয়াল ফার্মওয়্যার নির্বাচন</Select_Official_firmware>
+	<Select_Destination_MFW_firmware>গন্তব্য MFW ফার্মওয়্যার নির্বাচন</Select_Destination_MFW_firmware>
+	<Build_MFW>বিল্ড MFW</Build_MFW>
+	<Exit>প্রস্থান</Exit>
+	<File>ফাইল</File>
+	<Theme>বিষয়</Theme>
+	<Help>সাহায্য</Help>
+	<Language>ভাষা</Language>
+	<Save_settings>রক্ষা</Save_settings>
+	<Default_settings>ডিফল্টরূপে</Default_settings>
+	<PS3MFW_Builder_Settings>PS3MFW বিল্ডার সেটিংস</PS3MFW_Builder_Settings>
+	<Configure>কনফিগার</Configure>
+	<Task_Options>টাস্ক বিকল্প</Task_Options>
+	<successfully>বার পরিমার্জিত ফার্মওয়্যার সফলভাবে অন্তর্নির্মিত!</successfully>
+</Lang>
