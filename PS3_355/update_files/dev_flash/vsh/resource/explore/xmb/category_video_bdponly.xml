@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<XMBML version="1.0">
+	<View id="root">
+		<Attributes>
+			<Table key="seg_bddata_mgmt">
+				<Pair key="focus_priority"><String>6</String></Pair>
+			</Table>
+			<Table key="seg_bdmav_device">
+				<Pair key="focus_detect"><String>enable</String></Pair>
+				<Pair key="focus_priority"><String>-50</String></Pair>
+			</Table>
+			<Table key="seg_avchd_device">
+				<Pair key="focus_detect"><String>enable</String></Pair>
+				<Pair key="focus_priority"><String>-49</String></Pair>
+			</Table>
+			<Table key="seg_dvdv_device">
+				<Pair key="focus_detect"><String>enable</String></Pair>
+				<Pair key="focus_priority"><String>-48</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_bddata_mgmt"
+				attr="seg_bddata_mgmt"
+				src="xmb://localhost/%flash/xmb/category_video.xml#seg_bddatamgmt" 
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_bdmav_device"
+				attr="seg_bdmav_device"
+				src="xcb://localhost/query?table=MMS_MEDIA_TYPE_SYSTEM&genre=Video&sort=+StorageMedia:StorageMedia.mediaFormat&cond=Ae+StorageMedia:StorageMedia.stat.mediaStatus %xCB_MEDIA_INSERTED+AGL+StorageMedia:StorageMedia.mediaFormat %xCB_MEDIA_FORMAT_BDMV %xCB_MEDIA_FORMAT_BDAV+AGL+StorageMedia:StorageMedia.type %xCB_MEDIA_TYPE_PS3_BD %xCB_MEDIA_TYPE_DVDPRW&perm=1" 
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_avchd_device"
+				attr="seg_avchd_device"
+				src="xcb://localhost/query?table=MMS_MEDIA_TYPE_SYSTEM&genre=Video&cond=Ae+StorageMedia:StorageMedia.stat.mediaStatus %xCB_MEDIA_INSERTED+Ae+StorageMedia:StorageMedia.mediaFormat %xCB_MEDIA_FORMAT_AVCHD+AGL+StorageMedia:StorageMedia.type %xCB_MEDIA_TYPE_DVDMR %xCB_MEDIA_TYPE_DVDPRW&perm=1" 
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_dvdv_device"
+				attr="seg_dvdv_device"
+				src="xcb://localhost/query?table=MMS_MEDIA_TYPE_SYSTEM&genre=Video&cond=Ae+StorageMedia:StorageMedia.stat.mediaStatus %xCB_MEDIA_INSERTED+AGL+StorageMedia:StorageMedia.mediaFormat %xCB_MEDIA_FORMAT_DVD_VIDEO %xCB_MEDIA_FORMAT_DVDPVR+AGL+StorageMedia:StorageMedia.type %xCB_MEDIA_TYPE_DVDROM %xCB_MEDIA_TYPE_DVDPRW&perm=1" 
+				/>
+		</Items>
+	</View>
+
+</XMBML>

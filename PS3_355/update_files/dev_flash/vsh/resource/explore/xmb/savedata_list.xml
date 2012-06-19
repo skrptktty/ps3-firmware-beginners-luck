@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<XMBML version="1.0">
+	<View id="seg_newdata">
+		<Attributes>
+			<Table key="new_data">
+				<Pair key="title"><String>new data</String></Pair>
+				<Pair key="action"><String>newdata</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+			<Query class="type:x-xcb/savedata-ps3" key="new_data"  attr="new_data" />
+		</Items>
+	</View>
+	<View id="seg_psp_newdata">
+		<Attributes>
+			<Table key="new_data">
+				<Pair key="title"><String>new data</String></Pair>
+				<Pair key="action"><String>newdata</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+			<Query class="type:x-xcb/savedata-psp" key="new_data"  attr="new_data" />
+		</Items>
+	</View>
+</XMBML>

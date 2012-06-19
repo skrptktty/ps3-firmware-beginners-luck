@@ -1,0 +1,56 @@
+﻿<MicroBrowser>
+  <!-- This file is written in UTF-8 -->
+  <key>FontFileInfo</key>
+  <dict>
+	<!-- ####################################################
+	  # morisawa-ARIB monospace fonts.
+	  #
+	  # Specify "Charmap" key to define the font character map.
+	  #
+	  # Supported values are:
+	  # unicode         : standard unicode character map. (default)
+	  # unicode_BML_mono: unicode like BML monospace ascii character map.
+	  # 
+	  # ex... 
+	  # <key>Charmap</key> 
+	  # <string>unicode_BML_mono</string>
+	  #
+	  ###################################################### -->
+	<key>SGR_AR3.ttf,0</key>
+	<dict>
+	  <key>FamilyName</key>
+	  <string>ARIB-ShinGo-regular_BML_mono</string>
+	  <key>Style</key>
+	  <integer>0</integer>
+	  <key>SizeInPixels</key>
+	  <integer>0</integer>
+	  <key>Charmap</key>
+	  <string>unicode_BML_mono</string>
+	</dict>
+
+	<key>SRGB_AR2.ttf,0</key>
+	<dict>
+	  <key>FamilyName</key>
+	  <string>ARIB-ShinMGo-Bold_BML_mono</string>
+	  <key>Style</key>
+	  <integer>0</integer>
+	  <key>SizeInPixels</key>
+	  <integer>0</integer>
+	  <key>Charmap</key>
+	  <string>unicode_BML_mono</string>
+	</dict>
+
+	<key>SRGR_AR2.ttf,0</key>
+	<dict>
+	  <key>FamilyName</key>
+	  <string>ARIB-ShinMGo-regular_BML_mono</string>
+	  <key>Style</key>
+	  <integer>0</integer>
+	  <key>SizeInPixels</key>
+	  <integer>0</integer>
+	  <key>Charmap</key>
+	  <string>unicode_BML_mono</string>
+	</dict>
+  </dict>
+</MicroBrowser>
+

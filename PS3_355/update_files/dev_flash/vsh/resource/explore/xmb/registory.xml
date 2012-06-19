@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<XMBML version="1.0">
+	<View id="root">
+		<Attributes>
+			<Table key="view_photo">
+				<Pair key="month"><String>xcb://localhost/query?ssort=root.view_sort_selected.photo_month&cond=Ae+PhotoList:PhotoList.type %xCB_LIST_TYPE_PHOTO_ALBUM_MONTH</String></Pair>
+				<Pair key="year"><String>xcb://localhost/query?ssort=root.view_sort_selected.photo_year&cond=Ae+PhotoList:PhotoList.type %xCB_LIST_TYPE_PHOTO_ALBUM_YEAR</String></Pair>
+				<Pair key="album"><String>xcb://localhost/query?sort=+PhotoList:Common.titleForSort&cond=Ae+PhotoList:PhotoList.type %xCB_LIST_TYPE_PHOTO_TAGS</String></Pair>
+				<Pair key="all"><String>xcb://localhost/query?ssort=root.sort_selected.photo_all&cond=Aa+Photo:Photo.codec</String></Pair>
+			</Table>
+
+			<Table key="view_music">
+				<Pair key="album"><String>xcb://localhost/query?ssort=root.view_sort_selected.music_album&cond=Ae+MusicList:MusicList.type %xCB_LIST_TYPE_MUSIC_ALBUM</String></Pair>
+				<Pair key="artist"><String>xcb://localhost/query?sort=+MusicList:Common.titleForSort&cond=Ae+MusicList:MusicList.type %xCB_LIST_TYPE_MUSIC_PLAYLIST_ARTIST</String></Pair>
+				<Pair key="genre"><String>xcb://localhost/query?sort=+MusicList:MusicListServed.genreForSort&cond=Ae+MusicList:MusicList.type %xCB_LIST_TYPE_MUSIC_PLAYLIST_GENRE</String></Pair>
+				<Pair key="track_initial"><String>xcb://localhost/query?sort=+MusicList:Common.titleForSort&cond=Ae+MusicList:MusicList.type %xCB_LIST_TYPE_MUSIC_TRACKNAME_INITIAL</String></Pair>
+				<Pair key="year"><String>xcb://localhost/query?ssort=root.view_sort_selected.music_year&cond=Ae+MusicList:MusicList.type %xCB_LIST_TYPE_MUSIC_RELEASEDYEAR</String></Pair>
+				<Pair key="all"><String>xcb://localhost/query?ssort=root.sort_selected.music_all&cond=Aa+Music:Music.codec</String></Pair>
+			</Table>
+
+			<Table key="view_video">
+				<Pair key="title_initial"><String>xcb://localhost/query?sort=+VideoList:Common.titleForSort&cond=Ae+VideoList:VideoList.type %xCB_LIST_TYPE_VIDEO_TITLE_INITIAL</String></Pair>
+				<Pair key="imported_month"><String>xcb://localhost/query?sort=+VideoList:Common.titleForSort&cond=Ae+VideoList:VideoList.type %xCB_LIST_TYPE_VIDEO_IMPORTEDMONTH</String></Pair>
+				<Pair key="album"><String>xcb://localhost/query?sort=+VideoList:Common.titleForSort&cond=Ae+VideoList:VideoList.type %xCB_LIST_TYPE_VIDEO_TAGS</String></Pair>
+				<Pair key="all"><String>xcb://localhost/query?ssort=root.sort_selected.video_all&cond=Aa+Video:Video.videoCodec</String></Pair>
+			</Table>
+
+			<Table key="view_vmc">
+				<Pair key="all"><String>xcb://localhost/query?ssort=root.sort_selected.vmc_all&limit=2048</String></Pair>
+			</Table>
+
+			<Table key="view_savedata_ps2">
+				<Pair key="all"><String>xcb://localhost/query?ssort=root.sort_selected.savedata_ps2_all&limit=2048</String></Pair>
+			</Table>
+
+			<Table key="view_savedata_psp">
+				<Pair key="title"><String>xcb://localhost/query?sort=+GameList:Common.titleForSort&cond=Ae+GameList:GameList.type %xCB_LIST_TYPE_PSPSAVEDATA_TITLE+Ae+GameList:Common.owner %xUserId&limit=2048</String></Pair>
+				<Pair key="all"><String>xcb://localhost/query?ssort=root.sort_selected.savedata_psp_all&cond=Ap+PspSaveData:Common.dirPath %xUserHomeDir/minis_savedata+Ae+PspSaveData:Common.owner %xUserId&limit=2048</String></Pair>
+			</Table>
+
+			<Table key="view_savedata_ps3">
+				<Pair key="title"><String>xcb://localhost/query?sort=+GameList:Common.titleForSort&cond=Ae+GameList:GameList.type %xCB_LIST_TYPE_PS3SAVEDATA_TITLE+Ae+GameList:Common.owner %xUserId&limit=2048</String></Pair>
+				<Pair key="all"><String>xcb://localhost/query?ssort=root.sort_selected.savedata_ps3_all&cond=Ap+Ps3SaveData:Common.dirPath %xUserHomeDir/savedata+Ae+Ps3SaveData:Common.owner %xUserId&limit=2048</String></Pair>
+			</Table>
+
+			<Table key="view_game">
+				<Pair key="format"><String>xcb://localhost/query?limit=2048&sort=+GameList:Common.titleForSort&scond=root.cond_selected.gamelist_format</String></Pair>
+				<Pair key="tags"><String>xcb://localhost/query?limit=2048&sort=+GameList:Common.titleForSort&cond=Ae+GameList:GameList.type %xCB_LIST_TYPE_GAME_TAGS</String></Pair>
+				<Pair key="all"><String>xcb://localhost/query?limit=2048&ssort=root.sort_selected.game_all&limit=2048&scond=root.cond_selected.game_all</String></Pair>
+			</Table>
+
+			<Table key="view_friend">
+				<Pair key="all"><String>xcb://localhost/query?table=MMS_MEDIA_TYPE_SYSTEM&ssort=root.sort_selected.friend_all&cond=Aa+Person:Common.titleForSort+AGL+Person:Common.stat.status 2 5</String></Pair>
+			</Table>
+
+			<Table key="view_trophy_title">
+				<Pair key="all"><String></String></Pair>
+			</Table>
+
+			<Table key="view_trophy">
+				<Pair key="all"><String></String></Pair>
+				<Pair key="group"><String></String></Pair>
+			</Table>
+
+			<Table key="view_trophy_ex">
+				<Pair key="all"><String></String></Pair>
+				<Pair key="group"><String></String></Pair>
+			</Table>
+
+			<Table key="cond_trophy">
+				<Pair key="default"><String></String></Pair>
+				<Pair key="default_ex"><String></String></Pair>
+				<Pair key="unlocked"><String></String></Pair>
+				<Pair key="unlocked_ex"><String></String></Pair>
+				<Pair key="show"><String></String></Pair>
+				<Pair key="show_ex"><String></String></Pair>
+			</Table>
+
+			<Table key="cond_trophy2">
+				<Pair key="default"><String></String></Pair>
+				<Pair key="default_ex"><String></String></Pair>
+				<Pair key="unlocked"><String></String></Pair>
+				<Pair key="unlocked_ex"><String></String></Pair>
+				<Pair key="show"><String></String></Pair>
+				<Pair key="show_ex"><String></String></Pair>
+			</Table>
+
+			<Table key="view_friendtrophy_title">
+				<Pair key="all"><String>xcb://localhost/query?limit=2048&table=MMS_MEDIA_TYPE_SYSTEM&subclass=x-xcb/friendachievtitle&cond=Aa+AchievTitle:Common.titleForSort&ssort=root.sort_selected.friendtrophy_title_all</String></Pair>
+			</Table>
+
+			<Table key="view_friendtrophy">
+				<Pair key="all"><String>xcb://localhost/query?limit=2048&table=MMS_MEDIA_TYPE_SYSTEM&subclass=x-xcb/friendachievflag&cond=Aa+AchievFlag:AchievFlag.reserved3+Aa+AchievFlag:Common.titleForSort&ssort=root.sort_selected.friendtrophy_all</String></Pair>
+				<Pair key="group"><String>xcb://localhost/query?limit=2048&table=MMS_MEDIA_TYPE_SYSTEM&subclass=x-xcb/friendachievgroup&cond=Aa+AchievFlag:AchievFlag.reserved0+Aa+AchievFlag:Common.titleForSort&ssort=root.sort_selected.friendtrophy_group_all</String></Pair>
+			</Table>
+
+			<Table key="view_selected">
+				<Pair key="photo"><String>view_photo.month</String></Pair>
+				<Pair key="music"><String>view_music.album</String></Pair>
+				<Pair key="video"><String>view_video.all</String></Pair>
+				<Pair key="vmc"><String>view_vmc.all</String></Pair>
+				<Pair key="savedata_ps2"><String>view_savedata_ps2.all</String></Pair>
+				<Pair key="savedata_psp"><String>view_savedata_psp.all</String></Pair>
+				<Pair key="savedata_ps3"><String>view_savedata_ps3.all</String></Pair>
+				<Pair key="game"><String>view_game.all</String></Pair>
+				<Pair key="game_tool"><String>view_game.all_tool</String></Pair>
+				<Pair key="friend"><String>view_friend.all</String></Pair>
+				<Pair key="trophy_title"><String>view_trophy_title.all</String></Pair>
+				<Pair key="trophy"><String>view_trophy.all</String></Pair>
+				<Pair key="trophy_ex"><String>view_trophy_ex.all</String></Pair>
+				<Pair key="friendtrophy_title"><String>view_friendtrophy_title.all</String></Pair>
+				<Pair key="friendtrophy"><String>view_friendtrophy.all</String></Pair>
+			</Table>
+
+			<Table key="cond_gamelist">
+				<Pair key="format_default"><String>cond=Ae+GameList:GameList.type %xCB_LIST_TYPE_GAME_FORMAT</String></Pair>
+				<Pair key="format_but_1p_pp"><String>cond=Ae+GameList:GameList.type %xCB_LIST_TYPE_GAME_FORMAT+An+GameList:Common.titleForSort 2000+An+GameList:Common.titleForSort 4000</String></Pair>
+			</Table>
+
+			<Table key="cond_game">
+				<Pair key="all_default"><String>cond=An+Game:Game.category GD+An+Game:Game.category 2D+An+Game:Game.category CB+An+Game:Game.category HM+An+Game:Game.category AT+An+Game:Game.category AV+An+Game:Game.category AM+An+Game:Game.category AP+An+Game:Game.category VF+AL+Game:Common.stat.rating 299</String></Pair>
+				<Pair key="all_shop_guest"><String>cond=An+Game:Game.category GD+An+Game:Game.category 2D+An+Game:Game.category CB+An+Game:Game.category HM+An+Game:Game.category AT+An+Game:Game.category AV+An+Game:Game.category AM+An+Game:Game.category AP+An+Game:Game.category VF+An+Game:Common.fileName SCEAPPS01+An+Game:Common.fileName SCEAPPS02+An+Game:Common.fileName SCEAPPS03+AL+Game:Common.stat.rating 299</String></Pair>
+				<Pair key="all_but_1p_pp"><String>cond=An+Game:Game.category GD+An+Game:Game.category 2D+An+Game:Game.category CB+An+Game:Game.category 1P+An+Game:Game.category PP+An+Game:Game.category HM+An+Game:Game.category AT+An+Game:Game.category AP+An+Game:Game.category AV+An+Game:Game.category AM+An+Game:Game.category VF+AL+Game:Common.stat.rating 299</String></Pair>
+			</Table>
+
+			<Table key="cond_selected">
+				<Pair key="trophy_all"><String>cond_trophy.default</String></Pair>
+				<Pair key="trophy_ex_all"><String>cond_trophy.default_ex</String></Pair>
+
+				<Pair key="trophy2_all"><String>cond_trophy2.default</String></Pair>
+				<Pair key="trophy2_ex_all"><String>cond_trophy2.default_ex</String></Pair>
+
+				<Pair key="gamelist_format"><String>cond_gamelist.format_default</String></Pair>
+				<Pair key="game_all"><String>cond_game.all_default</String></Pair>
+			</Table>
+
+			<Table key="sort_photo">
+				<Pair key="title_ascend"><String>sort=+Photo:Common.titleForSort+Photo:Common.size+Photo:Common.stat.timeImportedTicks</String></Pair>
+				<Pair key="time_created_ascend"><String>sort=+Photo:Common.timeCreated+Photo:Common.titleForSort+Photo:Common.size+Photo:Common.stat.timeImportedTicks</String></Pair>
+				<Pair key="time_created_descend"><String>sort=-Photo:Common.timeCreated-Photo:Common.titleForSort-Photo:Common.size-Photo:Common.stat.timeImportedTicks</String></Pair>
+				<Pair key="time_imported_ascend"><String>sort=+Photo:Common.stat.timeImportedTicks+Photo:Common.titleForSort+Photo:Common.size</String></Pair>
+				<Pair key="time_imported_descend"><String>sort=-Photo:Common.stat.timeImportedTicks-Photo:Common.titleForSort-Photo:Common.size</String></Pair>
+			</Table>
+
+			<Table key="sort_music">
+				<Pair key="player_ascend"><String>sort=+Music:MusicServed.playerForSort+Music:MusicServed.listTitleForSort+Music:MusicServed.discNumber+Music:MusicServed.trackNumber+Music:Common.stat.timeImportedTicks</String></Pair>
+				<Pair key="list_title_ascend"><String>sort=+Music:MusicServed.listTitleForSort+Music:MusicServed.discNumber+Music:MusicServed.trackNumber-Music:Common.stat.timeImportedTicks</String></Pair>
+				<Pair key="title_ascend"><String>sort=+Music:Common.titleForSort+Music:MusicServed.playerForSort+Music:MusicServed.listTitleForSort+Music:MusicServed.discNumber+Music:MusicServed.trackNumber+Music:Common.stat.timeImportedTicks</String></Pair>
+				<Pair key="time_imported_ascend"><String>sort=+Music:Common.reserved1+Music:Common.titleForSort</String></Pair>
+				<Pair key="time_imported_descend"><String>sort=-Music:Common.reserved1-Music:Common.titleForSort</String></Pair>
+				<Pair key="genre_ascend"><String>sort=+Music:MusicServed.genreForSort+Music:MusicServed.playerForSort+Music:MusicServed.listTitleForSort+Music:MusicServed.discNumber+Music:MusicServed.trackNumber+Music:Common.stat.timeImportedTicks</String></Pair>
+				<Pair key="track_number_ascend"><String>sort=+Music:MusicServed.discNumber+Music:MusicServed.trackNumber-Music:Common.stat.timeImportedTicks</String></Pair>
+			</Table>
+
+			<Table key="sort_video">
+				<Pair key="title_ascend"><String>sort=+Video:Common.titleForSort-Video:Common.stat.timeImportedTicks+Video:Common.size</String></Pair>
+				<Pair key="time_imported_ascend"><String>sort=+Video:Common.stat.timeImportedTicks+Video:Common.size</String></Pair>
+				<Pair key="time_imported_descend"><String>sort=-Video:Common.stat.timeImportedTicks-Video:Common.size</String></Pair>
+			</Table>
+
+			<Table key="sort_vmc">
+				<Pair key="time_created_descend"><String>sort=-Vmc:Common.timeCreatedUTC-Vmc:Common.titleForSort-Vmc:Vmc.type</String></Pair>
+				<Pair key="time_created_ascend"><String>sort=+Vmc:Common.timeCreatedUTC+Vmc:Common.titleForSort-Vmc:Vmc.type</String></Pair>
+				<Pair key="title_ascend"><String>sort=+Vmc:Common.titleForSort-Vmc:Common.timeCreatedUTC-Vmc:Vmc.type</String></Pair>
+				<Pair key="format_ascend"><String>sort=-Vmc:Vmc.type-Vmc:Common.timeCreatedUTC-Vmc:Common.titleForSort</String></Pair>
+			</Table>
+
+			<Table key="sort_savedata_ps2">
+				<Pair key="time_modified_descend"><String>sort=-Ps2SaveData:Ps2.timeModified+Ps2SaveData:Common.titleForSort</String></Pair>
+				<Pair key="time_modified_ascend"><String>sort=+Ps2SaveData:Ps2.timeModified+Ps2SaveData:Common.titleForSort</String></Pair>
+				<Pair key="title_ascend"><String>sort=+Ps2SaveData:Common.titleForSort-Ps2SaveData:Ps2.timeModified</String></Pair>
+			</Table>
+
+                        <Table key="sort_savedata_psp">
+                                <Pair key="time_modified_descend"><String>sort=-PspSaveData:PspSaveData.timeModified+PspSaveData:Common.titleForSort+PspSaveData:PspSaveData.sdTitle</String></Pair>
+                                <Pair key="time_modified_ascend"><String>sort=+PspSaveData:PspSaveData.timeModified+PspSaveData:Common.titleForSort+PspSaveData:PspSaveData.sdTitle</String></Pair>
+                                <Pair key="title_ascend"><String>sort=+PspSaveData:PspSaveData.broken+PspSaveData:Common.titleForSort+PspSaveData:PspSaveData.sdTitle-PspSaveData:PspSaveData.timeModified</String></Pair>
+                                <Pair key="subtitle_ascend"><String>sort=+PspSaveData:PspSaveData.broken+PspSaveData:PspSaveData.sdTitle-PspSaveData:PspSaveData.timeModified</String></Pair>
+                        </Table>
+
+			<Table key="sort_savedata_ps3">
+				<Pair key="time_modified_descend"><String>sort=-Ps3SaveData:Ps3SaveData.timeModified+Ps3SaveData:Common.titleForSort+Ps3SaveData:Ps3SaveData.subTitle</String></Pair>
+				<Pair key="time_modified_ascend"><String>sort=+Ps3SaveData:Ps3SaveData.timeModified+Ps3SaveData:Common.titleForSort+Ps3SaveData:Ps3SaveData.subTitle</String></Pair>
+				<Pair key="title_ascend"><String>sort=+Ps3SaveData:Ps3SaveData.broken+Ps3SaveData:Common.titleForSort+Ps3SaveData:Ps3SaveData.subTitle-Ps3SaveData:Ps3SaveData.timeModified</String></Pair>
+				<Pair key="subtitle_ascend"><String>sort=+Ps3SaveData:Ps3SaveData.broken+Ps3SaveData:Ps3SaveData.subTitle-Ps3SaveData:Ps3SaveData.timeModified</String></Pair>
+			</Table>	
+
+			<Table key="sort_game">
+				<Pair key="time_created_descend"><String>sort=-Game:Common.stat.rating-Game:Common.timeCreated+Game:Common.titleForSort-Game:Game.category</String></Pair>
+				<Pair key="time_created_ascend"><String>sort=-Game:Common.stat.rating+Game:Common.timeCreated+Game:Common.titleForSort-Game:Game.category</String></Pair>
+				<Pair key="time_executed_descend"><String>sort=-Game:Common.stat.rating-Game:Common.stat.timeLastUsed+Game:Common.titleForSort-Game:Common.timeCreated-Game:Game.category</String></Pair>
+				<Pair key="title_ascend"><String>sort=-Game:Common.stat.rating+Game:Common.titleForSort-Game:Common.timeCreated-Game:Game.category</String></Pair>
+				<Pair key="format_ascend"><String>sort=-Game:Common.stat.rating+Game:Game.gameCategory-Game:Common.timeCreated+Game:Common.titleForSort</String></Pair>
+			</Table>
+
+			<Table key="sort_friend">
+				<Pair key="presence_descend"><String>sort=-Person:Common.stat.status+Person:Common.titleForSort</String></Pair>
+				<Pair key="title_ascend"><String>sort=+Person:Common.titleForSort-Person:Common.stat.status</String></Pair>
+				<Pair key="title_ascend_only"><String>sort=+Person:Common.titleForSort</String></Pair>
+			</Table>
+
+			<Table key="sort_trophy_title">
+				<Pair key="name_ascend"><String>sort=+AchievTitle:Common.titleForSort</String></Pair>
+				<Pair key="time_last_updated_ascend"><String>sort=+AchievTitle:AchievTitle.ex.timeLastUpdate+AchievTitle:AchievTitle.timeLastUnlocked+AchievTitle:Common.timeModified</String></Pair>
+				<Pair key="time_last_updated_descend"><String>sort=-AchievTitle:AchievTitle.ex.timeLastUpdate-AchievTitle:AchievTitle.timeLastUnlocked-AchievTitle:Common.timeModified</String></Pair>
+			</Table>
+
+			<Table key="sort_trophy_group">
+				<Pair key="default"><String>sort=+AchievTitle:Common.fileName</String></Pair>
+				<Pair key="time_last_unlocked_ascend"><String>sort=+AchievTitle:AchievTitle.timeLastUnlocked+AchievTitle:AchievTitle.ex.timeLastUnlocked</String></Pair>
+				<Pair key="time_last_unlocked_descend"><String>sort=-AchievTitle:AchievTitle.timeLastUnlocked-AchievTitle:AchievTitle.ex.timeLastUnlocked</String></Pair>
+			</Table>
+
+			<Table key="sort_trophy">
+				<Pair key="default"><String>sort=+AchievFlag:Common.fileName</String></Pair>
+				<Pair key="default_ex"><String>sort=+AchievFlag:Common.fileName</String></Pair>
+				<Pair key="unlocked_descend"><String>sort=-AchievFlag:AchievFlag.timeUnlocked+AchievFlag:Common.fileName</String></Pair>
+				<Pair key="unlocked_ascend"><String>sort=+AchievFlag:AchievFlag.timeUnlocked+AchievFlag:Common.fileName</String></Pair>
+				<Pair key="unlocked_ex"><String>sort=+AchievFlag:Common.fileName</String></Pair>
+				<Pair key="name_ascend"><String>sort=+AchievFlag:Common.titleForSort</String></Pair>
+				<Pair key="name_ex"><String>sort=+AchievFlag:Common.fileName</String></Pair>
+				<Pair key="grade_ascend"><String>sort=+AchievFlag:AchievFlag.flagType+AchievFlag:Common.fileName</String></Pair>
+				<Pair key="grade_ex"><String>sort=+AchievFlag:Common.fileName</String></Pair>
+			</Table>
+         
+			<Table key="sort_friendtrophy_title">
+				<Pair key="all"><String>sort=+AchievTitle:Common.titleForSort</String></Pair>
+				<Pair key="descend"><String>sort=-AchievTitle:AchievTitle.ex.timeLastUnlocked-AchievTitle:AchievTitle.timeLastUnlocked</String></Pair>
+				<Pair key="ascend"><String>sort=+AchievTitle:AchievTitle.ex.timeLastUnlocked+AchievTitle:AchievTitle.timeLastUnlocked</String></Pair>
+			</Table>
+
+			<Table key="sort_friendtrophy_group">
+				<Pair key="all"><String>sort=+AchievFlag:AchievFlag.flagId</String></Pair>
+				<Pair key="descend"><String>sort=-AchievFlag:AchievFlag.ex.timeUnlocked-AchievFlag:AchievFlag.timeUnlocked</String></Pair>
+				<Pair key="ascend"><String>sort=+AchievFlag:AchievFlag.ex.timeUnlocked+AchievFlag:AchievFlag.timeUnlocked</String></Pair>
+			</Table>
+
+			<Table key="sort_friendtrophy">
+				<Pair key="all"><String>sort=+AchievFlag:AchievFlag.flagId</String></Pair>
+				<Pair key="name"><String>sort=-AchievFlag:AchievFlag.reserved4+AchievFlag:Common.titleForSort</String></Pair>
+				<Pair key="grade"><String>sort=-AchievFlag:AchievFlag.reserved4+AchievFlag:AchievFlag.flagType+AchievFlag:Common.titleForSort</String></Pair>
+				<Pair key="descend"><String>sort=-AchievFlag:AchievFlag.ex.timeUnlocked-AchievFlag:AchievFlag.timeUnlocked</String></Pair>
+				<Pair key="ascend"><String>sort=+AchievFlag:AchievFlag.ex.timeUnlocked+AchievFlag:AchievFlag.timeUnlocked</String></Pair>
+			</Table>
+
+			<Table key="sort_selected">
+				<Pair key="photo_month"><String>sort_photo.time_created_ascend</String></Pair>
+				<Pair key="photo_year"><String>sort_photo.time_created_ascend</String></Pair>
+				<Pair key="photo_album"><String>sort_photo.time_created_ascend</String></Pair>
+				<Pair key="photo_all"><String>sort_photo.time_created_ascend</String></Pair>
+
+				<Pair key="music_album"><String>sort_music.track_number_ascend</String></Pair>
+				<Pair key="music_artist"><String>sort_music.list_title_ascend</String></Pair>
+				<Pair key="music_genre"><String>sort_music.player_ascend</String></Pair>
+				<Pair key="music_track_initial"><String>sort_music.title_ascend</String></Pair>
+				<Pair key="music_year"><String>sort_music.player_ascend</String></Pair>
+				<Pair key="music_all"><String>sort_music.player_ascend</String></Pair>
+
+				<Pair key="video_title_initial"><String>sort_video.title_ascend</String></Pair>
+				<Pair key="video_imported_month"><String>sort_video.time_imported_descend</String></Pair>
+				<Pair key="video_album"><String>sort_video.time_imported_descend</String></Pair>
+				<Pair key="video_all"><String>sort_video.time_imported_descend</String></Pair>
+
+				<Pair key="vmc_all"><String>sort_vmc.time_created_descend</String></Pair>
+
+				<Pair key="savedata_ps2_all"><String>sort_savedata_ps2.time_modified_descend</String></Pair>
+
+				<Pair key="savedata_psp_title"><String>sort_savedata_psp.time_modified_descend</String></Pair>
+				<Pair key="savedata_psp_all"><String>sort_savedata_psp.time_modified_descend</String></Pair>
+
+				<Pair key="savedata_ps3_title"><String>sort_savedata_ps3.time_modified_descend</String></Pair>
+				<Pair key="savedata_ps3_all"><String>sort_savedata_ps3.time_modified_descend</String></Pair>
+
+				<Pair key="game_format"><String>sort_game.time_created_descend</String></Pair>
+				<Pair key="game_tags"><String>sort_game.time_created_descend</String></Pair>
+				<Pair key="game_all"><String>sort_game.time_created_descend</String></Pair>
+
+				<Pair key="friend_all"><String>sort_friend.presence_descend</String></Pair>
+
+				<Pair key="friend_named"><String></String></Pair>  <!--<String>sort_friend.title_ascend</String>-->
+				<Pair key="friend_presence"><String>sort_friend.title_ascend_only</String></Pair>
+
+				<Pair key="trophy_title_all"><String>sort_trophy_title.time_last_updated_descend</String></Pair>
+
+				<Pair key="trophy_group"><String>sort_trophy_group.default</String></Pair>
+
+				<Pair key="trophy_all"><String>sort_trophy.default</String></Pair>
+				<Pair key="trophy_ex_all"><String>sort_trophy.default_ex</String></Pair>
+
+				<Pair key="trophy2_all"><String>sort_trophy.default</String></Pair>
+				<Pair key="trophy2_ex_all"><String>sort_trophy.default_ex</String></Pair>
+
+				<Pair key="friendtrophy_title_all"><String>sort_friendtrophy_title.all</String></Pair>
+				<Pair key="friendtrophy_group_all"><String>sort_friendtrophy_group.all</String></Pair>
+				<Pair key="friendtrophy_all"><String>sort_friendtrophy.all</String></Pair>
+			</Table>
+
+			<Table key="sort_photo_month">
+				<Pair key="list_title_descend"><String>sort=-PhotoList:Common.titleForSort</String></Pair>
+				<Pair key="list_title_ascend"><String>sort=+PhotoList:Common.titleForSort</String></Pair>
+			</Table>
+
+			<Table key="sort_photo_year">
+				<Pair key="list_title_descend"><String>sort=-PhotoList:Common.titleForSort</String></Pair>
+				<Pair key="list_title_ascend"><String>sort=+PhotoList:Common.titleForSort</String></Pair>
+			</Table>
+
+			<Table key="sort_music_album">
+				<Pair key="player_ascend"><String>sort=+MusicList:MusicListServed.playerForSort+MusicList:Common.titleForSort</String></Pair>
+				<Pair key="list_title_ascend"><String>sort=+MusicList:Common.titleForSort</String></Pair>
+			</Table>
+
+			<Table key="sort_music_year">
+				<Pair key="list_title_descend"><String>sort=-MusicList:Common.titleForSort</String></Pair>
+				<Pair key="list_title_ascend"><String>sort=+MusicList:Common.titleForSort</String></Pair>
+			</Table>
+
+			<Table key="view_sort_selected">
+				<Pair key="photo_month"><String>sort_photo_month.list_title_ascend</String></Pair>
+				<Pair key="photo_year"><String>sort_photo_year.list_title_ascend</String></Pair>
+				<Pair key="music_album"><String>sort_music_album.list_title_ascend</String></Pair>
+				<Pair key="music_year"><String>sort_music_year.list_title_descend</String></Pair>
+			</Table>
+
+			<Table key="fixed_items">
+				<Pair key="fah"><String>xmb://localhost/%flash/xmb/category_network.xml#seg_folding_at_home</String></Pair>
+				<Pair key="bddatacommon"><String>xmb://localhost/%flash/xmb/category_video.xml#seg_bddatacommon</String></Pair>
+				<Pair key="netflix"><String>sel://localhost/netflix?category_video.xml#seg_netflix</String></Pair>
+				<Pair key="playlistempty"><String>xmb://localhost/%flash/xmb/category_photo.xml#seg_playlist_empty</String></Pair>
+				<Pair key="trophy"><String>xmb://localhost/%flash/xmb/category_game.xml#seg_trophy</String></Pair>
+				<Pair key="psh"><String>xmb://localhost/%flash/xmb/category_psn.xml#seg_home</String></Pair>
+				<Pair key="facebook_del_acc"><String>xmb://localhost/%flash/xmb/category_psn.xml#seg_cam_facebook_del_acc</String></Pair>
+				<Pair key="nowmusic"><String>xmb://localhost/%flash/xmb/category_music.xml#seg_now</String></Pair>
+				<Pair key="playlistpspphoto"><String>xmb://localhost/%flash/xmb/category_photo.xml#seg_playlist_mgmt_psp</String></Pair>
+				<Pair key="playlistpspmusic"><String>xmb://localhost/%flash/xmb/category_music.xml#seg_playlist_mgmt_psp</String></Pair>
+			</Table>
+
+		</Attributes>
+
+		<Items>
+			<Item key="view_photo"			attr="view_photo" />
+			<Item key="view_music"			attr="view_music" />
+			<Item key="view_video"			attr="view_video" />
+			<Item key="view_savedata_psp"	attr="view_savedata_psp" />
+			<Item key="view_savedata_ps3"	attr="view_savedata_ps3" />
+			<Item key="view_game"			attr="view_game" />
+			<Item key="view_friend"			attr="view_friend" />
+			<Item key="view_trophy_title"		attr="view_trophy_title" />
+			<Item key="view_trophy"			attr="view_trophy" />
+			<Item key="view_trophy_ex"		attr="view_trophy_ex" />
+			<Item key="view_friendtrophy_title"	attr="view_friendtrophy_title" />
+			<Item key="view_friendtrophy"	attr="view_friendtrophy" />
+			<Item key="view_selected"		attr="view_selected" />
+			<Item key="sort_photo"			attr="sort_photo" />
+			<Item key="sort_music"			attr="sort_music" />
+			<Item key="sort_video"			attr="sort_video" />
+			<Item key="sort_vmc"			attr="sort_vmc" />
+			<Item key="sort_savedata_ps2"	attr="sort_savedata_ps2" />
+			<Item key="sort_savedata_psp"	attr="sort_savedata_psp" />
+			<Item key="sort_savedata_ps3"	attr="sort_savedata_ps3" />
+			<Item key="sort_game"			attr="sort_game" />
+			<Item key="sort_friend"			attr="sort_friend" />
+			<Item key="sort_trophy_title"		attr="sort_trophy_title" />
+			<Item key="sort_trophy_group"		attr="sort_trophy_group" />
+			<Item key="sort_trophy"			attr="sort_trophy" />
+			<Item key="sort_friendtrophy_title"	attr="sort_friendtrophy_title" />
+			<Item key="sort_friendtrophy_group"	attr="sort_friendtrophy_group" />
+			<Item key="sort_friendtrophy"	attr="sort_friendtrophy" />
+			<Item key="sort_selected"		attr="sort_selected" />
+			<Item key="sort_photo_month"	attr="sort_photo_month" />
+			<Item key="sort_photo_year"		attr="sort_photo_year" />
+			<Item key="sort_music_album"	attr="sort_music_album" />
+			<Item key="sort_music_year"		attr="sort_music_year" />
+			<Item key="view_sort_selected"	attr="view_sort_selected" />
+			<Item key="cond_gamelist"		attr="cond_gamelist" />
+			<Item key="cond_game"			attr="cond_game" />
+			<Item key="cond_trophy"			attr="cond_trophy" />
+			<Item key="cond_trophy2"		attr="cond_trophy2" />
+			<Item key="cond_selected"		attr="cond_selected" />
+			<Item key="fixed_items"			attr="fixed_items" />
+		</Items>
+
+	</View>
+
+</XMBML>
