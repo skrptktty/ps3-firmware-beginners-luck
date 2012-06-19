@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<XMBML version="1.0">
+	<View id="root">
+		<Items>
+			<Query 
+				class="type:x-xmb/folder-pixmap" 
+				key="seg_fixed_items" 
+				src="#seg_fixed_items"
+				/>
+		</Items>
+	</View>
+
+	<View id="seg_fixed_items">
+		<Attributes>
+			<Table key="poweroff">
+				<Pair key="icon_rsc"><String>tex_power_off</String></Pair>
+				<Pair key="icon_notation"><String>WNT_XmbItemPowerOff</String></Pair>
+				<Pair key="title_rsc"><String>msg_power_off_console2</String></Pair>
+				<Pair key="module_name"><String>explore_plugin</String></Pair>
+				<Pair key="module_action"><String>NotifyErrorNoExecute</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+				<Pair key="lbl_half"><String>1</String></Pair>
+			</Table>
+			<Table key="create_user">
+				<Pair key="icon_rsc"><String>item_tex_NewUser</String></Pair>
+				<Pair key="icon_notation"><String>WNT_XmbItemUser</String></Pair>
+				<Pair key="title_rsc"><String>msg_new_user_create</String></Pair>
+				<Pair key="module_name"><String>explore_plugin</String></Pair>
+				<Pair key="module_action"><String>NotifyErrorNoExecute</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+				<Pair key="lbl_half"><String>1</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+			<Item  class="type:x-xmb/module-action"   key="poweroff"         attr="poweroff"    />
+			<Item  class="type:x-xmb/module-action"   key="create_user"      attr="create_user" />
+		</Items>
+	</View>
+
+</XMBML>

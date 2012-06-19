@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<XMBML version="1.0">
+	<View id="upload_photo_hdd_items">
+		<Items>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_photo_playlist"
+				src="xmb://localhost/%flash/xmb/category_photo.xml#seg_playlist_mgmt"
+			/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="photo_hdd"
+				src="sel://localhost/ex?root.view_selected.photo"
+			/>
+		</Items>
+	</View>
+
+	<View id="upload_photo_hdd">
+		<Attributes>
+			<Table key="photo_hdd">
+				<Pair key="icon_rsc"><String>tex_photo</String></Pair>
+				<Pair key="icon_notation"><String>WNT_XmbListPhoto</String></Pair>
+				<Pair key="title_rsc"><String>msg_ps3_photo</String></Pair>
+				<Pair key="info_rsc"><String>msg_space</String></Pair>
+				<Pair key="device_path"><String>/dev_hdd0</String></Pair>
+				<Pair key="logical_sceme"><String>Photo</String></Pair>
+				<Pair key="child"><String>segment</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="photo_hdd"
+				attr="photo_hdd"
+				src="#upload_photo_hdd_items"
+			/>
+		</Items>
+	</View>
+
+	<View id="upload_photo_root">
+		<Items>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="upload_photo_hdd"
+				src="#upload_photo_hdd"
+			/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_bdvd_device"
+				src="xcb://localhost/query?table=MMS_MEDIA_TYPE_SYSTEM&genre=Photo&cond=Ae+StorageMedia:StorageMedia.stat.mediaStatus %xCB_MEDIA_INSERTED+Ae+StorageMedia:StorageMedia.mediaFormat %xCB_MEDIA_FORMAT_DATA+AGL+StorageMedia:StorageMedia.type %xCB_MEDIA_TYPE_BDROM %xCB_MEDIA_TYPE_DVDPRW" 
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_cd_device"
+				src="xcb://localhost/query?table=MMS_MEDIA_TYPE_SYSTEM&genre=Photo&cond=Ae+StorageMedia:StorageMedia.stat.mediaStatus %xCB_MEDIA_INSERTED+Ae+StorageMedia:StorageMedia.mediaFormat %xCB_MEDIA_FORMAT_DATA+AGL+StorageMedia:StorageMedia.type %xCB_MEDIA_TYPE_CDROM %xCB_MEDIA_TYPE_CDMRW" 
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_ms_device"
+				src="xcb://localhost/query?table=MMS_MEDIA_TYPE_SYSTEM&genre=Photo&cond=Ae+StorageMedia:StorageMedia.stat.mediaStatus %xCB_MEDIA_INSERTED+Ae+StorageMedia:StorageMedia.deviceType %xCB_DEVICE_TYPE_MS+AGL+StorageMedia:StorageMedia.type %xCB_MEDIA_TYPE_MS_STD %xCB_MEDIA_TYPE_MS_R+Ae+StorageMedia:StorageMedia.mediaFormat %xCB_MEDIA_FORMAT_DATA" 
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_sd_device"
+				src="xcb://localhost/query?table=MMS_MEDIA_TYPE_SYSTEM&genre=Photo&cond=Ae+StorageMedia:StorageMedia.stat.mediaStatus %xCB_MEDIA_INSERTED+Ae+StorageMedia:StorageMedia.type %xCB_MEDIA_TYPE_SD+Ae+StorageMedia:StorageMedia.mediaFormat %xCB_MEDIA_FORMAT_DATA" 
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_cf_device"
+				src="xcb://localhost/query?table=MMS_MEDIA_TYPE_SYSTEM&genre=Photo&cond=Ae+StorageMedia:StorageMedia.stat.mediaStatus %xCB_MEDIA_INSERTED+Ae+StorageMedia:StorageMedia.type %xCB_MEDIA_TYPE_CF+Ae+StorageMedia:StorageMedia.mediaFormat %xCB_MEDIA_FORMAT_DATA" 
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_usbpsp_device"
+				src="xcb://localhost/query?table=MMS_MEDIA_TYPE_SYSTEM&genre=Photo&cond=Ae+StorageMedia:StorageMedia.stat.mediaStatus %xCB_MEDIA_INSERTED+Ae+StorageMedia:StorageMedia.deviceType %xCB_DEVICE_TYPE_USBPSP+Ae+StorageMedia:StorageMedia.mediaFormat %xCB_MEDIA_FORMAT_DATA&sort=+StorageMedia:Common.stat.timeImported" 
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_usbspecial_device"
+				src="xcb://localhost/query?table=MMS_MEDIA_TYPE_SYSTEM&genre=Photo&cond=Ae+StorageMedia:StorageMedia.stat.mediaStatus %xCB_MEDIA_INSERTED+AGL+StorageMedia:StorageMedia.deviceType %xCB_DEVICE_TYPE_USBCAMERA %xCB_DEVICE_TYPE_USBAAD+Ae+StorageMedia:StorageMedia.mediaFormat %xCB_MEDIA_FORMAT_DATA&sort=+StorageMedia:Common.stat.timeImported" 
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_usb_aad_new_device"
+				src="xcb://localhost/query?table=MMS_MEDIA_TYPE_SYSTEM&genre=Photo&cond=Ae+StorageMedia:StorageMedia.stat.mediaStatus %xCB_MEDIA_INSERTED+AGL+StorageMedia:StorageMedia.deviceType %xCB_DEVICE_TYPE_USBAADWM %xCB_DEVICE_TYPE_USBWM+Ae+StorageMedia:StorageMedia.mediaFormat %xCB_MEDIA_FORMAT_DATA&sort=+StorageMedia:Common.stat.timeImported" 
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_usbmass_device"
+				src="xcb://localhost/query?table=MMS_MEDIA_TYPE_SYSTEM&genre=Photo&cond=Ae+StorageMedia:StorageMedia.stat.mediaStatus %xCB_MEDIA_INSERTED+Ae+StorageMedia:StorageMedia.deviceType %xCB_DEVICE_TYPE_USBMASS+Ae+StorageMedia:StorageMedia.mediaFormat %xCB_MEDIA_FORMAT_DATA&sort=+StorageMedia:Common.stat.timeImported" 
+				/>
+		</Items>
+	</View>
+
+	<View id="upload_music_hdd_items">
+		<Items>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_music_playlist"
+				src="xmb://localhost/%flash/xmb/category_music.xml#seg_playlist_mgmt"
+			/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="music_hdd"
+				attr="music_hdd"
+				src="sel://localhost/ex?root.view_selected.music"
+			/>
+		</Items>
+	</View>
+
+	<View id="upload_music_hdd">
+		<Attributes>
+			<Table key="music_hdd">
+				<Pair key="icon_rsc"><String>tex_music</String></Pair>
+				<Pair key="icon_notation"><String>WNT_XmbListMusic</String></Pair>
+				<Pair key="title_rsc"><String>msg_ps3_music</String></Pair>
+				<Pair key="info_rsc"><String>msg_space</String></Pair>
+				<Pair key="device_path"><String>/dev_hdd0</String></Pair>
+				<Pair key="logical_sceme"><String>Music</String></Pair>
+				<Pair key="child"><String>segment</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="music_hdd"
+				attr="music_hdd"
+				src="#upload_music_hdd_items"
+			/>
+		</Items>
+	</View>
+
+	<View id="upload_video_hdd_items">
+		<Items>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="video_hdd"
+				src="sel://localhost/ex?root.view_selected.video"
+			/>
+		</Items>
+	</View>
+
+	<View id="upload_video_hdd">
+		<Attributes>
+			<Table key="video_hdd">
+				<Pair key="icon_rsc"><String>video_tex_load</String></Pair>
+				<Pair key="icon_notation"><String>WNT_XmbListVideo</String></Pair>
+				<Pair key="title_rsc"><String>msg_ps3_video</String></Pair>
+				<Pair key="info_rsc"><String>msg_space</String></Pair>
+				<Pair key="device_path"><String>/dev_hdd0</String></Pair>
+				<Pair key="logical_sceme"><String>Video</String></Pair>
+				<Pair key="child"><String>segment</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="video_hdd"
+				attr="video_hdd"
+				src="#upload_video_hdd_items"
+			/>
+		</Items>
+	</View>
+
+	<View id="upload_hdd_all_root">
+		<Items>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="upload_video_hdd"
+				src="#upload_video_hdd"
+			/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="upload_music_hdd"
+				src="#upload_music_hdd"
+			/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="upload_photo_hdd"
+				src="#upload_photo_hdd"
+			/>
+		</Items>
+	</View>
+
+
+</XMBML>

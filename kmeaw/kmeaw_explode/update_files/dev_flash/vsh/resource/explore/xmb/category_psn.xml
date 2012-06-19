@@ -1,0 +1,1072 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<XMBML version="1.0">
+	<View id="root">
+		<Attributes>
+			<Table key="seg_welcome">
+				<Pair key="focus_priority"><String>-80</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_regist"
+				src="sel://localhost/fnregist?"
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_welcome"
+				attr="seg_welcome"
+				src="sel://localhost/welcome?type=psn"
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_gameexit"
+				src="sel://localhost/ingame?path=category_psn.xml#seg_gameexit&type=psn"
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_home"
+				src="xcb://localhost/exists?having=off&rquery=root.fixed_items.psh&cond=Ae+Game:Common.dirPath /dev_hdd0/game+Ae+Game:Common.fileName NPIA00005&reload=HomeInstaller"
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="gameDir"
+				src="xcb://localhost/query?limit=2048&table=MMS_MEDIA_TYPE_HDD&sort=-Game:Common.stat.rating-Game:Common.timeCreated&cond=Aa+Game:Common.title+Ae+Game:Game.category HM"
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_commerce_new"
+				src="#seg_commerce_new"
+				/>
+		</Items>
+	</View>
+
+	<View id="tool_root">
+		<Attributes>
+			<Table key="seg_welcome">
+				<Pair key="focus_priority"><String>-80</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_regist"
+				src="#seg_regist"
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_reg_quick"
+				src="sel://localhost/nonpaccount?category_psn.xml#seg_reg_quick"
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_welcome"
+				attr="seg_welcome"
+				src="sel://localhost/welcome?type=psn"
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_gameexit"
+				src="sel://localhost/ingame?path=category_psn.xml#seg_gameexit&type=psn"
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="gameDir"
+				src="xcb://localhost/query?limit=2048&table=MMS_MEDIA_TYPE_HDD&sort=-Game:Common.stat.rating-Game:Common.timeCreated&cond=Aa+Game:Common.title+Ae+Game:Game.category HM"
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_newstore_preview_ingame"
+				src="#seg_newstore_preview_ingame"
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_newstore_preview"
+				src="#seg_newstore_preview"
+				/>
+		</Items>
+	</View>
+
+	<View id="shop_staff_root">
+		<Attributes>
+			<Table key="seg_welcome">
+				<Pair key="focus_priority"><String>-80</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_regist"
+				src="sel://localhost/fnregist?"
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_welcome"
+				attr="seg_welcome"
+				src="sel://localhost/welcome?type=psn"
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_home_shop"
+				src="#seg_home_shop"
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_commerce_shop"
+				src="#seg_commerce_shop"
+				/>
+		</Items>
+	</View>
+
+	<View id="shop_guest_root">
+		<Attributes>
+			<Table key="seg_welcome">
+				<Pair key="focus_priority"><String>-80</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_account_guest"
+				src="#seg_account_guest"
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_welcome"
+				attr="seg_welcome"
+				src="sel://localhost/welcome?type=psn"
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_home_shop"
+				src="#seg_home_shop"
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_commerce_shop"
+				src="#seg_commerce_shop"
+				/>
+		</Items>
+	</View>
+
+	<!-- CAM(2) AgeGroup=3 #AM010-1 -->
+	<View id="seg_cam">
+		<Attributes>
+			<Table key="seg_cam_change_info">
+				<Pair key="info"><String>seg_cam_change_info</String></Pair>
+				<Pair key="info_rsc"><String>msg_registration_information_info_psn</String></Pair>
+				<Pair key="icon_rsc"><String>item_tex_cam_icon</String></Pair>
+				<Pair key="title_rsc"><String>msg_registration_information_psn</String></Pair>
+			</Table>
+			<Table key="seg_cam_sub_account">
+				<Pair key="info"><String>seg_cam_sub_account</String></Pair>
+				<Pair key="info_rsc"><String>msg_sub_account_management_info_psn</String></Pair>
+				<Pair key="icon_rsc"><String>item_tex_cam_icon</String></Pair>
+				<Pair key="title_rsc"><String>msg_sub_account_management_psn</String></Pair>
+			</Table>
+			<Table key="cam_input_code">
+				<Pair key="info"><String>cam_input_code</String></Pair>
+				<Pair key="info_rsc"><String>msg_code_input_info_psn</String></Pair>
+				<Pair key="icon_rsc"><String>item_tex_cam_icon</String></Pair>
+				<Pair key="title_rsc"><String>msg_code_input_psn</String></Pair>
+			</Table>
+			<Table key="seg_cam_buying">
+				<Pair key="info"><String>seg_cam_buying</String></Pair>
+				<Pair key="info_rsc"><String>msg_transaction_management_info_psn</String></Pair>
+				<Pair key="icon_rsc"><String>item_tex_cam_icon</String></Pair>
+				<Pair key="title_rsc"><String>msg_transaction_management_psn</String></Pair>
+			</Table>
+			<Table key="seg_cam_authentication">
+				<Pair key="info"><String>seg_cam_authentication</String></Pair>
+				<Pair key="info_rsc"><String>msg_system_activation_ps3_psp_info_psn</String></Pair>
+				<Pair key="icon_rsc"><String>item_tex_cam_icon</String></Pair>
+				<Pair key="title_rsc"><String>msg_system_activation_psn</String></Pair>
+			</Table>
+			<Table key="seg_cam_facebook">
+				<Pair key="info"><String>seg_cam_facebook</String></Pair>
+				<Pair key="info_rsc"><String>msg_facebook_cam_explanation_psn</String></Pair>
+				<Pair key="icon_rsc"><String>item_tex_cam_facebook</String></Pair>
+				<Pair key="title_rsc"><String>msg_facebook</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+			<Query class="type:x-xmb/xmlnpsignup" key="seg_cam_change_info" attr="seg_cam_change_info" />
+			<Query class="type:x-xmb/xmlnpsignup" key="seg_cam_sub_account" attr="seg_cam_sub_account" />
+			<Query class="type:x-xmb/xmlnpsignup" key="cam_input_code" attr="cam_input_code" />
+			<Query class="type:x-xmb/xmlnpsignup" key="seg_cam_buying" attr="seg_cam_buying" />
+			<Query class="type:x-xmb/xmlnpsignup" key="seg_cam_authentication" attr="seg_cam_authentication" />
+			<Query class="type:x-xmb/xmlnpsignup" key="seg_cam_facebook" attr="seg_cam_facebook" />
+		</Items>
+	</View>
+
+	<!-- CAM(2) AgeGroup=3 non supported PSStore #AM010-2 -->
+	<View id="seg_cam_no_psstore">
+		<Attributes>
+			<Table key="seg_cam_change_info">
+				<Pair key="info"><String>seg_cam_change_info</String></Pair>
+				<Pair key="info_rsc"><String>msg_registration_information_info_psn</String></Pair>
+				<Pair key="icon_rsc"><String>item_tex_cam_icon</String></Pair>
+				<Pair key="title_rsc"><String>msg_registration_information_psn</String></Pair>
+			</Table>
+			<Table key="seg_cam_sub_account">
+				<Pair key="info"><String>seg_cam_sub_account</String></Pair>
+				<Pair key="info_rsc"><String>msg_sub_account_management_info_psn</String></Pair>
+				<Pair key="icon_rsc"><String>item_tex_cam_icon</String></Pair>
+				<Pair key="title_rsc"><String>msg_sub_account_management_psn</String></Pair>
+			</Table>
+			<Table key="seg_cam_authentication">
+				<Pair key="info"><String>seg_cam_authentication</String></Pair>
+				<Pair key="info_rsc"><String>msg_system_activation_ps3_psp_info_psn</String></Pair>
+				<Pair key="icon_rsc"><String>item_tex_cam_icon</String></Pair>
+				<Pair key="title_rsc"><String>msg_system_activation_psn</String></Pair>
+			</Table>
+			<Table key="seg_cam_facebook">
+				<Pair key="info"><String>seg_cam_facebook</String></Pair>
+				<Pair key="info_rsc"><String>msg_facebook_cam_explanation_psn</String></Pair>
+				<Pair key="icon_rsc"><String>item_tex_cam_facebook</String></Pair>
+				<Pair key="title_rsc"><String>msg_facebook</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+			<Query class="type:x-xmb/xmlnpsignup" key="seg_cam_change_info" attr="seg_cam_change_info" />
+			<Query class="type:x-xmb/xmlnpsignup" key="seg_cam_sub_account" attr="seg_cam_sub_account" />
+			<Query class="type:x-xmb/xmlnpsignup" key="seg_cam_authentication" attr="seg_cam_authentication" />
+			<Query class="type:x-xmb/xmlnpsignup" key="seg_cam_facebook" attr="seg_cam_facebook" />
+		</Items>
+	</View>
+
+	<!-- CAM(2) non support PSStore/no sub account -->
+	<View id="seg_cam_no_psstore_sub">
+		<Attributes>
+			<Table key="seg_cam_change_info">
+				<Pair key="info"><String>seg_cam_change_info</String></Pair>
+				<Pair key="info_rsc"><String>msg_registration_information_info_psn</String></Pair>
+				<Pair key="icon_rsc"><String>item_tex_cam_icon</String></Pair>
+				<Pair key="title_rsc"><String>msg_registration_information_psn</String></Pair>
+			</Table>
+			<Table key="seg_cam_authentication">
+				<Pair key="info"><String>seg_cam_authentication</String></Pair>
+				<Pair key="info_rsc"><String>msg_system_activation_ps3_psp_info_psn</String></Pair>
+				<Pair key="icon_rsc"><String>item_tex_cam_icon</String></Pair>
+				<Pair key="title_rsc"><String>msg_system_activation_psn</String></Pair>
+			</Table>
+			<Table key="seg_cam_facebook">
+				<Pair key="info"><String>seg_cam_facebook</String></Pair>
+				<Pair key="info_rsc"><String>msg_facebook_cam_explanation_psn</String></Pair>
+				<Pair key="icon_rsc"><String>item_tex_cam_facebook</String></Pair>
+				<Pair key="title_rsc"><String>msg_facebook</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+			<Query class="type:x-xmb/xmlnpsignup" key="seg_cam_change_info" attr="seg_cam_change_info" />
+			<Query class="type:x-xmb/xmlnpsignup" key="seg_cam_authentication" attr="seg_cam_authentication" />
+			<Query class="type:x-xmb/xmlnpsignup" key="seg_cam_facebook" attr="seg_cam_facebook" />
+		</Items>
+	</View>
+
+	<!-- CAM(2) AgeGroup=1,2 no sub account #AM011 -->
+	<View id="seg_cam_no_sub">
+		<Attributes>
+			<Table key="seg_cam_change_info">
+				<Pair key="info"><String>seg_cam_change_info</String></Pair>
+				<Pair key="info_rsc"><String>msg_registration_information_info_psn</String></Pair>
+				<Pair key="icon_rsc"><String>item_tex_cam_icon</String></Pair>
+				<Pair key="title_rsc"><String>msg_registration_information_psn</String></Pair>
+			</Table>
+			<Table key="cam_input_code">
+				<Pair key="info"><String>cam_input_code</String></Pair>
+				<Pair key="info_rsc"><String>msg_code_input_info_psn</String></Pair>
+				<Pair key="icon_rsc"><String>item_tex_cam_icon</String></Pair>
+				<Pair key="title_rsc"><String>msg_code_input_psn</String></Pair>
+			</Table>
+			<Table key="seg_cam_buying">
+				<Pair key="info"><String>seg_cam_buying</String></Pair>
+				<Pair key="info_rsc"><String>msg_transaction_management_info_psn</String></Pair>
+				<Pair key="icon_rsc"><String>item_tex_cam_icon</String></Pair>
+				<Pair key="title_rsc"><String>msg_transaction_management_psn</String></Pair>
+			</Table>
+			<Table key="seg_cam_authentication">
+				<Pair key="info"><String>seg_cam_authentication</String></Pair>
+				<Pair key="info_rsc"><String>msg_system_activation_ps3_psp_info_psn</String></Pair>
+				<Pair key="icon_rsc"><String>item_tex_cam_icon</String></Pair>
+				<Pair key="title_rsc"><String>msg_system_activation_psn</String></Pair>
+			</Table>
+			<Table key="seg_cam_facebook">
+				<Pair key="info"><String>seg_cam_facebook</String></Pair>
+				<Pair key="info_rsc"><String>msg_facebook_cam_explanation_psn</String></Pair>
+				<Pair key="icon_rsc"><String>item_tex_cam_facebook</String></Pair>
+				<Pair key="title_rsc"><String>msg_facebook</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+			<Query class="type:x-xmb/xmlnpsignup" key="seg_cam_change_info" attr="seg_cam_change_info" />
+			<Query class="type:x-xmb/xmlnpsignup" key="cam_input_code" attr="cam_input_code" />
+			<Query class="type:x-xmb/xmlnpsignup" key="seg_cam_buying" attr="seg_cam_buying" />
+			<Query class="type:x-xmb/xmlnpsignup" key="seg_cam_authentication" attr="seg_cam_authentication" />
+			<Query class="type:x-xmb/xmlnpsignup" key="seg_cam_facebook" attr="seg_cam_facebook" />
+		</Items>
+	</View>
+
+	<!-- CAM(2) sub account #AM012-1 -->
+	<View id="seg_cam_sub">
+		<Attributes>
+			<Table key="seg_cam_change_info">
+				<Pair key="info"><String>seg_cam_change_info</String></Pair>
+				<Pair key="info_rsc"><String>msg_registration_information_info_psn</String></Pair>
+				<Pair key="icon_rsc"><String>item_tex_cam_icon</String></Pair>
+				<Pair key="title_rsc"><String>msg_registration_information_psn</String></Pair>
+			</Table>
+			<Table key="cam_input_code">
+				<Pair key="info"><String>cam_input_code</String></Pair>
+				<Pair key="info_rsc"><String>msg_code_input_info_psn</String></Pair>
+				<Pair key="icon_rsc"><String>item_tex_cam_icon</String></Pair>
+				<Pair key="title_rsc"><String>msg_code_input_psn</String></Pair>
+			</Table>
+			<Table key="seg_cam_buying">
+				<Pair key="info"><String>seg_cam_buying</String></Pair>
+				<Pair key="info_rsc"><String>msg_transaction_management_info_psn</String></Pair>
+				<Pair key="icon_rsc"><String>item_tex_cam_icon</String></Pair>
+				<Pair key="title_rsc"><String>msg_transaction_management_psn</String></Pair>
+			</Table>
+			<Table key="seg_cam_authentication">
+				<Pair key="info"><String>seg_cam_authentication</String></Pair>
+				<Pair key="info_rsc"><String>msg_system_activation_ps3_psp_info_psn</String></Pair>
+				<Pair key="icon_rsc"><String>item_tex_cam_icon</String></Pair>
+				<Pair key="title_rsc"><String>msg_system_activation_psn</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+			<Query class="type:x-xmb/xmlnpsignup" key="seg_cam_change_info" attr="seg_cam_change_info" />
+			<Query class="type:x-xmb/xmlnpsignup" key="cam_input_code" attr="cam_input_code" />
+			<Query class="type:x-xmb/xmlnpsignup" key="seg_cam_buying" attr="seg_cam_buying" />
+			<Query class="type:x-xmb/xmlnpsignup" key="seg_cam_authentication" attr="seg_cam_authentication" />
+		</Items>
+	</View>
+
+	<!-- CAM(2) sub account / non support PSStore -->
+	<View id="seg_cam_sub_no_psstore">
+		<Attributes>
+			<Table key="seg_cam_change_info">
+				<Pair key="info"><String>seg_cam_change_info</String></Pair>
+				<Pair key="info_rsc"><String>msg_registration_information_info_psn</String></Pair>
+				<Pair key="icon_rsc"><String>item_tex_cam_icon</String></Pair>
+				<Pair key="title_rsc"><String>msg_registration_information_psn</String></Pair>
+			</Table>
+			<Table key="seg_cam_authentication">
+				<Pair key="info"><String>seg_cam_authentication</String></Pair>
+				<Pair key="info_rsc"><String>msg_system_activation_ps3_psp_info_psn</String></Pair>
+				<Pair key="icon_rsc"><String>item_tex_cam_icon</String></Pair>
+				<Pair key="title_rsc"><String>msg_system_activation_psn</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+			<Query class="type:x-xmb/xmlnpsignup" key="seg_cam_change_info" attr="seg_cam_change_info" />
+			<Query class="type:x-xmb/xmlnpsignup" key="seg_cam_authentication" attr="seg_cam_authentication" />
+		</Items>
+
+	</View>
+
+	<!-- CAM(3) AgeGroup=3 #AM020-1 -->
+	<View id="seg_cam_change_info">
+		<Attributes>
+			<Table key="cam_credit_card">
+				<Pair key="info"><String>cam_credit_card</String></Pair>
+				<Pair key="icon_rsc"><String>item_tex_cam_icon</String></Pair>
+				<Pair key="title_rsc"><String>msg_billing_information_psn</String></Pair>
+			</Table>
+			<Table key="cam_signin_id">
+				<Pair key="info"><String>cam_signin_id</String></Pair>
+				<Pair key="icon_rsc"><String>item_tex_cam_icon</String></Pair>
+				<Pair key="title_rsc"><String>msg_id_email_psn</String></Pair>
+			</Table>
+			<Table key="cam_password">
+				<Pair key="info"><String>cam_password</String></Pair>
+				<Pair key="icon_rsc"><String>item_tex_cam_icon</String></Pair>
+				<Pair key="title_rsc"><String>msg_pw_psn</String></Pair>
+			</Table>
+			<Table key="cam_name">
+				<Pair key="info"><String>cam_name</String></Pair>
+				<Pair key="icon_rsc"><String>item_tex_cam_icon</String></Pair>
+				<Pair key="title_rsc"><String>msg_name_psn</String></Pair>
+			</Table>
+			<Table key="cam_address">
+				<Pair key="info"><String>cam_address</String></Pair>
+				<Pair key="icon_rsc"><String>item_tex_cam_icon</String></Pair>
+				<Pair key="title_rsc"><String>msg_address_psn</String></Pair>
+			</Table>
+			<Table key="cam_avatar">
+				<Pair key="info"><String>cam_avatar</String></Pair>
+				<Pair key="icon_rsc"><String>item_tex_cam_icon</String></Pair>
+				<Pair key="title_rsc"><String>msg_avatar_psn</String></Pair>
+			</Table>
+			<Table key="cam_profile">
+				<Pair key="info"><String>cam_profile</String></Pair>
+				<Pair key="info_rsc"><String>msg_profile_info_psn</String></Pair>
+				<Pair key="icon_rsc"><String>item_tex_cam_icon</String></Pair>
+				<Pair key="title_rsc"><String>msg_profile_psn</String></Pair>
+			</Table>
+			<Table key="cam_notification">
+				<Pair key="info"><String>cam_notification</String></Pair>
+				<Pair key="info_rsc"><String>msg_notification_preferences_info_psn</String></Pair>
+				<Pair key="icon_rsc"><String>item_tex_cam_icon</String></Pair>
+				<Pair key="title_rsc"><String>msg_notification_preferences_psn</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+			<Query class="type:x-xmb/xmlnpsignup" key="cam_credit_card" attr="cam_credit_card" />
+			<Query class="type:x-xmb/xmlnpsignup" key="cam_signin_id" attr="cam_signin_id" />
+			<Query class="type:x-xmb/xmlnpsignup" key="cam_password" attr="cam_password" />
+			<Query class="type:x-xmb/xmlnpsignup" key="cam_name" attr="cam_name" />
+			<Query class="type:x-xmb/xmlnpsignup" key="cam_address" attr="cam_address" />
+			<Query class="type:x-xmb/xmlnpsignup" key="cam_avatar" attr="cam_avatar" />
+			<Query class="type:x-xmb/xmlnpsignup" key="cam_profile" attr="cam_profile" />
+			<Query class="type:x-xmb/xmlnpsignup" key="cam_notification" attr="cam_notification" />
+		</Items>
+	</View>
+	<!-- CAM(3) AgeGroup=3 #AM020-1 No CreditCard(Mexico/Korea) -->
+	<View id="seg_cam_change_info_no_cc">
+		<Attributes>
+			<Table key="cam_signin_id">
+				<Pair key="info"><String>cam_signin_id</String></Pair>
+				<Pair key="icon_rsc"><String>item_tex_cam_icon</String></Pair>
+				<Pair key="title_rsc"><String>msg_id_email_psn</String></Pair>
+			</Table>
+			<Table key="cam_password">
+				<Pair key="info"><String>cam_password</String></Pair>
+				<Pair key="icon_rsc"><String>item_tex_cam_icon</String></Pair>
+				<Pair key="title_rsc"><String>msg_pw_psn</String></Pair>
+			</Table>
+			<Table key="cam_name">
+				<Pair key="info"><String>cam_name</String></Pair>
+				<Pair key="icon_rsc"><String>item_tex_cam_icon</String></Pair>
+				<Pair key="title_rsc"><String>msg_name_psn</String></Pair>
+			</Table>
+			<Table key="cam_address">
+				<Pair key="info"><String>cam_address</String></Pair>
+				<Pair key="icon_rsc"><String>item_tex_cam_icon</String></Pair>
+				<Pair key="title_rsc"><String>msg_address_psn</String></Pair>
+			</Table>
+			<Table key="cam_avatar">
+				<Pair key="info"><String>cam_avatar</String></Pair>
+				<Pair key="icon_rsc"><String>item_tex_cam_icon</String></Pair>
+				<Pair key="title_rsc"><String>msg_avatar_psn</String></Pair>
+			</Table>
+			<Table key="cam_profile">
+				<Pair key="info"><String>cam_profile</String></Pair>
+				<Pair key="info_rsc"><String>msg_profile_info_psn</String></Pair>
+				<Pair key="icon_rsc"><String>item_tex_cam_icon</String></Pair>
+				<Pair key="title_rsc"><String>msg_profile_psn</String></Pair>
+			</Table>
+			<Table key="cam_notification">
+				<Pair key="info"><String>cam_notification</String></Pair>
+				<Pair key="info_rsc"><String>msg_notification_preferences_info_psn</String></Pair>
+				<Pair key="icon_rsc"><String>item_tex_cam_icon</String></Pair>
+				<Pair key="title_rsc"><String>msg_notification_preferences_psn</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+			<Query class="type:x-xmb/xmlnpsignup" key="cam_signin_id" attr="cam_signin_id" />
+			<Query class="type:x-xmb/xmlnpsignup" key="cam_password" attr="cam_password" />
+			<Query class="type:x-xmb/xmlnpsignup" key="cam_name" attr="cam_name" />
+			<Query class="type:x-xmb/xmlnpsignup" key="cam_address" attr="cam_address" />
+			<Query class="type:x-xmb/xmlnpsignup" key="cam_avatar" attr="cam_avatar" />
+			<Query class="type:x-xmb/xmlnpsignup" key="cam_profile" attr="cam_profile" />
+			<Query class="type:x-xmb/xmlnpsignup" key="cam_notification" attr="cam_notification" />
+		</Items>
+	</View>
+
+
+	<!-- CAM(3) AgeGroup=3 non supported PSStore #AM020-2 -->
+	<View id="seg_cam_change_info_no_psstore">
+		<Attributes>
+			<Table key="cam_signin_id">
+				<Pair key="info"><String>cam_signin_id</String></Pair>
+				<Pair key="icon_rsc"><String>item_tex_cam_icon</String></Pair>
+				<Pair key="title_rsc"><String>msg_id_email_psn</String></Pair>
+			</Table>
+			<Table key="cam_password">
+				<Pair key="info"><String>cam_password</String></Pair>
+				<Pair key="icon_rsc"><String>item_tex_cam_icon</String></Pair>
+				<Pair key="title_rsc"><String>msg_pw_psn</String></Pair>
+			</Table>
+			<Table key="cam_name">
+				<Pair key="info"><String>cam_name</String></Pair>
+				<Pair key="icon_rsc"><String>item_tex_cam_icon</String></Pair>
+				<Pair key="title_rsc"><String>msg_name_psn</String></Pair>
+			</Table>
+			<Table key="cam_address">
+				<Pair key="info"><String>cam_address</String></Pair>
+				<Pair key="icon_rsc"><String>item_tex_cam_icon</String></Pair>
+				<Pair key="title_rsc"><String>msg_address_psn</String></Pair>
+			</Table>
+			<Table key="cam_avatar">
+				<Pair key="info"><String>cam_avatar</String></Pair>
+				<Pair key="icon_rsc"><String>item_tex_cam_icon</String></Pair>
+				<Pair key="title_rsc"><String>msg_avatar_psn</String></Pair>
+			</Table>
+			<Table key="cam_profile">
+				<Pair key="info"><String>cam_profile</String></Pair>
+				<Pair key="info_rsc"><String>msg_profile_info_psn</String></Pair>
+				<Pair key="icon_rsc"><String>item_tex_cam_icon</String></Pair>
+				<Pair key="title_rsc"><String>msg_profile_psn</String></Pair>
+			</Table>
+			<Table key="cam_notification">
+				<Pair key="info"><String>cam_notification</String></Pair>
+				<Pair key="info_rsc"><String>msg_notification_preferences_info_psn</String></Pair>
+				<Pair key="icon_rsc"><String>item_tex_cam_icon</String></Pair>
+				<Pair key="title_rsc"><String>msg_notification_preferences_psn</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+			<Query class="type:x-xmb/xmlnpsignup" key="cam_signin_id" attr="cam_signin_id" />
+			<Query class="type:x-xmb/xmlnpsignup" key="cam_password" attr="cam_password" />
+			<Query class="type:x-xmb/xmlnpsignup" key="cam_name" attr="cam_name" />
+			<Query class="type:x-xmb/xmlnpsignup" key="cam_address" attr="cam_address" />
+			<Query class="type:x-xmb/xmlnpsignup" key="cam_avatar" attr="cam_avatar" />
+			<Query class="type:x-xmb/xmlnpsignup" key="cam_profile" attr="cam_profile" />
+			<Query class="type:x-xmb/xmlnpsignup" key="cam_notification" attr="cam_notification" />
+		</Items>
+	</View>
+
+	<!-- CAM(3) AgeGroup=2 #AM022 -->
+	<View id="seg_cam_change_info_agegroup2">
+		<Attributes>
+			<Table key="cam_signin_id">
+				<Pair key="info"><String>cam_signin_id</String></Pair>
+				<Pair key="icon_rsc"><String>item_tex_cam_icon</String></Pair>
+				<Pair key="title_rsc"><String>msg_id_email_psn</String></Pair>
+			</Table>
+			<Table key="cam_password">
+				<Pair key="info"><String>cam_password</String></Pair>
+				<Pair key="icon_rsc"><String>item_tex_cam_icon</String></Pair>
+				<Pair key="title_rsc"><String>msg_pw_psn</String></Pair>
+			</Table>
+			<Table key="cam_name">
+				<Pair key="info"><String>cam_name</String></Pair>
+				<Pair key="icon_rsc"><String>item_tex_cam_icon</String></Pair>
+				<Pair key="title_rsc"><String>msg_name_psn</String></Pair>
+			</Table>
+			<Table key="cam_address">
+				<Pair key="info"><String>cam_address</String></Pair>
+				<Pair key="icon_rsc"><String>item_tex_cam_icon</String></Pair>
+				<Pair key="title_rsc"><String>msg_address_psn</String></Pair>
+			</Table>
+			<Table key="cam_avatar">
+				<Pair key="info"><String>cam_avatar</String></Pair>
+				<Pair key="icon_rsc"><String>item_tex_cam_icon</String></Pair>
+				<Pair key="title_rsc"><String>msg_avatar_psn</String></Pair>
+			</Table>
+			<Table key="cam_profile">
+				<Pair key="info"><String>cam_profile</String></Pair>
+				<Pair key="info_rsc"><String>msg_profile_info_psn</String></Pair>
+				<Pair key="icon_rsc"><String>item_tex_cam_icon</String></Pair>
+				<Pair key="title_rsc"><String>msg_profile_psn</String></Pair>
+			</Table>
+			<Table key="cam_notification">
+				<Pair key="info"><String>cam_notification</String></Pair>
+				<Pair key="info_rsc"><String>msg_notification_preferences_info_psn</String></Pair>
+				<Pair key="icon_rsc"><String>item_tex_cam_icon</String></Pair>
+				<Pair key="title_rsc"><String>msg_notification_preferences_psn</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+			<Query class="type:x-xmb/xmlnpsignup" key="cam_signin_id" attr="cam_signin_id" />
+			<Query class="type:x-xmb/xmlnpsignup" key="cam_password" attr="cam_password" />
+			<Query class="type:x-xmb/xmlnpsignup" key="cam_name" attr="cam_name" />
+			<Query class="type:x-xmb/xmlnpsignup" key="cam_address" attr="cam_address" />
+			<Query class="type:x-xmb/xmlnpsignup" key="cam_avatar" attr="cam_avatar" />
+			<Query class="type:x-xmb/xmlnpsignup" key="cam_profile" attr="cam_profile" />
+			<Query class="type:x-xmb/xmlnpsignup" key="cam_notification" attr="cam_notification" />
+		</Items>
+	</View>
+
+	<!-- CAM(3) AgeGroup=1 #AM023 -->
+	<View id="seg_cam_change_info_agegroup1">
+		<Attributes>
+			<Table key="cam_signin_id">
+				<Pair key="info"><String>cam_signin_id</String></Pair>
+				<Pair key="icon_rsc"><String>item_tex_cam_icon</String></Pair>
+				<Pair key="title_rsc"><String>msg_id_email_psn</String></Pair>
+			</Table>
+			<Table key="cam_password">
+				<Pair key="info"><String>cam_password</String></Pair>
+				<Pair key="icon_rsc"><String>item_tex_cam_icon</String></Pair>
+				<Pair key="title_rsc"><String>msg_pw_psn</String></Pair>
+			</Table>
+			<Table key="cam_name">
+				<Pair key="info"><String>cam_name</String></Pair>
+				<Pair key="icon_rsc"><String>item_tex_cam_icon</String></Pair>
+				<Pair key="title_rsc"><String>msg_name_psn</String></Pair>
+			</Table>
+			<Table key="cam_address">
+				<Pair key="info"><String>cam_address</String></Pair>
+				<Pair key="icon_rsc"><String>item_tex_cam_icon</String></Pair>
+				<Pair key="title_rsc"><String>msg_address_psn</String></Pair>
+			</Table>
+			<Table key="cam_avatar">
+				<Pair key="info"><String>cam_avatar</String></Pair>
+				<Pair key="icon_rsc"><String>item_tex_cam_icon</String></Pair>
+				<Pair key="title_rsc"><String>msg_avatar_psn</String></Pair>
+			</Table>
+			<Table key="cam_profile">
+				<Pair key="info"><String>cam_profile</String></Pair>
+				<Pair key="info_rsc"><String>msg_profile_info_psn</String></Pair>
+				<Pair key="icon_rsc"><String>item_tex_cam_icon</String></Pair>
+				<Pair key="title_rsc"><String>msg_profile_psn</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+			<Query class="type:x-xmb/xmlnpsignup" key="cam_signin_id" attr="cam_signin_id" />
+			<Query class="type:x-xmb/xmlnpsignup" key="cam_password" attr="cam_password" />
+			<Query class="type:x-xmb/xmlnpsignup" key="cam_name" attr="cam_name" />
+			<Query class="type:x-xmb/xmlnpsignup" key="cam_address" attr="cam_address" />
+			<Query class="type:x-xmb/xmlnpsignup" key="cam_avatar" attr="cam_avatar" />
+			<Query class="type:x-xmb/xmlnpsignup" key="cam_profile" attr="cam_profile" />
+		</Items>
+	</View>
+
+	<View id="seg_cam_sub_account">
+		<Attributes>
+			<Table key="cam_sub_account_limitation">
+				<Pair key="info"><String>cam_sub_account_limitation</String></Pair>
+				<Pair key="info_rsc"><String>msg_parental_control_info_psn</String></Pair>
+				<Pair key="icon_rsc"><String>item_tex_cam_icon</String></Pair>
+				<Pair key="title_rsc"><String>msg_parental_control_psn</String></Pair>
+			</Table>
+			<Table key="cam_sub_account_password">
+				<Pair key="info"><String>cam_sub_account_password</String></Pair>
+				<Pair key="icon_rsc"><String>item_tex_cam_icon</String></Pair>
+				<Pair key="title_rsc"><String>msg_change_password_psn</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+			<Query class="type:x-xmb/xmlnpsignup" key="cam_sub_account_limitation" attr="cam_sub_account_limitation" />
+			<Query class="type:x-xmb/xmlnpsignup" key="cam_sub_account_password" attr="cam_sub_account_password" />
+		</Items>
+	</View>
+
+	<!-- CAM(3) #AM025 -->
+	<View id="seg_cam_buying">
+		<Attributes>
+			<Table key="cam_charge">
+				<Pair key="info"><String>cam_charge</String></Pair>
+				<Pair key="icon_rsc"><String>item_tex_cam_icon</String></Pair>
+				<Pair key="title_rsc"><String>msg_add_funds_psn</String></Pair>
+			</Table>
+			<Table key="cam_password_confirm">
+				<Pair key="info"><String>cam_password_confirm</String></Pair>
+				<Pair key="icon_rsc"><String>item_tex_cam_icon</String></Pair>
+				<Pair key="title_rsc"><String>msg_password_on_checkout_psn</String></Pair>
+			</Table>
+			<Table key="cam_auto_charge">
+				<Pair key="info"><String>cam_auto_charge</String></Pair>
+				<Pair key="info_rsc"><String>msg_auto_add_funds_info_psn</String></Pair>
+				<Pair key="icon_rsc"><String>item_tex_cam_icon</String></Pair>
+				<Pair key="title_rsc"><String>msg_auto_add_funds_psn</String></Pair>
+			</Table>
+			<Table key="cam_history">
+				<Pair key="info"><String>cam_history</String></Pair>
+				<Pair key="info_rsc"><String>msg_transaction_history_info_psn</String></Pair>
+				<Pair key="icon_rsc"><String>item_tex_cam_icon</String></Pair>
+				<Pair key="title_rsc"><String>msg_transaction_history_psn</String></Pair>
+			</Table>
+			<Table key="cam_download_list">
+				<Pair key="info"><String>cam_download_list</String></Pair>
+				<Pair key="info_rsc"><String>msg_download_list_info_psn</String></Pair>
+				<Pair key="icon_rsc"><String>item_tex_cam_icon</String></Pair>
+				<Pair key="title_rsc"><String>msg_download_list_psn</String></Pair>
+			</Table>
+			<Table key="cam_service_list">
+				<Pair key="info"><String>cam_service_list</String></Pair>
+				<Pair key="info_rsc"><String>msg_service_list_info_psn</String></Pair>
+				<Pair key="icon_rsc"><String>item_tex_cam_icon</String></Pair>
+				<Pair key="title_rsc"><String>msg_service_list_psn</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+			<Query class="type:x-xmb/xmlnpsignup" key="cam_charge" attr="cam_charge" />
+			<Query class="type:x-xmb/xmlnpsignup" key="cam_password_confirm" attr="cam_password_confirm" />
+			<Query class="type:x-xmb/xmlnpsignup" key="cam_auto_charge" attr="cam_auto_charge" />
+			<Query class="type:x-xmb/xmlnpsignup" key="cam_history" attr="cam_history" />
+			<Query class="type:x-xmb/xmlnpsignup" key="cam_download_list" attr="cam_download_list" />
+			<Query class="type:x-xmb/xmlnpsignup" key="cam_service_list" attr="cam_service_list" />
+		</Items>
+	</View>
+
+	<!-- CAM(3) #AM025 No CreditCard(No AutoCharge Mexico/Korea) -->
+	<View id="seg_cam_buying_no_cc">
+		<Attributes>
+			<Table key="cam_charge">
+				<Pair key="info"><String>cam_charge</String></Pair>
+				<Pair key="icon_rsc"><String>item_tex_cam_icon</String></Pair>
+				<Pair key="title_rsc"><String>msg_add_funds_psn</String></Pair>
+			</Table>
+			<Table key="cam_password_confirm">
+				<Pair key="info"><String>cam_password_confirm</String></Pair>
+				<Pair key="icon_rsc"><String>item_tex_cam_icon</String></Pair>
+				<Pair key="title_rsc"><String>msg_password_on_checkout_psn</String></Pair>
+			</Table>
+			<Table key="cam_history">
+				<Pair key="info"><String>cam_history</String></Pair>
+				<Pair key="info_rsc"><String>msg_transaction_history_info_psn</String></Pair>
+				<Pair key="icon_rsc"><String>item_tex_cam_icon</String></Pair>
+				<Pair key="title_rsc"><String>msg_transaction_history_psn</String></Pair>
+			</Table>
+			<Table key="cam_download_list">
+				<Pair key="info"><String>cam_download_list</String></Pair>
+				<Pair key="info_rsc"><String>msg_download_list_info_psn</String></Pair>
+				<Pair key="icon_rsc"><String>item_tex_cam_icon</String></Pair>
+				<Pair key="title_rsc"><String>msg_download_list_psn</String></Pair>
+			</Table>
+			<Table key="cam_service_list">
+				<Pair key="info"><String>cam_service_list</String></Pair>
+				<Pair key="info_rsc"><String>msg_service_list_info_psn</String></Pair>
+				<Pair key="icon_rsc"><String>item_tex_cam_icon</String></Pair>
+				<Pair key="title_rsc"><String>msg_service_list_psn</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+			<Query class="type:x-xmb/xmlnpsignup" key="cam_charge" attr="cam_charge" />
+			<Query class="type:x-xmb/xmlnpsignup" key="cam_password_confirm" attr="cam_password_confirm" />
+			<Query class="type:x-xmb/xmlnpsignup" key="cam_history" attr="cam_history" />
+			<Query class="type:x-xmb/xmlnpsignup" key="cam_download_list" attr="cam_download_list" />
+			<Query class="type:x-xmb/xmlnpsignup" key="cam_service_list" attr="cam_service_list" />
+		</Items>
+	</View>
+
+	<!-- CAM(3) sub account #AM026 -->
+	<View id="seg_cam_buying_sub_account">
+		<Attributes>
+			<Table key="cam_history">
+				<Pair key="info"><String>cam_history</String></Pair>
+				<Pair key="info_rsc"><String>msg_transaction_history_info_psn</String></Pair>
+				<Pair key="icon_rsc"><String>item_tex_cam_icon</String></Pair>
+				<Pair key="title_rsc"><String>msg_transaction_history_psn</String></Pair>
+			</Table>
+			<Table key="cam_download_list">
+				<Pair key="info"><String>cam_download_list</String></Pair>
+				<Pair key="info_rsc"><String>msg_download_list_info_psn</String></Pair>
+				<Pair key="icon_rsc"><String>item_tex_cam_icon</String></Pair>
+				<Pair key="title_rsc"><String>msg_download_list_psn</String></Pair>
+			</Table>
+			<Table key="cam_service_list">
+				<Pair key="info"><String>cam_service_list</String></Pair>
+				<Pair key="info_rsc"><String>msg_service_list_info_psn</String></Pair>
+				<Pair key="icon_rsc"><String>item_tex_cam_icon</String></Pair>
+				<Pair key="title_rsc"><String>msg_service_list_psn</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+			<Query class="type:x-xmb/xmlnpsignup" key="cam_history" attr="cam_history" />
+			<Query class="type:x-xmb/xmlnpsignup" key="cam_download_list" attr="cam_download_list" />
+			<Query class="type:x-xmb/xmlnpsignup" key="cam_service_list" attr="cam_service_list" />
+		</Items>
+	</View>
+
+	<View id="seg_cam_authentication">
+		<Attributes>
+			<Table key="cam_auth_ps3">
+				<Pair key="info"><String>cam_auth_ps3</String></Pair>
+				<Pair key="info_rsc"><String>msg_system_activation_deactivation_info_psn</String></Pair>
+				<Pair key="icon_rsc"><String>item_tex_cam_icon</String></Pair>
+				<Pair key="title_rsc"><String>msg_ps3_psn</String></Pair>
+			</Table>
+			<Table key="cam_auth_psp">
+				<Pair key="info"><String>cam_auth_psp</String></Pair>
+				<Pair key="info_rsc"><String>msg_activate_psp_psn</String></Pair>
+				<Pair key="icon_rsc"><String>item_tex_cam_icon</String></Pair>
+				<Pair key="title_rsc"><String>msg_psp_abbreviated_psn</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+			<Query class="type:x-xmb/xmlnpsignup" key="cam_auth_ps3" attr="cam_auth_ps3" />
+			<Query class="type:x-xmb/xmlnpsignup" key="cam_auth_psp" attr="cam_auth_psp" />
+		</Items>
+	</View>
+
+	<!-- CAM(3) #AM251, #AM254, #AM257, AM263 -->
+	<View id="seg_cam_facebook">
+		<Attributes>
+			<Table key="cam_facebook_trophy">
+				<Pair key="info"><String>cam_facebook_trophy</String></Pair>
+				<Pair key="info_rsc"><String>msg_publish_trophy_explanation_psn</String></Pair>
+				<Pair key="icon_rsc"><String>item_tex_cam_icon</String></Pair>
+				<Pair key="title_rsc"><String>msg_publish_trophy_psn</String></Pair>
+			</Table>
+			<Table key="cam_facebook_purchase">
+				<Pair key="info"><String>cam_facebook_purchase</String></Pair>
+				<Pair key="info_rsc"><String>msg_publish_purchase_explanation_psn</String></Pair>
+				<Pair key="icon_rsc"><String>item_tex_cam_icon</String></Pair>
+				<Pair key="title_rsc"><String>msg_publish_purchase_psn</String></Pair>
+			</Table>
+			<Table key="cam_facebook_game_event">
+				<Pair key="info"><String>cam_facebook_game_event</String></Pair>
+				<Pair key="info_rsc"><String>msg_publish_game_event_explanation_psn</String></Pair>
+				<Pair key="icon_rsc"><String>item_tex_cam_icon</String></Pair>
+				<Pair key="title_rsc"><String>msg_publish_game_event_psn</String></Pair>
+			</Table>
+			<Table key="cam_facebook_game_integrations">
+				<Pair key="info"><String>cam_facebook_game_integrations</String></Pair>
+				<Pair key="info_rsc"><String>msg_allow_access_from_game_explanation_psn</String></Pair>
+				<Pair key="icon_rsc"><String>item_tex_cam_icon</String></Pair>
+				<Pair key="title_rsc"><String>msg_allow_access_from_game_psn</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+			<Query class="type:x-xmb/xmlnpsignup" key="cam_facebook_trophy" attr="cam_facebook_trophy" />
+			<Query class="type:x-xmb/xmlnpsignup" key="cam_facebook_purchase" attr="cam_facebook_purchase" />
+			<Query class="type:x-xmb/xmlnpsignup" key="cam_facebook_game_event" attr="cam_facebook_game_event" />
+			<Query class="type:x-xmb/xmlnpsignup" key="cam_facebook_game_integrations" attr="cam_facebook_game_integrations" />
+		</Items>
+	</View>
+
+	<!-- CAM(3) non supported PSStore #AM251, #AM257, AM263 -->
+	<View id="seg_cam_facebook_no_psstore">
+		<Attributes>
+			<Table key="cam_facebook_trophy">
+				<Pair key="info"><String>cam_facebook_trophy</String></Pair>
+				<Pair key="info_rsc"><String>msg_publish_trophy_explanation_psn</String></Pair>
+				<Pair key="icon_rsc"><String>item_tex_cam_icon</String></Pair>
+				<Pair key="title_rsc"><String>msg_publish_trophy_psn</String></Pair>
+			</Table>
+			<Table key="cam_facebook_game_event">
+				<Pair key="info"><String>cam_facebook_game_event</String></Pair>
+				<Pair key="info_rsc"><String>msg_publish_game_event_explanation_psn</String></Pair>
+				<Pair key="icon_rsc"><String>item_tex_cam_icon</String></Pair>
+				<Pair key="title_rsc"><String>msg_publish_game_event_psn</String></Pair>
+			</Table>
+			<Table key="cam_facebook_game_integrations">
+				<Pair key="info"><String>cam_facebook_game_integrations</String></Pair>
+				<Pair key="info_rsc"><String>msg_allow_access_from_game_explanation_psn</String></Pair>
+				<Pair key="icon_rsc"><String>item_tex_cam_icon</String></Pair>
+				<Pair key="title_rsc"><String>msg_allow_access_from_game_psn</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+			<Query class="type:x-xmb/xmlnpsignup" key="cam_facebook_trophy" attr="cam_facebook_trophy" />
+			<Query class="type:x-xmb/xmlnpsignup" key="cam_facebook_game_event" attr="cam_facebook_game_event" />
+			<Query class="type:x-xmb/xmlnpsignup" key="cam_facebook_game_integrations" attr="cam_facebook_game_integrations" />
+		</Items>
+	</View>
+
+	<!-- CAM(3) #AM260 -->
+	<View id="seg_cam_facebook_del_acc">
+		<Attributes>
+			<Table key="cam_facebook_del_account">
+				<Pair key="info"><String>cam_facebook_del_account</String></Pair>
+				<Pair key="info_rsc"><String>msg_delete_account_info_explanation_psn</String></Pair>
+				<Pair key="icon_rsc"><String>item_tex_cam_icon</String></Pair>
+				<Pair key="title_rsc"><String>msg_delete_account_info_psn</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+			<Query class="type:x-xmb/xmlnpsignup" key="cam_facebook_del_account" attr="cam_facebook_del_account" />
+		</Items>
+	</View>
+
+	<View id="seg_commerce">
+		<Attributes>
+			<Table key="commerce">
+				<Pair key="info"><String>commerce</String></Pair>
+ 			</Table>
+		</Attributes>
+		<Items>
+			<Item class="type:x-xmb/xmlnpsignup" key="commerce"	attr="commerce" />
+		</Items>
+	</View>
+
+	<View id="seg_commerce_new">
+		<Attributes>
+			<Table key="commerce_new">
+				<Pair key="info"><String>commerce_new</String></Pair>
+ 			</Table>
+		</Attributes>
+		<Items>
+			<Item class="type:x-xmb/xmlnpsignup" key="commerce_new"	attr="commerce_new" />
+		</Items>
+	</View>
+
+	<View id="seg_regist">
+		<Attributes>
+			<Table key="regcam_reg">
+				<Pair key="info"><String>regcam_reg</String></Pair>
+ 			</Table>
+		</Attributes>
+		<Items>
+			<Item
+				class="type:x-xmb/xmlnpsignup"
+				key="regcam_reg"
+				attr="regcam_reg" />
+		</Items>
+	</View>
+
+	<View id="seg_reg_quick">
+		<Attributes>
+			<Table key="regcam_reg_quick">
+					<Pair key="info"><String>regcam_reg_quick</String></Pair>
+ 			</Table>
+		</Attributes>
+		<Items>
+			<Item
+				class="type:x-xmb/xmlnpsignup"
+				key="regcam_reg_quick"
+				attr="regcam_reg_quick" />
+		</Items>
+	</View>
+
+	<View id="seg_regist_merlin">
+		<Attributes>
+			<Table key="regcam_reg">
+				<Pair key="info"><String>regcam_reg</String></Pair>
+ 			</Table>
+			<Table key="registration">
+				<Pair key="info"><String>registration</String></Pair>
+			</Table>
+			<Table key="account_management">
+				<Pair key="info"><String>account_management</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+			<Item
+				class="type:x-xmb/xmlnpsignup"
+				key="regcam_reg"
+				attr="regcam_reg" />
+			<Item
+				class="type:x-xmb/xmlnpsignup"
+				key="registration"
+				attr="registration" />
+			<Item
+				class="type:x-xmb/xmlnpsignup"
+				key="account_management"
+				attr="account_management" />
+		</Items>
+	</View>
+
+	<View id="seg_regist_hide">
+		<Attributes>
+			<Table key="registration">
+				<Pair key="info"><String>registration</String></Pair>
+ 			</Table>
+			<Table key="regcam_reg">
+				<Pair key="info"><String>regcam_reg</String></Pair>
+			</Table>
+			<Table key="regcam_cam">
+				<Pair key="info"><String>regcam_cam</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+			<Item
+				class="type:x-xmb/xmlnpsignup"
+				key="registration"
+				attr="registration" />
+		</Items>
+	</View>
+
+	<View id="seg_gameexit">
+		<Items>
+			<Item class="type:x-xmb/xmlgameexit" key="gameexit" />
+		</Items>
+	</View>
+
+	<View id="seg_home">
+		<Attributes>
+			<Table key="home_install">
+				<Pair key="info"><String>home_install</String></Pair>
+				<Pair key="pkg_src"><String>http://pkg.ww.home.playstation.net/home/ww/home/EP9000-NPIA00005_00-HOME000000000001-E.pkg</String></Pair>
+				<Pair key="pkg_src_qa"><String>http://pkg.xx.home.playstation.net/home/xx/home/EP9000-NPIA00005_00-HOME000000000001-E.pkg</String></Pair>
+				<Pair key="content_name"><String>msg_playstation_home</String></Pair>
+				<Pair key="content_id"><String>EP9000-NPIA00005_00-HOME000000000001</String></Pair>
+				<Pair key="instruction_rsc"><String>msg_playstation_home_explanation</String></Pair>
+				<Pair key="prod_pict_path"><String>/dev_flash/vsh/resource/explore/icon/icon_home.png</String></Pair>
+				<Pair key="focus"><String>last</String></Pair>
+ 			</Table>
+		</Attributes>
+		<Items>
+			<Item class="type:x-xmb/xmlnpsignup" key="home_install"	attr="home_install" />
+		</Items>
+	</View>
+
+	<View id="seg_commerce_shop">
+		<Attributes>
+			<Table key="commerce">
+				<Pair key="icon_rsc"><String>item_tex_ps_store</String></Pair>
+				<Pair key="title_rsc"><String>msg_ps3_portal</String></Pair>
+				<Pair key="module_name"><String>explore_plugin</String></Pair>
+				<Pair key="module_action"><String>NotifyErrorNoExecute</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+				<Pair key="lbl_half"><String>1</String></Pair>
+ 			</Table>
+		</Attributes>
+		<Items>
+			<Item  class="type:x-xmb/module-action"   key="commerce"       attr="commerce" />
+		</Items>
+	</View>
+
+	<View id="seg_account_guest">
+		<Attributes>
+			<Table key="Account">
+				<Pair key="icon_rsc"><String>item_tex_account</String></Pair>
+				<Pair key="icon_notation"><String>WNT_XmbItemFriendAccountManagement</String></Pair>
+				<Pair key="title_rsc"><String>msg_account_manage</String></Pair>
+				<Pair key="module_name"><String>explore_plugin</String></Pair>
+				<Pair key="module_action"><String>NotifyErrorNoExecute</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+				<Pair key="lbl_half"><String>1</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+			<Item  class="type:x-xmb/module-action"   key="Account"          attr="Account" />
+		</Items>
+	</View>
+
+	<View id="seg_home_shop">
+		<Attributes>
+			<Table key="home_shop">
+				<Pair key="icon"><String>/dev_flash/vsh/resource/explore/icon/icon_home.png</String></Pair>
+				<Pair key="title_rsc"><String>msg_playstation_home</String></Pair>
+				<Pair key="module_name"><String>explore_plugin</String></Pair>
+				<Pair key="module_action"><String>NotifyErrorNoExecute</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+				<Pair key="lbl_half"><String>1</String></Pair>
+ 			</Table>
+		</Attributes>
+		<Items>
+			<Item  class="type:x-xmb/module-action"   key="home_shop"       attr="home_shop" />
+		</Items>
+	</View>
+
+	<View id="seg_newstore_preview_ingame">
+		<Attributes>
+			<Table key="newstore_preview_ingame">
+				<Pair key="info"><String>newstore_preview_ingame</String></Pair>
+ 			</Table>
+		</Attributes>
+		<Items>
+			<Item class="type:x-xmb/xmlnpsignup" key="newstore_preview_ingame"	attr="newstore_preview_ingame" />
+		</Items>
+	</View>
+
+	<View id="seg_newstore_preview">
+		<Attributes>
+			<Table key="newstore_preview">
+				<Pair key="info"><String>newstore_preview</String></Pair>
+ 			</Table>
+		</Attributes>
+		<Items>
+			<Item class="type:x-xmb/xmlnpsignup" key="newstore_preview"	attr="newstore_preview" />
+		</Items>
+	</View>
+
+	<View id="seg_welcome">
+		<Attributes>
+			<Table key="welcome">
+				<Pair key="content_type"><String>psn</String></Pair>
+ 			</Table>
+		</Attributes>
+		<Items>
+			<Item class="type:x-xmb/xmlwelcome" key="welcome" attr="welcome" />
+		</Items>
+	</View>
+
+</XMBML>
