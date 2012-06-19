@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<XMBML version="1.0">
+	<View id="root">
+		<Items>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_fixed_items"
+				attr="seg_fixed_items"
+				src="#seg_fixed_items" 
+				/>
+		</Items>
+	</View>
+
+	<View id="seg_fixed_items">
+		<Attributes>
+			<Table key="update">
+				<Pair key="icon_rsc"><String>tex_update</String></Pair>
+				<Pair key="title_rsc"><String>msg_update</String></Pair>
+				<Pair key="module_name"><String>explore_plugin</String></Pair>
+				<Pair key="module_action"><String>NotifyErrorNoExecute</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+				<Pair key="lbl_half"><String>1</String></Pair>
+			</Table>
+			<Table key="edy">
+				<Pair key="icon_rsc"><String>tex_edyviewer</String></Pair>
+				<Pair key="title_rsc"><String>msg_edyviewer</String></Pair>
+				<Pair key="module_name"><String>explore_plugin</String></Pair>
+				<Pair key="module_action"><String>NotifyErrorNoExecute</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+				<Pair key="lbl_half"><String>1</String></Pair>
+			</Table>
+			<Table key="game">
+				<Pair key="icon_rsc"><String>tex_game</String></Pair>
+				<Pair key="title_rsc"><String>msg_game_setting</String></Pair>
+				<Pair key="module_name"><String>explore_plugin</String></Pair>
+				<Pair key="module_action"><String>NotifyErrorNoExecute</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+				<Pair key="lbl_half"><String>1</String></Pair>
+			</Table>
+			<Table key="bd_dvd">
+				<Pair key="icon_rsc"><String>tex_bddvd</String></Pair>
+				<Pair key="title_rsc"><String>msg_video_setting</String></Pair>
+				<Pair key="module_name"><String>explore_plugin</String></Pair>
+				<Pair key="module_action"><String>NotifyErrorNoExecute</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+				<Pair key="lbl_half"><String>1</String></Pair>
+			</Table>
+			<Table key="music">
+				<Pair key="icon_rsc"><String>tex_music</String></Pair>
+				<Pair key="title_rsc"><String>msg_music_setting</String></Pair>
+				<Pair key="module_name"><String>explore_plugin</String></Pair>
+				<Pair key="module_action"><String>NotifyErrorNoExecute</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+				<Pair key="lbl_half"><String>1</String></Pair>
+			</Table>
+			<Table key="chat">
+				<Pair key="icon_rsc"><String>tex_chat</String></Pair>
+				<Pair key="title_rsc"><String>msg_chat_setting</String></Pair>
+				<Pair key="module_name"><String>explore_plugin</String></Pair>
+				<Pair key="module_action"><String>NotifyErrorNoExecute</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+				<Pair key="lbl_half"><String>1</String></Pair>
+			</Table>
+			<Table key="console">
+				<Pair key="icon_rsc"><String>tex_console</String></Pair>
+				<Pair key="title_rsc"><String>msg_console_setting</String></Pair>
+				<Pair key="module_name"><String>explore_plugin</String></Pair>
+				<Pair key="module_action"><String>NotifyErrorNoExecute</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+				<Pair key="lbl_half"><String>1</String></Pair>
+			</Table>
+			<Table key="theme">
+				<Pair key="icon_rsc"><String>tex_thema</String></Pair>
+				<Pair key="title_rsc"><String>msg_theme_settings</String></Pair>
+				<Pair key="module_name"><String>explore_plugin</String></Pair>
+				<Pair key="module_action"><String>NotifyErrorNoExecute</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+				<Pair key="lbl_half"><String>1</String></Pair>
+			</Table>
+			<Table key="date_time">
+				<Pair key="icon_rsc"><String>tex_datetime</String></Pair>
+				<Pair key="title_rsc"><String>msg_datetime_setting</String></Pair>
+				<Pair key="module_name"><String>explore_plugin</String></Pair>
+				<Pair key="module_action"><String>NotifyErrorNoExecute</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+				<Pair key="lbl_half"><String>1</String></Pair>
+			</Table>
+			<Table key="power">
+				<Pair key="icon_rsc"><String>tex_power</String></Pair>
+				<Pair key="title_rsc"><String>msg_power_saving_setting</String></Pair>
+				<Pair key="module_name"><String>explore_plugin</String></Pair>
+				<Pair key="module_action"><String>NotifyErrorNoExecute</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+				<Pair key="lbl_half"><String>1</String></Pair>
+			</Table>
+			<Table key="device">
+				<Pair key="icon_rsc"><String>tex_pd</String></Pair>
+				<Pair key="title_rsc"><String>msg_pd_setting</String></Pair>
+				<Pair key="module_name"><String>explore_plugin</String></Pair>
+				<Pair key="module_action"><String>NotifyErrorNoExecute</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+				<Pair key="lbl_half"><String>1</String></Pair>
+			</Table>
+			<Table key="print">
+				<Pair key="icon_rsc"><String>tex_printer</String></Pair>
+				<Pair key="title_rsc"><String>msg_printer_settings</String></Pair>
+				<Pair key="module_name"><String>explore_plugin</String></Pair>
+				<Pair key="module_action"><String>NotifyErrorNoExecute</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+				<Pair key="lbl_half"><String>1</String></Pair>
+			</Table>
+			<Table key="display">
+				<Pair key="icon_rsc"><String>tex_display</String></Pair>
+				<Pair key="title_rsc"><String>msg_display_setting</String></Pair>
+				<Pair key="module_name"><String>explore_plugin</String></Pair>
+				<Pair key="module_action"><String>NotifyErrorNoExecute</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+				<Pair key="lbl_half"><String>1</String></Pair>
+			</Table>
+			<Table key="sound">
+				<Pair key="icon_rsc"><String>tex_sound</String></Pair>
+				<Pair key="title_rsc"><String>msg_sound_setting</String></Pair>
+				<Pair key="module_name"><String>explore_plugin</String></Pair>
+				<Pair key="module_action"><String>NotifyErrorNoExecute</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+				<Pair key="lbl_half"><String>1</String></Pair>
+			</Table>
+			<Table key="security">
+				<Pair key="icon_rsc"><String>tex_security</String></Pair>
+				<Pair key="title_rsc"><String>msg_security_setting</String></Pair>
+				<Pair key="module_name"><String>explore_plugin</String></Pair>
+				<Pair key="module_action"><String>NotifyErrorNoExecute</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+				<Pair key="lbl_half"><String>1</String></Pair>
+			</Table>
+			<Table key="remote">
+				<Pair key="icon_rsc"><String>tex_remote</String></Pair>
+				<Pair key="title_rsc"><String>msg_remoteplay_setting</String></Pair>
+				<Pair key="module_name"><String>explore_plugin</String></Pair>
+				<Pair key="module_action"><String>NotifyErrorNoExecute</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+				<Pair key="lbl_half"><String>1</String></Pair>
+			</Table>
+			<Table key="network">
+				<Pair key="icon_rsc"><String>tex_network</String></Pair>
+				<Pair key="title_rsc"><String>msg_net_setting</String></Pair>
+				<Pair key="module_name"><String>explore_plugin</String></Pair>
+				<Pair key="module_action"><String>NotifyErrorNoExecute</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+				<Pair key="lbl_half"><String>1</String></Pair>
+			</Table>
+			<Table key="console_qa">
+				<Pair key="icon_rsc"><String>tex_update</String></Pair>
+				<Pair key="title_rsc"><String>msg_tool_debug_settings</String></Pair>
+				<Pair key="module_name"><String>explore_plugin</String></Pair>
+				<Pair key="module_action"><String>NotifyErrorNoExecute</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+				<Pair key="lbl_half"><String>1</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+			<Item  class="type:x-xmb/module-action" key="update"     attr="update" />
+			<Item  class="type:x-xmb/module-action" key="edy"        attr="edy" />
+			<Item  class="type:x-xmb/module-action" key="game"       attr="game" />
+			<Item  class="type:x-xmb/module-action" key="bd_dvd"     attr="bd_dvd" />
+			<Item  class="type:x-xmb/module-action" key="music"      attr="music" />
+			<Item  class="type:x-xmb/module-action" key="chat"       attr="chat" />
+			<Item  class="type:x-xmb/module-action" key="console"    attr="console" />
+			<Item  class="type:x-xmb/module-action" key="theme"      attr="theme" />
+			<Item  class="type:x-xmb/module-action" key="date_time"  attr="date_time" />
+			<Item  class="type:x-xmb/module-action" key="power"      attr="power" />
+			<Item  class="type:x-xmb/module-action" key="device"     attr="device"/>
+			<Item  class="type:x-xmb/module-action" key="print"      attr="print" />
+			<Item  class="type:x-xmb/module-action" key="display"    attr="display" />
+			<Item  class="type:x-xmb/module-action" key="sound"      attr="sound" />
+			<Item  class="type:x-xmb/module-action" key="security"   attr="security" />
+			<Item  class="type:x-xmb/module-action" key="remote"     attr="remote" />
+			<Item  class="type:x-xmb/module-action" key="network"    attr="network" />
+			<Item  class="type:x-xmb/module-action" key="console_qa" attr="console_qa" />
+		</Items>
+	</View>
+
+</XMBML>

@@ -1,0 +1,628 @@
+/********************************************************/
+/* This file contains the default css style properties	*/
+/* Only properties that require a unique behavior (or	*/
+/* that which is different from what the CSS spec		*/
+/* specifies to be the "initial" value) have stylisitic */
+/* informaion explicitly defined here. Otherwise, the	*/
+/* initial values of a style when a DOM	element is		*/
+/* created, will take precedence.						*/
+/********************************************************/
+/*
+ * $Change: 35688 $
+ * $DateTime: 2008/02/01 08:27:38 $
+ * $Header: //depot/Branch_Silk_2_27_0/browser-dev/microbrowser/HTML/Core/css/Platform/Win32/html.css#1 $
+ */
+
+
+/******************************************/
+/* windows                                */
+/******************************************/
+html
+{
+	color: black;
+	display: block ! important;
+	width: auto ! important;
+	height: auto ! important;
+}
+
+body 
+{
+	font-size: medium;	
+	margin: 15px 10px 15px 10px;
+	display: block;
+}
+
+head 
+{
+	display: none;
+}
+
+frameset 
+{
+	display: block ! important;
+}
+
+frame 
+{
+	background-color: white;
+}
+
+iframe 
+{
+	background-color: transparent;
+	border-width: 2px;
+	border-style: inset;
+}
+
+/******************************************/
+/* blocks                                 */
+/******************************************/
+address 
+{
+	font-style: italic;
+	display: block;
+}
+
+blockquote 
+{
+	margin: 1em 40px;
+	display: block;
+}
+
+center 
+{
+	text-align: center;
+	display: block;
+}
+
+div
+{
+	display: block;
+}
+
+fieldset 
+{
+	display: block;
+	border-width: 2px;
+	border-style: groove;
+	padding: 4px;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+hr 
+{
+	border-width: 1px;
+	border-left-color: gray;
+	border-top-color: gray;
+	border-right-color: silver;
+	border-bottom-color: silver;
+	border-style: inset;
+	margin-top: 7px;
+	margin-bottom: 7px;
+	height: 2px;
+	display: block;
+	vertical-align: middle;
+}
+
+legend 
+{
+	display: block;
+	padding-left: 2px;
+	padding-right: 2px;
+	color: #0046d5;
+}
+
+marquee
+{
+	display: block;
+}
+
+p 
+{
+/*	margin: 1.2em 0; bug 2716*/
+	display: block;
+}
+
+/************/
+/* headings */
+/************/
+h1 
+{
+	font-size: 2em;
+	font-weight: bold;
+	margin: .67em 0px;
+	display: block;
+}
+
+h2 
+{
+	font-size: 1.5em;
+	font-weight: bold;
+	margin: .83em 0px;
+	display: block;
+}
+
+h3 
+{
+	font-size: 1.17em;
+	font-weight: bold;
+	margin: 1em 0px;
+	display: block;
+}
+
+h4 
+{
+	font-weight: bold;
+	margin: 1.33em 0px;
+	display: block;
+}
+
+h5 
+{
+	font-size: 0.83em;
+	font-weight: bold;
+	margin: 1.67em 0px;
+	display: block;
+}
+
+h6 
+{
+	font-size: 0.67em;
+	font-weight: bold;
+	margin: 2.33em 0px;
+	display: block;
+}
+
+/****************/
+/* text formats */
+/****************/
+listing 
+{
+	font-family: courier;	/* TODO - change to some mapped font type for xp compatibility */
+	font-size: medium;
+	white-space: pre;
+	margin: 1em 0px;
+	display: block;
+}
+
+pre, plaintext, xmp
+{
+	font-family: "courier";
+	font-size: .85em;
+	white-space: pre;
+	margin: 1em 0px;
+	display: block;
+}
+
+/**********/
+/* tables */
+/**********/
+
+table
+{
+	border-top-color: #ece9d8;
+	border-left-color: #ece9d8;
+	border-bottom-color: #ece9d8;
+	border-right-color: #ece9d8;
+	display: block;
+}
+
+/* IE6 quirk. bug 4764 */
+table
+{
+	white-space: normal;
+}
+
+td 
+{
+	vertical-align: inherit;
+	border-top-color: #ece9d8;
+	border-left-color: #ece9d8;
+	border-bottom-color: #ece9d8;
+	border-right-color: #ece9d8;
+	padding-top: 1px;
+	padding-left: 1px;
+	padding-bottom: 1px;
+	padding-right: 1px;
+	display: block;
+}
+
+th 
+{
+	font-weight: bold;
+	vertical-align: inherit;
+	display: table-cell;
+	border-top-color: #ece9d8;
+	border-left-color: #ece9d8;
+	border-bottom-color: #ece9d8;
+	border-right-color: #ece9d8;
+	padding-top: 1px;
+	padding-left: 1px;
+	padding-bottom: 1px;
+	padding-right: 1px;
+	display: block;
+}
+
+caption 
+{
+	text-align: center;
+
+	padding-top: 1px;
+	padding-left: 4px;
+	padding-bottom: 3px;
+	padding-right: 4px;
+
+	display: block;
+}
+
+tr 
+{
+	vertical-align: inherit;
+	display: block;
+}
+
+tbody, thead, tfoot 
+{
+	vertical-align: middle;
+	display: block;
+}
+
+col, colgroup
+{
+	display: block;
+}
+
+/******************************************/
+/* img default                            */
+/******************************************/
+img {
+	border: 4px;
+}
+
+/******************************************/
+/* spans                                  */
+/******************************************/
+:link
+{
+	color: blue;
+	text-decoration: underline;
+}
+
+:visited 
+{
+	color: purple;
+	text-decoration: underline;
+}
+
+:link img
+{
+	border-width: 2px;
+	border-style: solid;
+}
+
+/* ????????????????  WHY DO WE HAVE THIS COMMENTED OUT ??????????????????
+:link img, :visited img, :active img
+{
+	border-width: 2px;
+	border-style: solid;
+}
+
+:link img
+{
+	border-color: blue;
+}
+
+:visited img
+{
+	border-color: purple;
+}
+*/
+
+b, strong 
+{
+	font-weight: bolder;
+}
+
+i, cite, em, var 
+{
+	font-style: italic;
+}
+
+tt, code, kbd, samp 
+{
+	font-family: courier;
+	font-size: .85em;
+}
+
+u 
+{
+	text-decoration: underline;
+}
+
+s, strike 
+{
+	text-decoration: line-through;
+}
+
+blink 
+{
+	text-decoration: blink;
+}
+
+big 
+{
+	font-size: larger; 
+}
+
+small 
+{
+	font-size: smaller;
+}
+
+ins 
+{ 
+	text-decoration: underline; 
+}
+
+del 
+{ 
+	text-decoration: line-through; 
+}
+
+dfn 
+{ 
+	font-style: italic; 
+}
+
+sub, sup 
+{
+	font-size: smaller;
+}
+
+sub 
+{
+	vertical-align: sub;
+}
+
+sup 
+{
+	vertical-align: super;
+}
+
+img 
+{
+	text-align: bottom;
+}
+
+nobr 
+{
+	white-space: nowrap;
+}
+
+/******************************************/
+/* lists                                  */
+/******************************************/
+ul, menu, dir 
+{
+	list-style-type: disc;
+	margin: 1.2em 0px 1.2em 40px;
+	display: block;
+}
+
+ol 
+{
+	list-style-type: decimal;
+	margin: 1.2em 0px 1.2em 40px;
+	display: block;
+}
+ 
+li 
+{
+	margin: 0px 0px 0px 0px;
+	display: list-item;
+}
+
+/* **-- bug 3953 -- */
+body {
+  list-style-position: inside; 
+}
+
+ul, ol, dir, menu {  
+  list-style-position: outside; 
+}
+
+  ul ul,   ul ol,   ul dir,   ul menu,   ul li,
+  ol ul,   ol ol,   ol dir,   ol menu,   ol li,
+ dir ul,  dir ol,  dir dir,  dir menu,  dir li,
+menu ul, menu ol, menu dir, menu menu, menu li {
+  list-style-position: inherit;
+}
+/* -- bug 3953 --** */
+
+ul ul,   ul ol,   ul menu,   ul dir,
+menu ul, menu ol, menu menu, menu dir,
+dir ul,  dir ol,  dir menu,  dir dir,
+ol ul,   ol ol,   ol menu,   ol dir
+{
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+/* 2 deep unordered lists use a circle */
+ol ul,   ul ul,   menu ul,   dir ul,
+ol menu, ul menu, menu menu, dir menu,
+ol dir,  ul dir,  menu dir,  dir dir
+{
+	list-style-type: circle;
+}
+
+/* 3 deep (or more) unordered lists use a square */
+ol ol ul,   ol ul ul,   ol menu ul,   ol dir ul,
+ol ol menu, ol ul menu, ol menu menu, ol dir menu,
+ol ol dir,  ol ul dir,  ol menu dir,  ol dir dir,
+
+ul ol ul,   ul ul ul,   ul menu ul,   ul dir ul,
+ul ol menu, ul ul menu, ul menu menu, ul dir menu,
+ul ol dir,  ul ul dir,  ul menu dir,  ul dir dir,
+
+menu ol ul,   menu ul ul,   menu menu ul,   menu dir ul,
+menu ol menu, menu ul menu, menu menu menu, menu dir menu,
+menu ol dir,  menu ul dir,  menu menu dir,  menu dir dir,
+
+dir ol ul,   dir ul ul,   dir menu ul,   dir dir ul,
+dir ol menu, dir ul menu, dir menu menu, dir dir menu,
+dir ol dir,  dir ul dir,  dir menu dir,  dir dir dir
+{
+	list-style-type: square;
+}
+
+dl 
+{
+	margin: 1.2em 0px 1.2em 0px;
+	display: block;
+}
+
+dd 
+{
+	margin-left: 40px;
+	display: block;
+}
+
+dt
+{
+	display: block;
+}
+
+dl dl 
+{
+	margin: 0px 0px 0px 40px;
+}
+
+dt dl, dd dl 
+{
+	margin: 0px;
+}
+
+/*********/
+/* forms */
+/*********/
+form 
+{
+	/* 	margin: 1.2em 0 1em 0;  bug 2927 */
+	margin: 0px  0px 1em 0px;
+	display: block;
+}
+
+input 
+{
+	font-family: "Microsoft Sans Serif";
+	font-size: 13px;
+	color: #000000;
+}
+
+select
+{
+	vertical-align: baseline;
+	font-family: "Microsoft Sans Serif";
+	font-size: 13px;
+	background-color: #ffffff;
+	border-width: 2px;
+	border-style: inset;
+	color: black;
+}
+
+label 
+{
+	vertical-align: bottom;
+	padding-left: 3px;
+	padding-right: 3px;
+}
+
+option 
+{
+	font-size: inherit;
+	display: block;
+}
+
+textarea 
+{
+	font-family: "monospace";		/* TODO - change to some mapped font type for xp compatibility */
+	font-size: .85em;
+	vertical-align: bottom;
+	border-width: 2px;
+	border-style: inset;
+	border-color: #c0c0c0;
+	background-color:white;
+	color:black;
+	margin-top:    1px;
+	margin-bottom: 1px;
+	margin-left:   0px;
+	margin-right:  0px;
+}
+
+/****************/
+/* buttons		*/
+/****************/
+
+button 
+{
+	font-family: "Microsoft Sans Serif";
+	font-size: small;
+	background-color: silver;
+	border-width: 2px;
+	border-style: outset;
+	text-align: center;
+}
+
+
+/*************************************************************/
+/* PROPRIETARY SELECTORS, XXX - USE WITH CAUTION - XXX       */
+/*      syntax: input[type] <-- notice NO quotes, NO spaces  */
+/*************************************************************/
+input[button], input[submit], input[reset]
+{
+	background-color: #C0C0C0;
+	border-width: 2px;
+	padding-left: 2px;
+	padding-right: 2px;
+	border-style: outset;
+}
+
+input[text], input[password]
+{
+	background-color: #ffffff;
+	border-width: 2px;
+	border-style: inset;
+}
+
+input[checkbox], input[radio]
+{
+	background-color: #ffffff;
+	border-width: 0px;
+	border-style: inset;
+}
+
+input[submit], input[button], input[file], input[text], input[password]
+{
+	overflow: hidden;
+}
+
+/* cehtml internal*/
+
+body * 
+{
+	-cehtml-box-sizing: content-box;
+}
+
+table
+{
+	-cehtml-box-sizing: border-box;
+}
+
+/* ie6 quirk properties. */
+*
+{
+	zoom: normal;
+}
+

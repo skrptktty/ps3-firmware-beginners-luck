@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<XMBML version="1.0">
+	<View id="new_playlist">
+		<Attributes>
+			<Table key="new_playlist">
+				<Pair key="title"><String>new playlist</String></Pair>
+				<Pair key="title_rsc"><String>msg_create_new_playlist</String></Pair>
+<!--				<Pair key="title_rsc"><String>msg_new_playlist</String></Pair> -->
+				<Pair key="icon_rsc"><String>tex_add_playlist</String></Pair>
+				<Pair key="icon_notation"><String>WNT_XmbItemPlaylistAdd</String></Pair>
+				<Pair key="module_name"><String>playlist_plugin</String></Pair>
+				<Pair key="module_action"><String>new_playlist</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+			<Query class="type:x-xmb/module-action" key="new_playlist"  attr="new_playlist" />
+		</Items>
+	</View>
+
+	<View id="dev_list">
+		<Items>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_bdvd_device"
+				src="xcb://localhost/query?table=MMS_MEDIA_TYPE_SYSTEM&genre=Photo&cond=Ae+StorageMedia:StorageMedia.stat.mediaStatus %xCB_MEDIA_INSERTED+Ae+StorageMedia:StorageMedia.mediaFormat %xCB_MEDIA_FORMAT_DATA+AGL+StorageMedia:StorageMedia.type %xCB_MEDIA_TYPE_BDROM %xCB_MEDIA_TYPE_DVDPRW" 
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_cd_device"
+				src="xcb://localhost/query?table=MMS_MEDIA_TYPE_SYSTEM&genre=Photo&cond=Ae+StorageMedia:StorageMedia.stat.mediaStatus %xCB_MEDIA_INSERTED+Ae+StorageMedia:StorageMedia.mediaFormat %xCB_MEDIA_FORMAT_DATA+AGL+StorageMedia:StorageMedia.type %xCB_MEDIA_TYPE_CDROM %xCB_MEDIA_TYPE_CDMRW" 
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_ms_device"
+				src="xcb://localhost/query?table=MMS_MEDIA_TYPE_SYSTEM&genre=Photo&cond=Ae+StorageMedia:StorageMedia.stat.mediaStatus %xCB_MEDIA_INSERTED+Ae+StorageMedia:StorageMedia.deviceType %xCB_DEVICE_TYPE_MS+AGL+StorageMedia:StorageMedia.type %xCB_MEDIA_TYPE_MS_STD %xCB_MEDIA_TYPE_MS_R+Ae+StorageMedia:StorageMedia.mediaFormat %xCB_MEDIA_FORMAT_DATA" 
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_sd_device"
+				src="xcb://localhost/query?table=MMS_MEDIA_TYPE_SYSTEM&genre=Photo&cond=Ae+StorageMedia:StorageMedia.stat.mediaStatus %xCB_MEDIA_INSERTED+Ae+StorageMedia:StorageMedia.type %xCB_MEDIA_TYPE_SD+Ae+StorageMedia:StorageMedia.mediaFormat %xCB_MEDIA_FORMAT_DATA" 
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_cf_device"
+				src="xcb://localhost/query?table=MMS_MEDIA_TYPE_SYSTEM&genre=Photo&cond=Ae+StorageMedia:StorageMedia.stat.mediaStatus %xCB_MEDIA_INSERTED+Ae+StorageMedia:StorageMedia.type %xCB_MEDIA_TYPE_CF+Ae+StorageMedia:StorageMedia.mediaFormat %xCB_MEDIA_FORMAT_DATA" 
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_usbpsp_device"
+				src="xcb://localhost/query?table=MMS_MEDIA_TYPE_SYSTEM&genre=Photo&cond=Ae+StorageMedia:StorageMedia.stat.mediaStatus %xCB_MEDIA_INSERTED+Ae+StorageMedia:StorageMedia.deviceType %xCB_DEVICE_TYPE_USBPSP+Ae+StorageMedia:StorageMedia.mediaFormat %xCB_MEDIA_FORMAT_DATA&sort=+StorageMedia:Common.stat.timeImported" 
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_usbspecial_device"
+				src="xcb://localhost/query?table=MMS_MEDIA_TYPE_SYSTEM&genre=Photo&cond=Ae+StorageMedia:StorageMedia.stat.mediaStatus %xCB_MEDIA_INSERTED+AGL+StorageMedia:StorageMedia.deviceType %xCB_DEVICE_TYPE_USBCAMERA %xCB_DEVICE_TYPE_USBAAD+Ae+StorageMedia:StorageMedia.mediaFormat %xCB_MEDIA_FORMAT_DATA&sort=+StorageMedia:Common.stat.timeImported" 
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_usb_aad_new_device"
+				src="xcb://localhost/query?table=MMS_MEDIA_TYPE_SYSTEM&genre=Photo&cond=Ae+StorageMedia:StorageMedia.stat.mediaStatus %xCB_MEDIA_INSERTED+AGL+StorageMedia:StorageMedia.deviceType %xCB_DEVICE_TYPE_USBAADWM %xCB_DEVICE_TYPE_USBWM+Ae+StorageMedia:StorageMedia.mediaFormat %xCB_MEDIA_FORMAT_DATA&sort=+StorageMedia:Common.stat.timeImported" 
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_usbmass_device"
+				src="xcb://localhost/query?table=MMS_MEDIA_TYPE_SYSTEM&genre=Photo&cond=Ae+StorageMedia:StorageMedia.stat.mediaStatus %xCB_MEDIA_INSERTED+Ae+StorageMedia:StorageMedia.deviceType %xCB_DEVICE_TYPE_USBMASS+Ae+StorageMedia:StorageMedia.mediaFormat %xCB_MEDIA_FORMAT_DATA&sort=+StorageMedia:Common.stat.timeImported" 
+				/>
+		</Items>
+	</View>
+</XMBML>

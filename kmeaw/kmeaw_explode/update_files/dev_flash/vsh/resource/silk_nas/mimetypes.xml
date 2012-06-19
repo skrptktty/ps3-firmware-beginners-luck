@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<mimetypes>
+
+	<!-- (default value)
+	<entry>
+		<mimetype>sample/type</mimetype>
+		<plugin>hogehoge_plugin</plugin>
+		<moduleinterfaceversion>1</moduleinterfaceversion>
+		<moduleoption>1</moduleoption>
+		<surfacepoolsize>524288</surfacepoolsize>
+		<privateheapsize>98304</privateheapsize>
+		<option>12</option>
+		<userdata>data</userdata>
+	</entry>
+	-->
+
+	<entry>
+		<mimetype>application/vnd.sony.dstartup</mimetype>
+		<plugin>videodownloader_plugin</plugin>
+		<surfacepoolsize>524288</surfacepoolsize>
+		<privateheapsize>65536</privateheapsize><!--64KB-->
+		<userdata></userdata>
+	</entry>
+	<entry>
+		<mimetype>application/x-psp-dstartup</mimetype>
+		<plugin>videodownloader_plugin</plugin>
+		<surfacepoolsize>524288</surfacepoolsize>
+		<privateheapsize>65536</privateheapsize><!--64KB-->
+		<userdata></userdata>
+	</entry>
+
+</mimetypes>
