@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<XMBML version="1.0">
+	<View id="root">
+		<Items>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_data_device"
+				src="xcb://localhost/query?table=MMS_MEDIA_TYPE_SYSTEM&genre=Photo&sort=+StorageMedia:StorageMedia.sortOrder+StorageMedia:StorageMedia.timeInserted&cond=Ae+StorageMedia:StorageMedia.stat.mediaStatus %xCB_MEDIA_INSERTED+Ae+StorageMedia:StorageMedia.mediaFormat %xCB_MEDIA_FORMAT_DATA+AGL+StorageMedia:StorageMedia.type %xCB_MEDIA_TYPE_BDROM %xCB_MEDIA_TYPE_WM" 
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_photo_playlist"
+				src="xmb://localhost/%flash/xmb/category_photo.xml#seg_playlist_mgmt"
+			/>
+			<Query 
+				class="type:x-xmb/folder-pixmap" 
+				key="seg_hdd_contents" 
+				src="sel://localhost/ex?root.view_selected.photo"
+				/>
+
+		</Items>
+	</View>
+
+</XMBML>

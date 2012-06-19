@@ -1,0 +1,23 @@
+/* *******************************************
+ * Copyright 2004 Sony Corporation
+ *
+ * $Change: 45842 $
+ * $DateTime: 2009/06/18 14:11:59 $
+ * $Header: //depot/main/browser-dev/microbrowser/HTML/Core/css/Platform/Win32/quirk.css#9 $
+ *
+ * ********************************************/
+
+/* Quirk: bug 3984, 10406 */
+table {
+	font-size: medium;
+	font-variant: normal;
+	line-height: normal;
+	font-weight: normal;
+	text-decoration: none;
+	text-transform: none;
+}
+
+body * 
+{
+	-cehtml-box-sizing: border-box;
+}

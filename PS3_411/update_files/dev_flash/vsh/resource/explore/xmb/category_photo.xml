@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<XMBML version="1.0">
+	<View id="root">
+		<Attributes>
+			<Table key="seg_dlna_scan">
+				<Pair key="focus_priority"><String>4</String></Pair>
+			</Table>
+			<Table key="seg_screenshot">
+				<Pair key="focus_priority"><String>3</String></Pair>
+			</Table>
+			<Table key="gameDir">
+				<Pair key="focus_priority"><String>2</String></Pair>
+			</Table>
+			<Table key="seg_dlna_device">
+				<Pair key="focus_priority"><String>1</String></Pair>
+			</Table>
+			<Table key="seg_data_device">
+				<Pair key="focus_priority"><String>-50</String></Pair>
+			</Table>
+			<Table key="seg_playlist_mgmt">
+				<Pair key="focus_priority"><String>3</String></Pair>
+			</Table>
+			<Table key="seg_hdd_contents">
+				<Pair key="focus_priority"><String>0</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_dlna_scan"
+				attr="seg_dlna_scan"
+				src="sel://localhost/isdlna?category_photo.xml#seg_dlna_scan" 
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_hakoniwa"
+				src="sel://localhost/hakoniwa?category_photo.xml#seg_hakoniwa"
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_screenshot"
+				attr="seg_screenshot"
+				src="sel://localhost/screenshot?category_photo.xml#seg_screenshot"
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_gameexit"
+				src="sel://localhost/ingame?path=category_photo.xml#seg_gameexit&type=photo"
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="gameDir"
+				attr="gameDir"
+				src="xcb://localhost/query?limit=2048&table=MMS_MEDIA_TYPE_HDD&sort=+Game:Common.stat.rating+Game:Common.timeCreated&cond=Aa+Game:Common.title+Ae+Game:Game.category AP"
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_dlna_device"
+				attr="seg_dlna_device"
+				src="xcb://localhost/query?table=MMS_MEDIA_TYPE_SYSTEM&genre=Photo&sort=+StorageMedia:Common.titleForSort&cond=Ae+StorageMedia:StorageMedia.type %xCB_MEDIA_TYPE_DLNA" 
+				/>
+
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_data_device"
+				attr="seg_data_device"
+				src="xcb://localhost/query?table=MMS_MEDIA_TYPE_SYSTEM&genre=Photo&sort=+StorageMedia:StorageMedia.sortOrder+StorageMedia:StorageMedia.timeInserted&cond=Ae+StorageMedia:StorageMedia.stat.mediaStatus %xCB_MEDIA_INSERTED+Ae+StorageMedia:StorageMedia.mediaFormat %xCB_MEDIA_FORMAT_DATA+AGL+StorageMedia:StorageMedia.type %xCB_MEDIA_TYPE_BDROM %xCB_MEDIA_TYPE_WM" 
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_playlist_mgmt"
+				attr="seg_playlist_mgmt"
+				src="#seg_playlist_mgmt"
+				/>
+			<Query 
+				class="type:x-xmb/folder-pixmap" 
+				key="seg_hdd_contents" 
+				attr="seg_hdd_contents"
+				src="sel://localhost/ex?root.view_selected.photo"
+				/>
+
+		</Items>
+	</View>
+	
+	<View id="shop_root">
+		<Attributes>
+			<Table key="seg_dlna_scan">
+				<Pair key="focus_priority"><String>4</String></Pair>
+			</Table>
+			<Table key="seg_screenshot">
+				<Pair key="focus_priority"><String>3</String></Pair>
+			</Table>
+			<Table key="gameDir">
+				<Pair key="focus_priority"><String>2</String></Pair>
+			</Table>
+			<Table key="seg_dlna_device">
+				<Pair key="focus_priority"><String>1</String></Pair>
+			</Table>
+			<Table key="seg_data_device">
+				<Pair key="focus_priority"><String>-50</String></Pair>
+			</Table>
+			<Table key="seg_playlist_mgmt">
+				<Pair key="focus_priority"><String>3</String></Pair>
+			</Table>
+			<Table key="seg_hdd_contents">
+				<Pair key="focus_priority"><String>0</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_dlna_scan"
+				attr="seg_dlna_scan"
+				src="sel://localhost/isdlna?category_photo.xml#seg_dlna_scan" 
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_hakoniwa_dummy"
+				src="sel://localhost/nopremo?category_photo.xml#seg_hakoniwa_dummy"
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_screenshot"
+				attr="seg_screenshot"
+				src="sel://localhost/screenshot?category_photo.xml#seg_screenshot"
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_gameexit"
+				src="sel://localhost/ingame?path=category_photo.xml#seg_gameexit&type=photo"
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="gameDir"
+				attr="gameDir"
+				src="xcb://localhost/query?limit=2048&table=MMS_MEDIA_TYPE_HDD&sort=+Game:Common.stat.rating+Game:Common.timeCreated&cond=Aa+Game:Common.title+Ae+Game:Game.category AP"
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_dlna_device"
+				attr="seg_dlna_device"
+				src="xcb://localhost/query?table=MMS_MEDIA_TYPE_SYSTEM&genre=Photo&sort=+StorageMedia:Common.titleForSort&cond=Ae+StorageMedia:StorageMedia.type %xCB_MEDIA_TYPE_DLNA" 
+				/>
+
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_data_device"
+				attr="seg_data_device"
+				src="xcb://localhost/query?table=MMS_MEDIA_TYPE_SYSTEM&genre=Photo&sort=+StorageMedia:StorageMedia.sortOrder+StorageMedia:StorageMedia.timeInserted&cond=Ae+StorageMedia:StorageMedia.stat.mediaStatus %xCB_MEDIA_INSERTED+Ae+StorageMedia:StorageMedia.mediaFormat %xCB_MEDIA_FORMAT_DATA+AGL+StorageMedia:StorageMedia.type %xCB_MEDIA_TYPE_BDROM %xCB_MEDIA_TYPE_WM" 
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_playlist_mgmt"
+				attr="seg_playlist_mgmt"
+				src="#seg_playlist_mgmt"
+				/>
+			<Query 
+				class="type:x-xmb/folder-pixmap" 
+				key="seg_hdd_contents" 
+				attr="seg_hdd_contents"
+				src="sel://localhost/ex?root.view_selected.photo"
+				/>
+
+		</Items>
+	</View>
+	
+	<View id="seg_dlna_scan">
+		<Attributes>
+			<Table key="scan">
+				<Pair key="icon_rsc"><String>item_tex_dlna_scan</String></Pair>
+				<Pair key="icon_notation"><String>WNT_XmbItemMediaServerSearch</String></Pair>
+				<Pair key="title_rsc"><String>msg_scan_mediaserver</String></Pair>
+				<Pair key="module_name"><String>dlna_plugin</String></Pair>
+				<Pair key="module_action"><String>dlna_scan</String></Pair>
+				<Pair key="bar_action"><String>hide</String></Pair>
+ 			</Table>
+		</Attributes>
+		<Items>
+			<Item
+				class="type:x-xmb/module-action"
+				key="scan"
+				attr="scan"
+			/>
+		</Items>
+	</View>
+
+	<View id="seg_playlist_mgmt">
+		<Attributes>
+			<Table key="mgmt">
+				<Pair key="mode"><String>playlistmgmt</String></Pair>
+				<Pair key="type"><String>photo</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+			<Item class="type:x-xmb/xmlplaylist" key="mgmt" attr="mgmt" />
+		</Items>
+	</View>
+
+	<View id="seg_playlist_mgmt_psp">
+		<Attributes>
+			<Table key="mgmt">
+				<Pair key="mode"><String>playlistmgmtpsp</String></Pair>
+				<Pair key="type"><String>photo</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+			<Item class="type:x-xmb/xmlplaylist" key="mgmt" attr="mgmt" />
+		</Items>
+	</View>
+
+	<View id="seg_playlist_fixed_items">
+		<Attributes>
+			<Table key="make_new_playlist">
+				<Pair key="icon_rsc"><String>tex_add_playlist</String></Pair>
+				<Pair key="title_rsc"><String>msg_create_new_playlist</String></Pair>
+				<Pair key="icon_notation"><String>WNT_XmbItemPlaylistAdd</String></Pair>
+				<Pair key="module_name"><String>playlist_plugin</String></Pair>
+				<Pair key="module_action"><String>make_new_playlist_photo</String></Pair>
+				<Pair key="bar_action"><String>hide</String></Pair>
+ 			</Table>
+		</Attributes>
+		<Items>
+			<Item class="type:x-xmb/module-action" key="make_new_playlist" attr="make_new_playlist" />
+		</Items>
+	</View>
+
+	<View id="seg_playlist_empty">
+		<Attributes>
+			<Table key="empty">
+				<Pair key="mode"><String>playlistempty</String></Pair>
+				<Pair key="id"><String></String></Pair>
+				<Pair key="path"><String></String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+			<Item class="type:x-xmb/xmlplaylist" key="empty" attr="empty" />
+		</Items>
+	</View>
+
+	<View id="seg_hakoniwa">
+		<Items>
+			<Item class="type:x-xmb/xmlhakoniwa" key="hakoniwa"	attr="hakoniwa" />
+		</Items>
+	</View>
+
+	<View id="seg_hakoniwa_dummy">
+		<Attributes>
+			<Table key="hakoniwa_dummy">
+				<Pair key="icon"><String>/dev_flash/vsh/resource/explore/icon/hakoniwa.png</String></Pair>
+				<Pair key="title_rsc"><String>msg_photo_gallery</String></Pair>
+				<Pair key="module_name"><String>explore_plugin</String></Pair>
+				<Pair key="module_action"><String>NotifyErrorNoExecute</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+				<Pair key="lbl_half"><String>1</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+			<Item  class="type:x-xmb/module-action"   key="hakoniwa_dummy"           attr="hakoniwa_dummy" />
+		</Items>
+	</View>
+
+	<View id="seg_screenshot">
+		<Items>
+			<Item class="type:x-xmb/xmlscreenshot" key="screenshot" />
+		</Items>
+	</View>
+
+	<View id="seg_gameexit">
+		<Items>
+			<Item class="type:x-xmb/xmlgameexit" key="gameexit" />
+		</Items>
+	</View>
+</XMBML>
