@@ -1,0 +1,405 @@
+
+
+# コメントは、'#' か、'/' です。それ以降はコメント扱いです。
+
+
+#####################################################
+# デバッグ機能系
+#####################################################
+
+// 固定パターンフラグ。指定した番号 pattern_**_xx.ggf の xx の部分が固定番号になります。
+FIXED_PATTERN			int		0		// ０ ～ ５
+
+
+// 最高枚数固定フラグ。指定した番号 pattern_xx_**.ggf の xx の部分が固定番号になります。
+// ただし、写真の日付内の枚数が、最大枚数に満たない場合は、その日付分の写真の枚数になります。
+// 同じ日付がいっぱいあるようなデータがチェックに適していることになります。
+FIXED_MAX_PATTTERN		int		0		// ０ ～ ８
+
+
+// カメラ移動フラグ。０だと無効、それ以外だと有効
+CAMERA_DEBUG_MOVE		int		0
+
+
+// 床のＺ値を書き込むフラグ。めり込みチェック用。
+FLOOR_Z_ON				int		0
+
+
+LINE_WIDTH				int		16
+
+#####################################################
+# シェーダー系
+#####################################################
+
+
+// ネガ
+SHADER_F_NEGA_0  float 0.8  // 800 / 1000 // ネガ色にしたピクセルカラーの割合
+SHADER_F_NEGA_1  float 2.0  // 2000 / 1000 // 環境マップ00の範囲値
+SHADER_F_NEGA_2  float 8.0  // 8000 / 1000 // 環境マップ01の範囲値
+SHADER_F_NEGA_3  float 0.30 // 250 / 1000 // 環境マップ01の影響率
+SHADER_F_NEGA_4  float 0.93 // 930 / 1000 // 最終ピクセルのアルファ値
+SHADER_F_NEGA_5  float 0.50 // 500 / 1000 // R のネガ色率
+SHADER_F_NEGA_6  float 0.25 // 150 / 1000 // R の元色残し率
+SHADER_F_NEGA_7  float 0.30 // 300 / 1000 // G のネガ色率
+SHADER_F_NEGA_8  float 0.20 // 100 / 1000 // G の元色残し率
+SHADER_F_NEGA_9  float 0.18 // 180 / 1000 // B のネガ色率
+SHADER_F_NEGA_10 float 0.18 // 80 / 1000 // B の元色残し率
+
+// ポジ
+SHADER_F_POSI_0  float 0.98 // 800 / 1000 // ネガ色にしたピクセルカラーの割合
+SHADER_F_POSI_1  float 3.0  // 2000 / 1000 //3 環境マップ00の範囲値
+SHADER_F_POSI_2  float 5.0  // 8000 / 1000 //5 環境マップ01の範囲値
+SHADER_F_POSI_3  float 0.20 // 250 / 1000 //0.3 環境マップ01の影響率
+SHADER_F_POSI_4  float 1.00 // 930 / 1000 // 最終ピクセルのアルファ値
+SHADER_F_POSI_5  float 0.00 // 500 / 1000 // R のネガ色率
+SHADER_F_POSI_6  float 0.21 // 150 / 1000 //0.39 R の元色残し率
+SHADER_F_POSI_7  float 0.00 // 300 / 1000 // G のネガ色率
+SHADER_F_POSI_8  float 0.23 // 100 / 1000 //0.43 G の元色残し率
+SHADER_F_POSI_9  float 0.00 // 180 / 1000 // B のネガ色率
+SHADER_F_POSI_10 float 0.25 // 80 / 1000 //0.45 B の元色残し率
+
+
+// 写真間影
+SHADER_F_SHADOWVOLUME_0		float	0.00	// 写真影の色 R
+SHADER_F_SHADOWVOLUME_1		float	0.00	// 写真影の色 G
+SHADER_F_SHADOWVOLUME_2		float	0.00	// 写真影の色 B
+SHADER_F_SHADOWVOLUME_3		float	0.20	// カメラが一番近いときの写真影の濃さ
+SHADER_F_SHADOWVOLUME_4		float	0.30	// カメラが一番遠いときの写真影の濃さ
+
+
+// 床用影の色（写真（アルファのみ）、ネガ、ポジ）
+SHADOW_PHOTO_A	float		0.28
+
+SHADOW_NEGA_R	float		0.2
+SHADOW_NEGA_G	float		0.15
+SHADOW_NEGA_B	float		0.1
+SHADOW_NEGA_A	float		0.65
+
+SHADOW_POSI_R	float		0.0
+SHADOW_POSI_G	float		0.05
+SHADOW_POSI_B	float		0.08
+SHADOW_POSI_A	float		0.65
+
+// 影の頂点高さ倍率。
+// 影モデルの頂点のＹスケールを強制的に前後させ、濃淡の表現を極端にします。
+SHADOW_IMITATION_SCALE_PHOTO	float	7.5
+SHADOW_IMITATION_SCALE_ETC		float	7.0
+
+SHADOW_LOD_DIST_0				float	0.03
+SHADOW_LOD_DIST_1				float	0.08
+SHADOW_LOD_DIST_2				float	0.20
+
+
+// 写真
+SHADER_F_PHOTO2_0		float	0.80	// 800 / 1000	// ネガ色にしたピクセルカラーの割合
+SHADER_F_PHOTO2_1		float	2.00	// 2000 / 1000	// 環境マップ00の範囲値
+SHADER_F_PHOTO2_2		float	4.0		// 8000 / 1000	// 環境マップ01の範囲値
+SHADER_F_PHOTO2_3		float	0.2		// 250 / 1000	// 環境マップ01の影響率
+SHADER_F_PHOTO2_4		float	1.00	// 930 / 1000	// 最終ピクセルのアルファ値
+
+
+#####################################################
+# カメラ系
+#####################################################
+
+# カメラ距離
+CAMERA_ZOOM_1	float		0.35
+CAMERA_ZOOM_2	float		0.40
+CAMERA_ZOOM_3	float		1.00
+CAMERA_ZOOM_4	float		1.00
+
+
+# カメラの引き具合の初期値。0.0 でもっとも近づいた状態、1.0 でもっとも引いた状態
+CAMERA_ZOOM_INIT	float	0.0
+CAMERA_ZOOM_DEFAULT	float	0.40
+
+
+# カメラ角度定義
+CAMERA_ANGLE_1	float		-60.0
+CAMERA_ANGLE_2	float		-58.0
+CAMERA_ANGLE_3	float		-45.0
+CAMERA_ANGLE_4	float		-45.0
+
+
+#カメラ移動速度。アナログスティック入力時の加速度
+CAMERA_ALANOG_ACC float  0.3
+
+#カメラ移動速度定義
+CAMERA_SPEED_LOW	float		0.5
+CAMERA_SPEED_NORMAL	float		1.0
+CAMERA_SPEED_HIGH	float		1.7
+
+# カメラの移動速度の初期値。演出進行に伴い通常速度に収束
+CAMERA_SPEED_LOW_I		float		0.25
+CAMERA_SPEED_NORMAL_I	float		0.50
+CAMERA_SPEED_HIGH_I		float		0.85
+
+CAMERA_SPEED_FADE_TIME_W	float		0.0	// 速度補間がかかり始めるまでの間（1.0 で１秒）
+CAMERA_SPEED_FADE_TIME		float		2.0	// 速度補間にかかる時間（同上）
+
+# 左アナログ入力系
+CAMERA_ANG_L_ANGLE_1	float		-20.0	// 角度差分。下記移動量に対するカメラの角度変化量。
+CAMERA_ANG_L_ANGLE_2	float		-12.0
+CAMERA_ANG_L_ANGLE_3	float		  0.0
+CAMERA_ANG_L_ANGLE_4	float		  0.0
+
+CAMERA_ANG_L_MOVEZ_1	float		-0.15	// 移動範囲定義。大きい値を指定すると移動幅が上がります。
+CAMERA_ANG_L_MOVEZ_2	float		-0.15
+CAMERA_ANG_L_MOVEZ_3	float		0.15
+CAMERA_ANG_L_MOVEZ_4	float		0.15
+
+#カメラズームand移動の速度
+CAMERA_ZOOM_SPEED		float		0.0014
+
+#カメラのオフセット値
+CAMERA_OFFSET_Z		float		0.00
+
+# カメラの初期演出速度。1.0秒 / CAMERA_INITANIM_SPEED の時間がかかります。
+CAMERA_INITANIM_SPEED	float	0.30
+
+#####################################################
+# ライト系
+#####################################################
+
+
+# 写真へのライトの設定
+LIGHT_GLOBAL_PHOTO_DIFFUSE	float		0.258316
+LIGHT_GLOBAL_PHOTO_AMBIENT	float		1.380741
+LIGHT_GLOBAL_PHOTO_SPECULAR	float		0.345197
+
+# 床へのライトの設定
+LIGHT_GLOBAL_FLOOR_DIFFUSE	float		0.565
+LIGHT_GLOBAL_FLOOR_AMBIENT	float		0.796
+LIGHT_GLOBAL_FLOOR_SPECULAR	float		0.105
+
+#ライト座標
+LIGHT_POSITION_X			float		2.0
+LIGHT_POSITION_Y			float		3.0
+LIGHT_POSITION_Z			float		-2.5
+
+
+# 演出用ライト曲線
+LIGHT_FADE_SPECULAR_1	float		0.00
+LIGHT_FADE_SPECULAR_2	float		0.80
+LIGHT_FADE_SPECULAR_3	float		0.90
+LIGHT_FADE_SPECULAR_4	float		1.00
+
+LIGHT_FADE_OTHER_1		float		0.00
+LIGHT_FADE_OTHER_2		float		1.00
+LIGHT_FADE_OTHER_3		float		1.20
+LIGHT_FADE_OTHER_4		float		1.00
+
+LIGHT_FADE_SPEED_IN		float		0.10	// ライトフェード進行速度。数値を小さくすれば進行が遅くなります。
+LIGHT_FADE_SPEED_OUT	float		0.70	// 同上。終了時。
+
+
+#####################################################
+# 配置系
+#####################################################
+
+
+# 配置曲線系
+
+# 制御点の数。全体の移動曲線の長さに相当する。
+ARRANGE_CTRLPOINT_NUM			int		48
+
+
+# 配置曲線は、細かい上下の配置、ぶれを表現するための、１本目。
+# 全体の大きな配置流れを調整するための２本目があります。
+
+
+ARRANGE_CURVE_1_ROT_ADD_MIN		float	0.0 // 角度変化量のランダム最小値
+ARRANGE_CURVE_1_ROT_ADD_MAX		float	4.0 // 角度変化量のランダム最大値
+ARRANGE_CURVE_1_ROT_LIMIT		float	4.0
+
+ARRANGE_CURVE_2_ZWIDTH_MIN			float	0.0
+ARRANGE_CURVE_2_ZWIDTH_MAX			float	0.0
+
+# 写真グループのＹ軸回転値。
+ARRANGE_PHOTO_ROT_Y_MIN				float	-25.0
+ARRANGE_PHOTO_ROT_Y_MAX				float	5.0
+
+# 配置間隔。ARRANGE_SPACE_DAY が日付が変わった際のスペース、
+# ARRANGE_SPACE_FINISH が、写真が一周したときのスペース、
+# ARRANGE_SPACE_ が、写真が一周したときのスペース、
+# ARRANGE_SPACE_CONT が、日付が連続しているときの減算量
+
+ARRANGE_SPACE_TIME			float		0.01
+ARRANGE_SPACE_DAY			float		0.10
+//ARRANGE_SPACE_DAY			float		0.15	// ※※※※ プロジェクション用
+ARRANGE_SPACE_FINISH		float		0.60
+ARRANGE_SPACE_FINISH_LOOP	float		0.40
+ARRANGE_SPACE_CONT			float		0.00
+
+CALENDER_SPACE_TIME		float		0.02
+CALENDER_SPACE_DAY	float		0.05
+//CALENDER_SPACE_DAY		float		0.08	// ※※※※ プロジェクション用
+
+
+CALENDER_SIZE_X_TIME_MIN  float  0.009
+CALENDER_SIZE_Z_TIME_MIN  float  0.01
+CALENDER_SIZE_X_TIME_MAX  float  0.010
+CALENDER_SIZE_Z_TIME_MAX  float  0.012
+
+CALENDER_SIZE_X_DAY   float  0.015
+CALENDER_SIZE_Z_DAY   float  0.02
+CALENDER_SIZE_X_YEAR  float  0.011
+CALENDER_SIZE_Z_YEAR  float  0.013
+
+
+# 時間表示の色。HSV 系の SV を指定
+CALENDER_COLOR_TIME_S	float		1.0
+CALENDER_COLOR_TIME_V	float		0.65
+
+
+CALENDER_GAP_RAND_X		float		0.0003
+CALENDER_GAP_RAND_Z		float		0.0005
+
+CALENDER_WRITE_SPEED	float		0.08	// 毎シンクあたりの増加量。1.0 になるごとにつぎの文字が描画されます。
+CALENDER_WRITE_SPEED_W	float		5.00	// １文字が完全に表示されるまでの秒数。
+
+// プロジェクション表示
+// 現在未使用
+PROJECTION_SIZE_X		float		0.10	// 表示横幅
+PROJECTION_SIZE_Z		float		0.10	// 縦幅
+PROJECTION_OFS_X		float		0.06	// 日付表示を中心とした、表示位置（Ｘ）。右よりにしてみる。
+PROJECTION_OFS_Z		float		0.08	// 同上（Ｚ）。日付とかぶらないよう、下よりに。
+
+PROJECTION_ALPHA		int			170		// 半透明値。０～２５５
+
+// 半透明の透け具合減衰。４ が中心付近の濃度、１が外側の濃度。
+PROJECTION_ALPHA_ATT_1	float		0.00	
+PROJECTION_ALPHA_ATT_2	float		0.20
+PROJECTION_ALPHA_ATT_3	float		0.70
+PROJECTION_ALPHA_ATT_4	float		1.00
+
+// 出現フェードイン速度
+PROJECTION_FADEIN		float		3.00		// 1.0 = 1秒
+
+TEXT_SIZE				float		0.025
+
+
+# 開始までの間（距離）
+ARRANGE_START_LOW			float		0.3
+ARRANGE_START_NORMAL		float		0.40
+ARRANGE_START_HIGH			float		0.5
+
+
+# パターンデータ半径補正値
+ARRANGE_PATTERN_RADIUS_B_3_2	float		-0.04
+ARRANGE_PATTERN_RADIUS_F_3_2	float		-0.04
+
+ARRANGE_PATTERN_RADIUS_B_4_3	float		-0.08
+
+ARRANGE_PATTERN_RADIUS_F_4_5	float		-0.02
+
+ARRANGE_PATTERN_RADIUS_F_5_1	float		-0.01
+ARRANGE_PATTERN_RADIUS_B_5_1	float		-0.02
+
+ARRANGE_PATTERN_RADIUS_F_5_2	float		-0.01
+
+ARRANGE_PATTERN_RADIUS_B_5_3	float		-0.03
+
+ARRANGE_PATTERN_RADIUS_F_6_1	float		-0.02
+ARRANGE_PATTERN_RADIUS_B_6_1	float		-0.02
+
+ARRANGE_PATTERN_RADIUS_B_6_3	float		-0.02
+
+ARRANGE_PATTERN_RADIUS_F_6_4	float		-0.03
+ARRANGE_PATTERN_RADIUS_B_6_4	float		-0.01
+
+ARRANGE_PATTERN_RADIUS_B_6_5	float		-0.05
+
+ARRANGE_PATTERN_RADIUS_F_7_2	float		 0.01
+
+ARRANGE_PATTERN_RADIUS_B_7_3	float		-0.09
+
+ARRANGE_PATTERN_RADIUS_F_7_5	float		-0.04
+ARRANGE_PATTERN_RADIUS_B_7_5	float		-0.01
+
+ARRANGE_PATTERN_RADIUS_F_8_2	float		 0.07
+
+ARRANGE_PATTERN_RADIUS_F_8_3	float		-0.02
+ARRANGE_PATTERN_RADIUS_B_8_3	float		-0.00
+
+
+#####################################################
+# デバッグ用一時的なものなど
+#####################################################
+
+
+
+
+
+
+#####################################################
+# フォトアルバム２用
+#####################################################
+
+// グリッドサイズ
+//V2_GRID_SIZE_X					float		0.12
+//V2_GRID_SIZE_Z					float		0.09
+V2_GRID_SIZE_X					float		0.125
+V2_GRID_SIZE_Z					float		0.095
+
+// ランダムなずれ量
+V2_GRID_RAND_POS_X				float		0.002
+V2_GRID_RAND_POS_Z				float		0.005
+V2_GRID_RAND_ROT_Y				float		4.00	// ランダム回転角度。指定値の＋ー内で変化。
+
+V2_GRID_RAND_ROT_XZ_H			float		20.0	// ランダム回転角度。指定値の＋ー内で変化。
+V2_GRID_RAND_ROT_XZ_L			float		10.0	// ランダム回転角度。指定値の＋ー内で変化。
+V2_GRID_RAND_ROT_XZ_RAND		int			80		// 上記「ハイ/ロー」パラメータが、ランダムで「ロー」側が選ばれる確立。％
+
+// カメラ引き/寄り
+V2_CAMERA_ZOOM_1				float		0.30
+V2_CAMERA_ZOOM_2				float		0.30
+V2_CAMERA_ZOOM_3				float		0.72
+V2_CAMERA_ZOOM_4				float		0.72
+
+// カメラが寄ったときの注視点のＺ補正。下方向にスペースを作って時間が表示できるようにする
+V2_CAMERA_POS_CENTER_Z			float		0.003
+
+// スライドショー進行速度
+V2_CAMERA_SPEED_LOW				float		0.8
+V2_CAMERA_SPEED_NORMAL			float		1.3
+V2_CAMERA_SPEED_HIGH			float		2.1
+
+// アナログ入力時の速度リミッタ
+V2_CAMERA_SPEED_MAX				float		 7.0
+V2_CAMERA_SPEED_MIN				float		-7.0
+
+// カメラ角度
+V2_CAMERA_ANGLE					float		-85.0
+
+// カメラズームのアナログ入力レスポンス
+V2_CAMERA_ZOOM_SPEED			float		0.0014
+
+// カメラズームしたときの進行速度減速率
+V2_CAMERA_ZOOM_BRAKE			float		0.30
+
+
+// ライン数が変わるときのアニメーションに掛かる時間。秒数。
+V2_LINECHANGE_TIME				float		1.2
+
+// ライン数が変わるときの境界
+V2_LINECHANGE_BOUND_ZIN			float		0.8
+V2_LINECHANGE_BOUND_ZOUT		float		0.5
+
+// 時間表記文字の大きさ
+V2_CALENDER_SIZE_X_TIME_MIN		float		0.0065
+V2_CALENDER_SIZE_Z_TIME_MIN		float		0.0070
+V2_CALENDER_SIZE_X_TIME_MAX		float		0.0085
+V2_CALENDER_SIZE_Z_TIME_MAX		float		0.0090
+
+V2_SHADOW_LOD_DIST_0			float	0.03
+V2_SHADOW_LOD_DIST_1			float	0.16
+V2_SHADOW_LOD_DIST_2			float	0.80
+
+// カメラの開始位置。1.0 = 1グリッド。
+// 0.0 のとき最初の写真が中央で始まります。
+// マイナス値でカメラがより左側に、プラス値で右側から始まります。
+V2_CAMERA_START_POS				float		-1.0
+
+V2_START_FALL_DELAY				float		0.6
+

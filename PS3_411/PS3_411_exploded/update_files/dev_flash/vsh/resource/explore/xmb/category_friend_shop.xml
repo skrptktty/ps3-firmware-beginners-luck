@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<XMBML version="1.0">
+	<View id="root">
+		<Items>
+			<Query 
+				class="type:x-xmb/folder-pixmap" 
+				key="seg_fixed_items" 
+				src="#seg_fixed_items"
+				/>
+		</Items>
+	</View>
+
+	<View id="seg_fixed_items">
+		<Attributes>
+
+			<Table key="Ignore">
+				<Pair key="icon_rsc"><String>item_tex_IgnoreList</String></Pair>
+				<Pair key="icon_notation"><String>WNT_XmbItemFriendBlock</String></Pair>
+				<Pair key="title_rsc"><String>msg_ignore_list</String></Pair>
+				<Pair key="module_name"><String>explore_plugin</String></Pair>
+				<Pair key="module_action"><String>NotifyErrorNoExecute</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+				<Pair key="lbl_half"><String>1</String></Pair>
+			</Table>
+
+			<Table key="new_friend">
+				<Pair key="icon_rsc"><String>item_tex_NewFriend</String></Pair>
+				<Pair key="icon_notation"><String>WNT_XmbItemFriendAdd</String></Pair>
+				<Pair key="title_rsc"><String>msg_friend_register</String></Pair>
+				<Pair key="module_name"><String>explore_plugin</String></Pair>
+				<Pair key="module_action"><String>NotifyErrorNoExecute</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+				<Pair key="lbl_half"><String>1</String></Pair>
+			</Table>
+
+			<Table key="Played">
+				<Pair key="icon_rsc"><String>item_tex_Players</String></Pair>
+				<Pair key="icon_notation"><String>WNT_XmbItemFriendPlayer</String></Pair>
+				<Pair key="title_rsc"><String>msg_play_with</String></Pair>
+				<Pair key="module_name"><String>explore_plugin</String></Pair>
+				<Pair key="module_action"><String>NotifyErrorNoExecute</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+				<Pair key="lbl_half"><String>1</String></Pair>
+			</Table>
+
+			<Table key="Chat">
+				<Pair key="icon_rsc"><String>item_tex_NewAvc</String></Pair>
+				<Pair key="icon_notation"><String>WNT_XmbItemChat</String></Pair>
+				<Pair key="title_rsc"><String>msg_start_new_chat2</String></Pair>
+				<Pair key="module_name"><String>explore_plugin</String></Pair>
+				<Pair key="module_action"><String>NotifyErrorNoExecute</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+				<Pair key="lbl_half"><String>1</String></Pair>
+			</Table>
+
+			<Table key="Message">
+				<Pair key="icon_rsc"><String>item_tex_Messages</String></Pair>
+				<Pair key="icon_notation"><String>WNT_XmbItemFriendMessageBox</String></Pair>
+				<Pair key="title_rsc"><String>msg_msg_box</String></Pair>
+				<Pair key="module_name"><String>explore_plugin</String></Pair>
+				<Pair key="module_action"><String>NotifyErrorNoExecute</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+				<Pair key="lbl_half"><String>1</String></Pair>
+			</Table>
+
+		</Attributes>
+		<Items>
+			<Item  class="type:x-xmb/module-action"   key="Ignore"           attr="Ignore" />
+			<Item  class="type:x-xmb/module-action"   key="new_friend"       attr="new_friend" />
+			<Item  class="type:x-xmb/module-action"   key="Played"           attr="Played" />
+			<Item  class="type:x-xmb/module-action"   key="Chat"             attr="Chat" />
+			<Item  class="type:x-xmb/module-action"   key="Message"          attr="Message" />
+		</Items>
+	</View>
+
+</XMBML>

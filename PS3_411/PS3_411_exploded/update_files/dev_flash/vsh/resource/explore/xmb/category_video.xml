@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<XMBML version="1.0">
+	<View id="root">
+		<Attributes>
+			<Table key="seg_bddata_mgmt">
+				<Pair key="focus_priority"><String>6</String></Pair>
+			</Table>
+			<Table key="seg_dlna_scan">
+				<Pair key="focus_priority"><String>5</String></Pair>
+			</Table>
+			<Table key="seg_editingvideo_mgmt">
+				<Pair key="focus_priority"><String>4</String></Pair>
+			</Table>
+			<Table key="gameDir">
+				<Pair key="focus_priority"><String>3</String></Pair>
+			</Table>
+			<Table key="seg_welcome">
+				<Pair key="focus_priority"><String>2</String></Pair>
+				<Pair key="custom_priority"><String>video=-80</String></Pair>
+			</Table>
+			<Table key="seg_dlna_device">
+				<Pair key="focus_priority"><String>1</String></Pair>
+			</Table>
+			<Table key="seg_bdmav_device">
+				<Pair key="focus_detect"><String>enable</String></Pair>
+				<Pair key="focus_priority"><String>-50</String></Pair>
+			</Table>
+			<Table key="seg_avchd_device">
+				<Pair key="focus_detect"><String>enable</String></Pair>
+				<Pair key="focus_priority"><String>-49</String></Pair>
+			</Table>
+			<Table key="seg_dvdv_device">
+				<Pair key="focus_detect"><String>enable</String></Pair>
+				<Pair key="focus_priority"><String>-48</String></Pair>
+			</Table>
+			<Table key="seg_data_device">
+				<Pair key="focus_priority"><String>-47</String></Pair>
+			</Table>
+			<Table key="seg_hdd_install">
+				<Pair key="focus_priority"><String>-46</String></Pair>
+			</Table>
+			<Table key="seg_hdd_contents">
+				<Pair key="focus_priority"><String>0</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_bddata_mgmt"
+				attr="seg_bddata_mgmt"
+				src="#seg_bddatamgmt" 
+				/>
+
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_dlna_scan"
+				attr="seg_dlna_scan"
+				src="sel://localhost/isdlna?category_photo.xml#seg_dlna_scan" 
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_editingvideo_mgmt"
+				attr="seg_editingvideo_mgmt"
+				src="sel://localhost/videoedit?category_video.xml#seg_editingvideo_mgmt"
+				/>
+
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_gameexit"
+				src="sel://localhost/ingame?path=category_video.xml#seg_gameexit&type=video"
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="gameDir"
+				attr="gameDir"
+				src="xil://localhost/list?t=video"
+			/>
+
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_welcome"
+				attr="seg_welcome"
+				src="sel://localhost/welcome?type=video"
+				/>
+
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_dlna_device"
+				attr="seg_dlna_device"
+				src="xcb://localhost/query?table=MMS_MEDIA_TYPE_SYSTEM&genre=Video&sort=+StorageMedia:Common.titleForSort&cond=Ae+StorageMedia:StorageMedia.type %xCB_MEDIA_TYPE_DLNA" 
+				/>
+
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_bdmav_device"
+				attr="seg_bdmav_device"
+				src="xcb://localhost/query?table=MMS_MEDIA_TYPE_SYSTEM&genre=Video&sort=+StorageMedia:StorageMedia.mediaFormat&cond=Ae+StorageMedia:StorageMedia.stat.mediaStatus %xCB_MEDIA_INSERTED+AGL+StorageMedia:StorageMedia.mediaFormat %xCB_MEDIA_FORMAT_BDMV %xCB_MEDIA_FORMAT_BDAV+AGL+StorageMedia:StorageMedia.type %xCB_MEDIA_TYPE_PS3_BD %xCB_MEDIA_TYPE_DVDPRW&perm=1" 
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_bdc"
+				src="xcb://localhost/query?table=MMS_MEDIA_TYPE_SYSTEM&subclass=x-xcb/storagemedia-bdc&cond=Ae+StorageMedia:StorageMedia.stat.mediaStatus %xCB_MEDIA_INSERTED+AGL+StorageMedia:StorageMedia.type %xCB_MEDIA_TYPE_PS3_BD %xCB_MEDIA_TYPE_DVDPRW+Aa+StorageMedia:StorageMedia.reserved24"
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_avchd_device"
+				attr="seg_avchd_device"
+				src="xcb://localhost/query?table=MMS_MEDIA_TYPE_SYSTEM&genre=Video&cond=Ae+StorageMedia:StorageMedia.stat.mediaStatus %xCB_MEDIA_INSERTED+Ae+StorageMedia:StorageMedia.mediaFormat %xCB_MEDIA_FORMAT_AVCHD+AGL+StorageMedia:StorageMedia.type %xCB_MEDIA_TYPE_DVDROM %xCB_MEDIA_TYPE_DVDPRW&perm=1" 
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_dvdv_device"
+				attr="seg_dvdv_device"
+				src="xcb://localhost/query?table=MMS_MEDIA_TYPE_SYSTEM&genre=Video&cond=Ae+StorageMedia:StorageMedia.stat.mediaStatus %xCB_MEDIA_INSERTED+AGL+StorageMedia:StorageMedia.mediaFormat %xCB_MEDIA_FORMAT_DVD_VIDEO %xCB_MEDIA_FORMAT_DVDPVR+AGL+StorageMedia:StorageMedia.type %xCB_MEDIA_TYPE_DVDROM %xCB_MEDIA_TYPE_DVDPRW&perm=1" 
+				/>
+
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_add_content_device"
+				attr="seg_add_content_device"
+				src="xcb://localhost/query?table=MMS_MEDIA_TYPE_SYSTEM&sort=+StorageMedia:StorageMedia.type&cond=Ae+StorageMedia:StorageMedia.stat.mediaStatus %xCB_MEDIA_INSERTED+AGL+StorageMedia:StorageMedia.type %xCB_MEDIA_TYPE_PS3_BD %xCB_MEDIA_TYPE_DVDPRW+AGL+StorageMedia:StorageMedia.mediaFormat %xCB_MEDIA_FORMAT_PS3CONTENT_BD %xCB_MEDIA_FORMAT_PS3CONTENT_DVD+Ae+StorageMedia:Common.fileName EX_VIDEO"
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_mv_content_device"
+				src="xcb://localhost/query?table=MMS_MEDIA_TYPE_SYSTEM&sort=+StorageMedia:StorageMedia.type&cond=Ae+StorageMedia:StorageMedia.stat.mediaStatus %xCB_MEDIA_INSERTED+AGL+StorageMedia:StorageMedia.type %xCB_MEDIA_TYPE_PS3_BD %xCB_MEDIA_TYPE_DVDPRW+AGL+StorageMedia:StorageMedia.mediaFormat %xCB_MEDIA_FORMAT_PS3CONTENT_BD %xCB_MEDIA_FORMAT_PS3CONTENT_DVD+Ae+StorageMedia:Common.fileName VIDEODIR"
+				/>
+
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_data_device"
+				attr="seg_data_device"
+				src="xcb://localhost/query?table=MMS_MEDIA_TYPE_SYSTEM&genre=Video&sort=+StorageMedia:StorageMedia.sortOrder+StorageMedia:StorageMedia.timeInserted&cond=Ae+StorageMedia:StorageMedia.stat.mediaStatus %xCB_MEDIA_INSERTED+Ae+StorageMedia:StorageMedia.mediaFormat %xCB_MEDIA_FORMAT_DATA+AGL+StorageMedia:StorageMedia.type %xCB_MEDIA_TYPE_BDROM %xCB_MEDIA_TYPE_WM" 
+				/>
+
+			<Query
+				class="type:x-xmb/folder-pixmap" 
+				key="seg_hdd_install" 
+				attr="seg_hdd_install" 
+				src="ese://localhost/query?type=install_video"
+				/>
+
+			<Query
+				class="type:x-xmb/folder-pixmap" 
+				key="seg_hdd_contents" 
+				attr="seg_hdd_contents" 
+				src="sel://localhost/ex?root.view_selected.video"
+				/>
+
+		</Items>
+	</View>
+
+	<View id="root_for_dex">
+		<Attributes>
+			<Table key="seg_dlna_scan">
+				<Pair key="focus_priority"><String>5</String></Pair>
+			</Table>
+			<Table key="seg_editingvideo_mgmt">
+				<Pair key="focus_priority"><String>4</String></Pair>
+			</Table>
+			<Table key="gameDir">
+				<Pair key="focus_priority"><String>3</String></Pair>
+			</Table>
+			<Table key="seg_welcome">
+				<Pair key="focus_priority"><String>2</String></Pair>
+				<Pair key="custom_priority"><String>video=-80</String></Pair>
+			</Table>
+			<Table key="seg_dlna_device">
+				<Pair key="focus_priority"><String>1</String></Pair>
+			</Table>
+			<Table key="seg_data_device">
+				<Pair key="focus_priority"><String>-47</String></Pair>
+			</Table>
+			<Table key="seg_hdd_install">
+				<Pair key="focus_priority"><String>-46</String></Pair>
+			</Table>
+			<Table key="seg_hdd_contents">
+				<Pair key="focus_priority"><String>0</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_dlna_scan"
+				attr="seg_dlna_scan"
+				src="sel://localhost/isdlna?category_photo.xml#seg_dlna_scan" 
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_editingvideo_mgmt"
+				attr="seg_editingvideo_mgmt"
+				src="sel://localhost/videoedit?category_video.xml#seg_editingvideo_mgmt"
+				/>
+
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_gameexit"
+				src="sel://localhost/ingame?path=category_video.xml#seg_gameexit&type=video"
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="gameDir"
+				attr="gameDir"
+				src="xil://localhost/list?t=video"
+			/>
+
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_welcome"
+				attr="seg_welcome"
+				src="sel://localhost/welcome?type=video"
+				/>
+
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_dlna_device"
+				attr="seg_dlna_device"
+				src="xcb://localhost/query?table=MMS_MEDIA_TYPE_SYSTEM&genre=Video&sort=+StorageMedia:Common.titleForSort&cond=Ae+StorageMedia:StorageMedia.type %xCB_MEDIA_TYPE_DLNA" 
+				/>
+
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_bdc"
+				src="xcb://localhost/query?table=MMS_MEDIA_TYPE_SYSTEM&subclass=x-xcb/storagemedia-bdc&cond=Ae+StorageMedia:StorageMedia.stat.mediaStatus %xCB_MEDIA_INSERTED+Ae+StorageMedia:StorageMedia.mediaFormat %xCB_MEDIA_FORMAT_DATA+AGL+StorageMedia:StorageMedia.type %xCB_MEDIA_TYPE_PS3_BD %xCB_MEDIA_TYPE_DVDPRW+Aa+StorageMedia:StorageMedia.reserved24"
+				/>
+
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_add_content_device"
+				attr="seg_add_content_device"
+				src="xcb://localhost/query?table=MMS_MEDIA_TYPE_SYSTEM&sort=+StorageMedia:StorageMedia.type&cond=Ae+StorageMedia:StorageMedia.stat.mediaStatus %xCB_MEDIA_INSERTED+AGL+StorageMedia:StorageMedia.type %xCB_MEDIA_TYPE_PS3_BD %xCB_MEDIA_TYPE_DVDPRW+AGL+StorageMedia:StorageMedia.mediaFormat %xCB_MEDIA_FORMAT_PS3CONTENT_BD %xCB_MEDIA_FORMAT_PS3CONTENT_DVD+Ae+StorageMedia:Common.fileName EX_VIDEO"
+				/>
+
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_mv_content_device"
+				src="xcb://localhost/query?table=MMS_MEDIA_TYPE_SYSTEM&sort=+StorageMedia:StorageMedia.type&cond=Ae+StorageMedia:StorageMedia.stat.mediaStatus %xCB_MEDIA_INSERTED+AGL+StorageMedia:StorageMedia.type %xCB_MEDIA_TYPE_PS3_BD %xCB_MEDIA_TYPE_DVDPRW+AGL+StorageMedia:StorageMedia.mediaFormat %xCB_MEDIA_FORMAT_PS3CONTENT_BD %xCB_MEDIA_FORMAT_PS3CONTENT_DVD+Ae+StorageMedia:Common.fileName VIDEODIR"
+				/>
+
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_data_device"
+				attr="seg_data_device"
+				src="xcb://localhost/query?table=MMS_MEDIA_TYPE_SYSTEM&genre=Video&sort=+StorageMedia:StorageMedia.sortOrder+StorageMedia:StorageMedia.timeInserted&cond=Ae+StorageMedia:StorageMedia.stat.mediaStatus %xCB_MEDIA_INSERTED+Ae+StorageMedia:StorageMedia.mediaFormat %xCB_MEDIA_FORMAT_DATA+AGL+StorageMedia:StorageMedia.type %xCB_MEDIA_TYPE_BDROM %xCB_MEDIA_TYPE_WM" 
+				/>
+
+			<Query 
+				class="type:x-xmb/folder-pixmap" 
+				key="seg_hdd_install" 
+				attr="seg_hdd_install" 
+				src="ese://localhost/query?type=install_video"
+				/>
+
+			<Query 
+				class="type:x-xmb/folder-pixmap" 
+				key="seg_hdd_contents" 
+				attr="seg_hdd_contents" 
+				src="sel://localhost/ex?root.view_selected.video"
+				/>
+		</Items>
+	</View>
+
+	<View id="seg_bddatamgmt">
+		<Attributes>
+			<Table key="bddatamgmt">
+				<Pair key="mode"><String>mgmt</String></Pair>
+				<Pair key="genre"><String>BdData</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+			<Item 
+				class="type:x-xmb/xmlbddatamgmt" 
+				key="bddatamgmt" 
+				attr="bddatamgmt"
+				/>
+		</Items>
+	</View>
+
+	<View id="seg_editingvideo_mgmt">
+		<Attributes>
+			<Table key="mgmt">
+				<Pair key="mode"><String>editingvideomgmt</String></Pair>
+				<Pair key="type"><String>video</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+			<Item class="type:x-xmb/xmleditingvideo" key="mgmt" attr="mgmt" />
+		</Items>
+	</View>
+	<View id="seg_editingvideo">
+		<Attributes>
+			<Table key="editingvideo">
+				<Pair key="icon_rsc"><String>tex_add_playlist</String></Pair>
+				<Pair key="title_rsc"><String>msg_create_new_video</String></Pair>
+				<Pair key="icon_notation"><String>WNT_XmbItemVideoNew</String></Pair>
+				<Pair key="module_name"><String>scenefolder_plugin</String></Pair>
+				<Pair key="module_action"><String>make_new_scenefolder_video_wo_title</String></Pair>
+				<Pair key="bar_action"><String>hide</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+			<Item class="type:x-xmb/module-action" key="editingvideo" attr="editingvideo" />
+		</Items>
+	</View>
+
+	<View id="seg_bddatacommon">
+		<Attributes>
+			<Table key="bddatacommon">
+				<Pair key="mode"><String>common</String></Pair>
+				<Pair key="genre"><String>BdData</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+			<Item 
+				class="type:x-xmb/xmlbddatamgmt" 
+				key="bddatacommon" 
+				attr="bddatacommon"
+				/>
+		</Items>
+	</View>
+
+	<View id="seg_welcome">
+		<Attributes>
+			<Table key="welcome">
+				<Pair key="content_type"><String>video</String></Pair>
+ 			</Table>
+		</Attributes>
+		<Items>
+			<Item class="type:x-xmb/xmlwelcome" key="welcome" attr="welcome" />
+		</Items>
+	</View>
+
+	<View id="seg_gameexit">
+		<Items>
+			<Item class="type:x-xmb/xmlgameexit" key="gameexit" />
+		</Items>
+	</View>
+</XMBML>

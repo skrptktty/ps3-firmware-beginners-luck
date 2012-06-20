@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<XMBML version="1.0">
+	<View id="root">
+		<Attributes>
+			<Table key="seg_playlist_mgmt">
+				<Pair key="focus_priority"><String>5</String></Pair>
+			</Table>
+			<Table key="seg_dlna_scan">
+				<Pair key="focus_priority"><String>4</String></Pair>
+			</Table>
+			<Table key="gameDir">
+				<Pair key="focus_priority"><String>2</String></Pair>
+			</Table>
+			<Table key="seg_dlna_device">
+				<Pair key="focus_priority"><String>1</String></Pair>
+			</Table>
+			<Table key="seg_sacd_device">
+				<Pair key="focus_detect"><String>enable</String></Pair>
+				<Pair key="focus_priority"><String>-50</String></Pair>
+			</Table>
+			<Table key="seg_cdda_device">
+				<Pair key="focus_detect"><String>enable</String></Pair>
+				<Pair key="focus_priority"><String>-49</String></Pair>
+			</Table>
+			<Table key="seg_dsd_device">
+				<Pair key="focus_priority"><String>-48</String></Pair>
+			</Table>
+			<Table key="seg_data_device">
+				<Pair key="focus_priority"><String>-47</String></Pair>
+			</Table>
+			<Table key="seg_hdd_contents">
+				<Pair key="focus_priority"><String>0</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+
+			<Query 
+				class="type:x-xmb/folder-pixmap" 
+				key="seg_now" 
+				src="now://localhost/q?id=XMB_MODULE_MUSIC&rquery=root.fixed_items.nowmusic"
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_dlna_scan"
+				attr="seg_dlna_scan"
+				src="sel://localhost/isdlna?category_photo.xml#seg_dlna_scan" 
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_gameexit"
+				src="sel://localhost/ingame?path=category_music.xml#seg_gameexit&type=music"
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="gameDir"
+				attr="gameDir"
+				src="xil://localhost/list?t=music"
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_dlna_device"
+				attr="seg_dlna_device"
+				src="xcb://localhost/query?table=MMS_MEDIA_TYPE_SYSTEM&genre=Music&sort=+StorageMedia:Common.titleForSort&cond=Ae+StorageMedia:StorageMedia.type %xCB_MEDIA_TYPE_DLNA" 
+				/>
+
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_sacd_device"
+				attr="seg_sacd_device"
+				src="xcb://localhost/query?table=MMS_MEDIA_TYPE_SYSTEM&genre=Music&sort=-StorageMedia:StorageMedia.audio.channelType&cond=Ae+StorageMedia:StorageMedia.stat.mediaStatus %xCB_MEDIA_INSERTED+Ae+StorageMedia:StorageMedia.type %xCB_MEDIA_TYPE_SACD" 
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_cdda_device"
+				attr="seg_cdda_device"
+				src="xcb://localhost/query?table=MMS_MEDIA_TYPE_SYSTEM&genre=Music&cond=Ae+StorageMedia:StorageMedia.stat.mediaStatus %xCB_MEDIA_INSERTED+Ae+StorageMedia:StorageMedia.type %xCB_MEDIA_TYPE_CDDA" 
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_dsd_device"
+				attr="seg_dsd_device"
+				src="xcb://localhost/query?table=MMS_MEDIA_TYPE_SYSTEM&genre=Music&cond=Ae+StorageMedia:StorageMedia.stat.mediaStatus %xCB_MEDIA_INSERTED+Ae+StorageMedia:StorageMedia.type %xCB_MEDIA_TYPE_DSD" 
+				/>
+
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_data_device"
+				attr="seg_data_device"
+				src="xcb://localhost/query?table=MMS_MEDIA_TYPE_SYSTEM&genre=Music&sort=+StorageMedia:StorageMedia.sortOrder+StorageMedia:StorageMedia.timeInserted&cond=Ae+StorageMedia:StorageMedia.stat.mediaStatus %xCB_MEDIA_INSERTED+Ae+StorageMedia:StorageMedia.mediaFormat %xCB_MEDIA_FORMAT_DATA+AGL+StorageMedia:StorageMedia.type %xCB_MEDIA_TYPE_BDROM %xCB_MEDIA_TYPE_WM" 
+				/>
+
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_playlist_mgmt"
+				attr="seg_playlist_mgmt"
+				src="#seg_playlist_mgmt"
+				/>
+			<Query 
+				class="type:x-xmb/folder-pixmap" 
+				key="seg_hdd_contents" 
+				attr="seg_hdd_contents" 
+				src="sel://localhost/ex?root.view_selected.music"
+				/>
+
+		</Items>
+	</View>
+
+	<View id="root_for_dex">
+		<Attributes>
+			<Table key="seg_playlist_mgmt">
+				<Pair key="focus_priority"><String>5</String></Pair>
+			</Table>
+			<Table key="seg_dlna_scan">
+				<Pair key="focus_priority"><String>4</String></Pair>
+			</Table>
+			<Table key="gameDir">
+				<Pair key="focus_priority"><String>2</String></Pair>
+			</Table>
+			<Table key="seg_dlna_device">
+				<Pair key="focus_priority"><String>1</String></Pair>
+			</Table>
+			<Table key="seg_cdda_device">
+				<Pair key="focus_detect"><String>enable</String></Pair>
+				<Pair key="focus_priority"><String>-49</String></Pair>
+			</Table>
+			<Table key="seg_data_device">
+				<Pair key="focus_priority"><String>-47</String></Pair>
+			</Table>
+			<Table key="seg_hdd_contents">
+				<Pair key="focus_priority"><String>0</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+			<Query 
+				class="type:x-xmb/folder-pixmap" 
+				key="seg_now" 
+				src="now://localhost/q?id=XMB_MODULE_MUSIC&rquery=root.fixed_items.nowmusic"
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_dlna_scan"
+				attr="seg_dlna_scan"
+				src="sel://localhost/isdlna?category_photo.xml#seg_dlna_scan" 
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_gameexit"
+				src="sel://localhost/ingame?path=category_music.xml#seg_gameexit&type=music"
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="gameDir"
+				attr="gameDir"
+				src="xil://localhost/list?t=music"
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_dlna_device"
+				attr="seg_dlna_device"
+				src="xcb://localhost/query?table=MMS_MEDIA_TYPE_SYSTEM&genre=Music&sort=+StorageMedia:Common.titleForSort&cond=Ae+StorageMedia:StorageMedia.type %xCB_MEDIA_TYPE_DLNA" 
+				/>
+
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_cdda_device"
+				attr="seg_cdda_device"
+				src="xcb://localhost/query?table=MMS_MEDIA_TYPE_SYSTEM&genre=Music&cond=Ae+StorageMedia:StorageMedia.stat.mediaStatus %xCB_MEDIA_INSERTED+Ae+StorageMedia:StorageMedia.type %xCB_MEDIA_TYPE_CDDA" 
+				/>
+
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_data_device"
+				attr="seg_data_device"
+				src="xcb://localhost/query?table=MMS_MEDIA_TYPE_SYSTEM&genre=Music&sort=+StorageMedia:StorageMedia.sortOrder+StorageMedia:StorageMedia.timeInserted&cond=Ae+StorageMedia:StorageMedia.stat.mediaStatus %xCB_MEDIA_INSERTED+Ae+StorageMedia:StorageMedia.mediaFormat %xCB_MEDIA_FORMAT_DATA+AGL+StorageMedia:StorageMedia.type %xCB_MEDIA_TYPE_BDROM %xCB_MEDIA_TYPE_WM"
+				/>
+
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_playlist_mgmt"
+				attr="seg_playlist_mgmt"
+				src="#seg_playlist_mgmt"
+				/>
+			<Query 
+				class="type:x-xmb/folder-pixmap" 
+				key="seg_hdd_contents" 
+				attr="seg_hdd_contents" 
+				src="sel://localhost/ex?root.view_selected.music"
+				/>
+
+		</Items>
+	</View>
+
+	<View id="seg_now">
+		<Attributes>
+			<Table key="now">
+				<Pair key="icon_rsc"><String>tex_now_playing</String></Pair>
+				<Pair key="title"><String>now playing dummy</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+ 			</Table>
+		</Attributes>
+		<Items>
+			<Item class="type:x-xmb/xmlnowplaying" key="now" attr="now" />
+		</Items>
+	</View>
+
+	<View id="seg_gameexit">
+		<Items>
+			<Item class="type:x-xmb/xmlgameexit" key="gameexit" />
+		</Items>
+	</View>
+
+	<View id="seg_playlist_mgmt">
+		<Attributes>
+			<Table key="mgmt">
+				<Pair key="mode"><String>playlistmgmt</String></Pair>
+				<Pair key="type"><String>music</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+			<Item class="type:x-xmb/xmlplaylist" key="mgmt" attr="mgmt" />
+		</Items>
+	</View>
+
+	<View id="seg_playlist_mgmt_psp">
+		<Attributes>
+			<Table key="mgmt">
+				<Pair key="mode"><String>playlistmgmtpsp</String></Pair>
+				<Pair key="type"><String>music</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+			<Item class="type:x-xmb/xmlplaylist" key="mgmt" attr="mgmt" />
+		</Items>
+	</View>
+
+	<View id="seg_playlist_fixed_items">
+		<Attributes>
+			<Table key="make_new_playlist">
+				<Pair key="icon_rsc"><String>tex_add_playlist</String></Pair>
+				<Pair key="icon_notation"><String>WNT_XmbItemPlaylistAdd</String></Pair>
+				<Pair key="title_rsc"><String>msg_create_new_playlist</String></Pair>
+				<Pair key="module_name"><String>playlist_plugin</String></Pair>
+				<Pair key="module_action"><String>make_new_playlist_music</String></Pair>
+				<Pair key="bar_action"><String>hide</String></Pair>
+ 			</Table>
+		</Attributes>
+		<Items>
+			<Item class="type:x-xmb/module-action" key="make_new_playlist" attr="make_new_playlist" />
+		</Items>
+	</View>
+
+</XMBML>
