@@ -30,10 +30,17 @@ sudo chmod +x ps3mfw
 
 == Recent Changes ==
 
+6-19-2012
+
+Added the expanded 355 firmware 	<ap - 06192012>
+Added the expanded 411 firmware 	<ap - 06192012>
+Added the expanded kmeaw firmware 	<ap - 06192012>
+Added rebug pkg 			<ap - 06192012>
+
 6-16-2012
 
-Added mfw git to the repo
-Added ps3tools git to the repo
+Added mfw git to the repo		<ap - 06162012>
+Added ps3tools git to the repo		<ap - 06162012>
 
 ###############################################################################
 ################# "THERE IS NO RABBIT HOLE TOO DEEP!!!!" ######################

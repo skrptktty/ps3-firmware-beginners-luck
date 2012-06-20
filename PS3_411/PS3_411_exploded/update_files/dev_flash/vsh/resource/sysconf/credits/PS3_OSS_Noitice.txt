@@ -1,0 +1,488 @@
+﻿PlayStation®3 system includes following third-party open source software.<br/>
+<br/>
+<br/>
+AVM+<br/>
+<br/>
+The source code version of this software is made available to you under the terms of the Mozilla Public License Version 1.1 at http://www.scei.co.jp/ps3-license/avm.html<br/>
+<br/>
+<br/>
+<br/>
+eCOS<br/>
+<br/>
+This is the full text of the license as found on files within eCos covered by the eCos license. It should be read in conjuction with the GNU General Public License (GPL) on which it depends.<br/>
+This file is part of eCos, the Embedded Configurable Operating System.<br/>
+Copyright© 1998, 1999, 2000, 2001, 2002, 2003 Red Hat, Inc.<br/>
+Copyright© 2002, 2003 John Dallaway<br/>
+Copyright© 2002, 2003 Nick Garnett<br/>
+Copyright© 2002, 2003 Jonathan Larmour<br/>
+Copyright© 2002, 2003 Andrew Lunn<br/>
+Copyright© 2002, 2003 Gary Thomas<br/>
+Copyright© 2002, 2003 Bart Veer<br/>
+eCos is free software; you can redistribute it and/or modify it underthe terms of the GNU General Public License as published by the Free Software Foundation; either version 2 or (at your option) any later version.<br/>
+eCos is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.<br/>
+You should have received a copy of the GNU General Public License along with eCos; if not, write to the Free Software Foundation, Inc.,59 Temple Place, Suite 330, Boston, MA 02111-1307 USA.<br/>
+As a special exception, if other files instantiate templates or use macros or inline functions from this file, or you compile this file and link it with other works to produce a work based on this file, this file does not by itself cause the resulting work to be covered by the GNU General Public License. However the source code for this file must still be made available in accordance with section (3) of the GNU General Public License.<br/>
+This exception does not invalidate any other reasons why a work based on this file might be covered by the GNU General Public License.<br/>
+In compliance with the GPL, the source code of this software is made available to you at http://www.scei.co.jp/ps3-license/ecos.html.<br/>
+<br/>
+<br/>
+<br/>
+Expat<br/>
+<br/>
+Copyright© 1998, 1999, 2000 Thai Open Source Software Center Ltd. and Clark Cooper.<br/>
+Copyright© 2001, 2002, 2003, 2004, 2005, 2006 Expat maintainers.<br/>
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:<br/>
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.<br/>
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.<br/>
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.<br/>
+<br/>
+<br/>
+<br/>
+Free BSD<br/>
+<br/>
+# $FreeBSD: src/COPYRIGHT,v 1.5.2.1 2005/01/01 07:29:20 sobomax Exp $<br/>
+# @(#)COPYRIGHT 8.2 (Berkeley) 3/21/94<br/>
+The compilation of software known as FreeBSD is distributed under the following terms:<br/>
+Copyright© 1992-2005 The FreeBSD Project. All rights reserved.<br/>
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:<br/>
+・ Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.<br/>
+・ Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.<br/>
+THIS SOFTWARE IS PROVIDED BY AUTHOR AND CONTRIBUTORS ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL AUTHOR OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.<br/>
+The 4.4BSD and 4.4BSD-Lite software is distributed under the following terms:<br/>
+All of the documentation and software included in the 4.4BSD and 4.4BSD-Lite Releases is copyrighted by The Regents of the University of California.<br/>
+Copyright 1979, 1980, 1983, 1986, 1988, 1989, 1991, 1992, 1993, 1994<br/>
+The Regents of the University of California. All rights reserved.<br/>
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:<br/>
+・ Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.<br/>
+・ Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.<br/>
+・ All advertising materials mentioning features or use of this software must display the following acknowledgement: This product includes software developed by the University of California, Berkeley and its contributors.<br/>
+・ Neither the name of the University nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.<br/>
+THIS SOFTWARE IS PROVIDED BY THE REGENTS AND CONTRIBUTORS ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE REGENTS OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.<br/>
+The Institute of Electrical and Electronics Engineers and the American National Standards Committee X3, on Information Processing Systems have given us permission to reprint portions of their documentation.<br/>
+In the following statement, the phrase ``this text'' refers to portions of the system documentation.<br/>
+Portions of this text are reprinted and reproduced in electronic form in the second BSD Networking Software Release, from IEEE Std 1003.1-1988, IEEE Standard Portable Operating System Interface for Computer Environments (POSIX), copyright C 1988 by the Institute of Electrical and Electronics Engineers, Inc. In the event of any discrepancy between these versions and the original IEEE Standard, the original IEEE Standard is the referee document.<br/>
+In the following statement, the phrase ``This material'' refers to portions of the system documentation.<br/>
+This material is reproduced with permission from American National Standards Committee X3, on Information Processing Systems. Computer and Business Equipment Manufacturers Association (CBEMA), 311 First St., NW, Suite 500, Washington, DC 20001-2178. The developmental work of Programming Language C was completed by the X3J11 Technical Committee.<br/>
+The views and conclusions contained in the software and documentation are those of the authors and should not be interpreted as representing official policies, either expressed or implied, of the Regents of the University of California. <br/>
+NOTE: The copyright of UC Berkeley's Berkeley Software Distribution "BSD") source has been updated. The copyright addendum may be found at ftp://ftp.cs.berkeley.edu/pub/4bsd/README.Impt.License.Change and is included below.<br/>
+July 22, 1999<br/>
+To All Licensees, Distributors of Any Version of BSD:<br/>
+As you know, certain of the Berkeley Software Distribution ("BSD") source code files require that further distributions of products containing all or portions of the software, acknowledge within their advertising materials that such products contain software developed by UC Berkeley and its contributors.<br/>
+Specifically, the provision reads:<br/>
+" * 3. All advertising materials mentioning features or use of this software<br/>
+* must display the following acknowledgement:<br/>
+* This product includes software developed by the University of<br/>
+* California, Berkeley and its contributors."<br/>
+Effective immediately, licensees and distributors are no longer required to include the acknowledgement within advertising materials. Accordingly, the foregoing paragraph of those BSD Unix files containing it is hereby deleted in its entirety.<br/>
+William Hoskins<br/>
+Director, Office of Technology Licensing<br/>
+University of California, Berkeley<br/>
+<br/>
+<br/>
+<br/>
+FreeType2<br/>
+<br/>
+Portions of this software are copyright © 1996-2011 The FreeType Project (www.freetype.org). All rights reserved.<br/>
+<br/>
+<br/>
+<br/>
+Libjpeg<br/>
+<br/>
+This software is based in part on the work of the Independent JPEG Group.<br/>
+<br/>
+<br/>
+<br/>
+Libtiff<br/>
+<br/>
+Copyright (c) 1988-1997 Sam Leffler<br/>
+Copyright (c) 1991-1997 Silicon Graphics, Inc.<br/>
+Permission to use, copy, modify, distribute, and sell this software and its documentation for any purpose is hereby granted without fee, provided that (i) the above copyright notices and this permission notice appear in all copies of the software and related documentation, and (ii) the names of Sam Leffler and Silicon Graphics may not be used in any advertising or publicity relating to the software without the specific, prior written permission of Sam Leffler and Silicon Graphics.<br/>
+THE SOFTWARE IS PROVIDED "AS-IS" AND WITHOUT WARRANTY OF ANY KIND, EXPRESS, IMPLIED OR OTHERWISE, INCLUDING WITHOUT LIMITATION, ANY WARRANTY OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.  <br/>
+IN NO EVENT SHALL SAM LEFFLER OR SILICON GRAPHICS BE LIABLE FOR ANY SPECIAL, INCIDENTAL, INDIRECT OR CONSEQUENTIAL DAMAGES OF ANY KIND, OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER OR NOT ADVISED OF THE POSSIBILITY OF DAMAGE, AND ON ANY THEORY OF LIABILITY, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.<br/>
+<br/>
+<br/>
+<br/>
+Libungif<br/>
+<br/>
+The GIFLIB distribution is Copyright (c) 1997 Eric S. Raymond<br/>
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:<br/>
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.<br/>
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE<br/>
+<br/>
+<br/>
+<br/>
+MD4 Message-Digest Algorithm of RSA Data Security, Inc.<br/>
+<br/>
+Copyright© 1990-2, RSA Data Security, Inc. All rights reserved.<br/>
+License to copy and use this software is granted provided that it is identified as the "RSA Data Security, Inc. MD4 Message-Digest Algorithm" in all material mentioning or referencing this software or this function.<br/>
+License is also granted to make and use derivative works provided that such works are identified as "derived from the RSA Data Security, Inc. MD4 Message-Digest Algorithm" in all material mentioning or referencing the derived work.<br/>
+RSA Data Security, Inc. makes no representations concerning either the merchantability of this software or the suitability of this software for any particular purpose. It is provided "as is" without express or implied warranty of any kind.<br/>
+These notices must be retained in any copies of any part of this documentation and/or software.<br/>
+<br/>
+<br/>
+<br/>
+MD5 Message-Digest Algorithm of RSA Data Security, Inc.<br/>
+<br/>
+Copyright© 1991-2, RSA Data Security, Inc. Created 1991. All rights reserved.<br/>
+License to copy and use this software is granted provided that it is identified as the "RSA Data Security, Inc. MD5 Message-Digest Algorithm" in all material mentioning or referencing this software or this function.<br/>
+License is also granted to make and use derivative works provided that such works are identified as "derived from the RSA Data Security, Inc. MD5 Message-Digest Algorithm" in all material mentioning or referencing the derived work.<br/>
+RSA Data Security, Inc. makes no representations concerning either the merchantability of this software or the suitability of this software for any particular purpose. It is provided "as is" without express or implied warranty of any kind.<br/>
+These notices must be retained in any copies of any part of this documentation and/or software.<br/>
+<br/>
+<br/>
+<br/>
+NetBSD<br/>
+<br/>
+The communication function includes software developed by the NetBSD Foundation, Inc. and its contributors.<br/>
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:<br/>
+・ Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer. <br/>
+・ Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.<br/>
+・ All advertising materials mentioning features or use of this software must display the following acknowledgement: This product includes software developed by the NetBSD Foundation, Inc. and its contributors.<br/>
+・ Neither the name of The NetBSD Foundation nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.<br/>
+THIS SOFTWARE IS PROVIDED BY THE NETBSD FOUNDATION, INC. AND CONTRIBUTORS ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE FOUNDATION OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. <br/>
+Copyright© 1982-1995<br/>
+The Regents of the University of California. All rights reserved.<br/>
+Copyright© 1982, 1986, 1989, 1993<br/>
+The Regents of the University of California. All rights reserved.<br/>
+This code is derived from software contributed to Berkeley by Mike Karels at Berkeley Software Design, Inc.<br/>
+Copyright© 1991, 1993<br/>
+The Regents of the University of California. All rights reserved.<br/>
+This code is derived from software contributed to Berkeley by Berkeley Software Design, Inc.<br/>
+Copyright© 1982, 1986, 1989, 1990, 1991, 1993, 1994<br/>
+The Regents of the University of California. All rights reserved.<br/>
+© UNIX System Laboratories, Inc.<br/>
+All or some portions of this file are derived from material licensed to the University of California by American Telephone and Telegraph Co. or Unix System Laboratories, Inc. and are reproduced herein with the permission of UNIX System Laboratories, Inc.<br/>
+Copyright© 1992<br/>
+The Regents of the University of California. All rights reserved.<br/>
+This software was developed by the Computer Systems Engineering group at Lawrence Berkeley Laboratory under DARPA contract BG 91-66 and contributed to Berkeley.<br/>
+Copyright© 1992, 1993<br/>
+The Regents of the University of California. All rights reserved.<br/>
+This software was developed by the Computer Systems Engineering group at Lawrence Berkeley Laboratory under DARPA contract BG 91-66 and contributed to Berkeley.<br/>
+All advertising materials mentioning features or use of this software must display the following acknowledgement:<br/>
+This product includes software developed by the University of California, Lawrence Berkeley Laboratory.<br/>
+Copyright© 1990-1997<br/>
+This code is derived from the Stanford/CMU enet packet filter, (net/enet.c) distributed as part of 4.3BSD, and code contributed to Berkeley by Steven McCanne and Van Jacobson both of Lawrence Berkeley Laboratory.<br/>
+Copyright© 1992, 1993<br/>
+The Regents of the University of California. All rights reserved.<br/>
+This code is derived from software contributed to Berkeley by Stephen Deering of Stanford University.<br/>
+Copyright© 1996-2001, 2003<br/>
+The NetBSD Foundation, Inc. All rights reserved.<br/>
+This code is derived from software contributed to The NetBSD Foundation by Jason R. Thorpe of the Numerical Aerospace Simulation Facility, NASA Ames Research Center.<br/>
+Copyright© 1997<br/>
+The NetBSD Foundation, Inc. All rights reserved.<br/>
+This code is derived from software contributed to The NetBSD Foundation by J.T. Conklin.<br/>
+Copyright© 1997-1999, 2002<br/>
+The NetBSD Foundation, Inc. All rights reserved.<br/>
+This code is derived from software contributed to The NetBSD Foundation by Jason R. Thorpe of the Numerical Aerospace Simulation Facility, NASA Ames Research Center, and by Luke Mewburn.<br/>
+Copyright© 1997-1999<br/>
+The NetBSD Foundation, Inc. All rights reserved.<br/>
+This code is derived from software contributed to The NetBSD Foundation by Luke Mewburn.<br/>
+Copyright© 1997-1999<br/>
+The NetBSD Foundation, Inc. All rights reserved.<br/>
+This code is derived from software contributed to The NetBSD Foundation by Jason R. Thorpe of the Numerical Aerospace Simulation Facility, NASA Ames Research Center, and by Luke Mewburn.<br/>
+Copyright© 1997, 1998, 2003<br/>
+The NetBSD Foundation, Inc. All rights reserved.<br/>
+This code is derived from software contributed to The NetBSD Foundation by J.T. Conklin, by Nathan J. Williams, and by Jason R. Thorpe.<br/>
+Copyright© 1997, 1998, 2000, 2001<br/>
+The NetBSD Foundation, Inc. All rights reserved.<br/>
+This code is derived from software contributed to The NetBSD Foundation by Jason R. Thorpe and Kevin M. Lahey of the Numerical Aerospace Simulation Facility, NASA Ames Research Center.<br/>
+Copyright© 1997, 1998, 1999<br/>
+The NetBSD Foundation, Inc. All rights reserved.<br/>
+This code is derived from software contributed to The NetBSD Foundation by Jason R. Thorpe and Kevin M. Lahey of the Numerical Aerospace Simulation Facility, NASA Ames Research Center.<br/>
+Copyright© 1998<br/>
+The NetBSD Foundation, Inc. All rights reserved.<br/>
+This code is derived from software contributed to The NetBSD Foundation by Charles M. Hannum.<br/>
+Copyright© 1998<br/>
+The NetBSD Foundation, Inc. All rights reserved.<br/>
+This code is derived from software contributed to The NetBSD Foundation by Kevin M. Lahey of the Numerical Aerospace Simulation Facility, NASA Ames Research Center.<br/>
+Copyright© 1998<br/>
+The NetBSD Foundation, Inc. All rights reserved.<br/>
+This code is derived from software contributed to The NetBSD Foundation by Public Access Networks Corporation ("Panix"). It was developed under contract to Panix by Eric Haszlakiewicz and Thor Lancelot Simon.<br/>
+Copyright© 1999-2001<br/>
+The NetBSD Foundation, Inc. All rights reserved.<br/>
+This code is derived from software contributed to The NetBSD Foundation by William Studnemund and Jason R. Thorpe.<br/>
+Copyright© 2000<br/>
+The NetBSD Foundation, Inc. All rights reserved.<br/>
+Copyright© 2000<br/>
+The NetBSD Foundation, Inc. All rights reserved.<br/>
+This code is derived from software contributed to The NetBSD Foundation by Jun-ichiro itojun Hagino.<br/>
+Copyright© 2001<br/>
+The NetBSD Foundation, Inc. All rights reserved.<br/>
+This code is derived from software contributed to The NetBSD Foundation by Klaus Klein.<br/>
+Copyright© 2001<br/>
+The NetBSD Foundation, Inc. All rights reserved.<br/>
+This code is derived from software contributed to The NetBSD Foundation by Matt Thomas &lt;matt@3am-software.com&gt;.<br/>
+Copyright© 2002<br/>
+The NetBSD Foundation, Inc. All rights reserved.<br/>
+This code is derived from software contributed to The NetBSD Foundation by Thor Lancelot Simon.<br/>
+Copyright© 2002<br/>
+The NetBSD Foundation, Inc. All rights reserved.<br/>
+This code is derived from software contributed to The NetBSD Foundation by Jason R. Thorpe of Wasabi Systems, Inc.<br/>
+Copyright© 2002<br/>
+The NetBSD Foundation, Inc. All rights reserved.<br/>
+This code is derived from software contributed to The NetBSD Foundation by Martin Husemann &lt;martin@NetBSD.org&gt;.<br/>
+Copyright© 2002-2004<br/>
+The NetBSD Foundation, Inc. All rights reserved.<br/>
+This code is derived from software contributed to The NetBSD Foundation by Christos Zoulas.<br/>
+Copyright© 2003<br/>
+The NetBSD Foundation, Inc. All rights reserved.<br/>
+This code is derived from software contributed to The NetBSD Foundation by Jason R. Thorpe.<br/>
+Copyright© 2003<br/>
+The NetBSD Foundation, Inc. All rights reserved.<br/>
+This code is derived from software contributed to The NetBSD Foundation by Matthias Scheler.<br/>
+Copyright© 2003<br/>
+The NetBSD Foundation, Inc. All rights reserved.<br/>
+This code is derived from software contributed to The NetBSD Foundation by David Laight.<br/>
+Copyright© 1995-1999, 2003<br/>
+WIDE Project. All rights reserved.<br/>
+Portions Copyright© 1993<br/>
+by Digital Equipment Corporation.<br/>
+Permission to use, copy, modify, and distribute this software for any purpose with or without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies, and that the name of Digital Equipment Corporation not be used in advertising or publicity pertaining to distribution of the document or software without specific, written prior permission.<br/>
+Portions Copyright© 1995<br/>
+by International Business Machines, Inc.<br/>
+International Business Machines, Inc. (hereinafter called IBM) grants permission under its copyrights to use, copy, modify, and distribute this Software with or without fee, provided that the above copyright notice and all paragraphs of this notice appear in all copies, and that the name of IBM not be used in connection with the marketing of any product incorporating the Software or modifications thereof, without specific, written prior permission.<br/>
+To the extent it has a right to do so, IBM grants an immunity from suit under its patents, if any, for the use, sale or manufacture of products to the extent that such products are used for performing Domain Name System dynamic updates in TCP/IP networks by means of the Software. No immunity is granted for any product per se or for any other function of any product.<br/>
+Copyright© 1995, 1996<br/>
+Carnegie-Mellon University. All rights reserved.<br/>
+Author: Chris G. Demetriou<br/>
+Permission to use, copy, modify and distribute this software and its documentation is hereby granted, provided that both the copyright notice and this permission notice appear in all copies of the software, derivative works or modified versions, and any portions thereof, and that both notices appear in supporting documentation.<br/>
+CARNEGIE MELLON ALLOWS FREE USE OF THIS SOFTWARE IN ITS "AS IS" CONDITION. CARNEGIE MELLON DISCLAIMS ANY LIABILITY OF ANY KIND FOR ANY DAMAGES WHATSOEVER RESULTING FROM THE USE OF THIS SOFTWARE.<br/>
+Carnegie Mellon requests users of this software to return to<br/>
+Software Distribution Coordinator or Software.Distribution@CS.CMU.EDU<br/>
+School of Computer Science<br/>
+Carnegie Mellon University<br/>
+Pittsburgh PA 15213-3890<br/>
+any improvements or extensions that they make and grant Carnegie the rights to redistribute these changes.<br/>
+----------------------------------------------------------------------------<br/>
+"THE BEER-WARE LICENSE" (Revision 42):<br/>
+&lt;phk@FreeBSD.ORG&gt; wrote this file. As long as you retain this notice you can do whatever you want with this stuff. If we meet some day, and you think this stuff is worth it, you can buy me a beer in return. Poul-Henning Kamp<br/>
+----------------------------------------------------------------------------<br/>
+Copyright© 1996<br/>
+Matt Thomas. All rights reserved.<br/>
+Copyright© 1996<br/>
+by Internet Software Consortium.<br/>
+Permission to use, copy, modify, and distribute this software for any purpose with or without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies.<br/>
+Copyright© 1997<br/>
+Jonathan Stone and Jason R. Thorpe. All rights reserved.<br/>
+This software is derived from information provided by Matt Thomas.<br/>
+Copyright© 1989<br/>
+Carnegie Mellon University. All rights reserved.<br/>
+Redistribution and use in source and binary forms are permitted provided that the above copyright notice and this paragraph are duplicated in all such forms and that any documentation, advertising materials, and other materials related to such distribution and use acknowledge that the software was developed by Carnegie Mellon University. The name of the University may not be used to endorse or promote products derived from this software without specific prior written permission.<br/>
+THIS SOFTWARE IS PROVIDED ``AS IS'' AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.<br/>
+Drew D. Perkins<br/>
+Carnegie Mellon University<br/>
+4910 Forbes Ave.<br/>
+Pittsburgh, PA 15213<br/>
+(412) 268-8576<br/>
+ddp@andrew.cmu.edu<br/>
+Copyright© 1994<br/>
+The Australian National University. All rights reserved.<br/>
+Permission to use, copy, modify, and distribute this software and its documentation is hereby granted, provided that the above copyright notice appears in all copies. This software is provided without any warranty, express or implied. The Australian National University makes no representations about the suitability of this software for any purpose.<br/>
+Copyright© 1997<br/>
+Joerg Wunsch.<br/>
+This software is distributed with NO WARRANTIES, not even the implied warranties for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.<br/>
+Authors grant any other persons or organizations permission to use or modify this software as long as this message is kept with the software, all derivative works or modified versions.<br/>
+Copyright© 1994-1996<br/>
+Cronyx Engineering Ltd.<br/>
+Author: Serge Vakulenko, &lt;vak@cronyx.ru&gt;<br/>
+Heavily revamped to conform to RFC 1661.<br/>
+Copyright© 2000<br/>
+Jun-ichiro itojun Hagino &lt;itojun@iijlab.net&gt;.<br/>
+This software is distributed with NO WARRANTIES, not even the implied warranties for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.<br/>
+Authors grant any other persons or organisations permission to use or modify this software as long as this message is kept with the software, all derivative works or modified versions.<br/>
+Copyright© 1998<br/>
+Niels Provos &lt;provos@citi.umich.edu&gt; All rights reserved.<br/>
+Theo de Raadt &lt;deraadt@openbsd.org&gt; came up with the idea of using such a mathematical system to generate more random (yet non-repeating) ids to solve the resolver/named problem. But Niels designed the actual system based on the constraints.<br/>
+Copyright© 1997-2000<br/>
+Sony Computer Science Laboratories Inc. All rights reserved.<br/>
+Copyright© 1988<br/>
+Stephen Deering.<br/>
+Copyright© 1989-2002<br/>
+Paul Mackerras. All rights reserved.<br/>
+Copyright© 2000<br/>
+Aaron D. Gifford. All rights reserved.<br/>
+Copyright© 2001<br/>
+Thomas Nordin &lt;nordin@openbsd.org&gt;<br/>
+Copyright© 2000-2001<br/>
+Artur Grabowski &lt;art@openbsd.org&gt; All rights reserved. <br/>
+Copyright© 2003<br/>
+Citrus Project, All rights reserved.<br/>
+portions-copyright-nrl-95<br/>
+Portions of this software are Copyright 1995-1998 by Randall Atkinson, Ronald Lee, Daniel McDonald, Bao Phan, and Chris Winters. All Rights Reserved. All rights under this copyright have been assigned to the US Naval Research Laboratory (NRL). The NRL Copyright Notice and License Agreement Version 1.1 (January 17, 1995) applies to these portions of the software.<br/>
+You should have received a copy of the license with this software. If you didn't get a copy, you may request one from &lt;license@ipv6.nrl.navy.mil&gt;.<br/>
+<br/>
+<br/>
+<br/>
+SEE<br/>
+<br/>
+Copyright© 2003, 2004<br/>
+David Leonard. All rights reserved.<br/>
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:<br/>
+・ Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.<br/>
+・ Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.<br/>
+・ Neither the name of Mr Leonard nor the names of the contributors may be used to endorse or promote products derived from this software without specific prior written permission.<br/>
+THIS SOFTWARE IS PROVIDED BY DAVID LEONARD AND CONTRIBUTORS ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL DAVID LEONARD OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.<br/>
+The separate 'dtoa.c' file is separately licenced, thus:<br/>
+****************************************************************<br/>
+The author of this software is David M. Gay.<br/>
+Copyright© 1991, 2000 by Lucent Technologies.<br/>
+Permission to use, copy, modify, and distribute this software for any purpose without fee is hereby granted, provided that this entire notice is included in all copies of any software which is or includes a copy or modification of this software and in all copies of the supporting documentation for such software.<br/>
+THIS SOFTWARE IS BEING PROVIDED "AS IS", WITHOUT ANY EXPRESS OR IMPLIED WARRANTY. IN PARTICULAR, NEITHER THE AUTHOR NOR LUCENT MAKES ANY REPRESENTATION OR WARRANTY OF ANY KIND CONCERNING THE MERCHANTABILITY OF THIS SOFTWARE OR ITS FITNESS FOR ANY PARTICULAR PURPOSE.<br/>
+***************************************************************<br/>
+<br/>
+<br/>
+<br/>
+Info-ZIP<br/>
+<br/>
+This is version 2007-Mar-4 of the Info-ZIP license.<br/>
+The definitive version of this document should be available at ftp://ftp.info-zip.org/pub/infozip/license.html indefinitely and a copy at http://www.info-zip.org/pub/infozip/license.html.<br/>
+Copyright (c) 1990-2007 Info-ZIP. All rights reserved.<br/>
+For the purposes of this copyright and license, "Info-ZIP" is defined as the following set of individuals:<br/>
+Mark Adler, John Bush, Karl Davis, Harald Denker, Jean-Michel Dubois, Jean-loup Gailly, Hunter Goatley, Ed Gordon, Ian Gorman, Chris Herborth, Dirk Haase, Greg Hartwig, Robert Heath, Jonathan Hudson, Paul Kienitz, David Kirschbaum, Johnny Lee, Onno van der Linden, Igor Mandrichenko, Steve P. Miller, Sergio Monesi, Keith Owens, George Petrov, Greg Roelofs, Kai Uwe Rommel, Steve Salisbury, Dave Smith, Steven M. Schweda, Christian Spieler, Cosmin Truta, Antoine Verheijen, Paul von Behren, Rich Wales, Mike White.<br/>
+This software is provided "as is," without warranty of any kind, express or implied. In no event shall Info-ZIP or its contributors be held liable for any direct, indirect, incidental, special or consequential damages arising out of the use of or inability to use this software.<br/>
+Permission is granted to anyone to use this software for any purpose, including commercial applications, and to alter it and redistribute it freely, subject to the above disclaimer and the following restrictions:<br/>
+・ Redistributions of source code (in whole or in part) must retain the above copyright notice, definition, disclaimer, and this list of conditions.<br/>
+・ Redistributions in binary form (compiled executables and libraries) must reproduce the above copyright notice, definition, disclaimer, and this list of conditions in documentation and/or other materials provided with the distribution. The sole exception to this condition is redistribution of a standard UnZipSFX binary (including SFXWiz) as part of a self-extracting archive; that is permitted without inclusion of this license, as long as the normal SFX banner has not been removed from the binary or disabled.<br/>
+・ Altered versions--including, but not limited to, ports to new operating systems, existing ports with new graphical interfaces, versions with modified or added functionality, and dynamic, shared, or static library versions not from Info-ZIP--must be plainly marked as such and must not be misrepresented as being the original source or, if binaries, compiled from the original source. Such altered versions also must not be misrepresented as being Info-ZIP releases--including, but not limited to, labeling of the altered versions with the names "Info-ZIP" (or any variation thereof, including, but not limited to, different capitalizations), "Pocket UnZip," "WiZ" or "MacZip" without the explicit permission of Info-ZIP. Such altered versions are further prohibited from misrepresentative use of the Zip-Bugs or Info-ZIP e-mail addresses or the Info-ZIP URL(s), such as to imply Info-ZIP will provide support for the altered versions.<br/>
+・ Info-ZIP retains the right to use the names "Info-ZIP," "Zip," "UnZip," "UnZipSFX," "WiZ," "Pocket UnZip," "Pocket Zip," and "MacZip" for its own source and binary releases.<br/>
+<br/>
+<br/>
+<br/>
+Internet Browser for PlayStation®3 System<br/>
+<br/>
+<br/>
+cairo<br/>
+<br/>
+The source code version of this software is made available to you under the terms of the Mozilla Public License Version 1.1 at http://www.scei.co.jp/ps3-license/.<br/>
+<br/>
+<br/>
+<br/>
+dtoa<br/>
+<br/>
+The author of this software is David M. Gay.<br/>
+Copyright (c) 1991, 2000, 2001 by Lucent Technologies.<br/>
+Copyright (C) 2002, 2005, 2006, 2007, 2008, 2010 Apple Inc. All rights reserved.<br/>
+Permission to use, copy, modify, and distribute this software for any purpose without fee is hereby granted, provided that this entire notice is included in all copies of any software which is or includes a copy or modification of this software and in all copies of the supporting documentation for such software.<br/>
+THIS SOFTWARE IS BEING PROVIDED "AS IS", WITHOUT ANY EXPRESS OR IMPLIED WARRANTY. IN PARTICULAR, NEITHER THE AUTHOR NOR LUCENT MAKES ANY REPRESENTATION OR WARRANTY OF ANY KIND CONCERNING THE MERCHANTABILITY OF THIS SOFTWARE OR ITS FITNESS FOR ANY PARTICULAR PURPOSE.<br/>
+<br/>
+<br/>
+<br/>
+expat<br/>
+<br/>
+Copyright (c) 1998, 1999, 2000 Thai Open Source Software Center Ltd<br/>
+and Clark Cooper<br/>
+Copyright (c) 2001, 2002, 2003 Expat maintainers.<br/>
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:<br/>
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.<br/>
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.<br/>
+<br/>
+<br/>
+<br/>
+FreeType2<br/>
+<br/>
+Portions of this software are copyright © 1996-2011 The FreeType Project (www.freetype.org). All rights reserved.<br/>
+<br/>
+<br/>
+<br/>
+hash.c<br/>
+<br/>
+Copyright (C) 2000 Bjorn Reese and Daniel Veillard.<br/>
+Permission to use, copy, modify, and distribute this software for any purpose with or without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies.<br/>
+THIS SOFTWARE IS PROVIDED ``AS IS'' AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE AUTHORS AND CONTRIBUTORS ACCEPT NO RESPONSIBILITY IN ANY CONCEIVABLE MANNER.<br/>
+<br/>
+<br/>
+<br/>
+ICU<br/>
+<br/>
+ICU License - ICU 1.8.1 and later<br/>
+COPYRIGHT AND PERMISSION NOTICE<br/>
+Copyright (c) 1995-2009 International Business Machines Corporation and others<br/>
+All rights reserved.<br/>
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, provided that the above copyright notice(s) and this permission notice appear in all copies of the Software and that both the above copyright notice(s) and this permission notice appear in supporting documentation.<br/>
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF THIRD PARTY RIGHTS. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR HOLDERS INCLUDED IN THIS NOTICE BE LIABLE FOR ANY CLAIM, OR ANY SPECIAL INDIRECT OR CONSEQUENTIAL DAMAGES, OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.<br/>
+Except as contained in this notice, the name of a copyright holder shall not be used in advertising or otherwise to promote the sale, use or other dealings in this Software without prior written authorization of the copyright holder.<br/>
+All trademarks and registered trademarks mentioned herein are the property of their respective owners.<br/>
+<br/>
+<br/>
+<br/>
+libjpeg<br/>
+<br/>
+This software is based in part on the work of the Independent JPEG Group.<br/>
+<br/>
+<br/>
+<br/>
+libpixman<br/>
+<br/>
+Copyright 1987, 1988, 1989, 1998 The Open Group<br/>
+Copyright 1987, 1988, 1989 Digital Equipment Corporation<br/>
+Copyright 1999, 2004, 2008 Keith Packard<br/>
+Copyright 2000 SuSE, Inc.<br/>
+Copyright 2000 Keith Packard, member of The XFree86 Project, Inc.<br/>
+Copyright 2004, 2005, 2007, 2008, 2009, 2010 Red Hat, Inc.<br/>
+Copyright 2004 Nicholas Miell<br/>
+Copyright 2005 Lars Knoll &amp; Zack Rusin, Trolltech<br/>
+Copyright 2005 Trolltech AS<br/>
+Copyright 2007 Luca Barbato<br/>
+Copyright 2008 Aaron Plattner, NVIDIA Corporation<br/>
+Copyright 2008 Rodrigo Kumpera<br/>
+Copyright 2008 Andre Tupinamba<br/>
+Copyright 2008 Mozilla Corporation<br/>
+Copyright 2008 Frederic Plourde<br/>
+Copyright 2009, Oracle and/or its affiliates. All rights reserved.<br/>
+Copyright 2009, 2010 Nokia Corporation<br/>
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:<br/>
+The above copyright notice and this permission notice (including the next paragraph) shall be included in all copies or substantial portions of the Software.<br/>
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.<br/>
+<br/>
+<br/>
+<br/>
+libxml2<br/>
+<br/>
+Copyright (C) 1998-2003 Daniel Veillard. All Rights Reserved.<br/>
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:<br/>
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.<br/>
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FIT- NESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE DANIEL VEILLARD BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CON- NECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.<br/>
+Except as contained in this notice, the name of Daniel Veillard shall not be used in advertising or otherwise to promote the sale, use or other dealings in this Software without prior written authorization from him.<br/>
+<br/>
+<br/>
+<br/>
+list.c<br/>
+<br/>
+Copyright (C) 2000 Gary Pennington and Daniel Veillard.<br/>
+Permission to use, copy, modify, and distribute this software for any purpose with or without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies.<br/>
+THIS SOFTWARE IS PROVIDED ``AS IS'' AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE AUTHORS AND CONTRIBUTORS ACCEPT NO RESPONSIBILITY IN ANY CONCEIVABLE MANNER.<br/>
+<br/>
+<br/>
+<br/>
+PCRE<br/>
+<br/>
+PCRE is a library of functions to support regular expressions whose syntax and semantics are as close as possible to those of the Perl 5 language.<br/>
+This is JavaScriptCore's variant of the PCRE library. While this library started out as a copy of PCRE, many of the features of PCRE have been removed.<br/>
+Copyright (c) 1997-2005 University of Cambridge. All rights reserved.<br/>
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:<br/>
+* Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.<br/>
+* Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.<br/>
+* Neither the name of the University of Cambridge nor the name of Apple Inc. nor the names of their contributors may be used to endorse or promote products derived from this software without specific prior written permission.<br/>
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.<br/>
+<br/>
+<br/>
+<br/>
+trio<br/>
+<br/>
+Copyright (C) 1998,2000,2001 Bjorn Reese and Daniel Stenberg.<br/>
+Permission to use, copy, modify, and distribute this software for any purpose with or without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies.<br/>
+THIS SOFTWARE IS PROVIDED ``AS IS'' AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE AUTHORS AND CONTRIBUTORS ACCEPT NO RESPONSIBILITY IN ANY CONCEIVABLE MANNER.<br/>
+<br/>
+<br/>
+<br/>
+WebKit<br/>
+<br/>
+This software includes open source software licensed under GNU Lesser General Public License Version 2.0 or GNU Lesser General Public License Version 2.1 (“LGPL”). In compliance with the LGPL, the source code of the open source software is made available to you. For more information, please visit Sony Computer Entertainment Inc.'s official website: http://www.scei.co.jp/ps3-license/.<br/>
+Copyright (C) 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011 by various WebKit contributors.<br/>
+Changes are Copyright (C) 2011 Sony Computer Entertainment Inc.<br/>
+This library is free software; you can redistribute it and/or modify it under the terms of the LGPL as published by the Free Software Foundation. You can obtain a copy of the LGPL at http://www.scei.co.jp/ps3-license/.<br/>
+Copyright (C) 2003, 2004, 2005, 2006 Apple Computer, Inc. All rights reserved.<br/>
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:<br/>
+1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.<br/>
+2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.<br/>
+THIS SOFTWARE IS PROVIDED BY APPLE COMPUTER, INC. ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL APPLE COMPUTER, INC. OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.

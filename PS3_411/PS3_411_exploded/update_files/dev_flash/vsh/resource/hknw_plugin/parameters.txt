@@ -1,0 +1,1291 @@
+
+// 書式
+//
+// #define __paramname__	__value__
+// 
+// 「 __paramname__ 」 に、任意のパラメータ名、
+// 「 __value__ 」 に、そのパラメータ値を記述してください。
+// 
+// 結局、プリプロセスで閉じれるようにしようとすると、これしか思いつきませんでした…orz
+
+/////////////////////////////////////////////////////
+// デバッグ機能系
+/////////////////////////////////////////////////////
+
+
+// グループの○枠の表示のON/OFF
+// 非表示する場合には 1 にしてください。
+#define CONTOUR_LINE_DISABLE		0
+
+// グループのテキストの表示のON/OFF
+// 非表示する場合には 1 にしてください。
+#define GROUP_TEXT_DISABLE			0
+
+
+/////////////////////////////////////////////////////
+// シェーダー系
+/////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////
+// カメラ系
+/////////////////////////////////////////////////////
+
+#define CAMERA_SPEED_ZOOM			5.0//4.0		// 旧0.04。単位系はプログラム側に移動。
+
+#define CAMERA_ANGLE_CHAOS			65.0//80.0
+#define CAMERA_ANGLE_CHAOS_NEAR			80.0//50.0
+#define CAMERA_ANGLE_GRID			90.0
+
+#define CAMERA_NEAR_LIMIT			30.0//18.0
+#define CAMERA_FAR_LIMIT			150.0//170.0//200.0
+
+#define CAMERA_NEAR_LIMIT_GRID			11.0
+#define CAMERA_FAR_LIMIT_GRID			108.6396 // COORD_UNITすると1.086396になるような値にしておく
+
+#define CAMERA_NEAR_LIMIT_PLAYLIST		30.0
+#define CAMERA_NEAR_LIMIT_GRID_PLAYLIST		11.0
+#define CAMERA_FAR_LIMIT_PLAYLIST		125.0
+
+#define CAMERA_NEAR_LIMIT_NETWORK		30.0
+#define CAMERA_NEAR_LIMIT_GRID_NETWORK		11.0
+#define CAMERA_FAR_LIMIT_NETWORK		125.0
+
+#define CAMERA_SPEED_SPACECHANGE_ACC		0.20
+#define CAMERA_SPEED_SPACECHANGE_MAX		10.0
+#define CAMERA_SPEED_SPACECHANGE_TENSION	1.0
+
+/////////////////////////////////////////////////////
+// 視野範囲系
+/////////////////////////////////////////////////////
+
+// ジャケットのViewRectを計算する際の調整値
+// ・カメラが低い時には少し余分に広く範囲を判定させる
+// ・カメラが高い時にはあまり余分に範囲をとらない
+// 上の２つの中間は線形補間で範囲を決定する
+#define PLAYLIST_VRECT_CAM_POSY_MIN		40.0 // カメラが近い時の高さ
+#define PLAYLIST_VRECT_CAM_POSY_MAX		90.0 // カメラが遠い時の高さ
+#define PLAYLIST_VRECT_SCALE_W_MIN		1.5 // カメラが近い時のWIDTH方向スケール
+#define PLAYLIST_VRECT_SCALE_W_MAX		1.1 // カメラが遠い時のWIDTH方向スケール
+#define PLAYLIST_VRECT_SCALE_H_MIN		1.5 // カメラが近い時のHEIGHT方向スケール
+#define PLAYLIST_VRECT_SCALE_H_MAX		1.2 // カメラが遠い時のHEIGHT方向スケール
+
+/////////////////////////////////////////////////////
+// ライト系
+/////////////////////////////////////////////////////
+
+// 写真へのライトの設定
+#define LIGHT_PHOTO_POS_X			20.0
+#define LIGHT_PHOTO_POS_Y			1000.0
+#define LIGHT_PHOTO_POS_Z			-100.0
+
+#define LIGHT_PHOTO_DIFFUSE			0.6 // 0.508316
+#define LIGHT_PHOTO_AMBIENT			1.0 // 0.90741
+#define LIGHT_PHOTO_SPECULAR			0.1 // 0.25197
+
+/////////////////////////////////////////////////////
+// 影
+/////////////////////////////////////////////////////
+
+#define SHADOW_PHOTO_DIST_1			1.0 //1.0
+#define SHADOW_PHOTO_DIST_2			8.0 //7.0 //20.0
+#define SHADOW_PHOTO_DIST_3			50.0 //100.0
+
+#define SHADOW_PHOTO_DENSITY		0.7 //0.4//0.2
+
+// 写真の影のスケール調整用 (標準は1.0)
+#define SHADOW_PHOTO_SCALE_X		1.60 //1.55
+#define SHADOW_PHOTO_SCALE_Y		1.0 //1.0
+#define SHADOW_PHOTO_SCALE_Z		1.60 //1.55
+
+// ジャケット用の影
+#define SHADOW_JACKET_DIST_1		1.0
+#define SHADOW_JACKET_DIST_2		7.0 //20.0
+#define SHADOW_JACKET_DIST_3		100.0
+#define SHADOW_JACKET_DENSITY		1.0 //0.4
+
+/////////////////////////////////////////////////////
+// 写真の解像度切り替わり
+/////////////////////////////////////////////////////
+
+//#define LOD_PHOTO_DIST_1			28.0
+//#define LOD_PHOTO_DIST_2			38.0
+//#define LOD_PHOTO_DIST_3			80.0
+#define LOD_PHOTO_DIST_1			34.0
+#define LOD_PHOTO_DIST_2			60.0//80.0
+#define LOD_PHOTO_DIST_3			100.0//150.0
+
+// フォーカスの写真から指定dist分の範囲に対してリクエストを発行します。
+// LOD_PHOTO_DISTを変更して写真が出なくなったら、ここも調整してください。
+#define REQUEST_LOD_PHOTO_DIST_1	0.9f
+#define REQUEST_LOD_PHOTO_DIST_2	0.4f
+#define REQUEST_LOD_PHOTO_DIST_3	0.18f
+
+/////////////////////////////////////////////////////
+// ジャケットの解像度切り替わり
+/////////////////////////////////////////////////////
+
+//ジャケットの写真部分の切り替わりをそれっぽく修正
+#define LOD_JACKET_THUMB_DIST_1			45.0
+#define LOD_JACKET_THUMB_DIST_2			75.0
+#define LOD_JACKET_THUMB_DIST_3			140.0
+//#define LOD_JACKET_THUMB_DIST_1			45.0
+//#define LOD_JACKET_THUMB_DIST_2			85.0
+//#define LOD_JACKET_THUMB_DIST_3			1140.0
+
+//ジャケットのテクスチャの切り替わりをそれっぽく修正
+#define LOD_JACKET_FRAME_DIST_1			35.0 //75.0
+#define LOD_JACKET_FRAME_DIST_2			90.0 //140.0
+
+/////////////////////////////////////////////////////
+// メニュー系？
+/////////////////////////////////////////////////////
+
+#define MENU_EFFECT_DELAY			0.8		// カーソルが止まって xx 秒たってから演出が始まります
+
+
+/////////////////////////////////////////////////////
+// ユーザーインタフェース系
+/////////////////////////////////////////////////////
+
+// カーソルをあてたときの写真山の浮き方。数値が大きいと速く移動します
+#define GROUP_FOCUS_FLOAT_SPEED_UP 			3.0//2.0
+#define GROUP_FOCUS_FLOAT_SPEED_DOWN		1.0
+
+// フォーカスされる際の余白。値が大きいとフォーカスされやすくなります
+#define GROUP_FOCUS_RECT_SPACE				20.0//15.0
+
+#define GROUP_ALTEREGO_FLOAT_SPEED_UP 		2.0
+#define GROUP_ALTEREGO_FLOAT_SPEED_DOWN		1.0
+
+#define GROUP_ALTEREGO_MOVE_WH				1.0
+#define GROUP_ALTEREGO_MOVE_HEIGHT			30.0
+
+// 写真をまとめたときの高さ方向の調整パラメータ
+#define GROUP_ALTEREGO_FLOAT_HEIGHT		19.0 // グループ全体の底の高さ
+#define GROUP_ALTEREGO_FLOAT_HSCALE		1.0 // グループ間の高さ方向の幅
+#define GROUP_ALTEREGO_FLOAT_WSCALE		0.2 // グループ間の縦横方向の幅
+
+#define GROUP_ALTEREGO_FLOAT_HOFFSET		0.5 // グループ間の高さ方向の隙間
+
+#define INTF_ALL_SELECT				0.6		// 長押し時間
+
+#define FOCUS_MOVE_SPEED			2.0//1.7//1.5		// フォーカス移動速度
+#define FOCUS_MOVE_BRAKE			0.85	// 減速率
+#define FOCUS_GRAVITY				0.05	// 吸着度合い
+
+
+/////////////////////////////////////////////////////
+// 一般演出系など
+/////////////////////////////////////////////////////
+
+#define QUICK_ZOOM_TIME					0.5
+#define QUICK_ZOOM_OUT_TIME				0.8
+
+#define ICON_EFFECT_SCATTER_COLOR		0.0//0.6//1.7		// 飛び散るときの色フェード時間
+#define ICON_EFFECT_SCATTER_POS			1.0//0.8//2.0		// 飛び散るときの移動アニメ時間
+
+#define ICON_EFFECT_SCATTER_VIEW_SAFE			1.05 // 飛び散るときの可視範囲
+
+// 複数選択時に回転アニメーションが可能な選択数
+#define ROTATE_LIMIT_NUMBERS	100
+
+/////////////////////////////////////////////////////
+// グループ毎の設定
+/////////////////////////////////////////////////////
+
+// グループ内の配置で縦横のばらつき幅を調整します
+#define GROUP_WIDTH_RATIO 			2.0//1.5
+#define GROUP_HEIGHT_RATIO			1.2
+
+// グループ内の配置で下記
+//	#define PARAM_PHOTO_VIEW_COUNT_X3
+// を超える枚数が表示される際に
+//	（超えた枚数） x ↓
+// をプラスしてばらつき幅を更に大きく広げる
+// ゼロならば影響しない
+#define GROUP_SCALE_OFFSET_BY_LIMIT		0.0//0.0001//0.002
+
+// グループ内の配置でY軸回転のばらつき幅を調整します
+// ＋の値のみ有効です
+#define GROUP_RANGE_ROTATION_Y		10.0
+
+// グループ内の配置で特別に大きくY軸回転をする写真の出現度を調整します
+// 0.0 から 1.0 が有効です
+#define GROUP_RANGE_MUTANT_RATE		0.4//0.2
+
+// グループ内の配置で特別に大きくY軸回転をする写真のばらつき幅を調整します
+// ↑のGROUP_RANGE_ROTATION_Yにこの値を足した角度範囲から角度が計算されます
+// ＋の値のみ有効です
+#define GROUP_RANGE_MUTANT_ROTATION_Y		40.0
+
+
+/////////////////////////////////////////////////////
+// 浮遊グループの設定(プレイリストの追加時の写真の山)
+/////////////////////////////////////////////////////
+
+// 浮遊グループ内の配置で縦横のばらつき幅を調整します
+#define FLT_GROUP_WIDTH_RATIO 			16.0
+#define FLT_GROUP_HEIGHT_RATIO			12.0
+
+// 浮遊グループ内の配置で写真間隔を調整します
+#define FLT_GROUP_DEPTH_DIV			0.1
+
+// 浮遊グループ内の配置でY軸回転のばらつき幅を調整します
+// ＋の値のみ有効です
+#define FLT_GROUP_RANGE_ROTATION_Y		10.0
+
+// 浮遊グループ内の配置で特別に大きくY軸回転をする写真の出現度を調整します
+// 0.0 から 1.0 が有効です
+#define FLT_GROUP_RANGE_MUTANT_RATE		0.4//0.2
+
+// 浮遊グループ内の配置で特別に大きくY軸回転をする写真のばらつき幅を調整します
+// ↑のFLT_RANGE_ROTATION_Yにこの値を足した角度範囲から角度が計算されます
+// ＋の値のみ有効です
+#define FLT_GROUP_RANGE_MUTANT_ROT_Y		40.0
+
+
+/////////////////////////////////////////////////////
+// 写真のデフォルトカラー
+/////////////////////////////////////////////////////
+
+// BASEからCHANGEの明るさに変化します。(0.0～1.0)
+#define DEFAULT_PHOTO_COLOR_BASE_R		1.0
+#define DEFAULT_PHOTO_COLOR_BASE_G		1.0
+#define DEFAULT_PHOTO_COLOR_BASE_B		1.0
+
+#define DEFAULT_PHOTO_COLOR_CHANGE_R	1.0
+#define DEFAULT_PHOTO_COLOR_CHANGE_G	1.0
+#define DEFAULT_PHOTO_COLOR_CHANGE_B	1.0
+
+#define DEFAULT_PHOTO_COLOR_ALPHA		0.2		// 写真のデフォルトカラーのアルファ
+
+/////////////////////////////////////////////////////
+// 写真の形状
+/////////////////////////////////////////////////////
+
+// 写真のふくらみ具合。(0.1～1.0)
+#define PHOTO_TRANSFORM_SWELL_RATE		0.25
+
+
+/////////////////////////////////////////////////////
+// 写真の縁のマテリアル
+/////////////////////////////////////////////////////
+
+#define PHOTO_FRAME_COLOR_R	0.92
+#define PHOTO_FRAME_COLOR_G	0.92
+#define PHOTO_FRAME_COLOR_B	0.92
+#define PHOTO_FRAME_COLOR_A	1.0
+
+
+/////////////////////////////////////////////////////
+// 選択エフェクト
+/////////////////////////////////////////////////////
+
+#define SELECT_EFFECT_COLOR_R  0.5
+#define SELECT_EFFECT_COLOR_G  0.8 //1.80
+#define SELECT_EFFECT_COLOR_B  2.0 //0.90
+#define SELECT_EFFECT_COLOR_A  2.8
+
+#define SELECT_EFFECT_GRID_COLOR_R 0.9
+#define SELECT_EFFECT_GRID_COLOR_G 1.2 //1.7
+#define SELECT_EFFECT_GRID_COLOR_B 2.0 //1.3
+#define SELECT_EFFECT_GRID_COLOR_A 2.0 //1.5
+
+#define BORDER_LINE_WIDTH 0.5
+
+#define BORDER_LINE_COLOR_0_R 0.90 //1.0
+#define BORDER_LINE_COLOR_0_G 0.25 //0.4
+#define BORDER_LINE_COLOR_0_B 0.1 //0.7
+
+#define BORDER_LINE_COLOR_1_R 0.05 //0.4
+#define BORDER_LINE_COLOR_1_G 0.45 //0.9
+#define BORDER_LINE_COLOR_1_B 0.2 //0.2
+
+#define BORDER_LINE_COLOR_2_R 0.0 //0.1
+#define BORDER_LINE_COLOR_2_G 0.4 //0.8
+#define BORDER_LINE_COLOR_2_B 0.65 //0.9
+
+#define BORDER_LINE_COLOR_3_R 0.88 //1.0
+#define BORDER_LINE_COLOR_3_G 0.46 //0.6
+#define BORDER_LINE_COLOR_3_B 0.0 //0.2
+
+#define BORDER_LINE_COLOR_4_R 0.5 //0.82
+#define BORDER_LINE_COLOR_4_G 0.32 //0.3
+#define BORDER_LINE_COLOR_4_B 0.6 //0.9
+
+#define BORDER_LINE_COLOR_5_R 0.1 //0.1
+#define BORDER_LINE_COLOR_5_G 0.3 //0.3
+#define BORDER_LINE_COLOR_5_B 0.8 //0.8
+
+#define BORDER_YEAR_FONT_SIZE         10.0//12.0//5.0 // 矢印の間に書いてある年の文字の大きさ
+#define BORDER_LABEL_FONT_SIZE        3.5//5.0//2.5 // 写真の山に書いてあるラベルの文字の大きさのベース
+#define BORDER_LABEL_FONT_SIZE_SCALE  2.0 // 写真の山に書いてあるラベルの文字の大きさのスケール幅
+#define BORDER_ASSORT_TITLE_FONT_SIZE 8.0//5.0 // 仕分けられた山に書いてある文字の大きさ
+
+#define BORDER_LABEL_TEX_SCALE 5.0//1.0// 仕分けられた山に書いてある文字のかすれテクスチャのサイズ
+
+/////////////////////////////////////////////////////
+// グループ（写真山）の見た目の大きさ調整用
+/////////////////////////////////////////////////////
+#define GROUP_HEIGHT_OPTION			5.5
+
+/////////////////////////////////////////////////////
+// ネットワーク空間でのテキストのサイズ
+/////////////////////////////////////////////////////
+#define NETWORK_TEXT_SIZE        3.5
+
+/////////////////////////////////////////////////////
+// プレイリスト空間でのフォントのサイズ調整用
+// (ライブラリ空間を１としての比率)
+/////////////////////////////////////////////////////
+#define PLAYLIST_TEXT_SIZE			2.5
+#define PLAYLIST_TEXT_SIZE_SCALE			0.0
+#define PLAYLIST_TEXT_POS_Z			1.9
+
+/////////////////////////////////////////////////////
+// 仕分けしたフォントの色
+/////////////////////////////////////////////////////
+#define GROUP_TEXT_COLOR_0_R 0.90//0.95 //Red
+#define GROUP_TEXT_COLOR_0_G 0.25//0.3
+#define GROUP_TEXT_COLOR_0_B 0.1//0.7
+#define GROUP_TEXT_COLOR_0_A 0.9//0.85
+
+#define GROUP_TEXT_COLOR_1_R 0.05 //0.22 //GREEN
+#define GROUP_TEXT_COLOR_1_G 0.45 //0.72
+#define GROUP_TEXT_COLOR_1_B 0.2 //0.15
+#define GROUP_TEXT_COLOR_1_A 0.85
+
+#define GROUP_TEXT_COLOR_2_R 0.0//0.1 //SKY BLUE
+#define GROUP_TEXT_COLOR_2_G 0.4//0.69
+#define GROUP_TEXT_COLOR_2_B 0.65//0.95
+#define GROUP_TEXT_COLOR_2_A 0.9
+
+#define GROUP_TEXT_COLOR_3_R 0.88//1.0 //ORANGE
+#define GROUP_TEXT_COLOR_3_G 0.46//0.5
+#define GROUP_TEXT_COLOR_3_B 0.0//0.1
+#define GROUP_TEXT_COLOR_3_A 0.90
+
+#define GROUP_TEXT_COLOR_4_R 0.5//0.88 //PURPLE
+#define GROUP_TEXT_COLOR_4_G 0.32//0.3
+#define GROUP_TEXT_COLOR_4_B 0.6//0.9
+#define GROUP_TEXT_COLOR_4_A 0.9 
+
+#define GROUP_TEXT_COLOR_5_R 0.1//0.1 //BLUE
+#define GROUP_TEXT_COLOR_5_G 0.3//0.3
+#define GROUP_TEXT_COLOR_5_B 0.8//0.8
+#define GROUP_TEXT_COLOR_5_A 0.9//0.85
+
+#define GROUP_TEXT_LOD_DIST_0	20.0
+#define GROUP_TEXT_LOD_DIST_1	50.0
+#define GROUP_TEXT_LOD_DIST_2	100.0
+
+#define GROUP_TEXT_LOD_SIZE_0	80
+#define GROUP_TEXT_LOD_SIZE_1	56
+#define GROUP_TEXT_LOD_SIZE_2	26
+
+#define GROUP_TEXT_YEAR_LOD_DIST_0	30.0
+#define GROUP_TEXT_YEAR_LOD_DIST_1	80.0
+#define GROUP_TEXT_YEAR_LOD_DIST_2	100.0
+
+#define GROUP_TEXT_YEAR_LOD_SIZE_0	118
+#define GROUP_TEXT_YEAR_LOD_SIZE_1	80
+#define GROUP_TEXT_YEAR_LOD_SIZE_2	40
+
+#define GROUP_SEAL_SIZE_SCALE       8.0   // 分類時に表示されるシールの大きさ
+
+/////////////////////////////////////////////////////
+// 新フォント
+/////////////////////////////////////////////////////
+
+// NEWFONT_FAMILY_CODEの値
+//     0 SCE_FONT_DEFAULT_FAMILY_CODE
+//     1 SCE_FONT_FAMILY_SANSERIF
+//     2 SCE_FONT_FAMILY_SERIF
+//     3 SCE_FONT_FAMILY_ROUNDED
+//     4 SCE_FONT_FAMILY_ROUNDED_CASUAL（従来の丸文字）
+//     5 SCE_FONT_FAMILY_ROUNDED_CASUAL2
+// 61440 azukiLB
+// 61441 uzura
+// 61442 aqua
+// 61443 aqua_pfont
+
+#define NEWFONT_FAMILY_CODE     61440//61443
+
+// NEWFONT_STYLE_CODEの値
+// 101   細い
+// 102    ↑
+// 103    ｜
+// 104    ｜
+// 105    ↓
+// 106   太い
+#define NEWFONT_STYLE_CODE      104
+
+/////////////////////////////////////////////////////
+// 写真グルーピング
+/////////////////////////////////////////////////////
+#define PARAM_MIN_DX				2.5//1.8//最小限確保する写真間の横方向の間隔(当たり判定のときに使う)
+#define PARAM_MIN_DZ 				1.8//最小限確保する写真間の縦方向の間隔(当たり判定のときに使う)
+#define PARAM_UNIT_DX				1.8//単位時間に対応する単位距離
+#define PARAM_UNIT_DZ				0.0//1.8//単位時間に対応する単位距離
+#define PARAM_MAX_RANDOM_DX			0.0//0.5//ランダムに発生させるベクトルの最大値
+#define PARAM_MAX_RANDOM_DZ			0.3//2.5  //1.0//ランダムに発生させるベクトルの最大値
+#define PARAM_LINE_DZ_STEP			8.0//1.0//5.0  //1.0//これは PARAM_MAX_RANDOM_DZ と同じ位がよいと思います
+#define PARAM_MAX_PER_UNIT_DX		2.0//5.0//グループ間の最大距離と単位距離の比
+#define	PARAM_DISP_YEAR_PER_UNIT_DX	4.0//3.5//グループ間に年の表示をする場合に最小限確保する間隔と単位距離の比
+#define PARAM_MAX_LINE_LENGTH		0.7//1.0//写真配置領域の横幅(画面横幅に対する比なので普通は1.0以下)
+#define PARAM_LINE_GRAD_MAX			15.0 //12.0 //配置直線の傾きの最大
+#define PARAM_LINE_GRAD_MIN			9.0  //7.0  //10.0 //配置直線の傾きの最小
+#define PARAM_CURVE					0.35 // 配置曲線の湾曲度合い。0.0以上。大体1.0まで。
+#define PARAM_CURVE_POINT			0.3  // 配置曲線の湾曲点。大体0.1から0.45まで。
+
+#define PARAM_PHOTO_VIEW_COUNT_X1	10//5
+#define PARAM_PHOTO_VIEW_COUNT_X2	100//20
+#define PARAM_PHOTO_VIEW_COUNT_X3	300//100
+#define PARAM_PHOTO_VIEW_COUNT_Y1	10//5
+#define PARAM_PHOTO_VIEW_COUNT_Y2	30//14
+#define PARAM_PHOTO_VIEW_COUNT_Y3	50//30
+
+#define PROJECTION_EFFECT_ALPHA		1.0
+#define PROJECTION_EFFECT_SIZE		1.2//1.0//0.7//0.75
+#define PROJECTION_EFFECT_SPACE		5
+
+#define PLAYLIST_ATARI_HANTEI_PARAM 1.0//0.5//0.85 //数値が大きくなる程、遠くによける。1.0だと従来どおりになります。0.1刻みぐらいで調整して下さい
+//プレイリスト空間の矩形領域定義
+#define PLAYLIST_SPACE_CENTER_X		0.0   //0.0f
+#define PLAYLIST_SPACE_CENTER_Z		0.0   //0.0f
+#define PLAYLIST_SPACE_WIDTH		715.0 // NEW_PLAYLIST_DIST_X の13倍以上にして下さい //300.0//3.0f
+#define PLAYLIST_SPACE_HEIGHT		520.0 // NEW_PLAYLIST_DIST_Z の13倍以上にして下さい //280.0//2.8f
+
+// 新規プレイリストを配置するときの、縦、横の配置間隔
+#define NEW_PLAYLIST_DIST_X         55.0
+#define NEW_PLAYLIST_DIST_Z         40.0
+
+#define PLAYLIST_SHOW_SPACE_SAFE_VALUE 1.0     // プレイリスト空間の表示範囲調整値(1.0=広め危険 / 0.7=まだ狭い / 0.6=狭いけど飛ばない)
+
+#define PLAYLIST_VIEW_SPACE_SAFE_VALUE 1.05 //1.0//1.15//1.05    // プレイリスト空間の表示範囲調整値(1.0がぴったり画面枠)
+#define PLAYLIST_VIEW_SPACE_FADE_VALUE 1.0 //0.95//1.05//0.95    // プレイリスト空間のフェード範囲調整値
+#define PLAYLIST_VIEW_SPACE_FADE_IN 0.5              // 　↑　のフェード IN 時間
+#define PLAYLIST_VIEW_SPACE_FADE_OUT 0.5             // 　↑　のフェード OUT 時間
+
+/////////////////////////////////////////////////////
+// ジャケット
+/////////////////////////////////////////////////////
+#define JACKET_ROTATION_SPEED           0.3 //2.0  // 回転速度
+#define JACKET_ROTATION_FRICTION        0.03 //0.15 // 回転中止後の減衰（値が大きい程早く停止します）
+
+/////////////////////////////////////////////////////
+// 取り込みアイコン
+/////////////////////////////////////////////////////
+#define PROMOTE_ICON_SIZE           13.0//20.00
+#define PROMOTE_ICON_SHADOW_SIZE    22.8 ///22.1//34.0 
+#define PROMOTE_ICON_FLOAT_HEIGHT   10.00	// 浮いたときの高さ
+#define PROMOTE_ICON_FLOAT_SCALE    1.15 ///1.05	//1.10 // 浮いたときの影の拡大率みたいなの
+#define PROMOTE_ICON_FLOAT_ALPHA    0.38 ///0.4		//0.60 // 浮いたときの影の薄さ割合みたいなの
+
+/////////////////////////////////////////////////////
+// キーワード検索アイコン
+/////////////////////////////////////////////////////
+#define SEARCH_ICON_SHADOW_SIZE    17.0
+#define SEARCH_ICON_SHADOW_X       0.25	// 影のX位置調整値
+#define SEARCH_ICON_SHADOW_Z       0.45	// 影のZ位置調整値
+
+/////////////////////////////////////////////////////
+// ボタンアイコン共通
+/////////////////////////////////////////////////////
+#define BUTTON_ICON_SIZE           13.0//20.00
+#define BUTTON_ICON_SHADOW_SIZE    13.0//22.1//34.0 
+#define BUTTON_ICON_FLOAT_HEIGHT   10.00	// 浮いたときの高さ
+#define BUTTON_ICON_FLOAT_SCALE    1.05	//1.10 // 浮いたときの影の拡大率みたいなの
+#define BUTTON_ICON_FLOAT_ALPHA    0.4		//0.60 // 浮いたときの影の薄さ割合みたいなの
+
+/////////////////////////////////////////////////////
+// ブートシーケンス
+/////////////////////////////////////////////////////
+#define BOOT_CONTENTS_LIMIT			100000		// 件数がこの値の範囲内なら箱庭起動
+
+#define BOOT_HELP_DISP_TIME                   7.0 //5.0   // ヘルプ１枚毎の表示時間
+
+#define BOOT_PHYSICS_ICON_LIMIT             	20000    // この値以上の場合降ってくる
+
+// グループの大きさ
+#define BOOT_GROUP_WIDTH			1.0
+#define BOOT_GROUP_HEIGHT			1.0
+
+#define BOOT_GROUP_WIDTH_RATIO			1.7 //2.2
+#define BOOT_GROUP_HEIGHT_RATIO			1.6 //2.1
+
+// 降ってくる写真の数 
+// 箱庭の制限として写真の同時描画最大枚数が1000枚なので、
+// その値を超えないようにお願いします。
+#define BOOT_PHYSICS_ICON_NUM                  250 //450//350//25//250 //800 //50
+
+// 0:写真数が *BOOT_PHYSICS_ICON_LIMIT以上* の場合降ってくる
+// 1:枚数に関係なく必ず降ってくる（ただし分類が早く終了すると降ってくるのが見えない場合あり）
+#define BOOT_SWITCH_PHYSICS_ANM                 0
+
+// 0:分類終了後にハケル
+// 1:写真が全部振り終わってからハケル（未実装）
+#define BOOT_SWITCH_PHYSICS_CONDITION           0
+
+#define BOOT_CAMERA_INIT_TARGET_POS_Z         2.0 //0.0   // 初期値:注視点座標Z
+#define BOOT_CAMERA_INIT_DIST                 40.0 //45.0 //50.0 //60.0 //20.0 //40.0  // 初期値:カメラ～注視点間の距離
+#define BOOT_CAMERA_INIT_ANGLE                65.0 //40.0 //35.0 //50.0  // 初期値:カメラ角度
+#define BOOT_CAMERA_DEST_ANGLE                50.0 //65.0 //70.0  // 到達カメラ角度
+#define BOOT_CAMERA_MOVE_START_DELAY          2.0 //3.0 //0.0   // カメラ移動開始までの待機時間
+#define BOOT_CAMERA_MOVE_SPEED                0.015 //0.012 //0.02 //0.1 //0.05 // カメラ移動速度
+#define BOOT_CAMERA_MOVE_TIME                 20.0 //40.0 //20.0 //6.0 // 5.0 //7.0   // カメラ移動時間
+
+#define BOOT_ICON_SCATTER_TIME                1.5   // 写真が捌ける時の移動アニメ時間
+
+// シミュレーションに入る直前の初期速度（Ｙ）
+#define BOOT_PHYSICS_INIT_YACC                0.0 //-15.0 //-10.0
+
+// シミュレーションに入る直前の初期位置（Ｙ）算出パラメータ
+//
+// Y = COORD_UNIT(PARAM_1) + COORD_UNIT(PARAM_2) * float(nPri) / float(nNum)
+//
+#define BOOT_PHYSICS_INIT_YPOS_PARAM_1        30.0 //0.03 //0.1
+#define BOOT_PHYSICS_INIT_YPOS_PARAM_2        200.0 //180.0 //400.0
+
+// それぞれの写真を落とす間隔調整用
+#define BOOT_PHYSICS_INIT_FALL_DELAY          10.0 //7.0 //5.0 //3.0 //1.0
+
+/////////////////////////////////////////////////////
+// 床表現
+/////////////////////////////////////////////////////
+#define FLOOR_COLOR_R				1.0 //0.85//0.90
+#define FLOOR_COLOR_G				1.0 //0.88//0.93
+#define FLOOR_COLOR_B				1.0 //0.89//0.94
+
+#define FLOOR_PLAYLIST_COLOR_R		1.0 //0.90	//1.10
+#define FLOOR_PLAYLIST_COLOR_G		1.0 //0.93	//0.93
+#define FLOOR_PLAYLIST_COLOR_B		1.0 //0.94	//0.94
+
+// 頃合を見て消す方向・もしくはSD調整用に移行させる
+#define FLOOR_LIGHT_OUT_COLOR_R     0.355//0.55
+#define FLOOR_LIGHT_OUT_COLOR_G     0.36//0.6
+#define FLOOR_LIGHT_OUT_COLOR_B     0.364//0.64
+
+#define FLOOR_WRAP_COUNT_LIBRARY    40.0
+#define FLOOR_WRAP_COUNT_PLAYLIST   40.0
+
+#define FLOOR_BRIGHTNESS_TYPE0      1.0 // 標準
+#define FLOOR_BRIGHTNESS_TYPE1      0.83 // -1
+#define FLOOR_BRIGHTNESS_TYPE2      0.66 //0.4 // -2
+#define FLOOR_BRIGHTNESS_TYPE3      0.5 //0.4 // -2
+#define FLOOR_BRIGHTNESS_TYPE4      0.3 //0.4 // -2
+#define FLOOR_BRIGHTNESS_TYPE5      0.1 //0.4 // -2
+
+#define FLOOR_SEAL_DENSITY          4 // 床に表示する飾りの数(1画面当たり) 
+
+//=================================================================
+//白床(1)
+//=================================================================
+#define FLOOR_TYPE1_TILE_COUNT_X    18//35 // タイルの数 横 
+#define FLOOR_TYPE1_TILE_COUNT_Y    18//35 // タイルの数 縦
+#define FLOOR_TYPE1_TEXT_R          1.0
+#define FLOOR_TYPE1_TEXT_G          1.0
+#define FLOOR_TYPE1_TEXT_B          1.0
+#define FLOOR_TYPE1_TEXT_A          1.0
+#define FLOOR_TYPE1_LIT_COL_R       0.11
+#define FLOOR_TYPE1_LIT_COL_G       0.12
+#define FLOOR_TYPE1_LIT_COL_B       0.13
+#define FLOOR_TYPE1_SEAL_COUNT      0   // 床に表示する飾りの種類の数
+#define FLOOR_TYPE1_SEAL_SMIN       1.0 // 床に表示する飾りのスケール(Scale)の最小値
+#define FLOOR_TYPE1_SEAL_SMAX       1.0 // 床に表示する飾りのスケール(Scale)の最大値
+#define FLOOR_TYPE1_SEAL_RMIN       0.0 // 床に表示する飾りの回転角(Rotation)の最小値(単位は度)
+#define FLOOR_TYPE1_SEAL_RMAX       0.0 // 床に表示する飾りの回転角(Rotation)の最大値(単位は度)
+
+#define FLOOR_TYPE1_TILE_SIZE_X     300.0 // 床タイルのサイズ 横 
+#define FLOOR_TYPE1_TILE_SIZE_Y     300.0 // 床タイルのサイズ 縦
+#define FLOOR_TYPE1_LTFF_COL_R      0.5 // R-ライトから離れた時の暗がりの色
+#define FLOOR_TYPE1_LTFF_COL_G      0.5 // G-〃
+#define FLOOR_TYPE1_LTFF_COL_B      0.5 // B-〃
+#define FLOOR_TYPE1_LTFF_COL_A      1.0   // A-〃 今は変更しないこと
+//------------------------------------
+#define FLOOR_TYPE1_TILE_ROTATE     0  // タイルを回転させるか？
+#define FLOOR_TYPE1_BLEND_FACT      0.0  // FXのブレンド率
+#define FLOOR_TYPE1_BLEND_FUNC      0  // MULTI
+// 元MIX(0)/元MULTI(1)/normal(2)/add(3)/multiply(4)/screen(5)/softlight(6)/overlay(7)/colorburn(8)
+//------------------------------------
+#define FLOOR_TYPE1_LYR1_ROT        0.0 // ベースレイヤの回転角度(DEG)
+#define FLOOR_TYPE1_LYR1_SCL        1.0 // ベースレイヤのスケール
+#define FLOOR_TYPE1_LYR1_RND_MOD    0 // 【未】ベースレイヤのランダムモード
+#define FLOOR_TYPE1_LYR1_RND_OPT    0.0 // 【未】ベースレイヤのオプション
+#define FLOOR_TYPE1_LYR2_ROT        0.0 // FXレイヤの回転角度(DEG)
+#define FLOOR_TYPE1_LYR2_SCL        1.0 // FXレイヤのスケール
+#define FLOOR_TYPE1_LYR2_RND_MOD    0 // 【未】FXレイヤのランダムモード
+#define FLOOR_TYPE1_LYR2_RND_OPT    0.0 // 【未】FXレイヤのオプション
+
+//=================================================================
+//木目(2)
+//=================================================================
+#define FLOOR_TYPE2_TILE_COUNT_X    13//25 // タイルの数 横 
+#define FLOOR_TYPE2_TILE_COUNT_Y    20//40 // タイルの数 縦
+#define FLOOR_TYPE2_TEXT_R          1.2//1.0////////////////////////////////////////
+#define FLOOR_TYPE2_TEXT_G          1.2//1.0////////////////////////////////////////
+#define FLOOR_TYPE2_TEXT_B          1.2//1.0////////////////////////////////////////
+#define FLOOR_TYPE2_TEXT_A          1.0//
+#define FLOOR_TYPE2_LIT_COL_R       0.18
+#define FLOOR_TYPE2_LIT_COL_G       0.14
+#define FLOOR_TYPE2_LIT_COL_B       0.10
+#define FLOOR_TYPE2_SEAL_COUNT      0   // 床に表示する飾りの種類の数
+#define FLOOR_TYPE2_SEAL_SMIN       1.0 // 床に表示する飾りのスケール(Scale)の最小値
+#define FLOOR_TYPE2_SEAL_SMAX       1.0 // 床に表示する飾りのスケール(Scale)の最大値
+#define FLOOR_TYPE2_SEAL_RMIN       0.0 // 床に表示する飾りの回転角(Rotation)の最小値(単位は度)
+#define FLOOR_TYPE2_SEAL_RMAX       0.0 // 床に表示する飾りの回転角(Rotation)の最大値(単位は度)
+
+#define FLOOR_TYPE2_TILE_SIZE_X     300.0 // 床タイルのサイズ 横 
+#define FLOOR_TYPE2_TILE_SIZE_Y     300.0 // 床タイルのサイズ 縦
+#define FLOOR_TYPE2_LTFF_COL_R      0.5 // R-ライトから離れた時の暗がりの色
+#define FLOOR_TYPE2_LTFF_COL_G      0.5 // G-〃
+#define FLOOR_TYPE2_LTFF_COL_B      0.5 // B-〃
+#define FLOOR_TYPE2_LTFF_COL_A      1.0   // A-〃 今は変更しないこと
+//------------------------------------
+#define FLOOR_TYPE2_TILE_ROTATE     0  // タイルを回転させるか？
+#define FLOOR_TYPE2_BLEND_FACT      1.0  // FXのブレンド率
+#define FLOOR_TYPE2_BLEND_FUNC      1  // MULTI
+// 元MIX(0)/元MULTI(1)/normal(2)/add(3)/multiply(4)/screen(5)/softlight(6)/overlay(7)/colorburn(8)
+//------------------------------------
+#define FLOOR_TYPE2_LYR1_ROT        0.0 // ベースレイヤの回転角度(DEG)
+#define FLOOR_TYPE2_LYR1_SCL        1.0 // ベースレイヤのスケール
+#define FLOOR_TYPE2_LYR1_RND_MOD    0 // 【未】ベースレイヤのランダムモード
+#define FLOOR_TYPE2_LYR1_RND_OPT    0.0 // 【未】ベースレイヤのオプション
+#define FLOOR_TYPE2_LYR2_ROT        0.0 // FXレイヤの回転角度(DEG)
+#define FLOOR_TYPE2_LYR2_SCL        1.0 // FXレイヤのスケール
+#define FLOOR_TYPE2_LYR2_RND_MOD    0 // 【未】FXレイヤのランダムモード
+#define FLOOR_TYPE2_LYR2_RND_OPT    0.0 // 【未】FXレイヤのオプション
+
+//=================================================================
+//青布縞(3)
+//=================================================================
+#define FLOOR_TYPE3_TILE_COUNT_X    14//15//30 // タイルの数 横 
+#define FLOOR_TYPE3_TILE_COUNT_Y    14//15//30 // タイルの数 縦
+#define FLOOR_TYPE3_TEXT_R          1.0
+#define FLOOR_TYPE3_TEXT_G          1.0
+#define FLOOR_TYPE3_TEXT_B          1.0
+#define FLOOR_TYPE3_TEXT_A          1.0
+#define FLOOR_TYPE3_LIT_COL_R       0.20
+#define FLOOR_TYPE3_LIT_COL_G       0.20
+#define FLOOR_TYPE3_LIT_COL_B       0.20
+#define FLOOR_TYPE3_SEAL_COUNT      0   // 床に表示する飾りの種類の数
+#define FLOOR_TYPE3_SEAL_SMIN       1.0 // 床に表示する飾りのスケール(Scale)の最小値
+#define FLOOR_TYPE3_SEAL_SMAX       1.0 // 床に表示する飾りのスケール(Scale)の最大値
+#define FLOOR_TYPE3_SEAL_RMIN       0.0 // 床に表示する飾りの回転角(Rotation)の最小値(単位は度)
+#define FLOOR_TYPE3_SEAL_RMAX       0.0 // 床に表示する飾りの回転角(Rotation)の最大値(単位は度)
+
+#define FLOOR_TYPE3_TILE_SIZE_X     300.0 // 床タイルのサイズ 横 
+#define FLOOR_TYPE3_TILE_SIZE_Y     300.0 // 床タイルのサイズ 縦
+#define FLOOR_TYPE3_LTFF_COL_R      0.5 // R-ライトから離れた時の暗がりの色
+#define FLOOR_TYPE3_LTFF_COL_G      0.5 // G-〃
+#define FLOOR_TYPE3_LTFF_COL_B      0.5 // B-〃
+#define FLOOR_TYPE3_LTFF_COL_A      1.0   // A-〃 今は変更しないこと
+//------------------------------------
+#define FLOOR_TYPE3_TILE_ROTATE     1  // タイルを回転させるか？
+#define FLOOR_TYPE3_BLEND_FACT      1.0  // FXのブレンド率
+#define FLOOR_TYPE3_BLEND_FUNC      1  // MULTI
+// 元MIX(0)/元MULTI(1)/normal(2)/add(3)/multiply(4)/screen(5)/softlight(6)/overlay(7)/colorburn(8)
+//------------------------------------
+#define FLOOR_TYPE3_LYR1_ROT        0.0 // ベースレイヤの回転角度(DEG)
+#define FLOOR_TYPE3_LYR1_SCL        1.0 // ベースレイヤのスケール
+#define FLOOR_TYPE3_LYR1_RND_MOD    0 // 【未】ベースレイヤのランダムモード
+#define FLOOR_TYPE3_LYR1_RND_OPT    0.0 // 【未】ベースレイヤのオプション
+#define FLOOR_TYPE3_LYR2_ROT        0.0 // FXレイヤの回転角度(DEG)
+#define FLOOR_TYPE3_LYR2_SCL        1.0 // FXレイヤのスケール
+#define FLOOR_TYPE3_LYR2_RND_MOD    0 // 【未】FXレイヤのランダムモード
+#define FLOOR_TYPE3_LYR2_RND_OPT    0.0 // 【未】FXレイヤのオプション
+
+//=================================================================
+//芝生１(4)
+//=================================================================
+#define FLOOR_TYPE4_TILE_COUNT_X    18//35 // タイルの数 横
+#define FLOOR_TYPE4_TILE_COUNT_Y    18//35 // タイルの数 縦
+#define FLOOR_TYPE4_TEXT_R          1.1//1.0////////////////////////////////////////
+#define FLOOR_TYPE4_TEXT_G          0.1/1.0////////////////////////////////////////
+#define FLOOR_TYPE4_TEXT_B          1.1//1.0////////////////////////////////////////
+#define FLOOR_TYPE4_TEXT_A          1.0
+#define FLOOR_TYPE4_LIT_COL_R       0.12
+#define FLOOR_TYPE4_LIT_COL_G       0.17
+#define FLOOR_TYPE4_LIT_COL_B       0.12
+#define FLOOR_TYPE4_SEAL_COUNT      2   // 床に表示する飾りの種類の数
+#define FLOOR_TYPE4_SEAL_SMIN       1.0 // 床に表示する飾りのスケール(Scale)の最小値
+#define FLOOR_TYPE4_SEAL_SMAX       1.5 // 床に表示する飾りのスケール(Scale)の最大値
+#define FLOOR_TYPE4_SEAL_RMIN       0.0 // 床に表示する飾りの回転角(Rotation)の最小値(単位は度)
+#define FLOOR_TYPE4_SEAL_RMAX       360.0 // 床に表示する飾りの回転角(Rotation)の最大値(単位は度)
+
+#define FLOOR_TYPE4_TILE_SIZE_X     300.0 // 床タイルのサイズ 横 
+#define FLOOR_TYPE4_TILE_SIZE_Y     300.0 // 床タイルのサイズ 縦
+#define FLOOR_TYPE4_LTFF_COL_R      0.5 // R-ライトから離れた時の暗がりの色
+#define FLOOR_TYPE4_LTFF_COL_G      0.5  // G-〃
+#define FLOOR_TYPE4_LTFF_COL_B      0.5 // B-〃
+#define FLOOR_TYPE4_LTFF_COL_A      1.0   // A-〃 今は変更しないこと
+//------------------------------------
+#define FLOOR_TYPE4_TILE_ROTATE     1  // タイルを回転させるか？
+#define FLOOR_TYPE4_BLEND_FACT      0.85  // FXのブレンド率
+#define FLOOR_TYPE4_BLEND_FUNC      1  // MULTI
+// 元MIX(0)/元MULTI(1)/normal(2)/add(3)/multiply(4)/screen(5)/softlight(6)/overlay(7)/colorburn(8)
+//------------------------------------
+#define FLOOR_TYPE4_LYR1_ROT        0.0 // ベースレイヤの回転角度(DEG)
+#define FLOOR_TYPE4_LYR1_SCL        1.0 // ベースレイヤのスケール
+#define FLOOR_TYPE4_LYR1_RND_MOD    0 // 【未】ベースレイヤのランダムモード
+#define FLOOR_TYPE4_LYR1_RND_OPT    0.0 // 【未】ベースレイヤのオプション
+#define FLOOR_TYPE4_LYR2_ROT        0.0 // FXレイヤの回転角度(DEG)
+#define FLOOR_TYPE4_LYR2_SCL        1.0 // FXレイヤのスケール
+#define FLOOR_TYPE4_LYR2_RND_MOD    0 // 【未】FXレイヤのランダムモード
+#define FLOOR_TYPE4_LYR2_RND_OPT    0.0 // 【未】FXレイヤのオプション
+
+//=================================================================
+//カーペット(5)
+//=================================================================
+#define FLOOR_TYPE5_TILE_COUNT_X    20//40 // タイルの数 横 
+#define FLOOR_TYPE5_TILE_COUNT_Y    20//40 // タイルの数 縦
+#define FLOOR_TYPE5_TEXT_R          1.0////////////////////////////////////////
+#define FLOOR_TYPE5_TEXT_G          1.0////////////////////////////////////////
+#define FLOOR_TYPE5_TEXT_B          1.0////////////////////////////////////////
+#define FLOOR_TYPE5_TEXT_A          1.0
+#define FLOOR_TYPE5_LIT_COL_R       0.22
+#define FLOOR_TYPE5_LIT_COL_G       0.20
+#define FLOOR_TYPE5_LIT_COL_B       0.25
+#define FLOOR_TYPE5_SEAL_COUNT      0   // 床に表示する飾りの種類の数
+#define FLOOR_TYPE5_SEAL_SMIN       1.0 // 床に表示する飾りのスケール(Scale)の最小値
+#define FLOOR_TYPE5_SEAL_SMAX       1.0 // 床に表示する飾りのスケール(Scale)の最大値
+#define FLOOR_TYPE5_SEAL_RMIN       0.0 // 床に表示する飾りの回転角(Rotation)の最小値(単位は度)
+#define FLOOR_TYPE5_SEAL_RMAX       0.0 // 床に表示する飾りの回転角(Rotation)の最大値(単位は度)
+
+#define FLOOR_TYPE5_TILE_SIZE_X     300.0 // 床タイルのサイズ 横 
+#define FLOOR_TYPE5_TILE_SIZE_Y     300.0 // 床タイルのサイズ 縦
+#define FLOOR_TYPE5_LTFF_COL_R      0.5 // R-ライトから離れた時の暗がりの色
+#define FLOOR_TYPE5_LTFF_COL_G      0.5 // G-〃
+#define FLOOR_TYPE5_LTFF_COL_B      0.5 // B-〃
+#define FLOOR_TYPE5_LTFF_COL_A      1.0   // A-〃 今は変更しないこと
+//------------------------------------
+#define FLOOR_TYPE5_TILE_ROTATE     0  // タイルを回転させるか？
+#define FLOOR_TYPE5_BLEND_FACT      0.8  // FXのブレンド率
+#define FLOOR_TYPE5_BLEND_FUNC      1  // MULTI
+// 元MIX(0)/元MULTI(1)/normal(2)/add(3)/multiply(4)/screen(5)/softlight(6)/overlay(7)/colorburn(8)
+//------------------------------------
+#define FLOOR_TYPE5_LYR1_ROT        0.0 // ベースレイヤの回転角度(DEG)
+#define FLOOR_TYPE5_LYR1_SCL        1.0 // ベースレイヤのスケール
+#define FLOOR_TYPE5_LYR1_RND_MOD    0 // 【未】ベースレイヤのランダムモード
+#define FLOOR_TYPE5_LYR1_RND_OPT    0.0 // 【未】ベースレイヤのオプション
+#define FLOOR_TYPE5_LYR2_ROT        0.0 // FXレイヤの回転角度(DEG)
+#define FLOOR_TYPE5_LYR2_SCL        1.0 // FXレイヤのスケール
+#define FLOOR_TYPE5_LYR2_RND_MOD    0 // 【未】FXレイヤのランダムモード
+#define FLOOR_TYPE5_LYR2_RND_OPT    0.0 // 【未】FXレイヤのオプション
+
+//=================================================================
+//方眼紙(6)
+//=================================================================
+#define FLOOR_TYPE6_TILE_COUNT_X    10//20 // タイルの数 横 
+#define FLOOR_TYPE6_TILE_COUNT_Y    10//20 // タイルの数 縦
+#define FLOOR_TYPE6_TEXT_R          1.0
+#define FLOOR_TYPE6_TEXT_G          1.0
+#define FLOOR_TYPE6_TEXT_B          1.0
+#define FLOOR_TYPE6_TEXT_A          1.0
+#define FLOOR_TYPE6_LIT_COL_R       0.20
+#define FLOOR_TYPE6_LIT_COL_G       0.21
+#define FLOOR_TYPE6_LIT_COL_B       0.25
+#define FLOOR_TYPE6_SEAL_COUNT      0   // 床に表示する飾りの種類の数
+#define FLOOR_TYPE6_SEAL_SMIN       1.0 // 床に表示する飾りのスケール(Scale)の最小値
+#define FLOOR_TYPE6_SEAL_SMAX       1.0 // 床に表示する飾りのスケール(Scale)の最大値
+#define FLOOR_TYPE6_SEAL_RMIN       0.0 // 床に表示する飾りの回転角(Rotation)の最小値(単位は度)
+#define FLOOR_TYPE6_SEAL_RMAX       0.0 // 床に表示する飾りの回転角(Rotation)の最大値(単位は度)
+
+#define FLOOR_TYPE6_TILE_SIZE_X     300.0 // 床タイルのサイズ 横 
+#define FLOOR_TYPE6_TILE_SIZE_Y     300.0 // 床タイルのサイズ 縦
+#define FLOOR_TYPE6_LTFF_COL_R      0.5 // R-ライトから離れた時の暗がりの色
+#define FLOOR_TYPE6_LTFF_COL_G      0.5 // G-〃
+#define FLOOR_TYPE6_LTFF_COL_B      0.5 // B-〃
+#define FLOOR_TYPE6_LTFF_COL_A      1.0   // A-〃 今は変更しないこと
+//------------------------------------
+#define FLOOR_TYPE6_TILE_ROTATE     0  // タイルを回転させるか？
+#define FLOOR_TYPE6_BLEND_FACT      0.0  // FXのブレンド率
+#define FLOOR_TYPE6_BLEND_FUNC      0  // MIX
+// 元MIX(0)/元MULTI(1)/normal(2)/add(3)/multiply(4)/screen(5)/softlight(6)/overlay(7)/colorburn(8)
+//------------------------------------
+#define FLOOR_TYPE6_LYR1_ROT        0.0 // ベースレイヤの回転角度(DEG)
+#define FLOOR_TYPE6_LYR1_SCL        1.0 // ベースレイヤのスケール
+#define FLOOR_TYPE6_LYR1_RND_MOD    0 // 【未】ベースレイヤのランダムモード
+#define FLOOR_TYPE6_LYR1_RND_OPT    0.0 // 【未】ベースレイヤのオプション
+#define FLOOR_TYPE6_LYR2_ROT        0.0 // FXレイヤの回転角度(DEG)
+#define FLOOR_TYPE6_LYR2_SCL        1.0 // FXレイヤのスケール
+#define FLOOR_TYPE6_LYR2_RND_MOD    0 // 【未】FXレイヤのランダムモード
+#define FLOOR_TYPE6_LYR2_RND_OPT    0.0 // 【未】FXレイヤのオプション
+
+//=================================================================
+//コルク(7)
+//=================================================================
+#define FLOOR_TYPE7_TILE_COUNT_X    18//35 // タイルの数 横 
+#define FLOOR_TYPE7_TILE_COUNT_Y    18//35 // タイルの数 縦
+#define FLOOR_TYPE7_TEXT_R          0.3//1.0////////////////////////////////////////
+#define FLOOR_TYPE7_TEXT_G          1.0
+#define FLOOR_TYPE7_TEXT_B          1.0
+#define FLOOR_TYPE7_TEXT_A          2.6//1.0////////////////////////////////////////
+#define FLOOR_TYPE7_LIT_COL_R       0.23
+#define FLOOR_TYPE7_LIT_COL_G       0.22
+#define FLOOR_TYPE7_LIT_COL_B       0.20
+#define FLOOR_TYPE7_SEAL_COUNT      0   // 床に表示する飾りの種類の数
+#define FLOOR_TYPE7_SEAL_SMIN       1.0 // 床に表示する飾りのスケール(Scale)の最小値
+#define FLOOR_TYPE7_SEAL_SMAX       1.0 // 床に表示する飾りのスケール(Scale)の最大値
+#define FLOOR_TYPE7_SEAL_RMIN       0.0 // 床に表示する飾りの回転角(Rotation)の最小値(単位は度)
+#define FLOOR_TYPE7_SEAL_RMAX       0.0 // 床に表示する飾りの回転角(Rotation)の最大値(単位は度)
+
+#define FLOOR_TYPE7_TILE_SIZE_X     300.0 // 床タイルのサイズ 横 
+#define FLOOR_TYPE7_TILE_SIZE_Y     300.0 // 床タイルのサイズ 縦
+#define FLOOR_TYPE7_LTFF_COL_R      0.5 // R-ライトから離れた時の暗がりの色
+#define FLOOR_TYPE7_LTFF_COL_G      0.5 // G-〃
+#define FLOOR_TYPE7_LTFF_COL_B      0.5 // B-〃
+#define FLOOR_TYPE7_LTFF_COL_A      1.0   // A-〃 今は変更しないこと
+//------------------------------------
+#define FLOOR_TYPE7_TILE_ROTATE     1  // タイルを回転させるか？
+#define FLOOR_TYPE7_BLEND_FACT      0.05  // FXのブレンド率
+#define FLOOR_TYPE7_BLEND_FUNC      1
+// 元MIX(0)/元MULTI(1)/normal(2)/add(3)/multiply(4)/screen(5)/softlight(6)/overlay(7)/colorburn(8)
+//------------------------------------
+#define FLOOR_TYPE7_LYR1_ROT        0.0 // ベースレイヤの回転角度(DEG)
+#define FLOOR_TYPE7_LYR1_SCL        1.0 // ベースレイヤのスケール
+#define FLOOR_TYPE7_LYR1_RND_MOD    0 // 【未】ベースレイヤのランダムモード
+#define FLOOR_TYPE7_LYR1_RND_OPT    0.0 // 【未】ベースレイヤのオプション
+#define FLOOR_TYPE7_LYR2_ROT        0.0 // FXレイヤの回転角度(DEG)
+#define FLOOR_TYPE7_LYR2_SCL        1.0 // FXレイヤのスケール
+#define FLOOR_TYPE7_LYR2_RND_MOD    0 // 【未】FXレイヤのランダムモード
+#define FLOOR_TYPE7_LYR2_RND_OPT    0.0 // 【未】FXレイヤのオプション
+
+//=================================================================
+//竹(8)
+//=================================================================
+#define FLOOR_TYPE8_TILE_COUNT_X    18//35 // タイルの数 横 
+#define FLOOR_TYPE8_TILE_COUNT_Y    18//35 // タイルの数 縦
+#define FLOOR_TYPE8_TEXT_R          1.0
+#define FLOOR_TYPE8_TEXT_G          1.3//1.0////////////////////////////////////////
+#define FLOOR_TYPE8_TEXT_B          1.3//1.0////////////////////////////////////////
+#define FLOOR_TYPE8_TEXT_A          1.0
+#define FLOOR_TYPE8_LIT_COL_R       0.16
+#define FLOOR_TYPE8_LIT_COL_G       0.14
+#define FLOOR_TYPE8_LIT_COL_B       0.10
+#define FLOOR_TYPE8_SEAL_COUNT      0   // 床に表示する飾りの種類の数
+#define FLOOR_TYPE8_SEAL_SMIN       1.0 // 床に表示する飾りのスケール(Scale)の最小値
+#define FLOOR_TYPE8_SEAL_SMAX       1.0 // 床に表示する飾りのスケール(Scale)の最大値
+#define FLOOR_TYPE8_SEAL_RMIN       0.0 // 床に表示する飾りの回転角(Rotation)の最小値(単位は度)
+#define FLOOR_TYPE8_SEAL_RMAX       0.0 // 床に表示する飾りの回転角(Rotation)の最大値(単位は度)
+
+#define FLOOR_TYPE8_TILE_SIZE_X     300.0 // 床タイルのサイズ 横 
+#define FLOOR_TYPE8_TILE_SIZE_Y     300.0 // 床タイルのサイズ 縦
+#define FLOOR_TYPE8_LTFF_COL_R      0.5 // R-ライトから離れた時の暗がりの色
+#define FLOOR_TYPE8_LTFF_COL_G      0.5 // G-〃
+#define FLOOR_TYPE8_LTFF_COL_B      0.5 // B-〃
+#define FLOOR_TYPE8_LTFF_COL_A      1.0   // A-〃 今は変更しないこと
+//------------------------------------
+#define FLOOR_TYPE8_TILE_ROTATE     0  // タイルを回転させるか？
+#define FLOOR_TYPE8_BLEND_FACT      1.0  // FXのブレンド率
+#define FLOOR_TYPE8_BLEND_FUNC      1
+// 元MIX(0)/元MULTI(1)/normal(2)/add(3)/multiply(4)/screen(5)/softlight(6)/overlay(7)/colorburn(8)
+//------------------------------------
+#define FLOOR_TYPE8_LYR1_ROT        0.0 // ベースレイヤの回転角度(DEG)
+#define FLOOR_TYPE8_LYR1_SCL        1.0 // ベースレイヤのスケール
+#define FLOOR_TYPE8_LYR1_RND_MOD    0 // 【未】ベースレイヤのランダムモード
+#define FLOOR_TYPE8_LYR1_RND_OPT    0.0 // 【未】ベースレイヤのオプション
+#define FLOOR_TYPE8_LYR2_ROT        0.0 // FXレイヤの回転角度(DEG)
+#define FLOOR_TYPE8_LYR2_SCL        1.0 // FXレイヤのスケール
+#define FLOOR_TYPE8_LYR2_RND_MOD    0 // 【未】FXレイヤのランダムモード
+#define FLOOR_TYPE8_LYR2_RND_OPT    0.0 // 【未】FXレイヤのオプション
+
+//=================================================================
+//皮(9)
+//Sweet Polka Dot
+//=================================================================
+#define FLOOR_TYPE9_TILE_COUNT_X    10//40 // タイルの数 横 
+#define FLOOR_TYPE9_TILE_COUNT_Y    10//40 // タイルの数 縦
+#define FLOOR_TYPE9_TEXT_R          1.0
+#define FLOOR_TYPE9_TEXT_G          1.0
+#define FLOOR_TYPE9_TEXT_B          1.0
+#define FLOOR_TYPE9_TEXT_A          1.0
+#define FLOOR_TYPE9_LIT_COL_R       0.24
+#define FLOOR_TYPE9_LIT_COL_G       0.22
+#define FLOOR_TYPE9_LIT_COL_B       0.20
+#define FLOOR_TYPE9_SEAL_COUNT      0   // 床に表示する飾りの種類の数
+#define FLOOR_TYPE9_SEAL_SMIN       1.0 // 床に表示する飾りのスケール(Scale)の最小値
+#define FLOOR_TYPE9_SEAL_SMAX       1.0 // 床に表示する飾りのスケール(Scale)の最大値
+#define FLOOR_TYPE9_SEAL_RMIN       0.0 // 床に表示する飾りの回転角(Rotation)の最小値(単位は度)
+#define FLOOR_TYPE9_SEAL_RMAX       0.0 // 床に表示する飾りの回転角(Rotation)の最大値(単位は度)
+
+#define FLOOR_TYPE9_TILE_SIZE_X     300.0 // 床タイルのサイズ 横 
+#define FLOOR_TYPE9_TILE_SIZE_Y     300.0 // 床タイルのサイズ 縦
+#define FLOOR_TYPE9_LTFF_COL_R      0.5 // R-ライトから離れた時の暗がりの色
+#define FLOOR_TYPE9_LTFF_COL_G      0.5 // G-〃
+#define FLOOR_TYPE9_LTFF_COL_B      0.5 // B-〃
+#define FLOOR_TYPE9_LTFF_COL_A      1.0   // A-〃 今は変更しないこと
+//------------------------------------
+#define FLOOR_TYPE9_TILE_ROTATE     1  // タイルを回転させるか？
+#define FLOOR_TYPE9_BLEND_FACT      0.8  // FXのブレンド率
+#define FLOOR_TYPE9_BLEND_FUNC      1
+// 元MIX(0)/元MULTI(1)/normal(2)/add(3)/multiply(4)/screen(5)/softlight(6)/overlay(7)/colorburn(8)
+//------------------------------------
+#define FLOOR_TYPE9_LYR1_ROT        0.0 // ベースレイヤの回転角度(DEG)
+#define FLOOR_TYPE9_LYR1_SCL        1.0 // ベースレイヤのスケール
+#define FLOOR_TYPE9_LYR1_RND_MOD    0 // 【未】ベースレイヤのランダムモード
+#define FLOOR_TYPE9_LYR1_RND_OPT    0.0 // 【未】ベースレイヤのオプション
+#define FLOOR_TYPE9_LYR2_ROT        0.0 // FXレイヤの回転角度(DEG)
+#define FLOOR_TYPE9_LYR2_SCL        1.0 // FXレイヤのスケール
+#define FLOOR_TYPE9_LYR2_RND_MOD    0 // 【未】FXレイヤのランダムモード
+#define FLOOR_TYPE9_LYR2_RND_OPT    0.0 // 【未】FXレイヤのオプション
+
+//=================================================================
+//ピンクバブル
+//=================================================================
+#define FLOOR_TYPE10_TILE_COUNT_X    12//13//25 // タイルの数 横 
+#define FLOOR_TYPE10_TILE_COUNT_Y    12//13//25 // タイルの数 縦
+#define FLOOR_TYPE10_TEXT_R          1.0
+#define FLOOR_TYPE10_TEXT_G          1.0
+#define FLOOR_TYPE10_TEXT_B          1.0
+#define FLOOR_TYPE10_TEXT_A          1.0
+#define FLOOR_TYPE10_LIT_COL_R       0.10
+#define FLOOR_TYPE10_LIT_COL_G       0.10
+#define FLOOR_TYPE10_LIT_COL_B       0.10
+#define FLOOR_TYPE10_SEAL_COUNT      0   // 床に表示する飾りの種類の数
+#define FLOOR_TYPE10_SEAL_SMIN       1.0 // 床に表示する飾りのスケール(Scale)の最小値
+#define FLOOR_TYPE10_SEAL_SMAX       1.0 // 床に表示する飾りのスケール(Scale)の最大値
+#define FLOOR_TYPE10_SEAL_RMIN       0.0 // 床に表示する飾りの回転角(Rotation)の最小値(単位は度)
+#define FLOOR_TYPE10_SEAL_RMAX       0.0 // 床に表示する飾りの回転角(Rotation)の最大値(単位は度)
+
+#define FLOOR_TYPE10_TILE_SIZE_X     300.0 // 床タイルのサイズ 横 
+#define FLOOR_TYPE10_TILE_SIZE_Y     300.0 // 床タイルのサイズ 縦
+#define FLOOR_TYPE10_LTFF_COL_R      0.5 // R-ライトから離れた時の暗がりの色
+#define FLOOR_TYPE10_LTFF_COL_G      0.5 // G-〃
+#define FLOOR_TYPE10_LTFF_COL_B      0.5 // B-〃
+#define FLOOR_TYPE10_LTFF_COL_A      1.0   // A-〃 今は変更しないこと
+//------------------------------------
+#define FLOOR_TYPE10_TILE_ROTATE     1  // タイルを回転させるか？
+#define FLOOR_TYPE10_BLEND_FACT      1.0  // FXのブレンド率
+#define FLOOR_TYPE10_BLEND_FUNC      0
+// 元MIX(0)/元MULTI(1)/normal(2)/add(3)/multiply(4)/screen(5)/softlight(6)/overlay(7)/colorburn(8)
+//------------------------------------
+#define FLOOR_TYPE10_LYR1_ROT        0.0 // ベースレイヤの回転角度(DEG)
+#define FLOOR_TYPE10_LYR1_SCL        1.0 // ベースレイヤのスケール
+#define FLOOR_TYPE10_LYR1_RND_MOD    0 // 【未】ベースレイヤのランダムモード
+#define FLOOR_TYPE10_LYR1_RND_OPT    0.0 // 【未】ベースレイヤのオプション
+#define FLOOR_TYPE10_LYR2_ROT        0.0 // FXレイヤの回転角度(DEG)
+#define FLOOR_TYPE10_LYR2_SCL        1.0 // FXレイヤのスケール
+#define FLOOR_TYPE10_LYR2_RND_MOD    0 // 【未】FXレイヤのランダムモード
+#define FLOOR_TYPE10_LYR2_RND_OPT    0.0 // 【未】FXレイヤのオプション
+
+//=================================================================
+//コンクリート１(11)
+//=================================================================
+#define FLOOR_TYPE11_TILE_COUNT_X    20//40 // タイルの数 横 
+#define FLOOR_TYPE11_TILE_COUNT_Y    20//40 // タイルの数 縦
+#define FLOOR_TYPE11_TEXT_R          1.5
+#define FLOOR_TYPE11_TEXT_G          1.5
+#define FLOOR_TYPE11_TEXT_B          1.5
+#define FLOOR_TYPE11_TEXT_A          1.0
+#define FLOOR_TYPE11_LIT_COL_R       0.05
+#define FLOOR_TYPE11_LIT_COL_G       0.05
+#define FLOOR_TYPE11_LIT_COL_B       0.05
+#define FLOOR_TYPE11_SEAL_COUNT      0   // 床に表示する飾りの種類の数
+#define FLOOR_TYPE11_SEAL_SMIN       1.0 // 床に表示する飾りのスケール(Scale)の最小値
+#define FLOOR_TYPE11_SEAL_SMAX       1.0 // 床に表示する飾りのスケール(Scale)の最大値
+#define FLOOR_TYPE11_SEAL_RMIN       0.0 // 床に表示する飾りの回転角(Rotation)の最小値(単位は度)
+#define FLOOR_TYPE11_SEAL_RMAX       0.0 // 床に表示する飾りの回転角(Rotation)の最大値(単位は度)
+
+#define FLOOR_TYPE11_TILE_SIZE_X     300.0 // 床タイルのサイズ 横 
+#define FLOOR_TYPE11_TILE_SIZE_Y     300.0 // 床タイルのサイズ 縦
+#define FLOOR_TYPE11_LTFF_COL_R      0.5 // R-ライトから離れた時の暗がりの色
+#define FLOOR_TYPE11_LTFF_COL_G      0.5 // G-〃
+#define FLOOR_TYPE11_LTFF_COL_B      0.5 // B-〃
+#define FLOOR_TYPE11_LTFF_COL_A      1.0   // A-〃 今は変更しないこと
+//------------------------------------
+#define FLOOR_TYPE11_TILE_ROTATE     0  // タイルを回転させるか？
+#define FLOOR_TYPE11_BLEND_FACT      1.0  // FXのブレンド率
+#define FLOOR_TYPE11_BLEND_FUNC      1
+// 元MIX(0)/元MULTI(1)/normal(2)/add(3)/multiply(4)/screen(5)/softlight(6)/overlay(7)/colorburn(8)
+//------------------------------------
+#define FLOOR_TYPE11_LYR1_ROT        0.0 // ベースレイヤの回転角度(DEG)
+#define FLOOR_TYPE11_LYR1_SCL        1.0 // ベースレイヤのスケール
+#define FLOOR_TYPE11_LYR1_RND_MOD    0 // 【未】ベースレイヤのランダムモード
+#define FLOOR_TYPE11_LYR1_RND_OPT    0.0 // 【未】ベースレイヤのオプション
+#define FLOOR_TYPE11_LYR2_ROT        0.0 // FXレイヤの回転角度(DEG)
+#define FLOOR_TYPE11_LYR2_SCL        1.0 // FXレイヤのスケール
+#define FLOOR_TYPE11_LYR2_RND_MOD    0 // 【未】FXレイヤのランダムモード
+#define FLOOR_TYPE11_LYR2_RND_OPT    0.0 // 【未】FXレイヤのオプション
+
+//=================================================================
+//畳(12)
+//=================================================================
+#define FLOOR_TYPE12_TILE_COUNT_X    20//46 // タイルの数 横 
+#define FLOOR_TYPE12_TILE_COUNT_Y    20//46 // タイルの数 縦
+#define FLOOR_TYPE12_TEXT_R          1.0
+#define FLOOR_TYPE12_TEXT_G          1.0
+#define FLOOR_TYPE12_TEXT_B          1.0
+#define FLOOR_TYPE12_TEXT_A          1.0
+#define FLOOR_TYPE12_LIT_COL_R       0.20
+#define FLOOR_TYPE12_LIT_COL_G       0.20
+#define FLOOR_TYPE12_LIT_COL_B       0.20
+#define FLOOR_TYPE12_SEAL_COUNT      0   // 床に表示する飾りの種類の数
+#define FLOOR_TYPE12_SEAL_SMIN       1.0 // 床に表示する飾りのスケール(Scale)の最小値
+#define FLOOR_TYPE12_SEAL_SMAX       1.0 // 床に表示する飾りのスケール(Scale)の最大値
+#define FLOOR_TYPE12_SEAL_RMIN       0.0 // 床に表示する飾りの回転角(Rotation)の最小値(単位は度)
+#define FLOOR_TYPE12_SEAL_RMAX       0.0 // 床に表示する飾りの回転角(Rotation)の最大値(単位は度)
+
+#define FLOOR_TYPE12_TILE_SIZE_X     300.0 // 床タイルのサイズ 横 
+#define FLOOR_TYPE12_TILE_SIZE_Y     300.0 // 床タイルのサイズ 縦
+#define FLOOR_TYPE12_LTFF_COL_R      0.5 // R-ライトから離れた時の暗がりの色
+#define FLOOR_TYPE12_LTFF_COL_G      0.5 // G-〃
+#define FLOOR_TYPE12_LTFF_COL_B      0.5 // B-〃
+#define FLOOR_TYPE12_LTFF_COL_A      1.0   // A-〃 今は変更しないこと
+//------------------------------------
+#define FLOOR_TYPE12_TILE_ROTATE     0  // タイルを回転させるか？
+#define FLOOR_TYPE12_BLEND_FACT      1.4  // FXのブレンド率
+#define FLOOR_TYPE12_BLEND_FUNC      1
+// 元MIX(0)/元MULTI(1)/normal(2)/add(3)/multiply(4)/screen(5)/softlight(6)/overlay(7)/colorburn(8)
+//------------------------------------
+#define FLOOR_TYPE12_LYR1_ROT        0.0 // ベースレイヤの回転角度(DEG)
+#define FLOOR_TYPE12_LYR1_SCL        1.0 // ベースレイヤのスケール
+#define FLOOR_TYPE12_LYR1_RND_MOD    0 // 【未】ベースレイヤのランダムモード
+#define FLOOR_TYPE12_LYR1_RND_OPT    0.0 // 【未】ベースレイヤのオプション
+#define FLOOR_TYPE12_LYR2_ROT        0.0 // FXレイヤの回転角度(DEG)
+#define FLOOR_TYPE12_LYR2_SCL        1.0 // FXレイヤのスケール
+#define FLOOR_TYPE12_LYR2_RND_MOD    0 // 【未】FXレイヤのランダムモード
+#define FLOOR_TYPE12_LYR2_RND_OPT    0.0 // 【未】FXレイヤのオプション
+
+//=================================================================
+//その他1(13)
+//=================================================================
+#define FLOOR_TYPE13_TILE_COUNT_X    20 // タイルの数 横 
+#define FLOOR_TYPE13_TILE_COUNT_Y    20 // タイルの数 縦
+#define FLOOR_TYPE13_TEXT_R          1.0
+#define FLOOR_TYPE13_TEXT_G          1.0
+#define FLOOR_TYPE13_TEXT_B          1.0
+#define FLOOR_TYPE13_TEXT_A          1.0
+#define FLOOR_TYPE13_LIT_COL_R       0.2
+#define FLOOR_TYPE13_LIT_COL_G       0.2
+#define FLOOR_TYPE13_LIT_COL_B       0.2
+#define FLOOR_TYPE13_SEAL_COUNT      0   // 床に表示する飾りの種類の数
+#define FLOOR_TYPE13_SEAL_SMIN       1.0 // 床に表示する飾りのスケール(Scale)の最小値
+#define FLOOR_TYPE13_SEAL_SMAX       1.0 // 床に表示する飾りのスケール(Scale)の最大値
+#define FLOOR_TYPE13_SEAL_RMIN       0.0 // 床に表示する飾りの回転角(Rotation)の最小値(単位は度)
+#define FLOOR_TYPE13_SEAL_RMAX       0.0 // 床に表示する飾りの回転角(Rotation)の最大値(単位は度)
+
+#define FLOOR_TYPE13_TILE_SIZE_X     300.0 // 床タイルのサイズ 横 
+#define FLOOR_TYPE13_TILE_SIZE_Y     300.0 // 床タイルのサイズ 縦
+#define FLOOR_TYPE13_LTFF_COL_R      0.5 // R-ライトから離れた時の暗がりの色
+#define FLOOR_TYPE13_LTFF_COL_G      0.5 // G-〃
+#define FLOOR_TYPE13_LTFF_COL_B      0.5 // B-〃
+#define FLOOR_TYPE13_LTFF_COL_A      1.0   // A-〃 今は変更しないこと
+//------------------------------------
+#define FLOOR_TYPE13_TILE_ROTATE     0  // タイルを回転させるか？
+#define FLOOR_TYPE13_BLEND_FACT      1.0  // FXのブレンド率
+#define FLOOR_TYPE13_BLEND_FUNC      1
+// 元MIX(0)/元MULTI(1)/normal(2)/add(3)/multiply(4)/screen(5)/softlight(6)/overlay(7)/colorburn(8)
+//------------------------------------
+#define FLOOR_TYPE13_LYR1_ROT        0.0 // ベースレイヤの回転角度(DEG)
+#define FLOOR_TYPE13_LYR1_SCL        1.0 // ベースレイヤのスケール
+#define FLOOR_TYPE13_LYR1_RND_MOD    0 // 【未】ベースレイヤのランダムモード
+#define FLOOR_TYPE13_LYR1_RND_OPT    0.0 // 【未】ベースレイヤのオプション
+#define FLOOR_TYPE13_LYR2_ROT        0.0 // FXレイヤの回転角度(DEG)
+#define FLOOR_TYPE13_LYR2_SCL        1.0 // FXレイヤのスケール
+#define FLOOR_TYPE13_LYR2_RND_MOD    0 // 【未】FXレイヤのランダムモード
+#define FLOOR_TYPE13_LYR2_RND_OPT    0.0 // 【未】FXレイヤのオプション
+
+//=================================================================
+//その他2(14)
+//=================================================================
+#define FLOOR_TYPE14_TILE_COUNT_X    20 // タイルの数 横 
+#define FLOOR_TYPE14_TILE_COUNT_Y    20 // タイルの数 縦
+#define FLOOR_TYPE14_TEXT_R          1.0
+#define FLOOR_TYPE14_TEXT_G          1.0
+#define FLOOR_TYPE14_TEXT_B          1.0
+#define FLOOR_TYPE14_TEXT_A          1.0
+#define FLOOR_TYPE14_LIT_COL_R       0.2
+#define FLOOR_TYPE14_LIT_COL_G       0.2
+#define FLOOR_TYPE14_LIT_COL_B       0.2
+#define FLOOR_TYPE14_SEAL_COUNT      0   // 床に表示する飾りの種類の数
+#define FLOOR_TYPE14_SEAL_SMIN       1.0 // 床に表示する飾りのスケール(Scale)の最小値
+#define FLOOR_TYPE14_SEAL_SMAX       1.0 // 床に表示する飾りのスケール(Scale)の最大値
+#define FLOOR_TYPE14_SEAL_RMIN       0.0 // 床に表示する飾りの回転角(Rotation)の最小値(単位は度)
+#define FLOOR_TYPE14_SEAL_RMAX       0.0 // 床に表示する飾りの回転角(Rotation)の最大値(単位は度)
+
+#define FLOOR_TYPE14_TILE_SIZE_X     300.0 // 床タイルのサイズ 横 
+#define FLOOR_TYPE14_TILE_SIZE_Y     300.0 // 床タイルのサイズ 縦
+#define FLOOR_TYPE14_LTFF_COL_R      0.5 // R-ライトから離れた時の暗がりの色
+#define FLOOR_TYPE14_LTFF_COL_G      0.5 // G-〃
+#define FLOOR_TYPE14_LTFF_COL_B      0.5 // B-〃
+#define FLOOR_TYPE14_LTFF_COL_A      1.0 // A-〃 今は変更しないこと
+//------------------------------------
+#define FLOOR_TYPE14_TILE_ROTATE     0  // タイルを回転させるか？
+#define FLOOR_TYPE14_BLEND_FACT      1.0  // FXのブレンド率
+#define FLOOR_TYPE14_BLEND_FUNC      1
+// 元MIX(0)/元MULTI(1)/normal(2)/add(3)/multiply(4)/screen(5)/softlight(6)/overlay(7)/colorburn(8)
+//------------------------------------
+#define FLOOR_TYPE14_LYR1_ROT        0.0 // ベースレイヤの回転角度(DEG)
+#define FLOOR_TYPE14_LYR1_SCL        1.0 // ベースレイヤのスケール
+#define FLOOR_TYPE14_LYR1_RND_MOD    0 // 【未】ベースレイヤのランダムモード
+#define FLOOR_TYPE14_LYR1_RND_OPT    0.0 // 【未】ベースレイヤのオプション
+#define FLOOR_TYPE14_LYR2_ROT        0.0 // FXレイヤの回転角度(DEG)
+#define FLOOR_TYPE14_LYR2_SCL        1.0 // FXレイヤのスケール
+#define FLOOR_TYPE14_LYR2_RND_MOD    0 // 【未】FXレイヤのランダムモード
+#define FLOOR_TYPE14_LYR2_RND_OPT    0.0 // 【未】FXレイヤのオプション
+
+//=================================================================
+//その他3(15)
+//=================================================================
+#define FLOOR_TYPE15_TILE_COUNT_X    20 // タイルの数 横 
+#define FLOOR_TYPE15_TILE_COUNT_Y    20 // タイルの数 縦
+#define FLOOR_TYPE15_TEXT_R          1.0
+#define FLOOR_TYPE15_TEXT_G          1.0
+#define FLOOR_TYPE15_TEXT_B          1.0
+#define FLOOR_TYPE15_TEXT_A          1.0
+#define FLOOR_TYPE15_LIT_COL_R       0.2
+#define FLOOR_TYPE15_LIT_COL_G       0.2
+#define FLOOR_TYPE15_LIT_COL_B       0.2
+#define FLOOR_TYPE15_SEAL_COUNT      0   // 床に表示する飾りの種類の数
+#define FLOOR_TYPE15_SEAL_SMIN       1.0 // 床に表示する飾りのスケール(Scale)の最小値
+#define FLOOR_TYPE15_SEAL_SMAX       1.0 // 床に表示する飾りのスケール(Scale)の最大値
+#define FLOOR_TYPE15_SEAL_RMIN       0.0 // 床に表示する飾りの回転角(Rotation)の最小値(単位は度)
+#define FLOOR_TYPE15_SEAL_RMAX       0.0 // 床に表示する飾りの回転角(Rotation)の最大値(単位は度)
+
+#define FLOOR_TYPE15_TILE_SIZE_X     300.0 // 床タイルのサイズ 横 
+#define FLOOR_TYPE15_TILE_SIZE_Y     300.0 // 床タイルのサイズ 縦
+#define FLOOR_TYPE15_LTFF_COL_R      0.5 // R-ライトから離れた時の暗がりの色
+#define FLOOR_TYPE15_LTFF_COL_G      0.5 // G-〃
+#define FLOOR_TYPE15_LTFF_COL_B      0.5 // B-〃
+#define FLOOR_TYPE15_LTFF_COL_A      1.0 // A-〃 今は変更しないこと
+//------------------------------------
+#define FLOOR_TYPE15_TILE_ROTATE     0  // タイルを回転させるか？
+#define FLOOR_TYPE15_BLEND_FACT      1.0  // FXのブレンド率
+#define FLOOR_TYPE15_BLEND_FUNC      1
+// 元MIX(0)/元MULTI(1)/normal(2)/add(3)/multiply(4)/screen(5)/softlight(6)/overlay(7)/colorburn(8)
+//------------------------------------
+#define FLOOR_TYPE15_LYR1_ROT        0.0 // ベースレイヤの回転角度(DEG)
+#define FLOOR_TYPE15_LYR1_SCL        1.0 // ベースレイヤのスケール
+#define FLOOR_TYPE15_LYR1_RND_MOD    0 // 【未】ベースレイヤのランダムモード
+#define FLOOR_TYPE15_LYR1_RND_OPT    0.0 // 【未】ベースレイヤのオプション
+#define FLOOR_TYPE15_LYR2_ROT        0.0 // FXレイヤの回転角度(DEG)
+#define FLOOR_TYPE15_LYR2_SCL        1.0 // FXレイヤのスケール
+#define FLOOR_TYPE15_LYR2_RND_MOD    0 // 【未】FXレイヤのランダムモード
+#define FLOOR_TYPE15_LYR2_RND_OPT    0.0 // 【未】FXレイヤのオプション
+
+//=================================================================
+
+
+/////////////////////////////////////////////////////
+// 矢印
+/////////////////////////////////////////////////////
+#define ARROW_OPACITY               0.6 // 矢印の不透明度
+
+
+/////////////////////////////////////////////////////
+// 円関係調整用
+/////////////////////////////////////////////////////
+// 分類の空グループの円
+#define CONTOUR_RADIUS_RATE			1.0//1.5//1.0
+#define CONTOUR_COLOR_R					0.0
+#define CONTOUR_COLOR_G					0.1
+#define CONTOUR_COLOR_B					0.3
+#define CONTOUR_COLOR_A					0.15//1.0
+// プレイリストに追加する時の選択用の円
+#define CONTOUR_PL_RADIUS_RATE			0.5//1.0
+#define CONTOUR_PL_COLOR_R				1.0
+#define CONTOUR_PL_COLOR_G				1.0
+#define CONTOUR_PL_COLOR_B				1.0
+#define CONTOUR_PL_COLOR_A				1.0
+// クラスターモード時のフォーカスカーソル
+#define FOCUS_CLUSER_RADIUS_RATE		1.0
+#define FOCUS_CLUSER_COLOR_R			1.3
+#define FOCUS_CLUSER_COLOR_G			1.3
+#define FOCUS_CLUSER_COLOR_B			1.3
+#define FOCUS_CLUSER_COLOR_A			1.0
+
+// 選択した時の円の設定
+#define SELECT_CL_RADIUS_RATE			0.5//0.8//1.0 // 写真山を選択した時の円
+#define SELECT_PL_RADIUS_RATE			0.4//0.5//1.0 // プレイリストを選択した時の円
+
+/////////////////////////////////////////////////////
+// CSceneManagerTask::DestroyGroup => CSceneManagerTask::ExecuteGroupDestroy
+// SContentsGroupInfo解放遅延時間
+/////////////////////////////////////////////////////
+// 0.0 ～ 2.0 の間に収めること厳守
+#define GROUP_DESTROY_DELAY			2.0
+
+
+/////////////////////////////////////////////////////
+// キャッシュ枚数
+/////////////////////////////////////////////////////
+// サムネイル
+#define CACHE_THUMBNAIL_LEVEL0			0		// 極小(常に0で)
+#define CACHE_THUMBNAIL_LEVEL1			0		// 128
+#define CACHE_THUMBNAIL_LEVEL2			0		// 256
+#define CACHE_THUMBNAIL_LEVEL3			256		// 512
+// リソース(ジャケット)
+#define CACHE_RESOURCE_LEVEL0			0//10		// 200
+#define CACHE_RESOURCE_LEVEL1			0//10		// 400
+#define CACHE_RESOURCE_LEVEL2			0//15		// 800
+
+
+
+/////////////////////////////////////////////////////
+// SD対応関連
+/////////////////////////////////////////////////////
+
+// SD対応は↓この縦サイズ解像度「より小さいもの」にされる
+#define SD_LIMIT_HEIGHT			720.0
+
+// カラー調整
+#define SD_COLOR_PHOTO_R			0.75
+#define SD_COLOR_PHOTO_G			0.75
+#define SD_COLOR_PHOTO_B			0.75
+
+#define SD_COLOR_FLOOR_R			0.7
+#define SD_COLOR_FLOOR_G			0.7
+#define SD_COLOR_FLOOR_B			0.7
+
+#define SD_COLOR_JACKET_R			0.7
+#define SD_COLOR_JACKET_G			0.7
+#define SD_COLOR_JACKET_B			0.7
+
+#define SD_COLOR_TEXT_R			0.7
+#define SD_COLOR_TEXT_G			0.7
+#define SD_COLOR_TEXT_B			0.7
+
+#define SD_COLOR_SEAL_R			0.7
+#define SD_COLOR_SEAL_G			0.7
+#define SD_COLOR_SEAL_B			0.7
+
+#define SD_COLOR_FOCUS_CLUSTER_FG_R			0.7
+#define SD_COLOR_FOCUS_CLUSTER_FG_G			0.7
+#define SD_COLOR_FOCUS_CLUSTER_FG_B			0.7
+
+#define SD_COLOR_FOCUS_CLUSTER_R			0.7
+#define SD_COLOR_FOCUS_CLUSTER_G			0.7
+#define SD_COLOR_FOCUS_CLUSTER_B			0.7
+
+#define SD_COLOR_FOCUS_GRID_FG_R			0.7
+#define SD_COLOR_FOCUS_GRID_FG_G			0.7
+#define SD_COLOR_FOCUS_GRID_FG_B			0.7
+
+#define SD_COLOR_FOCUS_GRID_R			0.7
+#define SD_COLOR_FOCUS_GRID_G			0.7
+#define SD_COLOR_FOCUS_GRID_B			0.7
+
+#define SD_COLOR_CONTOUR_R			0.7
+#define SD_COLOR_CONTOUR_G			0.7
+#define SD_COLOR_CONTOUR_B			0.7
+
+#define SD_COLOR_CONTOUR_PL_R			0.7
+#define SD_COLOR_CONTOUR_PL_G			0.7
+#define SD_COLOR_CONTOUR_PL_B			0.7
+
+#define SD_COLOR_PROJECTION_R			0.7
+#define SD_COLOR_PROJECTION_G			0.7
+#define SD_COLOR_PROJECTION_B			0.7
+
+#define SD_COLOR_SCRIBBLED_LINE_R			0.7
+#define SD_COLOR_SCRIBBLED_LINE_G			0.7
+#define SD_COLOR_SCRIBBLED_LINE_B			0.7
+
+#define SD_COLOR_COMMENT_TAG_R			0.7
+#define SD_COLOR_COMMENT_TAG_G			0.7
+#define SD_COLOR_COMMENT_TAG_B			0.7
+
+// 写真配置
+#define SD_PARAM_MAX_LINE_LENGTH			0.6
+

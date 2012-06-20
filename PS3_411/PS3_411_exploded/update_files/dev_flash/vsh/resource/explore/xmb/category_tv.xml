@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<XMBML version="1.0">
+	<View id="root">
+		<Attributes>
+			<Table key="seg_welcome">
+				<Pair key="focus_priority"><String>2</String></Pair>
+				<Pair key="custom_priority"><String>tv=-80</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_welcome"
+				attr="seg_welcome"
+				src="sel://localhost/welcome?type=tv"
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_gameexit"
+				src="sel://localhost/ingame?path=category_tv.xml#seg_gameexit&type=tv"
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="gameDir"
+				src="xil://localhost/list?t=tv"
+			/>
+
+		</Items>
+	</View>
+
+	<View id="seg_gameexit">
+		<Items>
+			<Item class="type:x-xmb/xmlgameexit" key="gameexit" />
+		</Items>
+	</View>
+
+	<View id="seg_welcome">
+		<Attributes>
+			<Table key="welcome">
+				<Pair key="content_type"><String>tv</String></Pair>
+ 			</Table>
+		</Attributes>
+		<Items>
+			<Item class="type:x-xmb/xmlwelcome" key="welcome" attr="welcome" />
+		</Items>
+	</View>
+
+</XMBML>

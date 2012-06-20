@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<XMBML version="1.0">
+	<View id="root">
+		<Attributes>
+			<Table key="seg_nas">
+				<Pair key="focus_priority"><String>-1</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+			<Query 
+				class="type:x-xmb/folder-pixmap" 
+				key="seg_fixed_items" 
+				src="sel://localhost/nplogin?category_friend.xml#seg_fixed_items"
+				/>
+			<Query 
+				class="type:x-xmb/folder-pixmap" 
+				key="seg_new_chat" 
+				src="sel://localhost/newchat?category_friend.xml#seg_new_chat"
+				/>
+			<Query 
+				class="type:x-xmb/folder-pixmap" 
+				key="seg_avcroom" 
+				src="sel://localhost/avcroom?category_friend.xml#seg_avcroom"
+				/>
+			<Query 
+				class="type:x-xmb/folder-pixmap" 
+				key="seg_chat"
+				src="chat://localhost/roomlist?"
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_message_box"
+				src="sel://localhost/npaccount?category_friend.xml#seg_message_box"
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_nas"
+				attr="seg_nas"
+				src="sel://localhost/nplogin?category_friend.xml#seg_nas"
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="named"
+				src="xcb://localhost/query?table=MMS_MEDIA_TYPE_SYSTEM&ssort=root.sort_selected.friend_named&cond=Aa+Person:Common.titleForSort+AGL+Person:Person.stat.presence 2 6" />
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="presence3"
+				src="xcb://localhost/query?table=MMS_MEDIA_TYPE_SYSTEM&ssort=root.sort_selected.friend_presence&cond=Ae+Person:Common.stat.status 3+Aa+Person:Common.titleForSort" />
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="presence6"
+				src="xcb://localhost/query?table=MMS_MEDIA_TYPE_SYSTEM&ssort=root.sort_selected.friend_presence&cond=Ae+Person:Common.stat.status 6+Aa+Person:Common.titleForSort" />
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="presence5"
+				src="xcb://localhost/query?table=MMS_MEDIA_TYPE_SYSTEM&ssort=root.sort_selected.friend_presence&cond=Ae+Person:Common.stat.status 5+Aa+Person:Common.titleForSort" />
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="presence4"
+				src="xcb://localhost/query?table=MMS_MEDIA_TYPE_SYSTEM&ssort=root.sort_selected.friend_presence&sort=-Person:Common.stat.timeLastUsed&cond=Ae+Person:Common.stat.status 4+Aa+Person:Common.titleForSort" />
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="presence2"
+				src="xcb://localhost/query?table=MMS_MEDIA_TYPE_SYSTEM&ssort=root.sort_selected.friend_presence&cond=Ae+Person:Common.stat.status 2+Aa+Person:Common.titleForSort" />
+		</Items>
+	</View>
+
+	<View id="root_hide_friend">
+		<Attributes>
+			<Table key="seg_nas">
+				<Pair key="focus_priority"><String>-1</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+			<Query 
+				class="type:x-xmb/folder-pixmap" 
+				key="seg_fixed_items" 
+				src="sel://localhost/nplogin?category_friend.xml#seg_fixed_items"
+				/>
+			<Query 
+				class="type:x-xmb/folder-pixmap" 
+				key="seg_new_chat" 
+				src="sel://localhost/newchat?category_friend.xml#seg_new_chat"
+				/>
+			<Query 
+				class="type:x-xmb/folder-pixmap" 
+				key="seg_avcroom" 
+				src="sel://localhost/avcroom?category_friend.xml#seg_avcroom"
+				/>
+			<Query 
+				class="type:x-xmb/folder-pixmap" 
+				key="seg_chat"
+				src="chat://localhost/roomlist?"
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_message_box"
+				src="sel://localhost/npaccount?category_friend.xml#seg_message_box"
+				/>
+		</Items>
+	</View>
+
+	<View id="seg_fixed_items">
+		<Attributes>
+
+			<Table key="Ignore">
+				<Pair key="icon_rsc"><String>item_tex_IgnoreList</String></Pair>
+				<Pair key="icon_notation"><String>WNT_XmbItemFriendBlock</String></Pair>
+				<Pair key="title_rsc"><String>msg_ignore_list</String></Pair>
+				<Pair key="str_noitem"><String>msg_error_not_registered</String></Pair>
+				<Pair key="title_fo"><String>1</String></Pair>
+			</Table>
+
+			<Table key="new_friend">
+				<Pair key="icon_rsc"><String>item_tex_NewFriend</String></Pair>
+				<Pair key="icon_notation"><String>WNT_XmbItemFriendAdd</String></Pair>
+				<Pair key="title_rsc"><String>msg_friend_register</String></Pair>
+				<Pair key="module_name"><String>friendim_plugin</String></Pair>
+				<Pair key="module_action"><String>new_friend</String></Pair>
+				<Pair key="start_factor_play"><String>disable</String></Pair>
+			</Table>
+
+			<Table key="Played">
+				<Pair key="icon_rsc"><String>item_tex_Players</String></Pair>
+				<Pair key="icon_notation"><String>WNT_XmbItemFriendPlayer</String></Pair>
+				<Pair key="title_rsc"><String>msg_play_with</String></Pair>
+				<Pair key="str_noitem"><String>msg_error_no_player</String></Pair>
+				<Pair key="title_fo"><String>1</String></Pair>
+			</Table>
+
+		</Attributes>
+		<Items>
+
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="Ignore"
+				attr="Ignore"
+				src="xcb://localhost/query?sort=+BlockedPlayer:Common.titleForSort&cond=Aa+BlockedPlayer:Common.titleForSort+Ae+BlockedPlayer:Common.owner %xUserId" />
+
+			<Item  class="type:x-xmb/module-action"   key="new_friend"       attr="new_friend" />
+
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="Played"
+				attr="Played"
+				src="xcb://localhost/query?sort=-PlayedPlayer:Common.timeCreated&cond=Aa+PlayedPlayer:Common.titleForSort+Ae+PlayedPlayer:Common.owner %xUserId" />
+
+		</Items>
+	</View>
+
+	<View id="seg_avcroom">
+		<Attributes>
+			<Table key="chat_room">
+				<Pair key="icon_rsc"><String>item_tex_ChatRoomText</String></Pair>
+				<Pair key="icon_notation"><String>WNT_XmbItemChatRoomText</String></Pair>
+				<Pair key="title_rsc"><String>msg_text_chatroom</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+			<Item  class="type:x-chat/xmlchatroom-manager"   key="chat_room"       attr="chat_room" />
+		</Items>
+	</View>
+
+	<View id="seg_new_chat">
+		<Attributes>
+			<Table key="new_chat">
+				<Pair key="icon_rsc"><String>item_tex_NewAvc</String></Pair>
+				<Pair key="icon_notation"><String>WNT_XmbItemChat</String></Pair>
+				<Pair key="title_rsc"><String>msg_start_new_chat2</String></Pair>
+				<Pair key="module_name"><String>avc2_text_plugin</String></Pair>
+				<Pair key="module_action"><String>new_chat</String></Pair>
+				<Pair key="start_factor_play"><String>disable</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+			<Item  class="type:x-xmb/module-action"   key="new_chat"       attr="new_chat" />
+		</Items>
+	</View>
+
+	<View id="seg_message_box">
+		<Attributes>
+			<Table key="message_box">
+				<Pair key="icon_rsc"><String>item_tex_Messages</String></Pair>
+				<Pair key="icon_notation"><String>WNT_XmbItemFriendMessageBox</String></Pair>
+				<Pair key="title_rsc"><String>msg_msg_box</String></Pair>
+				<Pair key="child"><String>segment</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+			<Query 
+				class="type:x-xmb/folder-pixmap" 
+				key="message_box" 
+				attr="message_box"
+				src="#seg_message_object"
+				/>
+		</Items>
+	</View>
+
+	<View id="seg_message_object">
+		<Items>
+			<Query 
+				class="type:x-xmb/folder-pixmap" 
+				key="message_box" 
+				src="#message_boxes"
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_message_box"
+				src="sel://localhost/nplogin?category_friend.xml#seg_new_message"
+				/>
+		</Items>
+	</View>
+
+	<View id="message_boxes">
+		<Attributes>
+			<Table key="ReceiveMessage">
+				<Pair key="icon_rsc"><String>item_tex_InBox</String></Pair>
+				<Pair key="icon_notation"><String>WNT_XmbItemFriendMessageBoxReceived</String></Pair>
+				<Pair key="title_rsc"><String>msg_received_box</String></Pair>
+				<Pair key="info"><String>receive</String></Pair>
+			</Table>
+			<Table key="SendMessage">
+				<Pair key="icon_rsc"><String>item_tex_OutBox</String></Pair>
+				<Pair key="icon_notation"><String>WNT_XmbItemFriendMessageBoxSent</String></Pair>
+				<Pair key="title_rsc"><String>msg_sent_box</String></Pair>
+				<Pair key="info"><String>send</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+			<Item
+				class="type:x-xmb/xmlmessagelist"
+				attr="ReceiveMessage"
+				key="ReceiveMessage" />
+			<Item
+				class="type:x-xmb/xmlmessagelist"
+				attr="SendMessage"
+				key="SendMessage" />
+		</Items>
+	</View>
+
+	<View id="seg_new_message">
+		<Attributes>
+			<Table key="new_message">
+				<Pair key="icon_rsc"><String>item_tex_NewMessage</String></Pair>
+				<Pair key="icon_notation"><String>WNT_XmbItemFriendMessageCreate</String></Pair>
+				<Pair key="title_rsc"><String>msg_new_msg</String></Pair>
+				<Pair key="module_name"><String>friendim_plugin</String></Pair>
+				<Pair key="module_action"><String>new_message</String></Pair>
+				<Pair key="start_factor_play"><String>disable</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+			<Item  class="type:x-xmb/module-action"   key="new_message"       attr="new_message" />
+		</Items>
+	</View>
+
+	<View id="seg_nas">
+		<Attributes>
+			<Table key="me">
+				<Pair key="info"><String>me</String></Pair>
+ 			</Table>
+		</Attributes>
+		<Items>
+			<Item
+				class="type:x-xmb/xmlnpsignup"
+				key="me"
+				attr="me" />
+		</Items>
+	</View>
+
+</XMBML>

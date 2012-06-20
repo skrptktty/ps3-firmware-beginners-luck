@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<XMBML version="1.0">
+
+	<View id="download_video_hdd">
+		<Attributes>
+			<Table key="video_hdd">
+				<Pair key="icon_rsc"><String>video_tex_load</String></Pair>
+				<Pair key="icon_notation"><String>WNT_XmbListVideo</String></Pair>
+				<Pair key="title_rsc"><String>msg_ps3_video</String></Pair>
+				<Pair key="info_rsc"><String>msg_space</String></Pair>
+				<Pair key="device_path"><String>/dev_hdd0</String></Pair>
+				<Pair key="logical_sceme"><String>Video</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+			<Item class="type:x-xmb/module-action" key="video_hdd" attr="video_hdd"/>
+		</Items>
+	</View>
+
+	<View id="secure">
+		<Items>
+			<!-- 内蔵HDD -->
+<!-- Day1 ではなし
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="download_video_hdd"
+				src="#download_video_hdd"
+			/>
+-->
+			<!-- 内蔵MSスロット -->
+<!-- テスト用
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_ms_device"
+				src="xcb://localhost/query?table=MMS_MEDIA_TYPE_SYSTEM&genre=Video&cond=Ae+StorageMedia:StorageMedia.stat.mediaStatus %xCB_MEDIA_INSERTED+Ae+StorageMedia:StorageMedia.deviceType %xCB_DEVICE_TYPE_MS+AGL+StorageMedia:StorageMedia.type %xCB_MEDIA_TYPE_MS_STD %xCB_MEDIA_TYPE_MS_R" 
+				/>
+-->
+			<!-- PSP ("-2.5" 以外) -->
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_usbpsp_device"
+				src="xcb://localhost/query?table=MMS_MEDIA_TYPE_SYSTEM&genre=Video&cond=Ae+StorageMedia:StorageMedia.stat.mediaStatus %xCB_MEDIA_INSERTED+Ae+StorageMedia:StorageMedia.deviceType %xCB_DEVICE_TYPE_USBPSP+An+StorageMedia:StorageMedia.stat.version -2.5&sort=+StorageMedia:Common.stat.timeImported"
+				/>
+		</Items>
+	</View>
+
+	<View id="hdd">
+		<Attributes>
+			<Table key="video_hdd">
+				<Pair key="icon_rsc"><String>video_tex_load</String></Pair>
+				<Pair key="icon_notation"><String>WNT_XmbListVideo</String></Pair>
+				<Pair key="title_rsc"><String>msg_ps3_video</String></Pair>
+				<Pair key="info_rsc"><String>msg_space</String></Pair>
+				<Pair key="device_path"><String>/dev_hdd0</String></Pair>
+				<Pair key="logical_sceme"><String>Video</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="download_video_hdd"
+				attr="video_hdd"
+				src="#download_video_hdd"
+			/>
+		</Items>
+	</View>
+
+	<View id="non_secure">
+		<Items>
+			<!-- 内蔵HDD -->
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="download_video_hdd"
+				src="#download_video_hdd"
+			/>
+			<!-- DEVICE_TYPE 不問で MS_STD, MS_MG, MS_PRO, MS_R -->
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_ms_device"
+				src="xcb://localhost/query?table=MMS_MEDIA_TYPE_SYSTEM&genre=Video&cond=Ae+StorageMedia:StorageMedia.stat.mediaStatus %xCB_MEDIA_INSERTED+AGL+StorageMedia:StorageMedia.type %xCB_MEDIA_TYPE_MS_STD %xCB_MEDIA_TYPE_MS_R" 
+			/>
+
+		</Items>
+	</View>
+
+</XMBML>
