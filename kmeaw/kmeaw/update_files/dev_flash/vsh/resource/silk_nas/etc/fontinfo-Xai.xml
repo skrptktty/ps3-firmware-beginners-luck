@@ -1,0 +1,175 @@
+<MicroBrowser>
+  <key>FileFormatVersion</key>
+  <integer>4</integer>
+  <key>FontAlias</key>
+  <dict>
+	<key>Generic SansSerif</key>
+	<string>sans-serif</string>
+
+	<key>Generic Serif</key>
+	<string>serif</string>
+
+	<key>Generic Monospace</key>
+	<string>monospace</string>
+
+	<key>Courier</key>
+	<string>monospace</string>
+
+	<key>Helvetica</key>
+	<string>sans-serif</string>
+
+	<key>Times</key>
+	<string>sans-serif</string>
+
+	<key>Arial</key>
+	<string>sans-serif</string>
+
+	<key>Courier New</key>
+	<string>monospace</string>
+
+	<key>Microsoft Sans Serif</key>
+	<string>sans-serif</string>
+
+	<key>Tahoma</key>
+	<string>sans-serif</string>
+
+	<key>Times New Roman</key>
+	<string>serif</string>
+
+	<key>Verdana</key>
+	<string>sans-serif</string>
+
+	<key>MSゴシック</key>
+	<string>sans-serif</string>
+
+	<key>MS ゴシック</key>
+	<string>sans-serif</string>
+
+	<key>ＭＳ ゴシック</key>
+	<string>sans-serif</string>
+
+	<key>ＭＳゴシック</key>
+	<string>sans-serif</string>
+
+	<key>MS P ゴシック</key>
+	<string>sans-serif</string>
+
+	<key>MS Pゴシック</key>
+	<string>sans-serif</string>
+
+	<key>ＭＳ Ｐ ゴシック</key>
+	<string>sans-serif</string>
+
+	<key>ＭＳ Ｐゴシック</key>
+	<string>sans-serif</string>
+
+	<key>MS P Gothic</key>
+	<string>sans-serif</string>
+
+	<key>MS UI Gothic</key>
+	<string>sans-serif</string>
+
+	<key>ＭＳ 明朝</key>
+	<string>serif</string>
+
+	<key>ＭＳ明朝</key>
+	<string>serif</string>
+
+	<key>MS 明朝</key>
+	<string>serif</string>
+
+	<key>MS明朝</key>
+	<string>serif</string>
+
+	<key>ＭＳ Ｐ 明朝</key>
+	<string>serif</string>
+
+	<key>ＭＳ Ｐ明朝</key>
+	<string>serif</string>
+
+	<key>MS P 明朝</key>
+	<string>serif</string>
+
+	<key>MS P明朝</key>
+	<string>serif</string>
+
+	<key>MS P Mincho</key>
+	<string>serif</string>
+
+	<key>新細明體</key>
+	<string>serif</string>
+	  
+	<key>mingliu</key>
+	<string>serif</string>
+  </dict>
+  <key>FontInfoLanguageList</key>
+  <array>
+	<string>en</string><!-- DEFAULT -->
+	<string>en</string>
+	<string>ja</string>
+	<string>zh</string>
+	<string>ko</string>
+  </array>
+
+  <key>DefaultGenericFontInfoList</key>
+  <dict>
+        <!-- ENGLISH -->
+	<key>en</key>
+	<dict>
+	  <key>serif</key>
+	  <array>
+		<string>SCE-PS3 Matisse LATIN</string>
+	  </array>
+
+	  <key>sans-serif</key>
+	  <array>
+		<string>SCE-PS3 Rodin LATIN</string>
+	  </array>
+
+	  <key>default</key>
+	  <array>
+		<string>SCE-PS3 Rodin LATIN</string>
+	  </array>
+	</dict>
+
+        <!-- JAPANESE -->
+	<key>ja</key>
+	<dict>
+
+	  <key>cursive</key>
+	  <array>
+		<string>SCE-PS3 SEURAT JPN</string>
+	  </array>
+
+	  <key>fantasy</key>
+	  <array>
+		<string>SCE-PS3 SEURAT JPN</string>
+	  </array>
+
+	  <key>default</key>
+	  <array>
+      <string>SCE-PS3 Rodin LATIN</string>
+      <string>SCE-PS3 NewRodin JPN</string>
+	  </array>
+	</dict>
+
+	<key>zh</key>
+	<dict>
+	  <key>default</key>
+	  <array>
+		<string>DFHEIW5-A</string>
+	  </array>
+	</dict>
+	
+	<!-- KOREAN -->
+	<key>ko</key>
+	<dict>
+	  
+	  <key>default</key>
+	  <array>
+		<string>SCE-PS3 YD gd Medium</string>
+	  </array>
+	</dict>
+
+  </dict>
+</MicroBrowser>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<XMBML version="1.0">
+	<View id="root">
+		<Attributes>
+			<Table key="seg_rss_key">
+				<Pair key="icon_rsc"><String>item_tex_ms_icon</String></Pair>
+				<Pair key="title"><String>RSS Samples</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+<!--
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_widget_control"
+				src="#seg_widget_control"
+				/>
+-->
+<!--
+			<Query class="type:x-xmb/folder-pixmap" 
+				key="seg_rss_key" 
+				attr="seg_rss_key" 
+				src="#sites_rss"/>
+-->
+			<Query class="type:x-xmb/folder-pixmap" key="host_provider_flash" src="host://localhost/q?path=/app_home/flash0/vsh/resource/silk/xai/widgets&suffix=&subclass=x-host/widget" />
+			<Query class="type:x-xmb/folder-pixmap" key="host_provider_bdvd" src="host://localhost/q?path=/dev_bdvd/ps3/widget&suffix=&subclass=x-host/widget" />
+			<Query class="type:x-xmb/folder-pixmap" key="host_provider_ms" src="host://localhost/q?path=/dev_ms/ps3/widget&suffix=&subclass=x-host/widget" />
+			<Query class="type:x-xmb/folder-pixmap" key="host_provider_usb0" src="host://localhost/q?path=/dev_usb000/ps3/widget&suffix=&subclass=x-host/widget" />
+			<Query class="type:x-xmb/folder-pixmap" key="host_provider_usb1" src="host://localhost/q?path=/dev_usb001/ps3/widget&suffix=&subclass=x-host/widget" />
+			<Query class="type:x-xmb/folder-pixmap" key="host_provider_usb2" src="host://localhost/q?path=/dev_usb002/ps3/widget&suffix=&subclass=x-host/widget" />
+			<Query class="type:x-xmb/folder-pixmap" key="host_provider_usb3" src="host://localhost/q?path=/dev_usb003/ps3/widget&suffix=&subclass=x-host/widget" />
+			<Query class="type:x-xmb/folder-pixmap" key="host_provider_usb4" src="host://localhost/q?path=/dev_usb004/ps3/widget&suffix=&subclass=x-host/widget" />
+			<Query class="type:x-xmb/folder-pixmap" key="host_provider_usb5" src="host://localhost/q?path=/dev_usb005/ps3/widget&suffix=&subclass=x-host/widget" />
+			<Query class="type:x-xmb/folder-pixmap" key="host_provider_usb6" src="host://localhost/q?path=/dev_usb006/ps3/widget&suffix=&subclass=x-host/widget" />
+			<Query class="type:x-xmb/folder-pixmap" key="host_provider_usb7" src="host://localhost/q?path=/dev_usb007/ps3/widget&suffix=&subclass=x-host/widget" />
+		</Items>
+	</View>
+<!--
+	<View id="seg_widget_control">
+		<Attributes>
+			<Table key="widget_control">
+				<Pair key="info"><String>widget_control</String></Pair>
+ 			</Table>
+		</Attributes>
+		<Items>
+			<Item class="type:x-xmb/xmlnpsignup" key="widget_control"	attr="widget_control" />
+		</Items>
+	</View>
+-->
+
+
+	<View id="sites_rss">
+		<Attributes>
+			<Table key="site_rss_2">
+				<Pair key="icon_rsc"><String>dummy</String></Pair>
+				<Pair key="icon_notation"><String>WNT_XmbItemBrowser</String></Pair>
+				<Pair key="title"><String>Link (temporary)</String></Pair>
+ 			</Table>
+		</Attributes>
+		<Items>
+			<Query class="type:x-xmb/folder-pixmap" 
+				key="site_rss_2" 
+				attr="site_rss_2" 
+				src="rss://http://ps3.drikin.com/rss/sample.xml"/>
+		</Items>
+	</View>
+
+</XMBML>

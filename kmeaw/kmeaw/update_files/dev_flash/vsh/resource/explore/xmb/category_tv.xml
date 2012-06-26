@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<XMBML version="1.0">
+	<View id="root">
+		<Items>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_xil"
+				src="xil://localhost/list?t=tv"
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_gameexit"
+				src="sel://localhost/ingame?path=category_tv.xml#seg_gameexit&type=tv"
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="gameDir"
+				src="xcb://localhost/query?io=IOGameTv&limit=2048&table=MMS_MEDIA_TYPE_HDD&sort=-Game:Common.stat.rating-Game:Common.timeCreated&cond=Aa+Game:Common.title+Ae+Game:Game.category AT"
+			/>
+
+		</Items>
+	</View>
+
+	<View id="seg_gameexit">
+		<Items>
+			<Item class="type:x-xmb/xmlgameexit" key="gameexit" />
+		</Items>
+	</View>
+
+</XMBML>

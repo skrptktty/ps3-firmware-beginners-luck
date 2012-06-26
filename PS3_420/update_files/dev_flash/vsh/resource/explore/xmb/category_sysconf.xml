@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<XMBML version="1.0">
+	<View id="root">
+		<Items>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_fixed_items"
+				attr="seg_fixed_items"
+				src="#seg_fixed_items" 
+				/>
+		</Items>
+	</View>
+
+	<View id="seg_fixed_items">
+		<Attributes>
+			<Table key="update">
+				<Pair key="icon_rsc"><String>tex_update</String></Pair>
+				<Pair key="title_rsc"><String>msg_update</String></Pair>
+				<Pair key="info_rsc"><String>msg_update_explanation</String></Pair>
+				<Pair key="item_type"><String>systop</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+			</Table>
+			<Table key="edy">
+				<Pair key="icon_rsc"><String>tex_edyviewer</String></Pair>
+				<Pair key="title_rsc"><String>msg_edyviewer</String></Pair>
+				<Pair key="info_rsc"><String>msg_edyviewer_explanation</String></Pair>
+				<Pair key="item_type"><String>systop</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+			</Table>
+			<Table key="game">
+				<Pair key="icon_rsc"><String>tex_game</String></Pair>
+				<Pair key="title_rsc"><String>msg_game_setting</String></Pair>
+				<Pair key="info_rsc"><String>msg_game_setting_explanation</String></Pair>
+				<Pair key="fo_lbl2_alpha"><String>0</String></Pair>
+				<Pair key="item_type"><String>systop</String></Pair>
+				<Pair key="child"><String>segment</String></Pair>
+				<Pair key="ch_pos"><String>1</String></Pair>
+			</Table>
+			<Table key="bd_dvd">
+				<Pair key="icon_rsc"><String>tex_bddvd</String></Pair>
+				<Pair key="title_rsc"><String>msg_video_setting</String></Pair>
+				<Pair key="info_rsc"><String>msg_video_setting_explanation</String></Pair>
+				<Pair key="item_type"><String>systop</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+			</Table>
+			<Table key="music">
+				<Pair key="icon_rsc"><String>tex_music</String></Pair>
+				<Pair key="title_rsc"><String>msg_music_setting</String></Pair>
+				<Pair key="info_rsc"><String>msg_music_setting_explanation</String></Pair>
+				<Pair key="item_type"><String>systop</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+			</Table>
+			<Table key="chat">
+				<Pair key="icon_rsc"><String>tex_chat</String></Pair>
+				<Pair key="title_rsc"><String>msg_chat_setting</String></Pair>
+				<Pair key="info_rsc"><String>msg_chat_setting_explanation</String></Pair>
+				<Pair key="item_type"><String>systop</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+			</Table>
+			<Table key="console">
+				<Pair key="icon_rsc"><String>tex_console</String></Pair>
+				<Pair key="title_rsc"><String>msg_console_setting</String></Pair>
+				<Pair key="info_rsc"><String>msg_console_setting_explanation</String></Pair>
+				<Pair key="item_type"><String>systop</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+			</Table>
+			<Table key="theme">
+				<Pair key="icon_rsc"><String>tex_thema</String></Pair>
+				<Pair key="title_rsc"><String>msg_theme_settings</String></Pair>
+				<Pair key="info_rsc"><String>msg_theme_settings_explanation</String></Pair>
+				<Pair key="item_type"><String>systop</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+			</Table>
+			<Table key="date_time">
+				<Pair key="icon_rsc"><String>tex_datetime</String></Pair>
+				<Pair key="title_rsc"><String>msg_datetime_setting</String></Pair>
+				<Pair key="info_rsc"><String>msg_datetime_setting_explanation</String></Pair>
+				<Pair key="item_type"><String>systop</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+			</Table>
+			<Table key="power">
+				<Pair key="icon_rsc"><String>tex_power</String></Pair>
+				<Pair key="title_rsc"><String>msg_power_saving_setting</String></Pair>
+				<Pair key="info_rsc"><String>msg_power_saving_setting_explanation</String></Pair>
+				<Pair key="item_type"><String>systop</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+			</Table>
+			<Table key="device">
+				<Pair key="icon_rsc"><String>tex_pd</String></Pair>
+				<Pair key="title_rsc"><String>msg_pd_setting</String></Pair>
+				<Pair key="info_rsc"><String>msg_pd_setting_explanation</String></Pair>
+				<Pair key="fo_lbl2_alpha"><String>0</String></Pair>
+				<Pair key="item_type"><String>systop</String></Pair>
+				<Pair key="child"><String>segment</String></Pair>
+				<Pair key="ch_pos"><String>1</String></Pair>
+			</Table>
+			<Table key="print">
+				<Pair key="icon_rsc"><String>tex_printer</String></Pair>
+				<Pair key="title_rsc"><String>msg_printer_settings</String></Pair>
+				<Pair key="info_rsc"><String>msg_printer_settings_explanation</String></Pair>
+				<Pair key="item_type"><String>systop</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+			</Table>
+			<Table key="display">
+				<Pair key="icon_rsc"><String>tex_display</String></Pair>
+				<Pair key="title_rsc"><String>msg_display_setting</String></Pair>
+				<Pair key="info_rsc"><String>msg_display_setting_explanation</String></Pair>
+				<Pair key="item_type"><String>systop</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+			</Table>
+			<Table key="sound">
+				<Pair key="icon_rsc"><String>tex_sound</String></Pair>
+				<Pair key="title_rsc"><String>msg_sound_setting</String></Pair>
+				<Pair key="info_rsc"><String>msg_sound_setting_explanation</String></Pair>
+				<Pair key="item_type"><String>systop</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+			</Table>
+			<Table key="security">
+				<Pair key="icon_rsc"><String>tex_security</String></Pair>
+				<Pair key="title_rsc"><String>msg_security_setting</String></Pair>
+				<Pair key="info_rsc"><String>msg_security_setting_explanation</String></Pair>
+				<Pair key="item_type"><String>systop</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+			</Table>
+			<Table key="remote">
+				<Pair key="icon_rsc"><String>tex_remote</String></Pair>
+				<Pair key="title_rsc"><String>msg_remoteplay_setting</String></Pair>
+				<Pair key="info_rsc"><String>msg_remoteplay_setting_explanation</String></Pair>
+				<Pair key="item_type"><String>systop</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+			</Table>
+			<Table key="network">
+				<Pair key="icon_rsc"><String>tex_network</String></Pair>
+				<Pair key="title_rsc"><String>msg_net_setting</String></Pair>
+				<Pair key="info_rsc"><String>msg_net_setting_explanation</String></Pair>
+				<Pair key="fo_lbl2_alpha"><String>0</String></Pair>
+				<Pair key="item_type"><String>systop</String></Pair>
+				<Pair key="child"><String>segment</String></Pair>
+				<Pair key="ch_pos"><String>1</String></Pair>
+			</Table>
+			<Table key="console_qa">
+				<Pair key="icon_rsc"><String>tex_update</String></Pair>
+				<Pair key="title_rsc"><String>msg_tool_debug_settings</String></Pair>
+				<Pair key="item_type"><String>systop</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+			<Item  class="type:x-xmb/xmlsysconf"    key="update"     attr="update" />
+			<Item  class="type:x-xmb/xmlsysconf"    key="edy"        attr="edy" />
+			<Query class="type:x-xmb/folder-pixmap" key="game"       attr="game" src="xmb://localhost/%flash/xmb/category_sysconf.xml#seg_game" />
+			<Item  class="type:x-xmb/xmlsysconf"    key="bd_dvd"     attr="bd_dvd" />
+			<Item  class="type:x-xmb/xmlsysconf"    key="music"      attr="music" />
+			<Item  class="type:x-xmb/xmlsysconf"    key="chat"       attr="chat" />
+			<Item  class="type:x-xmb/xmlsysconf"    key="console"    attr="console" />
+			<Item  class="type:x-xmb/xmlsysconf"    key="theme"      attr="theme" />
+			<Item  class="type:x-xmb/xmlsysconf"    key="date_time"  attr="date_time" />
+			<Item  class="type:x-xmb/xmlsysconf"    key="power"      attr="power" />
+			<Query class="type:x-xmb/folder-pixmap" key="device"     attr="device" src="xmb://localhost/%flash/xmb/category_sysconf.xml#seg_device"/>
+			<Item  class="type:x-xmb/xmlsysconf"    key="print"      attr="print" />
+			<Item  class="type:x-xmb/xmlsysconf"    key="display"    attr="display" />
+			<Item  class="type:x-xmb/xmlsysconf"    key="sound"      attr="sound" />
+			<Item  class="type:x-xmb/xmlsysconf"    key="security"   attr="security" />
+			<Item  class="type:x-xmb/xmlsysconf"    key="remote"     attr="remote" />
+			<Query class="type:x-xmb/folder-pixmap" key="network"    attr="network" src="xmb://localhost/%flash/xmb/category_sysconf.xml#seg_network"/>
+			<Item  class="type:x-xmb/xmlsysconf"    key="console_qa" attr="console_qa" />
+		</Items>
+	</View>
+
+	<View id="seg_game">
+		<Items>
+			<Query 
+				class="type:x-xmb/folder-pixmap" 
+				key="seg_game_fixed_upper" 
+				src="#seg_game_fixed_upper"
+				/>
+			<Query 
+				class="type:x-xmb/folder-pixmap" 
+				key="seg_game_fixed_middle" 
+				src="#seg_game_fixed_middle"
+				/>
+			<Query 
+				class="type:x-xmb/folder-pixmap" 
+				key="seg_game_fixed_lower" 
+				src="#seg_game_fixed_lower"
+				/>
+		</Items>
+	</View>
+
+	<View id="seg_game_fixed_upper">
+		<Attributes>
+			<Table key="game_psp_emu_viewmode">
+				<Pair key="icon_rsc"><String>tex_sett</String></Pair>
+				<Pair key="title_rsc"><String>msg_viewmode_psp_emu</String></Pair>
+				<Pair key="info_rsc"><String>msg_viewmode_psp_emu_explanation</String></Pair>
+				<Pair key="bar_action"><String>game_pspemu_viewmode</String></Pair>
+			</Table>
+			<Table key="game_psp_emu_3d">
+				<Pair key="icon_rsc"><String>tex_sett</String></Pair>
+				<Pair key="title_rsc"><String>msg_3d_display_psp_emu</String></Pair>
+				<Pair key="info_rsc"><String>msg_3d_display_psp_emu_explanation</String></Pair>
+				<Pair key="bar_action"><String>game_pspemu_3d</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+			<Item  class="type:x-xmb/xmlsysconf"   key="game_psp_emu_viewmode"   attr="game_psp_emu_viewmode" />
+			<Item  class="type:x-xmb/xmlsysconf"   key="game_psp_emu_3d"         attr="game_psp_emu_3d" />
+		</Items>
+	</View>
+
+	<View id="seg_game_fixed_middle">
+		<Attributes>
+			<Table key="game_psp_emu_adhoc_ch">
+				<Pair key="icon_rsc"><String>tex_sett</String></Pair>
+				<Pair key="title_rsc"><String>msg_adhoc_mode_channel_psp_emu</String></Pair>
+				<Pair key="info_rsc"><String>msg_adhoc_mode_channel_psp_emu_explanation</String></Pair>
+				<Pair key="bar_action"><String>game_pspemu_adhoc_ch</String></Pair>
+			</Table>
+			<Table key="game_psp_emu_adhoc_mode">
+				<Pair key="icon_rsc"><String>tex_sett</String></Pair>
+				<Pair key="title_rsc"><String>msg_adhoc_mode_psp_emu</String></Pair>
+				<Pair key="info_rsc"><String>msg_adhoc_mode_psp_emu_explanation</String></Pair>
+				<Pair key="bar_action"><String>game_pspemu_adhoc_mode</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+			<Item  class="type:x-xmb/xmlsysconf"   key="game_psp_emu_adhoc_ch"   attr="game_psp_emu_adhoc_ch" />
+			<Item  class="type:x-xmb/xmlsysconf"   key="game_psp_emu_adhoc_mode" attr="game_psp_emu_adhoc_mode" />
+		</Items>
+	</View>
+
+	<View id="seg_game_fixed_lower">
+		<Attributes>
+			<Table key="game_ps_emu_upcon">
+				<Pair key="icon_rsc"><String>tex_sett</String></Pair>
+				<Pair key="title_rsc"><String>msg_ps_upconvert</String></Pair>
+				<Pair key="info_rsc"><String>msg_upconvert_explanation</String></Pair>
+				<Pair key="bar_action"><String>game_psemu_upcon</String></Pair>
+			</Table>
+			<Table key="game_ps_emu_smooth">
+				<Pair key="icon_rsc"><String>tex_sett</String></Pair>
+				<Pair key="title_rsc"><String>msg_ps_smoothing</String></Pair>
+				<Pair key="info_rsc"><String>msg_ps_ps2_smoothing_explanation</String></Pair>
+				<Pair key="bar_action"><String>game_psemu_smooth</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+			<Item  class="type:x-xmb/xmlsysconf"   key="game_ps_emu_upcon"    attr="game_ps_emu_upcon" />
+			<Item  class="type:x-xmb/xmlsysconf"   key="game_ps_emu_smooth"   attr="game_ps_emu_smooth" />
+		</Items>
+	</View>
+
+	<View id="seg_device">
+		<Items>
+			<Query 
+				class="type:x-xmb/folder-pixmap" 
+				key="seg_device_fixed_upper" 
+				src="#seg_device_fixed_upper"
+				/>
+			<Query 
+				class="type:x-xmb/folder-pixmap" 
+				key="seg_device_usbheadset" 
+				src="#seg_device_usbheadset"
+				/>
+			<Query 
+				class="type:x-xmb/folder-pixmap" 
+				key="seg_device_fixed_middle" 
+				src="#seg_device_fixed_middle"
+				/>
+			<Query 
+				class="type:x-xmb/folder-pixmap" 
+				key="seg_device_kbim_hantai" 
+				src="sel://localhost/ishantai?category_sysconf.xml#seg_device_kbim_hantai"
+				/>
+			<Query 
+				class="type:x-xmb/folder-pixmap" 
+				key="seg_device_kbim_kana" 
+				src="sel://localhost/iskana?category_sysconf.xml#seg_device_kbim_kana"
+				/>
+			<Query 
+				class="type:x-xmb/folder-pixmap" 
+				key="seg_device_fixed_lower" 
+				src="#seg_device_fixed_lower"
+				/>
+		</Items>
+	</View>
+
+	<View id="seg_device_fixed_upper">
+		<Attributes>
+			<Table key="pd_calibrate_motion_controller">
+				<Pair key="icon_rsc"><String>tex_sett</String></Pair>
+				<Pair key="title_rsc"><String>msg_calibrate_motion_controller</String></Pair>
+				<Pair key="info_rsc"><String>msg_calibrate_motion_controller_explanation</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+			</Table>
+			<Table key="pd_pad_assign">
+				<Pair key="icon_rsc"><String>tex_sett</String></Pair>
+				<Pair key="title_rsc"><String>msg_controller_assign2</String></Pair>
+				<Pair key="info_rsc"><String>msg_controller_assign2_explanation</String></Pair>
+				<Pair key="bar_action"><String>pad_assign</String></Pair>
+			</Table>
+			<Table key="pd_pad_vibration">
+				<Pair key="icon_rsc"><String>tex_sett</String></Pair>
+				<Pair key="title_rsc"><String>msg_controller_vibration_function2</String></Pair>
+				<Pair key="info_rsc"><String>msg_controller_vibration_function2_explanation</String></Pair>
+				<Pair key="bar_action"><String>pad_vibration</String></Pair>
+			</Table>
+			<Table key="pd_bdremote_reg">
+				<Pair key="icon_rsc"><String>tex_sett</String></Pair>
+				<Pair key="title_rsc"><String>msg_bdremote_registration</String></Pair>
+				<Pair key="info_rsc"><String>msg_bdremote_registration_explanation</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+			</Table>
+			<Table key="pd_bt_utility">
+				<Pair key="icon_rsc"><String>tex_sett</String></Pair>
+				<Pair key="title_rsc"><String>msg_bt_device_utility</String></Pair>
+				<Pair key="info_rsc"><String>msg_bt_device_utility_explanation</String></Pair>
+				<Pair key="bar_action"><String>bt_device_utility</String></Pair>
+			</Table>
+			<Table key="pd_camera">
+				<Pair key="icon_rsc"><String>tex_sett</String></Pair>
+				<Pair key="title_rsc"><String>msg_camera_device_setting</String></Pair>
+				<Pair key="info_rsc"><String>msg_camera_device_setting_explanation</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+			</Table>
+			<Table key="pd_audio_setting">
+				<Pair key="icon_rsc"><String>tex_sett</String></Pair>
+				<Pair key="title_rsc"><String>msg_audio_device_setting</String></Pair>
+				<Pair key="info_rsc"><String>msg_audio_device_setting_explanation</String></Pair>
+				<Pair key="bar_action"><String>audio_setting</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+			<Item  class="type:x-xmb/xmlsysconf"   key="pd_calibrate_motion_controller"     attr="pd_calibrate_motion_controller" />
+			<Item  class="type:x-xmb/xmlsysconf"   key="pd_pad_assign"        attr="pd_pad_assign" />
+			<Item  class="type:x-xmb/xmlsysconf"   key="pd_pad_vibration"     attr="pd_pad_vibration" />
+			<Item  class="type:x-xmb/xmlsysconf"   key="pd_bdremote_reg"      attr="pd_bdremote_reg" />
+			<Item  class="type:x-xmb/xmlsysconf"   key="pd_bt_utility"        attr="pd_bt_utility" />
+			<Item  class="type:x-xmb/xmlsysconf"   key="pd_camera"            attr="pd_camera" />
+			<Item  class="type:x-xmb/xmlsysconf"   key="pd_audio_setting"     attr="pd_audio_setting" />
+		</Items>
+	</View>
+	<View id="seg_device_usbheadset">
+		<Attributes>
+			<Table key="pd_usbhdset_setting">
+				<Pair key="icon_rsc"><String>tex_sett</String></Pair>
+				<Pair key="title_rsc"><String>msg_sce_wireless_stereo_headset_setting</String></Pair>
+				<Pair key="info_rsc"><String>msg_sce_wireless_stereo_headset_setting_explanation</String></Pair>
+				<Pair key="bar_action"><String>usb_headset</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+			<Item  class="type:x-xmb/xmlsysconf"   key="pd_usbhdset_setting"  attr="pd_usbhdset_setting" />
+		</Items>
+	</View>
+	<View id="seg_device_fixed_middle">
+		<Attributes>
+			<Table key="pd_voice_changer">
+				<Pair key="icon_rsc"><String>tex_sett</String></Pair>
+				<Pair key="title_rsc"><String>msg_voice_changer</String></Pair>
+				<Pair key="info_rsc"><String>msg_voice_changer_explanation</String></Pair>
+				<Pair key="bar_action"><String>voice_changer</String></Pair>
+			</Table>
+			<Table key="pd_keyboard_type">
+				<Pair key="icon_rsc"><String>tex_sett</String></Pair>
+				<Pair key="title_rsc"><String>msg_keyboardtype</String></Pair>
+				<Pair key="info_rsc"><String>msg_keyboardtype_explanation</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+			<Item  class="type:x-xmb/xmlsysconf"   key="pd_voice_changer"     attr="pd_voice_changer" />
+			<Item  class="type:x-xmb/xmlsysconf"   key="pd_keyboard_type"     attr="pd_keyboard_type" />
+		</Items>
+	</View>
+
+	<View id="seg_device_kbim_hantai">
+		<Attributes>
+			<Table key="pd_keyboard_input">
+				<Pair key="icon_rsc"><String>tex_sett</String></Pair>
+				<Pair key="title_rsc"><String>msg_keyboard_input_mode</String></Pair>
+				<Pair key="info_rsc"><String>msg_keyboard_input_mode_explanation</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+			<Item  class="type:x-xmb/xmlsysconf"   key="pd_keyboard_input"    attr="pd_keyboard_input" />
+		</Items>
+	</View>
+
+	<View id="seg_device_kbim_kana">
+		<Attributes>
+			<Table key="pd_keyboard_input">
+				<Pair key="icon_rsc"><String>tex_sett</String></Pair>
+				<Pair key="title_rsc"><String>msg_keyboard_input_mode</String></Pair>
+				<Pair key="info_rsc"><String>msg_keyboard_input_mode_explanation</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+			</Table>
+			<Table key="pd_keybind">
+				<Pair key="icon_rsc"><String>tex_sett</String></Pair>
+				<Pair key="title_rsc"><String>msg_keybind</String></Pair>
+				<Pair key="info_rsc"><String>msg_keybind_explanation</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+			<Item  class="type:x-xmb/xmlsysconf"   key="pd_keyboard_input"    attr="pd_keyboard_input" />
+			<Item  class="type:x-xmb/xmlsysconf"   key="pd_keybind"           attr="pd_keybind" />
+		</Items>
+	</View>
+
+	<View id="seg_device_fixed_lower">
+		<Attributes>
+			<Table key="pd_keyrepeat_start">
+				<Pair key="icon_rsc"><String>tex_sett</String></Pair>
+				<Pair key="title_rsc"><String>msg_keyrepeat_starttime</String></Pair>
+				<Pair key="info_rsc"><String>msg_keyrepeat_starttime_explanation</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+			</Table>
+			<Table key="pd_keyrepeat_speed">
+				<Pair key="icon_rsc"><String>tex_sett</String></Pair>
+				<Pair key="title_rsc"><String>msg_keyboard_speed</String></Pair>
+				<Pair key="info_rsc"><String>msg_keyboard_speed_explanation</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+			</Table>
+			<Table key="pd_mouse_type">
+				<Pair key="icon_rsc"><String>tex_sett</String></Pair>
+				<Pair key="title_rsc"><String>msg_mouse_type</String></Pair>
+				<Pair key="info_rsc"><String>msg_mouse_type_explanation</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+			</Table>
+			<Table key="pd_pointer_speed">
+				<Pair key="icon_rsc"><String>tex_sett</String></Pair>
+				<Pair key="title_rsc"><String>msg_pointer_speed</String></Pair>
+				<Pair key="info_rsc"><String>msg_pointer_speed_explanation</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+			<Item  class="type:x-xmb/xmlsysconf"   key="pd_keyrepeat_start"   attr="pd_keyrepeat_start" />
+			<Item  class="type:x-xmb/xmlsysconf"   key="pd_keyrepeat_speed"   attr="pd_keyrepeat_speed" />
+			<Item  class="type:x-xmb/xmlsysconf"   key="pd_mouse_type"        attr="pd_mouse_type" />
+			<Item  class="type:x-xmb/xmlsysconf"   key="pd_pointer_speed"     attr="pd_pointer_speed" />
+		</Items>
+	</View>
+
+	<View id="seg_network">
+		<Items>
+			<Query 
+				class="type:x-xmb/folder-pixmap" 
+				key="seg_network_fixed" 
+				src="#seg_network_fixed"
+				/>
+			<Query 
+				class="type:x-xmb/folder-pixmap" 
+				key="seg_network_dlnaconf" 
+				src="sel://localhost/dlnaconf?category_sysconf.xml#seg_network_dlnaconf"
+				/>
+		</Items>
+	</View>
+
+	<View id="seg_network_fixed">
+		<Attributes>
+			<Table key="net_netlist">
+				<Pair key="icon_rsc"><String>tex_sett</String></Pair>
+				<Pair key="title_rsc"><String>msg_netlist_current</String></Pair>
+				<Pair key="info_rsc"><String>msg_netlist_current_explanation</String></Pair>
+				<Pair key="bar_action"><String>net_netlist</String></Pair>
+			</Table>
+			<Table key="net_internet">
+				<Pair key="icon_rsc"><String>tex_sett</String></Pair>
+				<Pair key="title_rsc"><String>msg_internet_connect</String></Pair>
+				<Pair key="info_rsc"><String>msg_internet_connect_explanation</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+			</Table>
+			<Table key="net_internet_setting">
+				<Pair key="icon_rsc"><String>tex_sett</String></Pair>
+				<Pair key="title_rsc"><String>msg_internet_connect_setting</String></Pair>
+				<Pair key="info_rsc"><String>msg_internet_connect_setting_with_wlan_explanation</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+			</Table>
+			<Table key="net_internet_test">
+				<Pair key="icon_rsc"><String>tex_sett</String></Pair>
+				<Pair key="title_rsc"><String>msg_internet_connect_test</String></Pair>
+				<Pair key="info_rsc"><String>msg_internet_connect_test_explanation</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+			<Item  class="type:x-xmb/xmlsysconf"   key="net_netlist"          attr="net_netlist" />
+			<Item  class="type:x-xmb/xmlsysconf"   key="net_internet"         attr="net_internet" />
+			<Item  class="type:x-xmb/xmlsysconf"   key="net_internet_setting" attr="net_internet_setting" />
+			<Item  class="type:x-xmb/xmlsysconf"   key="net_internet_test"    attr="net_internet_test" />
+		</Items>
+	</View>
+
+	<View id="seg_network_dlnaconf">
+		<Attributes>
+			<Table key="net_media_server">
+				<Pair key="icon_rsc"><String>tex_sett</String></Pair>
+				<Pair key="title_rsc"><String>msg_mediaserver_connection</String></Pair>
+				<Pair key="info_rsc"><String>msg_mediaserver_connection_explanation</String></Pair>
+				<Pair key="bar_action"><String>none</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+			<Item  class="type:x-xmb/xmlsysconf"   key="net_media_server"     attr="net_media_server" />
+		</Items>
+	</View>
+
+</XMBML>

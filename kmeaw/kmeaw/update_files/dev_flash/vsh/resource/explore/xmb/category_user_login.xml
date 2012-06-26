@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<XMBML version="1.0">
+	<View id="root">
+		<Items>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_poweroff"
+				src="#seg_poweroff"
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="user_provider_1"
+				src="user://localhost/users"
+				/>
+		</Items>
+	</View>
+	
+	<View id="seg_poweroff">
+		<Items>
+			<Item class="type:x-xmb/xmlpoweroff" key="poweroff" />
+		</Items>
+	</View>
+</XMBML>

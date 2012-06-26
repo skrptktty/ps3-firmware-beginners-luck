@@ -1,0 +1,42 @@
+#
+# Licensed Materials - Property of IBM,
+# (c) Copyright IBM Corp. 1998, 2005  All Rights Reserved
+#
+
+# This is the system security properties file
+# It should be named: ${java.home}/lib/security/java.security
+
+# set the provider for security
+security.provider.1=com.ibm.oti.security.provider.OTI
+security.provider.2=com.ibm.j9.jce.provider.J9JCEProvider
+security.provider.3=com.ibm.j9.jsse.J9JSSEProvider
+
+# Default system policy class. This handles loading and managing
+# the system security policy.
+policy.provider=com.ibm.oti.util.DefaultPolicy
+
+# First load the system policy file.
+#policy.url.1=file:${java.home}/java.policy
+
+# enables the expansion of special property tags inside policy files
+# for example, ${java.home} will be expanded to the system property
+# java.home
+policy.expandProperties=true
+
+# enables the use of command line policy file additions
+# for example, -Djava.security.policy=file:/c:/mypolicy.policy
+policy.allowSystemProperty=true
+
+# Default keystore file format.
+keystore.type=jks
+
+# packages (or prefixes of) to checkPackageAccess...
+# require RuntimePermission ("accessClassInPackage."+package)
+package.access=com.ibm.oti.,com.sony.bdjstack.,com.sony.gemstack.,com.sony.mhpstack.
+
+# packages (or prefixes of) to checkPackageDefinition ...
+# require RuntimePermission ("defineClassInPackage."+package)
+# 
+# no class loaders call checkPackageDefinition.
+#
+package.definition=com.aacsla.bluray.,org.blurayx.s3d

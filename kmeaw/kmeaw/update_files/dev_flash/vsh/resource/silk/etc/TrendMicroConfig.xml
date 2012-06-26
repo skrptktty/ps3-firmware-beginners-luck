@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plist>
+<key>EC_host</key>
+<string>boxreg.trendmicro.com</string>
+<key>EC_path</key>
+<string>/TMWS</string>
+<key>redirect_URL</key>
+<string>http://boxreg.trendmicro.com/TMWS/BlockHandler?</string>
+<key>RS_host</key>
+<string>ps301.url.trendmicro.com</string>
+<key>block_URL</key>
+<string>http://webprotection.trendmicro.com/PS3/catblock.aspx?</string>
+<key>License_Mode</key>
+<string>PLAYSTATION301</string>
+<key>JS_Domain</key>
+<string>trendmicro.com</string>
+<key>JS_Domain2</key>
+<string>trendsecure.com</string>
+<key>JS_Ssl</key>
+<string>1</string>
+</plist>

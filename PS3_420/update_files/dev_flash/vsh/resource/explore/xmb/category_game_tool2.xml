@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<XMBML version="1.0">
+	<View id="root">
+		<Attributes>
+			<Table key="seg_device">
+				<Pair key="focus_detect"><String>enable</String></Pair>
+				<Pair key="focus_priority"><String>-5</String></Pair>
+			</Table>
+			<Table key="seg_add_content_device">
+				<Pair key="focus_detect"><String>enable</String></Pair>
+				<Pair key="focus_priority"><String>-4</String></Pair>
+			</Table>
+			<Table key="gameDir">
+				<Pair key="focus_priority"><String>-3</String></Pair>
+			</Table>
+			<Table key="gameDir2">
+				<Pair key="focus_priority"><String>-2</String></Pair>
+			</Table>
+			<Table key="seg_welcome">
+				<Pair key="focus_priority"><String>-1</String></Pair>
+				<Pair key="custom_priority"><String>game=-80</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_psp2appdata"
+				src="xmb://localhost/%flash/xmb/category_game.xml#seg_psp2appdata"
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_gamedata"
+				src="xmb://localhost/%flash/xmb/category_game.xml#seg_gamedata"
+				/>
+
+                        <Query
+                                class="type:x-xmb/folder-pixmap"
+                                key="seg_sdpsp"
+                                attr="seg_sdpsp"
+                                src="xmb://localhost/%flash/xmb/category_game.xml#seg_sdpsp"
+                                />
+
+
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_sdps3"
+				attr="seg_sdps3"
+				src="xmb://localhost/%flash/xmb/category_game.xml#seg_sdps3"
+				/>
+<!--
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_trophy"
+				src="xcb://localhost/exists?having=on&rquery=root.fixed_items.trophy&cond=Ap+AchievTitle:Common.dirPath %xUserHomeDir/trophy"
+				/>
+-->
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_trophy"
+				src="xmb://localhost/%flash/xmb/category_game.xml#seg_trophy"
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_welcome"
+				attr="seg_welcome"
+				src="sel://localhost/welcome?type=game"
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_gamedebug"
+				src="#seg_gamedebug"
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_package_files"
+				src="#seg_package_files"
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_gameexit"
+				src="sel://localhost/ingame?path=category_game.xml#seg_gameexit&type=game"
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_manual"
+				src="sel://localhost/ingame?path=category_game.xml#seg_manual&type=manual"
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_device"
+				attr="seg_device"
+				src="xcb://localhost/query?table=MMS_MEDIA_TYPE_SYSTEM&sort=+StorageMedia:StorageMedia.type&cond=Ae+StorageMedia:StorageMedia.stat.mediaStatus %xCB_MEDIA_INSERTED+AGL+StorageMedia:StorageMedia.type %xCB_MEDIA_TYPE_PS3_BD %xCB_MEDIA_TYPE_PS3_DVD+AGL+StorageMedia:StorageMedia.mediaFormat %xCB_MEDIA_FORMAT_PS3GAME_BD %xCB_MEDIA_FORMAT_PS3GAME_DVD"
+			/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_device2"
+				src="xcb://localhost/query?table=MMS_MEDIA_TYPE_SYSTEM&sort=+StorageMedia:StorageMedia.type&cond=Ae+StorageMedia:StorageMedia.stat.mediaStatus %xCB_MEDIA_INSERTED+AGL+StorageMedia:StorageMedia.type %xCB_MEDIA_TYPE_PS3_BD %xCB_MEDIA_TYPE_PS3_DVD+AGL+StorageMedia:StorageMedia.mediaFormat %xCB_MEDIA_FORMAT_PS3GAME_BD %xCB_MEDIA_FORMAT_PS3GAME_DVD+Ae+StorageMedia:StorageMedia.hybrid HYBRID&opt=option_hybrid"
+			/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_add_content_device"
+				attr="seg_add_content_device"
+				src="xcb://localhost/query?table=MMS_MEDIA_TYPE_SYSTEM&sort=+StorageMedia:StorageMedia.type&cond=Ae+StorageMedia:StorageMedia.stat.mediaStatus %xCB_MEDIA_INSERTED+AGL+StorageMedia:StorageMedia.type %xCB_MEDIA_TYPE_PS3_BD %xCB_MEDIA_TYPE_DVDPRW+AGL+StorageMedia:StorageMedia.mediaFormat %xCB_MEDIA_FORMAT_PS3CONTENT_BD %xCB_MEDIA_FORMAT_PS3CONTENT_DVD+Ae+StorageMedia:Common.fileName EX_GAME"
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_mv_content_device"
+				attr="seg_mv_content_device"
+				src="xcb://localhost/query?table=MMS_MEDIA_TYPE_SYSTEM&sort=+StorageMedia:StorageMedia.type&cond=Ae+StorageMedia:StorageMedia.stat.mediaStatus %xCB_MEDIA_INSERTED+AGL+StorageMedia:StorageMedia.type %xCB_MEDIA_TYPE_PS3_BD %xCB_MEDIA_TYPE_DVDPRW+AGL+StorageMedia:StorageMedia.mediaFormat %xCB_MEDIA_FORMAT_PS3CONTENT_BD %xCB_MEDIA_FORMAT_PS3CONTENT_DVD+Ae+StorageMedia:Common.fileName THEMEDIR"
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="gameDir"
+				attr="gameDir"
+				src="xcb://localhost/query?limit=2048&table=MMS_MEDIA_TYPE_HDD&sort=-Game:Common.stat.rating-Game:Common.timeCreated&cond=Aa+Game:Common.title+An+Game:Game.category GD+An+Game:Game.category 2D+An+Game:Game.category CB+An+Game:Game.category 1P+An+Game:Game.category PP+An+Game:Game.category HM+An+Game:Game.category AT+An+Game:Game.category AV+An+Game:Game.category AM+An+Game:Game.category VF+An+Game:Game.category AP+An+Game:Game.category BV+An+Game:Game.category WT+An+Game:Game.category 2P+AG+Game:Common.stat.rating 300"
+			/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_hdd_install"
+				src="ese://localhost/query?type=install_game"
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_pkg_install"
+				src="ese://localhost/query?type=install_pkg"
+			/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="gameDir2"
+				attr="gameDir2"
+				src="sel://localhost/ex?root.view_selected.game"
+			/>
+		</Items>
+	</View>
+
+	<View id="root_dex">
+		<Attributes>
+			<Table key="seg_device">
+				<Pair key="focus_detect"><String>enable</String></Pair>
+				<Pair key="focus_priority"><String>-5</String></Pair>
+			</Table>
+			<Table key="seg_add_content_device">
+				<Pair key="focus_detect"><String>enable</String></Pair>
+				<Pair key="focus_priority"><String>-4</String></Pair>
+			</Table>
+			<Table key="gameDir">
+				<Pair key="focus_priority"><String>-3</String></Pair>
+			</Table>
+			<Table key="gameDir2">
+				<Pair key="focus_priority"><String>-2</String></Pair>
+			</Table>
+			<Table key="seg_welcome">
+				<Pair key="focus_priority"><String>-1</String></Pair>
+				<Pair key="custom_priority"><String>game=-80</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_psp2appdata"
+				src="xmb://localhost/%flash/xmb/category_game.xml#seg_psp2appdata"
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_gamedata"
+				src="xmb://localhost/%flash/xmb/category_game.xml#seg_gamedata"
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_mcutility"
+				src="xmb://localhost/%flash/xmb/category_game.xml#seg_mcutility"
+				/>
+
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_sdps2"
+				src="sel://localhost/ps2emusave?category_game.xml#seg_sdps2"
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_sdpsp"
+				attr="seg_sdpsp"
+				src="xmb://localhost/%flash/xmb/category_game.xml#seg_sdpsp"
+			/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_sdps3"
+				attr="seg_sdps3"
+				src="xmb://localhost/%flash/xmb/category_game.xml#seg_sdps3"
+				/>
+<!--
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_trophy"
+				src="xcb://localhost/exists?having=on&rquery=root.fixed_items.trophy&cond=Ap+AchievTitle:Common.dirPath %xUserHomeDir/trophy"
+				/>
+-->
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_trophy"
+				src="xmb://localhost/%flash/xmb/category_game.xml#seg_trophy"
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_welcome"
+				attr="seg_welcome"
+				src="sel://localhost/welcome?type=game"
+				/>
+
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_gamedebug"
+				src="#seg_gamedebug"
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_package_files"
+				src="#seg_package_files"
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_gameexit"
+				src="sel://localhost/ingame?path=category_game.xml#seg_gameexit&type=game"
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_manual"
+				src="sel://localhost/ingame?path=category_game.xml#seg_manual&type=manual"
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_device"
+				attr="seg_device"
+				src="xcb://localhost/query?table=MMS_MEDIA_TYPE_SYSTEM&sort=+StorageMedia:StorageMedia.type&cond=Ae+StorageMedia:StorageMedia.stat.mediaStatus %xCB_MEDIA_INSERTED+AGL+StorageMedia:StorageMedia.type %xCB_MEDIA_TYPE_PS3_BD %xCB_MEDIA_TYPE_PS1_CD+AGL+StorageMedia:StorageMedia.mediaFormat %xCB_MEDIA_FORMAT_PS3GAME_BD %xCB_MEDIA_FORMAT_PS1GAME_CD"
+			/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_device2"
+				src="xcb://localhost/query?table=MMS_MEDIA_TYPE_SYSTEM&sort=+StorageMedia:StorageMedia.type&cond=Ae+StorageMedia:StorageMedia.stat.mediaStatus %xCB_MEDIA_INSERTED+AGL+StorageMedia:StorageMedia.type %xCB_MEDIA_TYPE_PS3_BD %xCB_MEDIA_TYPE_PS1_CD+AGL+StorageMedia:StorageMedia.mediaFormat %xCB_MEDIA_FORMAT_PS3GAME_BD %xCB_MEDIA_FORMAT_PS1GAME_CD+Ae+StorageMedia:StorageMedia.hybrid HYBRID&opt=option_hybrid"
+			/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_add_content_device"
+				attr="seg_add_content_device"
+				src="xcb://localhost/query?table=MMS_MEDIA_TYPE_SYSTEM&sort=+StorageMedia:StorageMedia.type&cond=Ae+StorageMedia:StorageMedia.stat.mediaStatus %xCB_MEDIA_INSERTED+AGL+StorageMedia:StorageMedia.type %xCB_MEDIA_TYPE_PS3_BD %xCB_MEDIA_TYPE_DVDPRW+AGL+StorageMedia:StorageMedia.mediaFormat %xCB_MEDIA_FORMAT_PS3CONTENT_BD %xCB_MEDIA_FORMAT_PS3CONTENT_DVD+Ae+StorageMedia:Common.fileName EX_GAME"
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_mv_content_device"
+				attr="seg_mv_content_device"
+				src="xcb://localhost/query?table=MMS_MEDIA_TYPE_SYSTEM&sort=+StorageMedia:StorageMedia.type&cond=Ae+StorageMedia:StorageMedia.stat.mediaStatus %xCB_MEDIA_INSERTED+AGL+StorageMedia:StorageMedia.type %xCB_MEDIA_TYPE_PS3_BD %xCB_MEDIA_TYPE_DVDPRW+AGL+StorageMedia:StorageMedia.mediaFormat %xCB_MEDIA_FORMAT_PS3CONTENT_BD %xCB_MEDIA_FORMAT_PS3CONTENT_DVD+Ae+StorageMedia:Common.fileName THEMEDIR"
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="gameDir"
+				attr="gameDir"
+				src="xcb://localhost/query?limit=2048&table=MMS_MEDIA_TYPE_HDD&sort=-Game:Common.stat.rating-Game:Common.timeCreated&cond=Aa+Game:Common.title+An+Game:Game.category GD+An+Game:Game.category 2D+An+Game:Game.category CB+An+Game:Game.category HM+An+Game:Game.category AT+An+Game:Game.category AV+An+Game:Game.category AM+An+Game:Game.category VF+An+Game:Game.category AP+An+Game:Game.category BV+An+Game:Game.category WT+AG+Game:Common.stat.rating 300"
+			/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_hdd_install"
+				src="ese://localhost/query?type=install_game"
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_pkg_install"
+				src="ese://localhost/query?type=install_pkg"
+			/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="gameDir2"
+				attr="gameDir2"
+				src="sel://localhost/ex?root.view_selected.game"
+			/>
+		</Items>
+	</View>
+
+	<View id="root_arcade">
+		<Attributes>
+			<Table key="seg_device">
+				<Pair key="focus_detect"><String>enable</String></Pair>
+				<Pair key="focus_priority"><String>-3</String></Pair>
+			</Table>
+			<Table key="gameDir">
+				<Pair key="focus_priority"><String>-2</String></Pair>
+			</Table>
+			<Table key="gameDir2">
+				<Pair key="focus_priority"><String>-1</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_gamedata"
+				src="xmb://localhost/%flash/xmb/category_game.xml#seg_gamedata"
+				/>
+
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_sdps3"
+				attr="seg_sdps3"
+				src="xmb://localhost/%flash/xmb/category_game.xml#seg_sdps3"
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_package_files"
+				src="#seg_package_files"
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_gameexit"
+				src="sel://localhost/ingame?path=category_game.xml#seg_gameexit&type=game"
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_manual"
+				src="sel://localhost/ingame?path=category_game.xml#seg_manual&type=manual"
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_device"
+				attr="seg_device"
+				src="xcb://localhost/query?table=MMS_MEDIA_TYPE_SYSTEM&sort=+StorageMedia:StorageMedia.type&cond=Ae+StorageMedia:StorageMedia.stat.mediaStatus %xCB_MEDIA_INSERTED+AGL+StorageMedia:StorageMedia.type %xCB_MEDIA_TYPE_PS3_BD %xCB_MEDIA_TYPE_PS3_DVD+AGL+StorageMedia:StorageMedia.mediaFormat %xCB_MEDIA_FORMAT_PS3GAME_BD %xCB_MEDIA_FORMAT_PS3GAME_DVD"
+			/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_device2"
+				src="xcb://localhost/query?table=MMS_MEDIA_TYPE_SYSTEM&sort=+StorageMedia:StorageMedia.type&cond=Ae+StorageMedia:StorageMedia.stat.mediaStatus %xCB_MEDIA_INSERTED+AGL+StorageMedia:StorageMedia.type %xCB_MEDIA_TYPE_PS3_BD %xCB_MEDIA_TYPE_PS3_DVD+AGL+StorageMedia:StorageMedia.mediaFormat %xCB_MEDIA_FORMAT_PS3GAME_BD %xCB_MEDIA_FORMAT_PS3GAME_DVD+Ae+StorageMedia:StorageMedia.hybrid HYBRID&opt=option_hybrid"
+			/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_mv_content_device"
+				attr="seg_mv_content_device"
+				src="xcb://localhost/query?table=MMS_MEDIA_TYPE_SYSTEM&sort=+StorageMedia:StorageMedia.type&cond=Ae+StorageMedia:StorageMedia.stat.mediaStatus %xCB_MEDIA_INSERTED+AGL+StorageMedia:StorageMedia.type %xCB_MEDIA_TYPE_PS3_BD %xCB_MEDIA_TYPE_DVDPRW+AGL+StorageMedia:StorageMedia.mediaFormat %xCB_MEDIA_FORMAT_PS3CONTENT_BD %xCB_MEDIA_FORMAT_PS3CONTENT_DVD+Ae+StorageMedia:Common.fileName THEMEDIR"
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="gameDir"
+				attr="gameDir"
+				src="xcb://localhost/query?limit=2048&table=MMS_MEDIA_TYPE_HDD&sort=-Game:Common.stat.rating-Game:Common.timeCreated&cond=Aa+Game:Common.title+An+Game:Game.category GD+An+Game:Game.category 2D+An+Game:Game.category CB+An+Game:Game.category 1P+An+Game:Game.category PP+An+Game:Game.category HM+An+Game:Game.category AT+An+Game:Game.category AV+An+Game:Game.category AM+An+Game:Game.category VF+An+Game:Game.category AP+An+Game:Game.category BV+An+Game:Game.category WT+An+Game:Game.category 2P+AG+Game:Common.stat.rating 300"
+			/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_hdd_install"
+				src="ese://localhost/query?type=install_game"
+				/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="seg_pkg_install"
+				src="ese://localhost/query?type=install_pkg"
+			/>
+			<Query
+				class="type:x-xmb/folder-pixmap"
+				key="gameDir2"
+				attr="gameDir2"
+				src="sel://localhost/ex?root.view_selected.game"
+			/>
+		</Items>
+	</View>
+
+	<View id="seg_gamedebug">
+		<Attributes>
+			<Table key="game_debug">
+				<Pair key="icon_rsc"><String>tex_album_icon</String></Pair>
+				<Pair key="title_rsc"><String>msg_tool_app_home_ps3_game</String></Pair>
+				<Pair key="child"><String>segment</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+			<Query class="type:x-xcb/game-debug" key="game_debug"  attr="game_debug" />
+		</Items>
+	</View>
+
+	<View id="seg_package_files">
+		<Attributes>
+			<Table key="host_device">
+				<Pair key="icon_rsc"><String>tex_album_icon</String></Pair>
+				<Pair key="title_rsc"><String>msg_tool_install_file</String></Pair>
+				<Pair key="child"><String>segment</String></Pair>
+				<Pair key="ingame"><String>disable</String></Pair>
+			</Table>
+		</Attributes>
+		<Items>
+			<Query
+				class="type:x-xmb/xmlpackagefolder"
+				key="host_device" attr="host_device"
+				src="#seg_packages"
+			/>
+		</Items>
+	</View>
+
+	<View id="seg_packages">
+		<Items>
+			<Query class="type:x-xmb/xmlpackagefolder" key="host_provider_host" src="host://localhost/q?path=/app_home/&suffix=.pkg&subclass=x-host/package" />
+			<Query class="type:x-xmb/xmlpackagefolder" key="host_provider_bdvd" src="host://localhost/q?path=/dev_bdvd&suffix=.pkg&subclass=x-host/package" />
+			<Query class="type:x-xmb/xmlpackagefolder" key="host_provider_ms" src="host://localhost/q?path=/dev_ms&suffix=.pkg&subclass=x-host/package" />
+			<Query class="type:x-xmb/xmlpackagefolder" key="host_provider_usb0" src="host://localhost/q?path=/dev_usb000&suffix=.pkg&subclass=x-host/package" />
+			<Query class="type:x-xmb/xmlpackagefolder" key="host_provider_usb1" src="host://localhost/q?path=/dev_usb001&suffix=.pkg&subclass=x-host/package" />
+			<Query class="type:x-xmb/xmlpackagefolder" key="host_provider_usb2" src="host://localhost/q?path=/dev_usb002&suffix=.pkg&subclass=x-host/package" />
+			<Query class="type:x-xmb/xmlpackagefolder" key="host_provider_usb3" src="host://localhost/q?path=/dev_usb003&suffix=.pkg&subclass=x-host/package" />
+			<Query class="type:x-xmb/xmlpackagefolder" key="host_provider_usb4" src="host://localhost/q?path=/dev_usb004&suffix=.pkg&subclass=x-host/package" />
+			<Query class="type:x-xmb/xmlpackagefolder" key="host_provider_usb5" src="host://localhost/q?path=/dev_usb005&suffix=.pkg&subclass=x-host/package" />
+			<Query class="type:x-xmb/xmlpackagefolder" key="host_provider_usb6" src="host://localhost/q?path=/dev_usb006&suffix=.pkg&subclass=x-host/package" />
+			<Query class="type:x-xmb/xmlpackagefolder" key="host_provider_usb7" src="host://localhost/q?path=/dev_usb007&suffix=.pkg&subclass=x-host/package" />
+		</Items>
+	</View>
+
+</XMBML>
